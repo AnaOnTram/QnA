@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "created": "2026-11-06",
+  "scope": "timm ResNetV2-50 and MobileNetV2 only; TorchVision ResNet-50 excluded",
+  "artifacts": [
+    {
+      "path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "ONNX Runtime / TensorRT",
+      "precision": "FP32",
+      "recipe": "Original opset-20 source; identical to existing trt/mobilenetv2.onnx",
+      "metadata": {},
+      "bytes": 14203579,
+      "sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/pytorch/mobilenet_v2-b0353104.pth",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "PyTorch",
+      "precision": "FP32",
+      "recipe": "Upstream MobileNetV2 V1 checkpoint",
+      "metadata": {},
+      "bytes": 14212972,
+      "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/pytorch/mobilenet_v2-b0353104.pth",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/rknn/mobilenetv2.rknn",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "Rockchip RKNN Toolkit2 2.5.0 / RK3588",
+      "precision": "FP16",
+      "recipe": "Unquantized FP16 build; baked ImageNet normalization",
+      "metadata": {},
+      "bytes": 7548529,
+      "sha256": "b7a1684245b943a0aa8a02c60fccc2b898b01f4941ac6bc5c421c07c9dac5eaf",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/rknn/mobilenetv2.rknn",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/rknn/mobilenetv2_int8.rknn",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "Rockchip RKNN Toolkit2 2.5.0 / RK3588",
+      "precision": "INT8",
+      "recipe": "W8A8 PTQ; channel quantization, normal algorithm, optimization level 3; 256 calibration images; baked ImageNet normalization",
+      "metadata": {},
+      "bytes": 4107787,
+      "sha256": "e3266188be528f43e2431c4cd6067148e4c3d7ef9b340637baae2fc8de66c901",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/rknn/mobilenetv2_int8.rknn",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/rknn/mobilenetv2_opset19.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "RKNN conversion source / ONNX Runtime",
+      "precision": "FP32",
+      "recipe": "Opset-19 compatible conversion source; existing validation records bit-exact parity with opset-20 source",
+      "metadata": {},
+      "bytes": 13979056,
+      "sha256": "125a469ee547f98d3012fb8b7eaf9e74a3f6238ee09dfd762dbc0497c403ef14",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/rknn/mobilenetv2_opset19.onnx",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/tensorrt/mobilenetv2_fp16.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "TensorRT",
+      "precision": "FP16",
+      "recipe": "FP16 graph conversion",
+      "metadata": {},
+      "bytes": 7228514,
+      "sha256": "cf8a3b902a5f182c930f691a2216bc739912d224150b7498a4df8b4e5532b5d5",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/trt/mobilenetv2_fp16.onnx",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/tensorrt/mobilenetv2_fp8.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "TensorRT",
+      "precision": "FP8 E4M3 Q/DQ",
+      "recipe": "ModelOpt Q/DQ; per-channel weights, per-tensor activations",
+      "metadata": {},
+      "bytes": 7134563,
+      "sha256": "38be5a8ede5edba98ef5f6dfab0baacc326589e340b2a8f444c68b3713034712",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/trt/mobilenetv2_fp8.onnx",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/tensorrt/mobilenetv2_int4.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "TensorRT",
+      "precision": "INT4 weight-only, mixed precision",
+      "recipe": "RTN block-128 classifier Gemm only; convolution layers remain floating point",
+      "metadata": {},
+      "bytes": 9539157,
+      "sha256": "1b04e8a57b23dfac4a23a047c82bf92ce317db1762df49e88f3664e614d03260",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/trt/mobilenetv2_int4.onnx",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/tensorrt/mobilenetv2_int8.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "TensorRT",
+      "precision": "INT8 Q/DQ",
+      "recipe": "ModelOpt Q/DQ; per-channel weights, per-tensor activations",
+      "metadata": {},
+      "bytes": 7215111,
+      "sha256": "f8990e426d29cb7221950a09e3a4f7cac221c43ed2aeaaa4d8e13057146870be",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/trt/mobilenetv2_int8.onnx",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/resnetv2_50/edgetpu/resnetv2_50_int8_nhwc_edgetpu.tflite",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "Coral Edge TPU",
+      "precision": "INT8 with UINT8 I/O",
+      "recipe": "Static NHWC [1,224,224,3]; ImageNet normalization folded; 200 calibration images; compiled with Edge TPU compiler 16.0.384591198",
+      "metadata": {},
+      "bytes": 26542720,
+      "sha256": "6fa117471ef20f7aa0aa7b14f2f327a036ec69db9082b10a404b2eb77d90f5b2",
+      "source_path_relative_to_home": "QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc_edgetpu.tflite",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/resnetv2_50/onnx/resnetv2_50_fp16.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "ONNX Runtime CUDA",
+      "precision": "FP16",
+      "recipe": "ModelOpt FP16 graph conversion; FP16 input/output",
+      "metadata": {
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "checkpoint_sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+        "opset": 19,
+        "source_opset": 17,
+        "io_dtypes": {
+          "input": "10",
+          "output": "10"
+        }
+      },
+      "bytes": 51300694,
+      "sha256": "23cc23880d70cf7b7a0737aa717c4f1727f9d3c085df270739ae76a83fa663d0",
+      "source_path_relative_to_home": "QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp16.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/onnx/resnetv2_50_fp32.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "ONNX Runtime",
+      "precision": "FP32",
+      "recipe": "Canonical opset-17 graph",
+      "metadata": {
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "checkpoint_sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+        "opset": 17
+      },
+      "bytes": 102438526,
+      "sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+      "source_path_relative_to_home": "QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/onnx/resnetv2_50_int8_qoperator.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "ONNX Runtime CPU",
+      "precision": "INT8",
+      "recipe": "Static QOperator; per-channel signed INT8 weights, UINT8 activations; 512 calibration images",
+      "metadata": {
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "checkpoint_sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+        "per_channel": true,
+        "activation_type": "QUInt8",
+        "weight_type": "QInt8",
+        "format": "QOperator",
+        "calibration": {
+          "count": 512,
+          "sha256": "d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0"
+        }
+      },
+      "bytes": 26167247,
+      "sha256": "ae524e4dbb95c7b899cabf94f63b81dc0edb45d469ad9da532318b474c72b454",
+      "source_path_relative_to_home": "QA/Models/resnet50/quantize/artifacts/timm_rnv2_int8_ort_qop.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/pytorch/model.safetensors",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "PyTorch/timm",
+      "precision": "FP32",
+      "recipe": "Upstream pretrained checkpoint",
+      "metadata": {},
+      "bytes": 102409634,
+      "sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+      "source_path_relative_to_home": ".cache/huggingface/hub/models--timm--resnetv2_50.a1h_in1k/snapshots/a9035ec8691ab8c6eb6035aa3930c37583bcee5b/model.safetensors",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/qnn/resnetv2_50_fp32.dlc",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "Qualcomm QAIRT 2.42",
+      "precision": "FP32",
+      "recipe": "Local FP32 DLC; included as conversion source, not an HTP INT8 deployment; no pinned digest in source registry",
+      "metadata": {},
+      "bytes": 102419532,
+      "sha256": "7acd8225b13287410940d93fc9bb50cefc231ab1e81f006b2d101ea8b25a5574",
+      "source_path_relative_to_home": "qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/model/output/resnetv2_50_fp32.dlc",
+      "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/resnetv2_50/qnn/resnetv2_50_int8.dlc",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "Qualcomm QNN HTP (QCS6490), QAIRT 2.42.0.251225",
+      "precision": "INT8",
+      "recipe": "qairt-converter --source_model_input_shape input 1,3,224,224; qairt-quantizer",
+      "metadata": {},
+      "bytes": 25738660,
+      "sha256": "548940e753b83ec5c83284619fc3003c3f68726bec53a4e88653d6ac18d956ef",
+      "source_path_relative_to_home": "qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/model/output/resnetv2_50_int8.dlc",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/qnn/resnetv2_50_quantized.bin",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "Qualcomm QNN HTP (QCS6490), QAIRT 2.42.0.251225",
+      "precision": "INT8",
+      "recipe": "qnn-context-binary-generator (vtcm_mb 2, dsp_arch v68, soc_id 35)",
+      "metadata": {},
+      "bytes": 26001408,
+      "sha256": "928508ae776e277d81451176d71eea80ec24679f1cf9b038f08758979f47cc9a",
+      "source_path_relative_to_home": "qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/model/output/resnetv2_50_quantized.bin",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/rknn/resnetv2_50.rknn",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "Rockchip RKNN NPU (RK3588), rknn-toolkit2 2.5.0",
+      "precision": "FP16",
+      "recipe": "RK3588; unquantized FP16 build; baked ImageNet normalization",
+      "metadata": {},
+      "bytes": 52506033,
+      "sha256": "e997bb14f08434d1d193f65e44a77d4d67241fcff11e1d8429b7e6f0ff08ef1f",
+      "source_path_relative_to_home": "QA/Models/resnet50/rknn/NPU/resnet/resnetv2_50.rknn",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/rknn/resnetv2_50_int8.rknn",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "Rockchip RKNN NPU (RK3588), rknn-toolkit2 2.5.0",
+      "precision": "INT8",
+      "recipe": "RK3588; baked ImageNet normalization; INT8 PTQ uses 256 calibration images",
+      "metadata": {},
+      "bytes": 26731147,
+      "sha256": "f71ab0e12fcba8d2d6f5eccfaaa11280e165965ca2c31332a483093de759bf6a",
+      "source_path_relative_to_home": "QA/Models/resnet50/rknn/NPU/resnet/resnetv2_50_int8.rknn",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int8_dq.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT",
+      "precision": "INT8 compressed Q/DQ",
+      "recipe": "Same PTQ recipe with dq_only; INT8 weights stored",
+      "metadata": {
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "checkpoint_sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+        "quantize_mode": "int8",
+        "calibration_method": "max",
+        "high_precision_dtype": "fp32",
+        "dq_only": true,
+        "calibration": {
+          "count": 512,
+          "sha256": "d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0"
+        }
+      },
+      "bytes": 26168659,
+      "sha256": "fd967b8c04afdf78d737c49d59a6ebf9f3a80a03749655587b74ca061c0af776",
+      "source_path_relative_to_home": "QA/Models/resnet50/quantize/artifacts/timm_rnv2_int8_dq_ort.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int8_dq.trt109.b10.plan",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT 10.9.0.34",
+      "precision": "INT8",
+      "recipe": "Compiled engine; dynamic batch profile max 10; strongly typed; TF32 disabled",
+      "metadata": {
+        "build": {
+          "onnx_sha256": "fd967b8c04afdf78d737c49d59a6ebf9f3a80a03749655587b74ca061c0af776",
+          "max_batch": 10,
+          "trt_version": "10.9.0.34",
+          "tf32": false,
+          "strongly_typed": true,
+          "workspace_bytes": 1073741824,
+          "builder_optimization_level": 3
+        },
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU"
+      },
+      "bytes": 29252156,
+      "sha256": "586744282378a49ad4e787b7378bf421c2bb945b9fde1bad9ed7f7eadf063b46",
+      "source_path_relative_to_home": "QA/Models/resnet50/evasion_onnx/engines/timm_rnv2_int8_dq_ort.trt109.b10.plan",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int8_qdq.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT",
+      "precision": "INT8 Q/DQ",
+      "recipe": "ModelOpt PTQ max calibration, 512 images; FP32 weights stored with explicit Q/DQ",
+      "metadata": {
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "checkpoint_sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+        "quantize_mode": "int8",
+        "calibration_method": "max",
+        "high_precision_dtype": "fp32",
+        "dq_only": false,
+        "calibration": {
+          "count": 512,
+          "sha256": "d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0"
+        }
+      },
+      "bytes": 102691949,
+      "sha256": "99755d64590b5918eb31070a27688ff9848056d2d8fec8e67a7a6c64991f28aa",
+      "source_path_relative_to_home": "QA/Models/resnet50/quantize/artifacts/timm_rnv2_int8_ptq_ort.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int8_qdq.trt109.b10.plan",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT 10.9.0.34",
+      "precision": "INT8",
+      "recipe": "Compiled engine; dynamic batch profile max 10; strongly typed; TF32 disabled",
+      "metadata": {
+        "build": {
+          "onnx_sha256": "99755d64590b5918eb31070a27688ff9848056d2d8fec8e67a7a6c64991f28aa",
+          "max_batch": 10,
+          "trt_version": "10.9.0.34",
+          "tf32": false,
+          "strongly_typed": true,
+          "workspace_bytes": 1073741824,
+          "builder_optimization_level": 3
+        },
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU"
+      },
+      "bytes": 29199932,
+      "sha256": "67dd55b07ad581d26b31d8e8c748f179d002b7f29fa681e39151adb89f070d77",
+      "source_path_relative_to_home": "QA/Models/resnet50/evasion_onnx/engines/timm_rnv2_int8_ptq_ort.trt109.b10.plan",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tflite/resnetv2_50_int8_nhwc.tflite",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorFlow Lite CPU",
+      "precision": "INT8 with UINT8 I/O",
+      "recipe": "Static NHWC [1,224,224,3]; ImageNet normalization folded; 200 calibration images",
+      "metadata": {},
+      "bytes": 26290080,
+      "sha256": "4c835882627bf4cf32c24ccf2836282047cc59924d2a9cb3af94604ebec560da",
+      "source_path_relative_to_home": "QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc.tflite",
+      "source_hash_previously_pinned": false
+    }
+  ]
+}

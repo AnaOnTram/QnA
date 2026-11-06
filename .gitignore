@@ -1,0 +1,25 @@
+# Keep this repository limited to weights, documentation and tracking metadata.
+/*
+!/.gitattributes
+!/.gitignore
+!/README.md
+!/manifest.json
+!/SHA256SUMS
+!/docs/
+!/weights/
+/weights/**
+!/weights/**/
+!/weights/**/*.onnx
+!/weights/**/*.safetensors
+!/weights/**/*.pth
+!/weights/**/*.rknn
+!/weights/**/*.dlc
+!/weights/**/*.bin
+!/weights/**/*.plan
+!/weights/**/*.engine
+!/weights/**/*.tflite
+
+# Ignore local caches even if an upload tool creates them inside the repository.
+**/.cache/
+**/__pycache__/
+**/.env

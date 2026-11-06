@@ -1,0 +1,112 @@
+# Runtime and input contracts
+
+All models classify into the original 1,000 ImageNet classes. Outputs are logits
+or quantized logits, not probabilities. File extensions alone do not establish
+runtime compatibility or the precision of every operator.
+
+## Image preparation
+
+| Model | Image preparation used for the retained artifacts |
+| --- | --- |
+| timm ResNetV2-50 | RGB; resize shorter side to 232 with bilinear interpolation; center crop 224 |
+| MobileNetV2 | RGB; resize shorter side to 256 with bicubic interpolation and antialiasing; center crop 224 |
+
+For PyTorch and ONNX graphs, convert pixels to float in `[0,1]`, then normalize
+with mean `[0.485, 0.456, 0.406]` and standard deviation
+`[0.229, 0.224, 0.225]`. Use NCHW `[N,3,224,224]` and the graph's declared input
+dtype. ResNetV2 FP16 has FP16 inputs and outputs. The timm checkpoint's native
+recipe uses mean/std 0.5 and a different resize; the retained converted artifacts
+use the shared ImageNet-normalized contract above. Native timm preprocessing
+must not be substituted when reproducing these deployments.
+
+## PyTorch and ONNX Runtime
+
+Load `weights/resnetv2_50/pytorch/model.safetensors` into
+`timm.create_model('resnetv2_50', pretrained=False)` using
+`safetensors.torch.load_file()` and `load_state_dict()`. The checkpoint is
+`timm/resnetv2_50.a1h_in1k`, pinned to SHA-256 `b809e8c0…` in the manifest.
+
+The MobileNetV2 `.pth` is a state dictionary for
+`torchvision.models.mobilenet_v2(weights=None)`.
+
+For ResNetV2 CPU INT8 inference use `onnx/resnetv2_50_int8_qoperator.onnx`, with
+actual integer kernels. It uses per-channel INT8 weights and UINT8 activations,
+calibrated on 512 images. FP32 and FP16 graphs are also provided. Select a runtime
+provider supporting the graph's operators and dtypes; FP16 is intended for CUDA.
+
+MobileNetV2's FP32 graph is opset 20. Its `rknn/mobilenetv2_opset19.onnx` is a
+compatibility conversion for RKNN Toolkit2 2.5.0; the existing validation records
+bit-identical outputs on the retained 100-image validation sample.
+
+## TensorRT
+
+ResNetV2 INT8 graphs have two storage forms. `*_int8_qdq.onnx` retains float
+weights with explicit quantize/dequantize nodes. `*_int8_dq.onnx` stores compressed
+INT8 weights. The former is about 98 MiB even though TensorRT executes INT8
+convolutions. Both use ModelOpt max-calibration PTQ on 512 images. These graphs
+are intended for TensorRT; running them under ONNX Runtime does not guarantee
+integer convolution kernels or a speedup.
+
+The two included ResNetV2 `.plan` files were recorded with **TensorRT 10.9.0.34**
+on an **NVIDIA RTX 2000 Ada Generation Laptop GPU**, max batch 10, strongly typed,
+TF32 disabled, 1 GiB workspace. They are hardware/version-specific deployment
+artifacts. Rebuild from the included ONNX graphs for other targets; no portability
+guarantee is recorded for these plans. Their metadata and ONNX source hashes are
+in the manifest. The shared FP32/FP16 ONNX graphs are under `onnx/`.
+
+MobileNetV2 offers FP16, FP8 E4M3 Q/DQ and INT8 Q/DQ graphs. Its INT4 variant
+quantizes **only the classifier Gemm**, weight-only RTN with block size 128;
+the convolutions remain floating point. It is a mixed-precision graph, not a
+fully INT4 network. The original records describe TensorRT 11.3.0.99 / Blackwell
+deployment engines, but those per-precision engines are not present in the local
+source tree and are not included. Build compatible engines from the graphs on
+the target device.
+
+## RKNN on RK3588
+
+Both models include FP16 and INT8 `.rknn` files for **RK3588**, with
+**RKNN-Toolkit2 2.5.0**. INT8 uses 256 ImageNet-mini training images for
+calibration. MobileNetV2 uses channel quantization, the `normal` algorithm,
+W8A8, and optimization level 3.
+
+Normalization is **baked into the RKNN artifacts**. Feed RGB image values in
+`[0,255]` through the ordinary RKNN/RKNNLite input API; do not apply ImageNet
+normalization again. The ordinary UINT8 NHWC input convention is
+`[1,224,224,3]`; the runtime handles conversion to the native tensor type.
+Native I/O is FP16 for the FP16 artifact and INT8 for the quantized artifact.
+Native or zero-copy APIs require querying the actual tensor attributes instead
+of assuming the ordinary input convention.
+
+RKNN rebuilds can differ byte-for-byte despite equivalent outputs. A new build
+needs fresh checksums and runtime validation; keep it separate from this snapshot.
+
+## Qualcomm QAIRT / QNN
+
+The ResNetV2 files are `resnetv2_50_fp32.dlc` (conversion source),
+`resnetv2_50_int8.dlc` and `resnetv2_50_quantized.bin` (HTP context). The recorded
+deployment is **QCS6490**, **QAIRT 2.42.0.251225**, HTP v68, SoC ID 35,
+VTCM 2 MiB. The FP32 DLC is not an INT8 HTP deployment.
+
+The context digest matches the pinned deployment digest; this packaging step
+does not independently establish a fresh DLC-to-context build chain. The FP32
+DLC had no previously pinned digest and is newly hashed in this snapshot.
+
+Do not send raw RGB bytes directly to a native QNN input buffer. The retained
+context uses a native UINT8 encoding of ImageNet-normalized NCHW values, with
+scale `0.01865844801068306` and offset `-114`. For normalized float `x`, the
+recorded native encoding is `clip(round(x / scale) + 114, 0, 255)`. Query the
+context tensor metadata and use the matching QAIRT backend and target libraries.
+The original harness used QNN float-input handling to encode normalized floats.
+
+## TensorFlow Lite and Coral Edge TPU
+
+Use `tflite/resnetv2_50_int8_nhwc.tflite` for a CPU TFLite interpreter and
+`edgetpu/resnetv2_50_int8_nhwc_edgetpu.tflite` with a Coral Edge TPU delegate.
+Both use static UINT8 NHWC `[1,224,224,3]`, input scale `1/255` and zero point 0:
+feed the raw RGB crop without a second normalization. ImageNet normalization is
+folded into the converted model. Read output scale/zero-point from the runtime
+before interpreting logits.
+
+The source documentation records 200 calibration images and Edge TPU compiler
+**16.0.384591198**, with 114/114 operations mapped to one TPU subgraph. The old
+dynamic NCHW TFLite and intermediate TensorFlow SavedModel are excluded.
