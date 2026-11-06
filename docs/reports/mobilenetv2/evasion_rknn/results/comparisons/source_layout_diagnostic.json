@@ -1,0 +1,24 @@
+{
+  "channels_last": {
+    "numpy_strides": [
+      602112,
+      4,
+      2688,
+      12
+    ],
+    "max_abs": 1.33514404296875e-05,
+    "bit_exact": false,
+    "top1_agreement": 100
+  },
+  "contiguous_nchw": {
+    "numpy_strides": [
+      602112,
+      200704,
+      896,
+      4
+    ],
+    "max_abs": 0.0,
+    "bit_exact": true,
+    "top1_agreement": 100
+  }
+}

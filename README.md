@@ -11,14 +11,16 @@ tags:
   - quantized
 ---
 
-# Model weights across runtimes
+# Model weights and evasion attack reports
 
 Pretrained **timm ResNetV2-50 (`resnetv2_50.a1h_in1k`)** and **MobileNetV2
 (`IMAGENET1K_V1`)** weights, with the existing converted and quantized runtime
-artifacts. This snapshot was assembled on 6 November 2026 (Hong Kong time).
+artifacts, plus their evasion attack reports and supporting figures/evidence.
+This snapshot was assembled on 6 November 2026 (Hong Kong time).
 
-24 files, **841,027,645 bytes** (802.07 MiB). Every weight is tracked with Git
-LFS. Documentation, checksums and the provenance manifest use ordinary Git.
+24 weight files, **841,027,645 bytes** (802.07 MiB). Every weight is tracked with
+Git LFS. Reports, figures, compact result evidence, checksums and provenance
+manifests use ordinary Git.
 
 | Runtime / format | timm ResNetV2-50 | MobileNetV2 |
 | --- | --- | --- |
@@ -36,6 +38,8 @@ TorchVision checkpoint. ResNetV2-50 and MobileNetV2 are separate model families.
 
 ## Contents
 
+- [Evasion attack reports](docs/reports/README.md): unified timm comparison, Edge TPU,
+  MobileNetV2 TensorRT and RKNN reports, figures, matrices and validation evidence.
 - [Artifact catalog](docs/CATALOG.md): every included file, runtime, precision and size.
 - [Runtime and preprocessing notes](docs/RUNTIMES.md): input contracts and deployment limits.
 - [Provenance and scope](docs/PROVENANCE.md): sources, quantization recipes and exclusions.
@@ -50,10 +54,12 @@ Run from the repository root after downloading the LFS objects:
 
 ```bash
 sha256sum --check SHA256SUMS
+sha256sum --check docs/reports/SHA256SUMS
 ```
 
-This is a weights archive. It contains no datasets, calibration images,
-inference implementation, experiment outputs, virtual environments or SDKs.
+This archive contains weights, attack reports, figures and compact result evidence.
+It contains no datasets, calibration images, inference/attack implementation,
+adversarial candidate tensors, full experiment logs, virtual environments or SDKs.
 Use the appropriate runtime and model architecture; there is no single
 `from_pretrained()` entry point for this multi-model collection. See the runtime
 notes before passing inputs to the compiled models.

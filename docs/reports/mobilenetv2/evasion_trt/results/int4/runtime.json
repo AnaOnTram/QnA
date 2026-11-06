@@ -1,0 +1,30 @@
+{
+  "runtime": "native TensorRT",
+  "version": "11.3.0.99",
+  "provider": "CUDA device 0",
+  "engine": "/home/ross/QA/Models/mobilenetV2/trt/engine/mobilenetv2_int4_bs1.engine",
+  "engine_sha256": "11a44751c11d23ed87238445241a2c8e7b6480d4d281cc578f9e076b87e31810",
+  "engine_load_seconds": 0.11754155158996582,
+  "static_batch": 1,
+  "input": {
+    "name": "input",
+    "shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "dtype": "FLOAT"
+  },
+  "output": {
+    "name": "logits",
+    "shape": [
+      1,
+      1000
+    ],
+    "dtype": "FLOAT"
+  },
+  "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+  "cpu_fallback": false,
+  "layer_inspection": "evasion_trt/results/int4/tensorrt_layers.json"
+}

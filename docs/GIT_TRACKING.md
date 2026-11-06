@@ -3,7 +3,9 @@
 The repository uses `main`. All model binary extensions are matched by the
 committed `.gitattributes` LFS rules before the initial commit. Model files in
 Git history are small LFS pointers; complete payloads live in LFS storage and in
-the working tree. Documentation, `manifest.json` and `SHA256SUMS` use regular Git.
+the working tree. Documentation, report figures, compact JSON/CSV evidence,
+`manifest.json` and `SHA256SUMS` use regular Git. The report archive has its own
+manifest and checksum ledger under `docs/reports/`.
 
 ## This local checkout
 
@@ -25,6 +27,7 @@ git lfs ls-files
 git lfs fsck
 git status --short
 sha256sum --check SHA256SUMS
+sha256sum --check docs/reports/SHA256SUMS
 ```
 
 The original checkout's filter configuration contains absolute paths. If you
@@ -52,6 +55,9 @@ git lfs pull --include='weights/resnetv2_50/**' --exclude=''
 
 Full `SHA256SUMS` verification requires all 24 weight files to be downloaded.
 A text LFS pointer in place of a binary indicates its payload has not been fetched.
+The report checksum ledger is independent of the weight ledger. If an archived
+report or figure is replaced, update its archive-manifest entry and regenerate
+`docs/reports/SHA256SUMS` from the repository root before committing the change.
 
 ## Updating weights
 

@@ -1,0 +1,76 @@
+{
+  "model": "timm_rnv2_int8_dq_ort",
+  "onnx": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_int8_dq_ort.onnx",
+  "onnx_sha256": "fd967b8c04afdf78d737c49d59a6ebf9f3a80a03749655587b74ca061c0af776",
+  "runtime": {
+    "runtime": "native TensorRT",
+    "version": "10.9.0.34",
+    "provider": "CUDA device 0",
+    "engine": "/home/ross/QA/Models/resnet50/evasion_onnx/engines/timm_rnv2_int8_dq_ort.trt109.b10.plan",
+    "engine_sha256": "586744282378a49ad4e787b7378bf421c2bb945b9fde1bad9ed7f7eadf063b46",
+    "engine_build_or_load_seconds": 0.06751537322998047,
+    "configuration": {
+      "onnx_sha256": "fd967b8c04afdf78d737c49d59a6ebf9f3a80a03749655587b74ca061c0af776",
+      "max_batch": 10,
+      "trt_version": "10.9.0.34",
+      "tf32": false,
+      "strongly_typed": true,
+      "workspace_bytes": 1073741824,
+      "builder_optimization_level": 3
+    },
+    "layer_inspection": "/home/ross/QA/Models/resnet50/evasion_onnx/results/diagnostics/timm_rnv2_int8_dq_ort_probe/tensorrt_layers.json",
+    "convolution_weight_types": {
+      "Int8": 54
+    },
+    "cpu_fallback": false,
+    "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU"
+  },
+  "n_clean_correct": 79,
+  "n_probe_images": 20,
+  "probe_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    14,
+    15,
+    17,
+    18,
+    20,
+    21,
+    22,
+    26,
+    29,
+    30
+  ],
+  "eps_255": 2.0,
+  "replica_vs_engine_top1_agreement": "88/100",
+  "replica_vs_engine_top1_agreement_pct": 88,
+  "directions": {
+    "replica_gradient_sign": {
+      "flips": 11,
+      "flip_pct": 55.0,
+      "mean_margin_change": -0.8177574872970581,
+      "mean_logit_delta_l1": 0.7344163656234741
+    },
+    "negated_gradient": {
+      "flips": 0,
+      "flip_pct": 0.0,
+      "mean_margin_change": 1.362872838973999,
+      "mean_logit_delta_l1": 1.1521350145339966
+    },
+    "random_sign": {
+      "flips": 0,
+      "flip_pct": 0.0,
+      "mean_margin_change": 0.10301703214645386,
+      "mean_logit_delta_l1": 0.472088098526001
+    }
+  },
+  "verdict": "replica gradient is informative (sign step flips far more than random and the negated direction moves the margin the other way)"
+}

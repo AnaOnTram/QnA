@@ -1,0 +1,219 @@
+{
+  "board": "ross@192.168.1.39",
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "source_replica_max_abs": 1.9073486328125e-05,
+  "models": {
+    "rknn_fp16": {
+      "runtime": {
+        "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+        "driver": "0.9.8",
+        "input": {
+          "ret": 0,
+          "name": "input",
+          "dtype": "FP16",
+          "layout": "NHWC",
+          "qnt_type": 2,
+          "scale": 1,
+          "zero_point": 0,
+          "size": 301056,
+          "dims": [
+            1,
+            224,
+            224,
+            3
+          ]
+        },
+        "output": {
+          "ret": 0,
+          "name": "logits",
+          "dtype": "FP16",
+          "layout": "UNDEFINED",
+          "qnt_type": 2,
+          "scale": 1,
+          "zero_point": 0,
+          "size": 2000,
+          "dims": [
+            1,
+            1000
+          ]
+        },
+        "native_input": {
+          "ret": 0,
+          "name": "input",
+          "dtype": "FP16",
+          "layout": "NHWC",
+          "qnt_type": 2,
+          "scale": 1,
+          "zero_point": 0,
+          "size": 301056,
+          "dims": [
+            1,
+            224,
+            224,
+            3
+          ]
+        },
+        "native_output": {
+          "ret": 0,
+          "name": "logits",
+          "dtype": "FP16",
+          "layout": "UNDEFINED",
+          "qnt_type": 2,
+          "scale": 1,
+          "zero_point": 0,
+          "size": 2048,
+          "dims": [
+            1,
+            1000
+          ]
+        },
+        "workers": 3,
+        "weight_bytes": 7021824,
+        "internal_bytes": 3411968,
+        "model_sha256": "b7a1684245b943a0aa8a02c60fccc2b898b01f4941ac6bc5c421c07c9dac5eaf",
+        "board": "ross@192.168.1.39",
+        "native_runtime_autograd": false,
+        "cpu_fallback": false,
+        "execution": "native RKNN C API on Rock 5C NPU"
+      },
+      "n": 100,
+      "correct": 83,
+      "source_top1_agreement": 100,
+      "source_mae": 0.012315882369875908,
+      "source_max_abs": 0.1825052946805954,
+      "simulator_top1_agreement": 100,
+      "simulator_max_abs": 0.03125,
+      "integer_float_clean_bit_exact": true,
+      "quarter_rgb_logit_max_delta": 0.048828125,
+      "input_dtype_policy": "Fresh contexts for UINT8 and FLOAT32; do not change dtype within a live INT8 context."
+    },
+    "rknn_int8": {
+      "runtime": {
+        "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+        "driver": "0.9.8",
+        "input": {
+          "ret": 0,
+          "name": "input",
+          "dtype": "INT8",
+          "layout": "NHWC",
+          "qnt_type": 2,
+          "scale": 0.0186584480107,
+          "zero_point": -14,
+          "size": 150528,
+          "dims": [
+            1,
+            224,
+            224,
+            3
+          ]
+        },
+        "output": {
+          "ret": 0,
+          "name": "logits",
+          "dtype": "INT8",
+          "layout": "UNDEFINED",
+          "qnt_type": 2,
+          "scale": 0.188217833638,
+          "zero_point": -68,
+          "size": 1000,
+          "dims": [
+            1,
+            1000
+          ]
+        },
+        "native_input": {
+          "ret": 0,
+          "name": "input",
+          "dtype": "INT8",
+          "layout": "NHWC",
+          "qnt_type": 2,
+          "scale": 0.0186584480107,
+          "zero_point": -14,
+          "size": 150528,
+          "dims": [
+            1,
+            224,
+            224,
+            3
+          ]
+        },
+        "native_output": {
+          "ret": 0,
+          "name": "logits",
+          "dtype": "INT8",
+          "layout": "UNDEFINED",
+          "qnt_type": 2,
+          "scale": 0.188217833638,
+          "zero_point": -68,
+          "size": 1024,
+          "dims": [
+            1,
+            1000
+          ]
+        },
+        "workers": 3,
+        "weight_bytes": 3624832,
+        "internal_bytes": 1605632,
+        "model_sha256": "e3266188be528f43e2431c4cd6067148e4c3d7ef9b340637baae2fc8de66c901",
+        "board": "ross@192.168.1.39",
+        "native_runtime_autograd": false,
+        "cpu_fallback": false,
+        "execution": "native RKNN C API on Rock 5C NPU"
+      },
+      "n": 100,
+      "correct": 80,
+      "source_top1_agreement": 96,
+      "source_mae": 0.5142342448234558,
+      "source_max_abs": 5.979576110839844,
+      "simulator_top1_agreement": 91,
+      "simulator_max_abs": 3.0114855766296387,
+      "integer_float_clean_bit_exact": true,
+      "quarter_rgb_logit_max_delta": 2.635049819946289,
+      "input_dtype_policy": "Fresh contexts for UINT8 and FLOAT32; do not change dtype within a live INT8 context."
+    }
+  },
+  "transport": {
+    "rknn_fp16_integer_workers1": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_fp16_integer_workers3": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_int8_integer_workers1": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_int8_integer_workers3": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_fp16_fractional_workers1": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_fp16_fractional_workers3": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_int8_fractional_workers1": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    },
+    "rknn_int8_fractional_workers3": {
+      "n": 10,
+      "lite_c_bit_exact": true,
+      "repeat_bit_exact": true
+    }
+  },
+  "remote_sha256": "b7a1684245b943a0aa8a02c60fccc2b898b01f4941ac6bc5c421c07c9dac5eaf  /home/ross/QA/Models/mobilenetV2/rknn/mobilenetv2.rknn\ne3266188be528f43e2431c4cd6067148e4c3d7ef9b340637baae2fc8de66c901  /home/ross/QA/Models/mobilenetV2/rknn/mobilenetv2_int8.rknn\n4b6cc575bedf8952b13db4b1190fa3b3d2ac213f00be774ff6ccd19d651970c0  /home/ross/NPU/resnet/librknnrt.so\nccf8520a707d73693ee6cd08d430fc663611138003151a285d9419a319251d8c  /home/ross/QA/Models/mobilenetV2/evasion_rknn/rknn_scorer\n",
+  "complete": true
+}

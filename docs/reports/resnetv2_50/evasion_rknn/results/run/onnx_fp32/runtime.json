@@ -1,0 +1,18 @@
+{
+  "runtime": "ONNX Runtime",
+  "version": "1.24.4",
+  "requested_provider": "CUDAExecutionProvider",
+  "registered_providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "input_type": "tensor(float)",
+  "tf32": false,
+  "profile": "/home/ross/QA/Models/resnet50/evasion_rknn/results/run/onnx_fp32/ort_profile_2026-11-04_11-59-20.json",
+  "executed_node_providers": {
+    "CUDAExecutionProvider": 1390
+  },
+  "compute_kernels": {
+    "CUDAExecutionProvider:Conv": 540
+  }
+}

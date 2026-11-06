@@ -1,0 +1,656 @@
+{
+  "models": {
+    "pytorch_fp32": {
+      "clean_correct": 81,
+      "csv_rows": 1500,
+      "candidates_checked": 15,
+      "attacks": {
+        "random|1": {
+          "evaded": 0,
+          "eligible": 81
+        },
+        "fgsm|1": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "pgd|1": {
+          "evaded": 65,
+          "eligible": 81
+        },
+        "pgd_stronger|1": {
+          "evaded": 73,
+          "eligible": 81
+        },
+        "random|2": {
+          "evaded": 1,
+          "eligible": 81
+        },
+        "fgsm|2": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "pgd|2": {
+          "evaded": 73,
+          "eligible": 81
+        },
+        "random|4": {
+          "evaded": 1,
+          "eligible": 81
+        },
+        "fgsm|4": {
+          "evaded": 40,
+          "eligible": 81
+        },
+        "pgd|4": {
+          "evaded": 78,
+          "eligible": 81
+        },
+        "square|4": {
+          "evaded": 36,
+          "eligible": 81
+        },
+        "random|8": {
+          "evaded": 4,
+          "eligible": 81
+        },
+        "fgsm|8": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "pgd|8": {
+          "evaded": 81,
+          "eligible": 81
+        },
+        "square|8": {
+          "evaded": 49,
+          "eligible": 81
+        }
+      },
+      "board_rescored": false,
+      "board_rescore_max_logit_abs_difference": null,
+      "union": {
+        "1": {
+          "evaded": 73,
+          "common_evaded": 65
+        },
+        "2": {
+          "evaded": 73,
+          "common_evaded": 65
+        },
+        "4": {
+          "evaded": 78,
+          "common_evaded": 70
+        },
+        "8": {
+          "evaded": 81,
+          "common_evaded": 73
+        }
+      }
+    },
+    "onnx_fp32": {
+      "clean_correct": 81,
+      "csv_rows": 2300,
+      "candidates_checked": 23,
+      "attacks": {
+        "random|1": {
+          "evaded": 0,
+          "eligible": 81
+        },
+        "fgsm|1": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "pgd|1": {
+          "evaded": 65,
+          "eligible": 81
+        },
+        "pgd_stronger|1": {
+          "evaded": 74,
+          "eligible": 81
+        },
+        "random|2": {
+          "evaded": 1,
+          "eligible": 81
+        },
+        "fgsm|2": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "pgd|2": {
+          "evaded": 73,
+          "eligible": 81
+        },
+        "random|4": {
+          "evaded": 1,
+          "eligible": 81
+        },
+        "fgsm|4": {
+          "evaded": 40,
+          "eligible": 81
+        },
+        "pgd|4": {
+          "evaded": 79,
+          "eligible": 81
+        },
+        "square|4": {
+          "evaded": 37,
+          "eligible": 81
+        },
+        "random|8": {
+          "evaded": 4,
+          "eligible": 81
+        },
+        "fgsm|8": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "pgd|8": {
+          "evaded": 81,
+          "eligible": 81
+        },
+        "square|8": {
+          "evaded": 49,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|1": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|1": {
+          "evaded": 65,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|2": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|2": {
+          "evaded": 73,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|4": {
+          "evaded": 40,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|4": {
+          "evaded": 78,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|8": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|8": {
+          "evaded": 81,
+          "eligible": 81
+        }
+      },
+      "board_rescored": false,
+      "board_rescore_max_logit_abs_difference": null,
+      "union": {
+        "1": {
+          "evaded": 74,
+          "common_evaded": 66
+        },
+        "2": {
+          "evaded": 73,
+          "common_evaded": 65
+        },
+        "4": {
+          "evaded": 79,
+          "common_evaded": 71
+        },
+        "8": {
+          "evaded": 81,
+          "common_evaded": 73
+        }
+      }
+    },
+    "rknn_fp16": {
+      "clean_correct": 81,
+      "csv_rows": 2300,
+      "candidates_checked": 23,
+      "attacks": {
+        "random|1": {
+          "evaded": 0,
+          "eligible": 81
+        },
+        "fgsm|1": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "pgd|1": {
+          "evaded": 65,
+          "eligible": 81
+        },
+        "pgd_stronger|1": {
+          "evaded": 74,
+          "eligible": 81
+        },
+        "random|2": {
+          "evaded": 1,
+          "eligible": 81
+        },
+        "fgsm|2": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "pgd|2": {
+          "evaded": 74,
+          "eligible": 81
+        },
+        "random|4": {
+          "evaded": 1,
+          "eligible": 81
+        },
+        "fgsm|4": {
+          "evaded": 40,
+          "eligible": 81
+        },
+        "pgd|4": {
+          "evaded": 78,
+          "eligible": 81
+        },
+        "square|4": {
+          "evaded": 32,
+          "eligible": 81
+        },
+        "random|8": {
+          "evaded": 4,
+          "eligible": 81
+        },
+        "fgsm|8": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "pgd|8": {
+          "evaded": 81,
+          "eligible": 81
+        },
+        "square|8": {
+          "evaded": 50,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|1": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|1": {
+          "evaded": 65,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|2": {
+          "evaded": 41,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|2": {
+          "evaded": 73,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|4": {
+          "evaded": 40,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|4": {
+          "evaded": 78,
+          "eligible": 81
+        },
+        "transfer_pytorch_fgsm|8": {
+          "evaded": 42,
+          "eligible": 81
+        },
+        "transfer_pytorch_pgd|8": {
+          "evaded": 81,
+          "eligible": 81
+        }
+      },
+      "board_rescored": true,
+      "board_rescore_max_logit_abs_difference": 0,
+      "union": {
+        "1": {
+          "evaded": 74,
+          "common_evaded": 66
+        },
+        "2": {
+          "evaded": 75,
+          "common_evaded": 67
+        },
+        "4": {
+          "evaded": 78,
+          "common_evaded": 70
+        },
+        "8": {
+          "evaded": 81,
+          "common_evaded": 73
+        }
+      }
+    },
+    "rknn_int8": {
+      "clean_correct": 78,
+      "csv_rows": 2300,
+      "candidates_checked": 23,
+      "attacks": {
+        "random|1": {
+          "evaded": 4,
+          "eligible": 78
+        },
+        "fgsm|1": {
+          "evaded": 35,
+          "eligible": 78
+        },
+        "pgd|1": {
+          "evaded": 52,
+          "eligible": 78
+        },
+        "pgd_stronger|1": {
+          "evaded": 58,
+          "eligible": 78
+        },
+        "random|2": {
+          "evaded": 2,
+          "eligible": 78
+        },
+        "fgsm|2": {
+          "evaded": 39,
+          "eligible": 78
+        },
+        "pgd|2": {
+          "evaded": 61,
+          "eligible": 78
+        },
+        "random|4": {
+          "evaded": 3,
+          "eligible": 78
+        },
+        "fgsm|4": {
+          "evaded": 37,
+          "eligible": 78
+        },
+        "pgd|4": {
+          "evaded": 73,
+          "eligible": 78
+        },
+        "square|4": {
+          "evaded": 15,
+          "eligible": 78
+        },
+        "random|8": {
+          "evaded": 7,
+          "eligible": 78
+        },
+        "fgsm|8": {
+          "evaded": 38,
+          "eligible": 78
+        },
+        "pgd|8": {
+          "evaded": 78,
+          "eligible": 78
+        },
+        "square|8": {
+          "evaded": 28,
+          "eligible": 78
+        },
+        "transfer_pytorch_fgsm|1": {
+          "evaded": 35,
+          "eligible": 78
+        },
+        "transfer_pytorch_pgd|1": {
+          "evaded": 49,
+          "eligible": 78
+        },
+        "transfer_pytorch_fgsm|2": {
+          "evaded": 39,
+          "eligible": 78
+        },
+        "transfer_pytorch_pgd|2": {
+          "evaded": 62,
+          "eligible": 78
+        },
+        "transfer_pytorch_fgsm|4": {
+          "evaded": 37,
+          "eligible": 78
+        },
+        "transfer_pytorch_pgd|4": {
+          "evaded": 72,
+          "eligible": 78
+        },
+        "transfer_pytorch_fgsm|8": {
+          "evaded": 37,
+          "eligible": 78
+        },
+        "transfer_pytorch_pgd|8": {
+          "evaded": 78,
+          "eligible": 78
+        }
+      },
+      "board_rescored": true,
+      "board_rescore_max_logit_abs_difference": 0,
+      "union": {
+        "1": {
+          "evaded": 58,
+          "common_evaded": 53
+        },
+        "2": {
+          "evaded": 63,
+          "common_evaded": 58
+        },
+        "4": {
+          "evaded": 73,
+          "common_evaded": 68
+        },
+        "8": {
+          "evaded": 78,
+          "common_evaded": 73
+        }
+      }
+    }
+  },
+  "paired": {
+    "pytorch_fp32": {
+      "random|1": 0,
+      "fgsm|1": 33,
+      "pgd|1": 57,
+      "pgd_stronger|1": 65,
+      "random|2": 1,
+      "fgsm|2": 34,
+      "pgd|2": 65,
+      "random|4": 1,
+      "fgsm|4": 32,
+      "pgd|4": 70,
+      "square|4": 28,
+      "random|8": 3,
+      "fgsm|8": 34,
+      "pgd|8": 73,
+      "square|8": 41
+    },
+    "onnx_fp32": {
+      "random|1": 0,
+      "fgsm|1": 33,
+      "pgd|1": 57,
+      "pgd_stronger|1": 66,
+      "random|2": 1,
+      "fgsm|2": 34,
+      "pgd|2": 65,
+      "random|4": 1,
+      "fgsm|4": 32,
+      "pgd|4": 71,
+      "square|4": 29,
+      "random|8": 3,
+      "fgsm|8": 34,
+      "pgd|8": 73,
+      "square|8": 41,
+      "transfer_pytorch_fgsm|1": 33,
+      "transfer_pytorch_pgd|1": 57,
+      "transfer_pytorch_fgsm|2": 34,
+      "transfer_pytorch_pgd|2": 65,
+      "transfer_pytorch_fgsm|4": 32,
+      "transfer_pytorch_pgd|4": 70,
+      "transfer_pytorch_fgsm|8": 34,
+      "transfer_pytorch_pgd|8": 73
+    },
+    "rknn_fp16": {
+      "random|1": 0,
+      "fgsm|1": 33,
+      "pgd|1": 57,
+      "pgd_stronger|1": 66,
+      "random|2": 1,
+      "fgsm|2": 33,
+      "pgd|2": 66,
+      "random|4": 1,
+      "fgsm|4": 32,
+      "pgd|4": 70,
+      "square|4": 24,
+      "random|8": 3,
+      "fgsm|8": 34,
+      "pgd|8": 73,
+      "square|8": 42,
+      "transfer_pytorch_fgsm|1": 33,
+      "transfer_pytorch_pgd|1": 57,
+      "transfer_pytorch_fgsm|2": 33,
+      "transfer_pytorch_pgd|2": 65,
+      "transfer_pytorch_fgsm|4": 32,
+      "transfer_pytorch_pgd|4": 70,
+      "transfer_pytorch_fgsm|8": 34,
+      "transfer_pytorch_pgd|8": 73
+    },
+    "rknn_int8": {
+      "random|1": 2,
+      "fgsm|1": 30,
+      "pgd|1": 47,
+      "pgd_stronger|1": 53,
+      "random|2": 0,
+      "fgsm|2": 34,
+      "pgd|2": 56,
+      "random|4": 1,
+      "fgsm|4": 32,
+      "pgd|4": 68,
+      "square|4": 11,
+      "random|8": 4,
+      "fgsm|8": 33,
+      "pgd|8": 73,
+      "square|8": 23,
+      "transfer_pytorch_fgsm|1": 30,
+      "transfer_pytorch_pgd|1": 44,
+      "transfer_pytorch_fgsm|2": 34,
+      "transfer_pytorch_pgd|2": 57,
+      "transfer_pytorch_fgsm|4": 32,
+      "transfer_pytorch_pgd|4": 67,
+      "transfer_pytorch_fgsm|8": 32,
+      "transfer_pytorch_pgd|8": 73
+    }
+  },
+  "complete": true,
+  "identical_local_server_crop_sha256": "3d2698e412341774597aa1c52b584708c4e11e4c7299766be73144f7964e554d",
+  "common_clean_n": 73,
+  "matched_parent_tests": {
+    "rknn_fp16": {
+      "common_n": 81,
+      "attacks": {
+        "pgd|1": {
+          "parent_evaded": 65,
+          "device_evaded": 65,
+          "discordant_parent_only": 0,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "pgd_stronger|1": {
+          "parent_evaded": 73,
+          "device_evaded": 74,
+          "discordant_parent_only": 0,
+          "discordant_device_only": 1,
+          "exact_mcnemar_p": 1.0
+        },
+        "pgd|2": {
+          "parent_evaded": 73,
+          "device_evaded": 74,
+          "discordant_parent_only": 1,
+          "discordant_device_only": 2,
+          "exact_mcnemar_p": 1.0
+        },
+        "pgd|4": {
+          "parent_evaded": 78,
+          "device_evaded": 78,
+          "discordant_parent_only": 0,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "pgd|8": {
+          "parent_evaded": 81,
+          "device_evaded": 81,
+          "discordant_parent_only": 0,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "square|4": {
+          "parent_evaded": 36,
+          "device_evaded": 32,
+          "discordant_parent_only": 4,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 0.125
+        },
+        "square|8": {
+          "parent_evaded": 49,
+          "device_evaded": 50,
+          "discordant_parent_only": 1,
+          "discordant_device_only": 2,
+          "exact_mcnemar_p": 1.0
+        }
+      }
+    },
+    "rknn_int8": {
+      "common_n": 73,
+      "attacks": {
+        "pgd|1": {
+          "parent_evaded": 57,
+          "device_evaded": 47,
+          "discordant_parent_only": 10,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 0.001953125
+        },
+        "pgd_stronger|1": {
+          "parent_evaded": 65,
+          "device_evaded": 53,
+          "discordant_parent_only": 12,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 0.00048828125
+        },
+        "pgd|2": {
+          "parent_evaded": 65,
+          "device_evaded": 56,
+          "discordant_parent_only": 9,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 0.00390625
+        },
+        "pgd|4": {
+          "parent_evaded": 70,
+          "device_evaded": 68,
+          "discordant_parent_only": 2,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 0.5
+        },
+        "pgd|8": {
+          "parent_evaded": 73,
+          "device_evaded": 73,
+          "discordant_parent_only": 0,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "square|4": {
+          "parent_evaded": 28,
+          "device_evaded": 11,
+          "discordant_parent_only": 17,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 1.52587890625e-05
+        },
+        "square|8": {
+          "parent_evaded": 41,
+          "device_evaded": 23,
+          "discordant_parent_only": 18,
+          "discordant_device_only": 0,
+          "exact_mcnemar_p": 7.62939453125e-06
+        }
+      }
+    }
+  },
+  "remote_model_and_library_hashes_unchanged": true
+}

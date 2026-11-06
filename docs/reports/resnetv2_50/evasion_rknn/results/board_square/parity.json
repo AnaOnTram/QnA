@@ -1,0 +1,9 @@
+{
+  "adversarial": true,
+  "queries": true,
+  "logits": true,
+  "board_search_seconds": 0.5065174102783203,
+  "n": 10,
+  "query_budget": 5,
+  "algorithm_source_sha256": "ee4d362b07e350b694f08970ec1c97ec419888505dfacef6525808325091695b"
+}

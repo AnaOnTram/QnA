@@ -1,0 +1,63 @@
+{
+  "workers1": {
+    "rknn_fp16_integer": {
+      "n": 10,
+      "workers": 1,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true
+    },
+    "rknn_int8_integer": {
+      "n": 10,
+      "workers": 1,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true
+    },
+    "rknn_fp16_fractional": {
+      "n": 10,
+      "workers": 1,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true
+    },
+    "rknn_int8_fractional": {
+      "n": 10,
+      "workers": 1,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true
+    }
+  },
+  "workers3": {
+    "rknn_fp16_integer": {
+      "n": 10,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true,
+      "workers": 3
+    },
+    "rknn_int8_integer": {
+      "n": 10,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true,
+      "workers": 3
+    },
+    "rknn_fp16_fractional": {
+      "n": 10,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true,
+      "workers": 3
+    },
+    "rknn_int8_fractional": {
+      "n": 10,
+      "bit_exact": true,
+      "max_abs_difference": 0.0,
+      "repeat_bit_exact": true,
+      "workers": 3
+    }
+  },
+  "complete": true
+}

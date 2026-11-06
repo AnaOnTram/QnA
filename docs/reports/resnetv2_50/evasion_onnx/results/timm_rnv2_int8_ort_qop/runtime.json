@@ -1,0 +1,17 @@
+{
+  "runtime": "ONNX Runtime",
+  "version": "1.24.4",
+  "requested_provider": "CPUExecutionProvider",
+  "registered_providers": [
+    "CPUExecutionProvider"
+  ],
+  "input_type": "tensor(float)",
+  "tf32": null,
+  "profile": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_ort_qop/ort_profile_2026-11-04_18-30-52.json",
+  "executed_node_providers": {
+    "CPUExecutionProvider": 3230
+  },
+  "compute_kernels": {
+    "CPUExecutionProvider:QLinearConv": 540
+  }
+}

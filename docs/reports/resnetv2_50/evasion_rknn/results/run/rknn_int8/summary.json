@@ -1,0 +1,584 @@
+{
+  "model": "rknn_int8",
+  "source": "/home/ross/QA/Models/resnet50/rknn/resnetv2_50.onnx",
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "checkpoint": "/home/ross/.cache/huggingface/hub/models--timm--resnetv2_50.a1h_in1k/snapshots/a9035ec8691ab8c6eb6035aa3930c37583bcee5b/model.safetensors",
+  "checkpoint_sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+  "config": {
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_queries": 500,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "seed": 20261030,
+    "resize": 232,
+    "population": "same stratified Imagenette validation images as previous experiments",
+    "n": 100
+  },
+  "clean": {
+    "correct": 78,
+    "n": 100
+  },
+  "runtime": {
+    "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+    "driver": "0.9.8",
+    "input": {
+      "ret": 0,
+      "name": "input",
+      "dtype": "INT8",
+      "layout": "NHWC",
+      "qnt_type": 2,
+      "scale": 0.0186584480107,
+      "zero_point": -14,
+      "size": 150528,
+      "dims": [
+        1,
+        224,
+        224,
+        3
+      ]
+    },
+    "output": {
+      "ret": 0,
+      "name": "output",
+      "dtype": "INT8",
+      "layout": "UNDEFINED",
+      "qnt_type": 2,
+      "scale": 0.108344987035,
+      "zero_point": 77,
+      "size": 1000,
+      "dims": [
+        1,
+        1000
+      ]
+    },
+    "native_input": {
+      "ret": 0,
+      "name": "input",
+      "dtype": "INT8",
+      "layout": "NHWC",
+      "qnt_type": 2,
+      "scale": 0.0186584480107,
+      "zero_point": -14,
+      "size": 150528,
+      "dims": [
+        1,
+        224,
+        224,
+        3
+      ]
+    },
+    "native_output": {
+      "ret": 0,
+      "name": "output",
+      "dtype": "INT8",
+      "layout": "UNDEFINED",
+      "qnt_type": 2,
+      "scale": 0.108344987035,
+      "zero_point": 77,
+      "size": 1024,
+      "dims": [
+        1,
+        1000
+      ]
+    },
+    "workers": 3,
+    "weight_bytes": 26077696,
+    "internal_bytes": 2207744
+  },
+  "gradient": {
+    "exact_forward": true,
+    "finite_nonzero": true,
+    "replica_top1_agreement": 86,
+    "mean_absolute_logit_difference": 0.4678207337856293
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 4,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 74,
+      "attack_success_pct": 5.128205128205129,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 35,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 43,
+      "attack_success_pct": 44.87179487179487,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 6.120617151260376
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 52,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 26,
+      "attack_success_pct": 66.66666666666667,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 135.2378306388855
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 58,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 20,
+      "attack_success_pct": 74.35897435897436,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 376.9099576473236,
+      "steps": 100,
+      "restarts": 5,
+      "additional_survivor_n": 26
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 2,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 76,
+      "attack_success_pct": 2.5641025641025643,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 39,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 39,
+      "attack_success_pct": 50.0,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 6.587873935699463
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 61,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 17,
+      "attack_success_pct": 78.2051282051282,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 140.61055064201355
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 3,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 75,
+      "attack_success_pct": 3.8461538461538463,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 37,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 41,
+      "attack_success_pct": 47.43589743589744,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 7.424966335296631
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 73,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 5,
+      "attack_success_pct": 93.58974358974359,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 150.87029004096985
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 15,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 63,
+      "attack_success_pct": 19.23076923076923,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 787.6832141876221,
+      "query_budget": 500,
+      "total_attack_queries": 31701,
+      "query_trace": [
+        {
+          "query_budget": 50,
+          "fooled": 14,
+          "eligible": 78
+        },
+        {
+          "query_budget": 100,
+          "fooled": 14,
+          "eligible": 78
+        },
+        {
+          "query_budget": 250,
+          "fooled": 15,
+          "eligible": 78
+        },
+        {
+          "query_budget": 500,
+          "fooled": 15,
+          "eligible": 78
+        }
+      ]
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 7,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 71,
+      "attack_success_pct": 8.974358974358974,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 38,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 40,
+      "attack_success_pct": 48.717948717948715,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 6.160401821136475
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 78,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 156.23643970489502
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 28,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 50,
+      "attack_success_pct": 35.8974358974359,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 191.62064623832703,
+      "query_budget": 500,
+      "total_attack_queries": 25292,
+      "query_trace": [
+        {
+          "query_budget": 50,
+          "fooled": 26,
+          "eligible": 78
+        },
+        {
+          "query_budget": 100,
+          "fooled": 28,
+          "eligible": 78
+        },
+        {
+          "query_budget": 250,
+          "fooled": 28,
+          "eligible": 78
+        },
+        {
+          "query_budget": 500,
+          "fooled": 28,
+          "eligible": 78
+        }
+      ],
+      "board_execution": {
+        "host": "rock-5c",
+        "torch": "2.2.0",
+        "numpy": "1.26.4",
+        "workers": 3,
+        "local_pipe": true
+      },
+      "external_candidate_file": "/home/ross/QA/Models/resnet50/evasion_rknn/results/run/rknn_int8/external/square_eps8.pt",
+      "algorithm_source_sha256": "ee4d362b07e350b694f08970ec1c97ec419888505dfacef6525808325091695b"
+    },
+    {
+      "attack": "transfer_pytorch_fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 35,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 43,
+      "attack_success_pct": 44.87179487179487,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 49,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 29,
+      "attack_success_pct": 62.82051282051282,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 39,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 39,
+      "attack_success_pct": 50.0,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 62,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 16,
+      "attack_success_pct": 79.48717948717949,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 37,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 41,
+      "attack_success_pct": 47.43589743589744,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 72,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 6,
+      "attack_success_pct": 92.3076923076923,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 37,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 41,
+      "attack_success_pct": 47.43589743589744,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_pytorch_pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 78,
+      "fooled": 78,
+      "execution": {
+        "hostname": "NV10",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "torch": "2.15.0+cu132",
+        "python": "/home/ross/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0
+    }
+  ],
+  "complete": true,
+  "execution": {
+    "hostname": "NV10",
+    "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+    "torch": "2.15.0+cu132",
+    "python": "/home/ross/venv/bin/python"
+  },
+  "execution_segments": [
+    {
+      "hostname": "NV10",
+      "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+      "torch": "2.15.0+cu132",
+      "python": "/home/ross/venv/bin/python"
+    },
+    {
+      "hostname": "NV10",
+      "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+      "torch": "2.15.0+cu132",
+      "python": "/home/ross/venv/bin/python"
+    }
+  ],
+  "elapsed_seconds_current_process": 197.47386145591736,
+  "transport": {
+    "calls": 592,
+    "images": 5904,
+    "compressed_input_bytes": 2218991620,
+    "wall_seconds": 185.76724661549088
+  }
+}

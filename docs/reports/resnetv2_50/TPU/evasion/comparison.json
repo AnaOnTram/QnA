@@ -1,0 +1,487 @@
+{
+  "arms": {
+    "FP32 (ORT CUDA)": {
+      "clean_correct": 81,
+      "clean_n": 100,
+      "clean_accuracy_pct": 81.0,
+      "runtime": {
+        "runtime": "ONNX Runtime",
+        "version": "1.24.4",
+        "requested_provider": "CUDAExecutionProvider",
+        "registered_providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "input_type": "tensor(float)",
+        "tf32": false,
+        "profile": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_fp32/ort_profile_2026-11-04_20-13-25.json",
+        "executed_node_providers": {
+          "CUDAExecutionProvider": 1390
+        },
+        "compute_kernels": {
+          "CUDAExecutionProvider:Conv": 540
+        }
+      }
+    },
+    "FP16 (ORT CUDA)": {
+      "clean_correct": 82,
+      "clean_n": 100,
+      "clean_accuracy_pct": 82.0,
+      "runtime": {
+        "runtime": "ONNX Runtime",
+        "version": "1.24.4",
+        "requested_provider": "CUDAExecutionProvider",
+        "registered_providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "input_type": "tensor(float16)",
+        "tf32": false,
+        "profile": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_fp16/ort_profile_2026-11-04_20-21-00.json",
+        "executed_node_providers": {
+          "CUDAExecutionProvider": 1390
+        },
+        "compute_kernels": {
+          "CUDAExecutionProvider:Conv": 540
+        }
+      }
+    },
+    "INT8 QOperator (ORT CPU)": {
+      "clean_correct": 78,
+      "clean_n": 100,
+      "clean_accuracy_pct": 78.0,
+      "runtime": {
+        "runtime": "ONNX Runtime",
+        "version": "1.24.4",
+        "requested_provider": "CPUExecutionProvider",
+        "registered_providers": [
+          "CPUExecutionProvider"
+        ],
+        "input_type": "tensor(float)",
+        "tf32": null,
+        "profile": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_ort_qop/ort_profile_2026-11-04_18-30-52.json",
+        "executed_node_providers": {
+          "CPUExecutionProvider": 3230
+        },
+        "compute_kernels": {
+          "CPUExecutionProvider:QLinearConv": 540
+        }
+      }
+    },
+    "INT8 PTQ (TensorRT)": {
+      "clean_correct": 79,
+      "clean_n": 100,
+      "clean_accuracy_pct": 79.0,
+      "runtime": {
+        "runtime": "native TensorRT",
+        "version": "10.9.0.34",
+        "provider": "CUDA device 0",
+        "engine": "/home/ross/QA/Models/resnet50/evasion_onnx/engines/timm_rnv2_int8_ptq_ort.trt109.b10.plan",
+        "engine_sha256": "67dd55b07ad581d26b31d8e8c748f179d002b7f29fa681e39151adb89f070d77",
+        "engine_build_or_load_seconds": 0.17947769165039062,
+        "configuration": {
+          "onnx_sha256": "99755d64590b5918eb31070a27688ff9848056d2d8fec8e67a7a6c64991f28aa",
+          "max_batch": 10,
+          "trt_version": "10.9.0.34",
+          "tf32": false,
+          "strongly_typed": true,
+          "workspace_bytes": 1073741824,
+          "builder_optimization_level": 3
+        },
+        "layer_inspection": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_ptq_ort/tensorrt_layers.json",
+        "convolution_weight_types": {
+          "Int8": 54
+        },
+        "cpu_fallback": false,
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU"
+      }
+    },
+    "INT8 DQ (TensorRT)": {
+      "clean_correct": 79,
+      "clean_n": 100,
+      "clean_accuracy_pct": 79.0,
+      "runtime": {
+        "runtime": "native TensorRT",
+        "version": "10.9.0.34",
+        "provider": "CUDA device 0",
+        "engine": "/home/ross/QA/Models/resnet50/evasion_onnx/engines/timm_rnv2_int8_dq_ort.trt109.b10.plan",
+        "engine_sha256": "586744282378a49ad4e787b7378bf421c2bb945b9fde1bad9ed7f7eadf063b46",
+        "engine_build_or_load_seconds": 0.16319966316223145,
+        "configuration": {
+          "onnx_sha256": "fd967b8c04afdf78d737c49d59a6ebf9f3a80a03749655587b74ca061c0af776",
+          "max_batch": 10,
+          "trt_version": "10.9.0.34",
+          "tf32": false,
+          "strongly_typed": true,
+          "workspace_bytes": 1073741824,
+          "builder_optimization_level": 3
+        },
+        "layer_inspection": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_dq_ort/tensorrt_layers.json",
+        "convolution_weight_types": {
+          "Int8": 54
+        },
+        "cpu_fallback": false,
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU"
+      }
+    },
+    "RKNN INT8": {
+      "clean_correct": 78,
+      "clean_n": 100,
+      "clean_accuracy_pct": 78.0,
+      "runtime": {
+        "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+        "driver": "0.9.8",
+        "input": {
+          "ret": 0,
+          "name": "input",
+          "dtype": "INT8",
+          "layout": "NHWC",
+          "qnt_type": 2,
+          "scale": 0.0186584480107,
+          "zero_point": -14,
+          "size": 150528,
+          "dims": [
+            1,
+            224,
+            224,
+            3
+          ]
+        },
+        "output": {
+          "ret": 0,
+          "name": "output",
+          "dtype": "INT8",
+          "layout": "UNDEFINED",
+          "qnt_type": 2,
+          "scale": 0.108344987035,
+          "zero_point": 77,
+          "size": 1000,
+          "dims": [
+            1,
+            1000
+          ]
+        },
+        "native_input": {
+          "ret": 0,
+          "name": "input",
+          "dtype": "INT8",
+          "layout": "NHWC",
+          "qnt_type": 2,
+          "scale": 0.0186584480107,
+          "zero_point": -14,
+          "size": 150528,
+          "dims": [
+            1,
+            224,
+            224,
+            3
+          ]
+        },
+        "native_output": {
+          "ret": 0,
+          "name": "output",
+          "dtype": "INT8",
+          "layout": "UNDEFINED",
+          "qnt_type": 2,
+          "scale": 0.108344987035,
+          "zero_point": 77,
+          "size": 1024,
+          "dims": [
+            1,
+            1000
+          ]
+        },
+        "workers": 3,
+        "weight_bytes": 26077696,
+        "internal_bytes": 2207744
+      }
+    },
+    "Edge TPU INT8 (this arm)": {
+      "clean_correct": 80,
+      "clean_n": 100,
+      "clean_accuracy_pct": 80.0,
+      "runtime": {
+        "runtime": "Edge TPU (Coral USB Accelerator)",
+        "backend": "tpu",
+        "model": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc_edgetpu.tflite",
+        "model_bytes": 26542720,
+        "tensorflow": "2.19.1",
+        "input": {
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "uint8",
+          "scale": 0.003921568859368563,
+          "zero_point": 0,
+          "quantized": true
+        },
+        "output": {
+          "shape": [
+            1,
+            1000
+          ],
+          "dtype": "uint8",
+          "scale": 0.10331345349550247,
+          "zero_point": 203,
+          "quantized": true
+        },
+        "harness_normalization": {
+          "baked_into": "stem conv",
+          "mean": [
+            0.48500001430511475,
+            0.4560000002384186,
+            0.4059999883174896
+          ],
+          "std": [
+            0.2290000021457672,
+            0.2240000069141388,
+            0.22499999403953552
+          ],
+          "caller_contract": "pass pixel-space [0,1] tensors, unnormalized"
+        },
+        "gradients": false,
+        "libedgetpu": "libedgetpu.so.1",
+        "runtime_version": "BuildLabel(COMPILER=13.3.0,DATE=redacted,TIME=redacted), RuntimeVersion(14)",
+        "devices": [
+          {
+            "type": "APEX_USB",
+            "path": "/sys/bus/usb/devices/2-3.1"
+          }
+        ],
+        "delegated_ops": [
+          "edgetpu-custom-op",
+          "DELEGATE"
+        ]
+      }
+    }
+  },
+  "matrix": {
+    "random@1": {
+      "FP32 (ORT CUDA)": 0.0,
+      "FP16 (ORT CUDA)": 0.0,
+      "INT8 QOperator (ORT CPU)": 2.5641025641025643,
+      "INT8 PTQ (TensorRT)": 5.063291139240507,
+      "INT8 DQ (TensorRT)": 5.063291139240507,
+      "RKNN INT8": 5.128205128205129,
+      "Edge TPU INT8 (this arm)": 3.750000238418579
+    },
+    "random@2": {
+      "FP32 (ORT CUDA)": 1.2345679012345678,
+      "FP16 (ORT CUDA)": 2.4390243902439024,
+      "INT8 QOperator (ORT CPU)": 3.8461538461538463,
+      "INT8 PTQ (TensorRT)": 5.063291139240507,
+      "INT8 DQ (TensorRT)": 5.063291139240507,
+      "RKNN INT8": 2.5641025641025643,
+      "Edge TPU INT8 (this arm)": 1.25
+    },
+    "random@4": {
+      "FP32 (ORT CUDA)": 1.2345679012345678,
+      "FP16 (ORT CUDA)": 2.4390243902439024,
+      "INT8 QOperator (ORT CPU)": 2.5641025641025643,
+      "INT8 PTQ (TensorRT)": 6.329113924050633,
+      "INT8 DQ (TensorRT)": 6.329113924050633,
+      "RKNN INT8": 3.8461538461538463,
+      "Edge TPU INT8 (this arm)": 2.5
+    },
+    "random@8": {
+      "FP32 (ORT CUDA)": 4.938271604938271,
+      "FP16 (ORT CUDA)": 6.097560975609756,
+      "INT8 QOperator (ORT CPU)": 5.128205128205129,
+      "INT8 PTQ (TensorRT)": 7.594936708860759,
+      "INT8 DQ (TensorRT)": 7.594936708860759,
+      "RKNN INT8": 8.974358974358974,
+      "Edge TPU INT8 (this arm)": 3.750000238418579
+    },
+    "fgsm@1": {
+      "FP32 (ORT CUDA)": 50.617283950617285,
+      "FP16 (ORT CUDA)": 51.21951219512195,
+      "INT8 QOperator (ORT CPU)": 34.61538461538461,
+      "INT8 PTQ (TensorRT)": 40.50632911392405,
+      "INT8 DQ (TensorRT)": 40.50632911392405,
+      "RKNN INT8": 44.87179487179487,
+      "Edge TPU INT8 (this arm)": 35.0
+    },
+    "fgsm@2": {
+      "FP32 (ORT CUDA)": 51.851851851851855,
+      "FP16 (ORT CUDA)": 52.4390243902439,
+      "INT8 QOperator (ORT CPU)": 44.87179487179487,
+      "INT8 PTQ (TensorRT)": 44.30379746835443,
+      "INT8 DQ (TensorRT)": 44.30379746835443,
+      "RKNN INT8": 50.0,
+      "Edge TPU INT8 (this arm)": 41.25
+    },
+    "fgsm@4": {
+      "FP32 (ORT CUDA)": 49.382716049382715,
+      "FP16 (ORT CUDA)": 50.0,
+      "INT8 QOperator (ORT CPU)": 43.58974358974359,
+      "INT8 PTQ (TensorRT)": 46.835443037974684,
+      "INT8 DQ (TensorRT)": 46.835443037974684,
+      "RKNN INT8": 47.43589743589744,
+      "Edge TPU INT8 (this arm)": 45.0
+    },
+    "fgsm@8": {
+      "FP32 (ORT CUDA)": 51.851851851851855,
+      "FP16 (ORT CUDA)": 53.65853658536585,
+      "INT8 QOperator (ORT CPU)": 44.87179487179487,
+      "INT8 PTQ (TensorRT)": 46.835443037974684,
+      "INT8 DQ (TensorRT)": 46.835443037974684,
+      "RKNN INT8": 48.717948717948715,
+      "Edge TPU INT8 (this arm)": 43.75
+    },
+    "pgd@1": {
+      "FP32 (ORT CUDA)": 80.24691358024691,
+      "FP16 (ORT CUDA)": 79.26829268292683,
+      "INT8 QOperator (ORT CPU)": 61.53846153846154,
+      "INT8 PTQ (TensorRT)": 63.29113924050633,
+      "INT8 DQ (TensorRT)": 63.29113924050633,
+      "RKNN INT8": 66.66666666666667,
+      "Edge TPU INT8 (this arm)": 56.25
+    },
+    "pgd@2": {
+      "FP32 (ORT CUDA)": 90.12345679012346,
+      "FP16 (ORT CUDA)": 89.02439024390245,
+      "INT8 QOperator (ORT CPU)": 76.92307692307692,
+      "INT8 PTQ (TensorRT)": 74.68354430379746,
+      "INT8 DQ (TensorRT)": 75.9493670886076,
+      "RKNN INT8": 78.2051282051282,
+      "Edge TPU INT8 (this arm)": 71.25
+    },
+    "pgd@4": {
+      "FP32 (ORT CUDA)": 96.29629629629629,
+      "FP16 (ORT CUDA)": 96.34146341463415,
+      "INT8 QOperator (ORT CPU)": 93.58974358974359,
+      "INT8 PTQ (TensorRT)": 89.87341772151899,
+      "INT8 DQ (TensorRT)": 89.87341772151899,
+      "RKNN INT8": 93.58974358974359,
+      "Edge TPU INT8 (this arm)": 82.5
+    },
+    "pgd@8": {
+      "FP32 (ORT CUDA)": 100.0,
+      "FP16 (ORT CUDA)": 100.0,
+      "INT8 QOperator (ORT CPU)": 97.43589743589743,
+      "INT8 PTQ (TensorRT)": 97.46835443037975,
+      "INT8 DQ (TensorRT)": 97.46835443037975,
+      "RKNN INT8": 100.0,
+      "Edge TPU INT8 (this arm)": 98.75
+    },
+    "square@4": {
+      "FP32 (ORT CUDA)": 44.44444444444444,
+      "FP16 (ORT CUDA)": 37.80487804878049,
+      "INT8 QOperator (ORT CPU)": 23.076923076923077,
+      "INT8 PTQ (TensorRT)": 27.848101265822784,
+      "INT8 DQ (TensorRT)": 27.848101265822784,
+      "RKNN INT8": 19.23076923076923,
+      "Edge TPU INT8 (this arm)": 26.249998092651367
+    },
+    "square@8": {
+      "FP32 (ORT CUDA)": 60.49382716049383,
+      "FP16 (ORT CUDA)": 62.19512195121951,
+      "INT8 QOperator (ORT CPU)": 39.743589743589745,
+      "INT8 PTQ (TensorRT)": 43.037974683544306,
+      "INT8 DQ (TensorRT)": 43.037974683544306,
+      "RKNN INT8": 35.8974358974359,
+      "Edge TPU INT8 (this arm)": 38.75
+    }
+  },
+  "deltas": {
+    "FP32 (ORT CUDA)": {
+      "random@1": 0.0,
+      "random@2": 0.0,
+      "random@4": 0.0,
+      "random@8": 0.0,
+      "fgsm@1": 0.0,
+      "fgsm@2": 0.0,
+      "fgsm@4": 0.0,
+      "fgsm@8": 0.0,
+      "pgd@1": 0.0,
+      "pgd@2": 0.0,
+      "pgd@4": 0.0,
+      "pgd@8": 0.0,
+      "square@4": 0.0,
+      "square@8": 0.0
+    },
+    "FP16 (ORT CUDA)": {
+      "random@1": 0.0,
+      "random@2": 1.2044564890093346,
+      "random@4": 1.2044564890093346,
+      "random@8": 1.1592893706714849,
+      "fgsm@1": 0.6022282445046656,
+      "fgsm@2": 0.5871725383920463,
+      "fgsm@4": 0.6172839506172849,
+      "fgsm@8": 1.8066847335139968,
+      "pgd@1": -0.9786208973200843,
+      "pgd@2": -1.0990665462210103,
+      "pgd@4": 0.045167118337857914,
+      "pgd@8": 0.0,
+      "square@4": -6.639566395663955,
+      "square@8": 1.701294790725683
+    },
+    "INT8 QOperator (ORT CPU)": {
+      "random@1": 2.5641025641025643,
+      "random@2": 2.6115859449192786,
+      "random@4": 1.3295346628679965,
+      "random@8": 0.1899335232668573,
+      "fgsm@1": -16.00189933523267,
+      "fgsm@2": -6.980056980056986,
+      "fgsm@4": -5.792972459639124,
+      "fgsm@8": -6.980056980056986,
+      "pgd@1": -18.70845204178537,
+      "pgd@2": -13.200379867046536,
+      "pgd@4": -2.7065527065526993,
+      "pgd@8": -2.564102564102569,
+      "square@4": -21.367521367521366,
+      "square@8": -20.750237416904085
+    },
+    "INT8 PTQ (TensorRT)": {
+      "random@1": 5.063291139240507,
+      "random@2": 3.8287232380059386,
+      "random@4": 5.094546022816065,
+      "random@8": 2.656665103922488,
+      "fgsm@1": -10.110954836693232,
+      "fgsm@2": -7.548054383497423,
+      "fgsm@4": -2.5472730114080306,
+      "fgsm@8": -5.01640881387717,
+      "pgd@1": -16.95577433974058,
+      "pgd@2": -15.439912486325994,
+      "pgd@4": -6.4228785747773,
+      "pgd@8": -2.5316455696202524,
+      "square@4": -16.59634317862166,
+      "square@8": -17.455852476949524
+    },
+    "INT8 DQ (TensorRT)": {
+      "random@1": 5.063291139240507,
+      "random@2": 3.8287232380059386,
+      "random@4": 5.094546022816065,
+      "random@8": 2.656665103922488,
+      "fgsm@1": -10.110954836693232,
+      "fgsm@2": -7.548054383497423,
+      "fgsm@4": -2.5472730114080306,
+      "fgsm@8": -5.01640881387717,
+      "pgd@1": -16.95577433974058,
+      "pgd@2": -14.174089701515854,
+      "pgd@4": -6.4228785747773,
+      "pgd@8": -2.5316455696202524,
+      "square@4": -16.59634317862166,
+      "square@8": -17.455852476949524
+    },
+    "RKNN INT8": {
+      "random@1": 5.128205128205129,
+      "random@2": 1.3295346628679965,
+      "random@4": 2.6115859449192786,
+      "random@8": 4.036087369420703,
+      "fgsm@1": -5.745489078822416,
+      "fgsm@2": -1.8518518518518547,
+      "fgsm@4": -1.9468186134852772,
+      "fgsm@8": -3.1339031339031393,
+      "pgd@1": -13.58024691358024,
+      "pgd@2": -11.918328584995251,
+      "pgd@4": -2.7065527065526993,
+      "pgd@8": 0.0,
+      "square@4": -25.213675213675213,
+      "square@8": -24.59639126305793
+    }
+  }
+}

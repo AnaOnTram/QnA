@@ -1,0 +1,2271 @@
+{
+  "base_model": "timm/resnetv2_50.a1h_in1k",
+  "canonical_onnx_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "shared_clean_n": 71,
+  "deployments": {
+    "pytorch_fp32": {
+      "label": "PyTorch FP32 \u00b7 CUDA",
+      "precision": "float",
+      "clean_correct": 81,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 31,
+            "eligible": 71,
+            "pct": 43.662,
+            "wilson_lo": 32.7461,
+            "wilson_hi": 55.2285
+          },
+          "2": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          },
+          "4": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          },
+          "8": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 55,
+            "eligible": 71,
+            "pct": 77.4648,
+            "wilson_lo": 66.4848,
+            "wilson_hi": 85.6253
+          },
+          "2": {
+            "evaded": 63,
+            "eligible": 71,
+            "pct": 88.7324,
+            "wilson_lo": 79.31,
+            "wilson_hi": 94.1787
+          },
+          "4": {
+            "evaded": 68,
+            "eligible": 71,
+            "pct": 95.7746,
+            "wilson_lo": 88.2976,
+            "wilson_hi": 98.5527
+          },
+          "8": {
+            "evaded": 71,
+            "eligible": 71,
+            "pct": 100.0,
+            "wilson_lo": 94.8672,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 63,
+            "eligible": 71,
+            "pct": 88.7324,
+            "wilson_lo": 79.31,
+            "wilson_hi": 94.1787
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 26,
+            "eligible": 71,
+            "pct": 36.6197,
+            "wilson_lo": 26.3702,
+            "wilson_hi": 48.2428
+          },
+          "8": {
+            "evaded": 39,
+            "eligible": 71,
+            "pct": 54.9296,
+            "wilson_lo": 43.4011,
+            "wilson_hi": 65.952
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 41,
+            "eligible": 81,
+            "pct": 50.6173,
+            "wilson_lo": 39.9508,
+            "wilson_hi": 61.2279
+          },
+          "2": {
+            "evaded": 42,
+            "eligible": 81,
+            "pct": 51.8519,
+            "wilson_lo": 41.1356,
+            "wilson_hi": 62.4004
+          },
+          "4": {
+            "evaded": 40,
+            "eligible": 81,
+            "pct": 49.3827,
+            "wilson_lo": 38.7721,
+            "wilson_hi": 60.0492
+          },
+          "8": {
+            "evaded": 42,
+            "eligible": 81,
+            "pct": 51.8519,
+            "wilson_lo": 41.1356,
+            "wilson_hi": 62.4004
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 65,
+            "eligible": 81,
+            "pct": 80.2469,
+            "wilson_lo": 70.2956,
+            "wilson_hi": 87.4592
+          },
+          "2": {
+            "evaded": 73,
+            "eligible": 81,
+            "pct": 90.1235,
+            "wilson_lo": 81.7035,
+            "wilson_hi": 94.91
+          },
+          "4": {
+            "evaded": 78,
+            "eligible": 81,
+            "pct": 96.2963,
+            "wilson_lo": 89.6677,
+            "wilson_hi": 98.7325
+          },
+          "8": {
+            "evaded": 81,
+            "eligible": 81,
+            "pct": 100.0,
+            "wilson_lo": 95.4722,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 73,
+            "eligible": 81,
+            "pct": 90.1235,
+            "wilson_lo": 81.7035,
+            "wilson_hi": 94.91
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 36,
+            "eligible": 81,
+            "pct": 44.4444,
+            "wilson_lo": 34.1196,
+            "wilson_hi": 55.2724
+          },
+          "8": {
+            "evaded": 49,
+            "eligible": 81,
+            "pct": 60.4938,
+            "wilson_lo": 49.6055,
+            "wilson_hi": 70.4319
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "onnx_fp32": {
+      "label": "ORT FP32 \u00b7 CUDA",
+      "precision": "float",
+      "clean_correct": 81,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 31,
+            "eligible": 71,
+            "pct": 43.662,
+            "wilson_lo": 32.7461,
+            "wilson_hi": 55.2285
+          },
+          "2": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          },
+          "4": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          },
+          "8": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 55,
+            "eligible": 71,
+            "pct": 77.4648,
+            "wilson_lo": 66.4848,
+            "wilson_hi": 85.6253
+          },
+          "2": {
+            "evaded": 63,
+            "eligible": 71,
+            "pct": 88.7324,
+            "wilson_lo": 79.31,
+            "wilson_hi": 94.1787
+          },
+          "4": {
+            "evaded": 69,
+            "eligible": 71,
+            "pct": 97.1831,
+            "wilson_lo": 90.2985,
+            "wilson_hi": 99.2241
+          },
+          "8": {
+            "evaded": 71,
+            "eligible": 71,
+            "pct": 100.0,
+            "wilson_lo": 94.8672,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 64,
+            "eligible": 71,
+            "pct": 90.1408,
+            "wilson_lo": 81.0193,
+            "wilson_hi": 95.1417
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 27,
+            "eligible": 71,
+            "pct": 38.0282,
+            "wilson_lo": 27.6272,
+            "wilson_hi": 49.6581
+          },
+          "8": {
+            "evaded": 39,
+            "eligible": 71,
+            "pct": 54.9296,
+            "wilson_lo": 43.4011,
+            "wilson_hi": 65.952
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 41,
+            "eligible": 81,
+            "pct": 50.6173,
+            "wilson_lo": 39.9508,
+            "wilson_hi": 61.2279
+          },
+          "2": {
+            "evaded": 42,
+            "eligible": 81,
+            "pct": 51.8519,
+            "wilson_lo": 41.1356,
+            "wilson_hi": 62.4004
+          },
+          "4": {
+            "evaded": 40,
+            "eligible": 81,
+            "pct": 49.3827,
+            "wilson_lo": 38.7721,
+            "wilson_hi": 60.0492
+          },
+          "8": {
+            "evaded": 42,
+            "eligible": 81,
+            "pct": 51.8519,
+            "wilson_lo": 41.1356,
+            "wilson_hi": 62.4004
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 65,
+            "eligible": 81,
+            "pct": 80.2469,
+            "wilson_lo": 70.2956,
+            "wilson_hi": 87.4592
+          },
+          "2": {
+            "evaded": 73,
+            "eligible": 81,
+            "pct": 90.1235,
+            "wilson_lo": 81.7035,
+            "wilson_hi": 94.91
+          },
+          "4": {
+            "evaded": 79,
+            "eligible": 81,
+            "pct": 97.5309,
+            "wilson_lo": 91.4373,
+            "wilson_hi": 99.3202
+          },
+          "8": {
+            "evaded": 81,
+            "eligible": 81,
+            "pct": 100.0,
+            "wilson_lo": 95.4722,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 74,
+            "eligible": 81,
+            "pct": 91.358,
+            "wilson_lo": 83.2201,
+            "wilson_hi": 95.7507
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 37,
+            "eligible": 81,
+            "pct": 45.679,
+            "wilson_lo": 35.2733,
+            "wilson_hi": 56.476
+          },
+          "8": {
+            "evaded": 49,
+            "eligible": 81,
+            "pct": 60.4938,
+            "wilson_lo": 49.6055,
+            "wilson_hi": 70.4319
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "rknn_fp16": {
+      "label": "RKNN FP16 \u00b7 NPU",
+      "precision": "float",
+      "clean_correct": 81,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 31,
+            "eligible": 71,
+            "pct": 43.662,
+            "wilson_lo": 32.7461,
+            "wilson_hi": 55.2285
+          },
+          "2": {
+            "evaded": 31,
+            "eligible": 71,
+            "pct": 43.662,
+            "wilson_lo": 32.7461,
+            "wilson_hi": 55.2285
+          },
+          "4": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          },
+          "8": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 55,
+            "eligible": 71,
+            "pct": 77.4648,
+            "wilson_lo": 66.4848,
+            "wilson_hi": 85.6253
+          },
+          "2": {
+            "evaded": 64,
+            "eligible": 71,
+            "pct": 90.1408,
+            "wilson_lo": 81.0193,
+            "wilson_hi": 95.1417
+          },
+          "4": {
+            "evaded": 68,
+            "eligible": 71,
+            "pct": 95.7746,
+            "wilson_lo": 88.2976,
+            "wilson_hi": 98.5527
+          },
+          "8": {
+            "evaded": 71,
+            "eligible": 71,
+            "pct": 100.0,
+            "wilson_lo": 94.8672,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 64,
+            "eligible": 71,
+            "pct": 90.1408,
+            "wilson_lo": 81.0193,
+            "wilson_hi": 95.1417
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 22,
+            "eligible": 71,
+            "pct": 30.9859,
+            "wilson_lo": 21.4397,
+            "wilson_hi": 42.484
+          },
+          "8": {
+            "evaded": 40,
+            "eligible": 71,
+            "pct": 56.338,
+            "wilson_lo": 44.7715,
+            "wilson_hi": 67.2539
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 41,
+            "eligible": 81,
+            "pct": 50.6173,
+            "wilson_lo": 39.9508,
+            "wilson_hi": 61.2279
+          },
+          "2": {
+            "evaded": 41,
+            "eligible": 81,
+            "pct": 50.6173,
+            "wilson_lo": 39.9508,
+            "wilson_hi": 61.2279
+          },
+          "4": {
+            "evaded": 40,
+            "eligible": 81,
+            "pct": 49.3827,
+            "wilson_lo": 38.7721,
+            "wilson_hi": 60.0492
+          },
+          "8": {
+            "evaded": 42,
+            "eligible": 81,
+            "pct": 51.8519,
+            "wilson_lo": 41.1356,
+            "wilson_hi": 62.4004
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 65,
+            "eligible": 81,
+            "pct": 80.2469,
+            "wilson_lo": 70.2956,
+            "wilson_hi": 87.4592
+          },
+          "2": {
+            "evaded": 74,
+            "eligible": 81,
+            "pct": 91.358,
+            "wilson_lo": 83.2201,
+            "wilson_hi": 95.7507
+          },
+          "4": {
+            "evaded": 78,
+            "eligible": 81,
+            "pct": 96.2963,
+            "wilson_lo": 89.6677,
+            "wilson_hi": 98.7325
+          },
+          "8": {
+            "evaded": 81,
+            "eligible": 81,
+            "pct": 100.0,
+            "wilson_lo": 95.4722,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 74,
+            "eligible": 81,
+            "pct": 91.358,
+            "wilson_lo": 83.2201,
+            "wilson_hi": 95.7507
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 32,
+            "eligible": 81,
+            "pct": 39.5062,
+            "wilson_lo": 29.5681,
+            "wilson_hi": 50.3945
+          },
+          "8": {
+            "evaded": 50,
+            "eligible": 81,
+            "pct": 61.7284,
+            "wilson_lo": 50.8412,
+            "wilson_hi": 71.5535
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "rknn_int8": {
+      "label": "RKNN INT8 \u00b7 NPU",
+      "precision": "int8",
+      "clean_correct": 78,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 28,
+            "eligible": 71,
+            "pct": 39.4366,
+            "wilson_lo": 28.8934,
+            "wilson_hi": 51.0642
+          },
+          "2": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          },
+          "4": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          },
+          "8": {
+            "evaded": 31,
+            "eligible": 71,
+            "pct": 43.662,
+            "wilson_lo": 32.7461,
+            "wilson_hi": 55.2285
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 45,
+            "eligible": 71,
+            "pct": 63.3803,
+            "wilson_lo": 51.7572,
+            "wilson_hi": 73.6298
+          },
+          "2": {
+            "evaded": 54,
+            "eligible": 71,
+            "pct": 76.0563,
+            "wilson_lo": 64.9588,
+            "wilson_hi": 84.4791
+          },
+          "4": {
+            "evaded": 66,
+            "eligible": 71,
+            "pct": 92.9577,
+            "wilson_lo": 84.551,
+            "wilson_hi": 96.9546
+          },
+          "8": {
+            "evaded": 71,
+            "eligible": 71,
+            "pct": 100.0,
+            "wilson_lo": 94.8672,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 51,
+            "eligible": 71,
+            "pct": 71.831,
+            "wilson_lo": 60.458,
+            "wilson_hi": 80.9629
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 9,
+            "eligible": 71,
+            "pct": 12.6761,
+            "wilson_lo": 6.8145,
+            "wilson_hi": 22.3691
+          },
+          "8": {
+            "evaded": 21,
+            "eligible": 71,
+            "pct": 29.5775,
+            "wilson_lo": 20.2329,
+            "wilson_hi": 41.0185
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 35,
+            "eligible": 78,
+            "pct": 44.8718,
+            "wilson_lo": 34.3344,
+            "wilson_hi": 55.8906
+          },
+          "2": {
+            "evaded": 39,
+            "eligible": 78,
+            "pct": 50.0,
+            "wilson_lo": 39.1674,
+            "wilson_hi": 60.8326
+          },
+          "4": {
+            "evaded": 37,
+            "eligible": 78,
+            "pct": 47.4359,
+            "wilson_lo": 36.7373,
+            "wilson_hi": 58.3752
+          },
+          "8": {
+            "evaded": 38,
+            "eligible": 78,
+            "pct": 48.7179,
+            "wilson_lo": 37.949,
+            "wilson_hi": 59.6073
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 52,
+            "eligible": 78,
+            "pct": 66.6667,
+            "wilson_lo": 55.6414,
+            "wilson_hi": 76.1273
+          },
+          "2": {
+            "evaded": 61,
+            "eligible": 78,
+            "pct": 78.2051,
+            "wilson_lo": 67.8393,
+            "wilson_hi": 85.9232
+          },
+          "4": {
+            "evaded": 73,
+            "eligible": 78,
+            "pct": 93.5897,
+            "wilson_lo": 85.8564,
+            "wilson_hi": 97.2311
+          },
+          "8": {
+            "evaded": 78,
+            "eligible": 78,
+            "pct": 100.0,
+            "wilson_lo": 95.3062,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 58,
+            "eligible": 78,
+            "pct": 74.359,
+            "wilson_lo": 63.6867,
+            "wilson_hi": 82.7446
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 15,
+            "eligible": 78,
+            "pct": 19.2308,
+            "wilson_lo": 12.0152,
+            "wilson_hi": 29.3348
+          },
+          "8": {
+            "evaded": 28,
+            "eligible": 78,
+            "pct": 35.8974,
+            "wilson_lo": 26.1456,
+            "wilson_hi": 46.9732
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "npu": {
+      "label": "QNN INT8 \u00b7 NPU",
+      "precision": "int8",
+      "clean_correct": 79,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 24,
+            "eligible": 71,
+            "pct": 33.8028,
+            "wilson_lo": 23.885,
+            "wilson_hi": 45.3834
+          },
+          "2": {
+            "evaded": 28,
+            "eligible": 71,
+            "pct": 39.4366,
+            "wilson_lo": 28.8934,
+            "wilson_hi": 51.0642
+          },
+          "4": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          },
+          "8": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 41,
+            "eligible": 71,
+            "pct": 57.7465,
+            "wilson_lo": 46.1507,
+            "wilson_hi": 68.547
+          },
+          "2": {
+            "evaded": 52,
+            "eligible": 71,
+            "pct": 73.2394,
+            "wilson_lo": 61.946,
+            "wilson_hi": 82.1472
+          },
+          "4": {
+            "evaded": 65,
+            "eligible": 71,
+            "pct": 91.5493,
+            "wilson_lo": 82.764,
+            "wilson_hi": 96.0693
+          },
+          "8": {
+            "evaded": 71,
+            "eligible": 71,
+            "pct": 100.0,
+            "wilson_lo": 94.8672,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 43,
+            "eligible": 71,
+            "pct": 60.5634,
+            "wilson_lo": 48.9358,
+            "wilson_hi": 71.1066
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 10,
+            "eligible": 71,
+            "pct": 14.0845,
+            "wilson_lo": 7.8342,
+            "wilson_hi": 24.0217
+          },
+          "8": {
+            "evaded": 21,
+            "eligible": 71,
+            "pct": 29.5775,
+            "wilson_lo": 20.2329,
+            "wilson_hi": 41.0185
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 32,
+            "eligible": 79,
+            "pct": 40.5063,
+            "wilson_lo": 30.3663,
+            "wilson_hi": 51.5268
+          },
+          "2": {
+            "evaded": 36,
+            "eligible": 79,
+            "pct": 45.5696,
+            "wilson_lo": 35.0485,
+            "wilson_hi": 56.5017
+          },
+          "4": {
+            "evaded": 38,
+            "eligible": 79,
+            "pct": 48.1013,
+            "wilson_lo": 37.4297,
+            "wilson_hi": 58.9489
+          },
+          "8": {
+            "evaded": 38,
+            "eligible": 79,
+            "pct": 48.1013,
+            "wilson_lo": 37.4297,
+            "wilson_hi": 58.9489
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 49,
+            "eligible": 79,
+            "pct": 62.0253,
+            "wilson_lo": 51.0019,
+            "wilson_hi": 71.9335
+          },
+          "2": {
+            "evaded": 60,
+            "eligible": 79,
+            "pct": 75.9494,
+            "wilson_lo": 65.4643,
+            "wilson_hi": 84.0278
+          },
+          "4": {
+            "evaded": 73,
+            "eligible": 79,
+            "pct": 92.4051,
+            "wilson_lo": 84.4046,
+            "wilson_hi": 96.4728
+          },
+          "8": {
+            "evaded": 79,
+            "eligible": 79,
+            "pct": 100.0,
+            "wilson_lo": 95.3629,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 51,
+            "eligible": 79,
+            "pct": 64.557,
+            "wilson_lo": 53.5593,
+            "wilson_hi": 74.2046
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 18,
+            "eligible": 79,
+            "pct": 22.7848,
+            "wilson_lo": 14.9268,
+            "wilson_hi": 33.1668
+          },
+          "8": {
+            "evaded": 29,
+            "eligible": 79,
+            "pct": 36.7089,
+            "wilson_lo": 26.9273,
+            "wilson_hi": 47.7231
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "timm_rnv2_fp16": {
+      "label": "ORT FP16 \u00b7 CUDA",
+      "precision": "float",
+      "clean_correct": 82,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 31,
+            "eligible": 71,
+            "pct": 43.662,
+            "wilson_lo": 32.7461,
+            "wilson_hi": 55.2285
+          },
+          "2": {
+            "evaded": 32,
+            "eligible": 71,
+            "pct": 45.0704,
+            "wilson_lo": 34.048,
+            "wilson_hi": 56.5989
+          },
+          "4": {
+            "evaded": 30,
+            "eligible": 71,
+            "pct": 42.2535,
+            "wilson_lo": 31.453,
+            "wilson_hi": 53.8493
+          },
+          "8": {
+            "evaded": 33,
+            "eligible": 71,
+            "pct": 46.4789,
+            "wilson_lo": 35.3584,
+            "wilson_hi": 57.9608
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 54,
+            "eligible": 71,
+            "pct": 76.0563,
+            "wilson_lo": 64.9588,
+            "wilson_hi": 84.4791
+          },
+          "2": {
+            "evaded": 62,
+            "eligible": 71,
+            "pct": 87.3239,
+            "wilson_lo": 77.6309,
+            "wilson_hi": 93.1855
+          },
+          "4": {
+            "evaded": 68,
+            "eligible": 71,
+            "pct": 95.7746,
+            "wilson_lo": 88.2976,
+            "wilson_hi": 98.5527
+          },
+          "8": {
+            "evaded": 71,
+            "eligible": 71,
+            "pct": 100.0,
+            "wilson_lo": 94.8672,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 65,
+            "eligible": 71,
+            "pct": 91.5493,
+            "wilson_lo": 82.764,
+            "wilson_hi": 96.0693
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 20,
+            "eligible": 71,
+            "pct": 28.169,
+            "wilson_lo": 19.0371,
+            "wilson_hi": 39.542
+          },
+          "8": {
+            "evaded": 40,
+            "eligible": 71,
+            "pct": 56.338,
+            "wilson_lo": 44.7715,
+            "wilson_hi": 67.2539
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 42,
+            "eligible": 82,
+            "pct": 51.2195,
+            "wilson_lo": 40.5908,
+            "wilson_hi": 61.7391
+          },
+          "2": {
+            "evaded": 43,
+            "eligible": 82,
+            "pct": 52.439,
+            "wilson_lo": 41.7647,
+            "wilson_hi": 62.895
+          },
+          "4": {
+            "evaded": 41,
+            "eligible": 82,
+            "pct": 50.0,
+            "wilson_lo": 39.4228,
+            "wilson_hi": 60.5772
+          },
+          "8": {
+            "evaded": 44,
+            "eligible": 82,
+            "pct": 53.6585,
+            "wilson_lo": 42.9447,
+            "wilson_hi": 64.0449
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 65,
+            "eligible": 82,
+            "pct": 79.2683,
+            "wilson_lo": 69.2834,
+            "wilson_hi": 86.6336
+          },
+          "2": {
+            "evaded": 73,
+            "eligible": 82,
+            "pct": 89.0244,
+            "wilson_lo": 80.4388,
+            "wilson_hi": 94.1173
+          },
+          "4": {
+            "evaded": 79,
+            "eligible": 82,
+            "pct": 96.3415,
+            "wilson_lo": 89.7873,
+            "wilson_hi": 98.748
+          },
+          "8": {
+            "evaded": 82,
+            "eligible": 82,
+            "pct": 100.0,
+            "wilson_lo": 95.5249,
+            "wilson_hi": 100.0
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 76,
+            "eligible": 82,
+            "pct": 92.6829,
+            "wilson_lo": 84.9422,
+            "wilson_hi": 96.6035
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 31,
+            "eligible": 82,
+            "pct": 37.8049,
+            "wilson_lo": 28.0784,
+            "wilson_hi": 48.6229
+          },
+          "8": {
+            "evaded": 51,
+            "eligible": 82,
+            "pct": 62.1951,
+            "wilson_lo": 51.3771,
+            "wilson_hi": 71.9216
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "timm_rnv2_int8_ort_qop": {
+      "label": "ORT INT8 QOperator \u00b7 CPU",
+      "precision": "int8",
+      "clean_correct": 78,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 20,
+            "eligible": 71,
+            "pct": 28.169,
+            "wilson_lo": 19.0371,
+            "wilson_hi": 39.542
+          },
+          "2": {
+            "evaded": 28,
+            "eligible": 71,
+            "pct": 39.4366,
+            "wilson_lo": 28.8934,
+            "wilson_hi": 51.0642
+          },
+          "4": {
+            "evaded": 27,
+            "eligible": 71,
+            "pct": 38.0282,
+            "wilson_lo": 27.6272,
+            "wilson_hi": 49.6581
+          },
+          "8": {
+            "evaded": 28,
+            "eligible": 71,
+            "pct": 39.4366,
+            "wilson_lo": 28.8934,
+            "wilson_hi": 51.0642
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 41,
+            "eligible": 71,
+            "pct": 57.7465,
+            "wilson_lo": 46.1507,
+            "wilson_hi": 68.547
+          },
+          "2": {
+            "evaded": 53,
+            "eligible": 71,
+            "pct": 74.6479,
+            "wilson_lo": 63.4461,
+            "wilson_hi": 83.3194
+          },
+          "4": {
+            "evaded": 66,
+            "eligible": 71,
+            "pct": 92.9577,
+            "wilson_lo": 84.551,
+            "wilson_hi": 96.9546
+          },
+          "8": {
+            "evaded": 69,
+            "eligible": 71,
+            "pct": 97.1831,
+            "wilson_lo": 90.2985,
+            "wilson_hi": 99.2241
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 51,
+            "eligible": 71,
+            "pct": 71.831,
+            "wilson_lo": 60.458,
+            "wilson_hi": 80.9629
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 13,
+            "eligible": 71,
+            "pct": 18.3099,
+            "wilson_lo": 11.0247,
+            "wilson_hi": 28.8482
+          },
+          "8": {
+            "evaded": 24,
+            "eligible": 71,
+            "pct": 33.8028,
+            "wilson_lo": 23.885,
+            "wilson_hi": 45.3834
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 27,
+            "eligible": 78,
+            "pct": 34.6154,
+            "wilson_lo": 25.0052,
+            "wilson_hi": 45.6698
+          },
+          "2": {
+            "evaded": 35,
+            "eligible": 78,
+            "pct": 44.8718,
+            "wilson_lo": 34.3344,
+            "wilson_hi": 55.8906
+          },
+          "4": {
+            "evaded": 34,
+            "eligible": 78,
+            "pct": 43.5897,
+            "wilson_lo": 33.1432,
+            "wilson_hi": 54.638
+          },
+          "8": {
+            "evaded": 35,
+            "eligible": 78,
+            "pct": 44.8718,
+            "wilson_lo": 34.3344,
+            "wilson_hi": 55.8906
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 48,
+            "eligible": 78,
+            "pct": 61.5385,
+            "wilson_lo": 50.4428,
+            "wilson_hi": 71.551
+          },
+          "2": {
+            "evaded": 60,
+            "eligible": 78,
+            "pct": 76.9231,
+            "wilson_lo": 66.4442,
+            "wilson_hi": 84.8745
+          },
+          "4": {
+            "evaded": 73,
+            "eligible": 78,
+            "pct": 93.5897,
+            "wilson_lo": 85.8564,
+            "wilson_hi": 97.2311
+          },
+          "8": {
+            "evaded": 76,
+            "eligible": 78,
+            "pct": 97.4359,
+            "wilson_lo": 91.1247,
+            "wilson_hi": 99.294
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 58,
+            "eligible": 78,
+            "pct": 74.359,
+            "wilson_lo": 63.6867,
+            "wilson_hi": 82.7446
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 18,
+            "eligible": 78,
+            "pct": 23.0769,
+            "wilson_lo": 15.1255,
+            "wilson_hi": 33.5558
+          },
+          "8": {
+            "evaded": 31,
+            "eligible": 78,
+            "pct": 39.7436,
+            "wilson_lo": 29.6119,
+            "wilson_hi": 50.8381
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "timm_rnv2_int8_ptq_ort": {
+      "label": "TRT INT8 Q/DQ",
+      "precision": "int8",
+      "clean_correct": 79,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 24,
+            "eligible": 71,
+            "pct": 33.8028,
+            "wilson_lo": 23.885,
+            "wilson_hi": 45.3834
+          },
+          "2": {
+            "evaded": 27,
+            "eligible": 71,
+            "pct": 38.0282,
+            "wilson_lo": 27.6272,
+            "wilson_hi": 49.6581
+          },
+          "4": {
+            "evaded": 29,
+            "eligible": 71,
+            "pct": 40.8451,
+            "wilson_lo": 30.1687,
+            "wilson_hi": 52.4612
+          },
+          "8": {
+            "evaded": 29,
+            "eligible": 71,
+            "pct": 40.8451,
+            "wilson_lo": 30.1687,
+            "wilson_hi": 52.4612
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 42,
+            "eligible": 71,
+            "pct": 59.1549,
+            "wilson_lo": 47.5388,
+            "wilson_hi": 69.8313
+          },
+          "2": {
+            "evaded": 51,
+            "eligible": 71,
+            "pct": 71.831,
+            "wilson_lo": 60.458,
+            "wilson_hi": 80.9629
+          },
+          "4": {
+            "evaded": 63,
+            "eligible": 71,
+            "pct": 88.7324,
+            "wilson_lo": 79.31,
+            "wilson_hi": 94.1787
+          },
+          "8": {
+            "evaded": 69,
+            "eligible": 71,
+            "pct": 97.1831,
+            "wilson_lo": 90.2985,
+            "wilson_hi": 99.2241
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 49,
+            "eligible": 71,
+            "pct": 69.0141,
+            "wilson_lo": 57.516,
+            "wilson_hi": 78.5603
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 14,
+            "eligible": 71,
+            "pct": 19.7183,
+            "wilson_lo": 12.1255,
+            "wilson_hi": 30.4197
+          },
+          "8": {
+            "evaded": 26,
+            "eligible": 71,
+            "pct": 36.6197,
+            "wilson_lo": 26.3702,
+            "wilson_hi": 48.2428
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 32,
+            "eligible": 79,
+            "pct": 40.5063,
+            "wilson_lo": 30.3663,
+            "wilson_hi": 51.5268
+          },
+          "2": {
+            "evaded": 35,
+            "eligible": 79,
+            "pct": 44.3038,
+            "wilson_lo": 33.8678,
+            "wilson_hi": 55.2681
+          },
+          "4": {
+            "evaded": 37,
+            "eligible": 79,
+            "pct": 46.8354,
+            "wilson_lo": 36.2358,
+            "wilson_hi": 57.7286
+          },
+          "8": {
+            "evaded": 37,
+            "eligible": 79,
+            "pct": 46.8354,
+            "wilson_lo": 36.2358,
+            "wilson_hi": 57.7286
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 50,
+            "eligible": 79,
+            "pct": 63.2911,
+            "wilson_lo": 52.2769,
+            "wilson_hi": 73.0727
+          },
+          "2": {
+            "evaded": 59,
+            "eligible": 79,
+            "pct": 74.6835,
+            "wilson_lo": 64.1057,
+            "wilson_hi": 82.9721
+          },
+          "4": {
+            "evaded": 71,
+            "eligible": 79,
+            "pct": 89.8734,
+            "wilson_lo": 81.2701,
+            "wilson_hi": 94.7788
+          },
+          "8": {
+            "evaded": 77,
+            "eligible": 79,
+            "pct": 97.4684,
+            "wilson_lo": 91.2314,
+            "wilson_hi": 99.303
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 57,
+            "eligible": 79,
+            "pct": 72.1519,
+            "wilson_lo": 61.4176,
+            "wilson_hi": 80.8318
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 22,
+            "eligible": 79,
+            "pct": 27.8481,
+            "wilson_lo": 19.1682,
+            "wilson_hi": 38.5824
+          },
+          "8": {
+            "evaded": 34,
+            "eligible": 79,
+            "pct": 43.038,
+            "wilson_lo": 32.6938,
+            "wilson_hi": 54.0278
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    },
+    "timm_rnv2_int8_dq_ort": {
+      "label": "TRT INT8 compressed",
+      "precision": "int8",
+      "clean_correct": 79,
+      "shared": {
+        "fgsm": {
+          "1": {
+            "evaded": 24,
+            "eligible": 71,
+            "pct": 33.8028,
+            "wilson_lo": 23.885,
+            "wilson_hi": 45.3834
+          },
+          "2": {
+            "evaded": 27,
+            "eligible": 71,
+            "pct": 38.0282,
+            "wilson_lo": 27.6272,
+            "wilson_hi": 49.6581
+          },
+          "4": {
+            "evaded": 29,
+            "eligible": 71,
+            "pct": 40.8451,
+            "wilson_lo": 30.1687,
+            "wilson_hi": 52.4612
+          },
+          "8": {
+            "evaded": 29,
+            "eligible": 71,
+            "pct": 40.8451,
+            "wilson_lo": 30.1687,
+            "wilson_hi": 52.4612
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 42,
+            "eligible": 71,
+            "pct": 59.1549,
+            "wilson_lo": 47.5388,
+            "wilson_hi": 69.8313
+          },
+          "2": {
+            "evaded": 52,
+            "eligible": 71,
+            "pct": 73.2394,
+            "wilson_lo": 61.946,
+            "wilson_hi": 82.1472
+          },
+          "4": {
+            "evaded": 63,
+            "eligible": 71,
+            "pct": 88.7324,
+            "wilson_lo": 79.31,
+            "wilson_hi": 94.1787
+          },
+          "8": {
+            "evaded": 69,
+            "eligible": 71,
+            "pct": 97.1831,
+            "wilson_lo": 90.2985,
+            "wilson_hi": 99.2241
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 50,
+            "eligible": 71,
+            "pct": 70.4225,
+            "wilson_lo": 58.9815,
+            "wilson_hi": 79.7671
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 14,
+            "eligible": 71,
+            "pct": 19.7183,
+            "wilson_lo": 12.1255,
+            "wilson_hi": 30.4197
+          },
+          "8": {
+            "evaded": 26,
+            "eligible": 71,
+            "pct": 36.6197,
+            "wilson_lo": 26.3702,
+            "wilson_hi": 48.2428
+          }
+        }
+      },
+      "own_denominator": {
+        "fgsm": {
+          "1": {
+            "evaded": 32,
+            "eligible": 79,
+            "pct": 40.5063,
+            "wilson_lo": 30.3663,
+            "wilson_hi": 51.5268
+          },
+          "2": {
+            "evaded": 35,
+            "eligible": 79,
+            "pct": 44.3038,
+            "wilson_lo": 33.8678,
+            "wilson_hi": 55.2681
+          },
+          "4": {
+            "evaded": 37,
+            "eligible": 79,
+            "pct": 46.8354,
+            "wilson_lo": 36.2358,
+            "wilson_hi": 57.7286
+          },
+          "8": {
+            "evaded": 37,
+            "eligible": 79,
+            "pct": 46.8354,
+            "wilson_lo": 36.2358,
+            "wilson_hi": 57.7286
+          }
+        },
+        "pgd": {
+          "1": {
+            "evaded": 50,
+            "eligible": 79,
+            "pct": 63.2911,
+            "wilson_lo": 52.2769,
+            "wilson_hi": 73.0727
+          },
+          "2": {
+            "evaded": 60,
+            "eligible": 79,
+            "pct": 75.9494,
+            "wilson_lo": 65.4643,
+            "wilson_hi": 84.0278
+          },
+          "4": {
+            "evaded": 71,
+            "eligible": 79,
+            "pct": 89.8734,
+            "wilson_lo": 81.2701,
+            "wilson_hi": 94.7788
+          },
+          "8": {
+            "evaded": 77,
+            "eligible": 79,
+            "pct": 97.4684,
+            "wilson_lo": 91.2314,
+            "wilson_hi": 99.303
+          }
+        },
+        "pgd_stronger": {
+          "1": {
+            "evaded": 58,
+            "eligible": 79,
+            "pct": 73.4177,
+            "wilson_lo": 62.757,
+            "wilson_hi": 81.9067
+          }
+        },
+        "square": {
+          "4": {
+            "evaded": 22,
+            "eligible": 79,
+            "pct": 27.8481,
+            "wilson_lo": 19.1682,
+            "wilson_hi": 38.5824
+          },
+          "8": {
+            "evaded": 34,
+            "eligible": 79,
+            "pct": 43.038,
+            "wilson_lo": 32.6938,
+            "wilson_hi": 54.0278
+          }
+        }
+      },
+      "provenance": "timm_resnetv2_50",
+      "validation": true
+    }
+  },
+  "quantization_advantage": {
+    "RKNN NPU": {
+      "pgd_1": {
+        "float_evaded": 55,
+        "float_n": 71,
+        "float_pct": 77.4648,
+        "int8_evaded": 45,
+        "int8_n": 71,
+        "int8_pct": 63.3803,
+        "advantage_images": 10,
+        "advantage_pct_points": 14.1
+      },
+      "pgd_stronger_1": {
+        "float_evaded": 64,
+        "float_n": 71,
+        "float_pct": 90.1408,
+        "int8_evaded": 51,
+        "int8_n": 71,
+        "int8_pct": 71.831,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "square_4": {
+        "float_evaded": 22,
+        "float_n": 71,
+        "float_pct": 30.9859,
+        "int8_evaded": 9,
+        "int8_n": 71,
+        "int8_pct": 12.6761,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "square_8": {
+        "float_evaded": 40,
+        "float_n": 71,
+        "float_pct": 56.338,
+        "int8_evaded": 21,
+        "int8_n": 71,
+        "int8_pct": 29.5775,
+        "advantage_images": 19,
+        "advantage_pct_points": 26.8
+      }
+    },
+    "QNN HTP": {
+      "pgd_1": {
+        "float_evaded": 56,
+        "float_n": 71,
+        "float_pct": 78.8732,
+        "int8_evaded": 41,
+        "int8_n": 71,
+        "int8_pct": 57.7465,
+        "advantage_images": 15,
+        "advantage_pct_points": 21.1
+      },
+      "pgd_stronger_1": {
+        "float_evaded": 64,
+        "float_n": 71,
+        "float_pct": 90.1408,
+        "int8_evaded": 43,
+        "int8_n": 71,
+        "int8_pct": 60.5634,
+        "advantage_images": 21,
+        "advantage_pct_points": 29.6
+      },
+      "square_4": {
+        "float_evaded": 22,
+        "float_n": 71,
+        "float_pct": 30.9859,
+        "int8_evaded": 10,
+        "int8_n": 71,
+        "int8_pct": 14.0845,
+        "advantage_images": 12,
+        "advantage_pct_points": 16.9
+      },
+      "square_8": {
+        "float_evaded": 41,
+        "float_n": 71,
+        "float_pct": 57.7465,
+        "int8_evaded": 21,
+        "int8_n": 71,
+        "int8_pct": 29.5775,
+        "advantage_images": 20,
+        "advantage_pct_points": 28.2
+      }
+    },
+    "ORT CPU": {
+      "pgd_1": {
+        "float_evaded": 55,
+        "float_n": 71,
+        "float_pct": 77.4648,
+        "int8_evaded": 41,
+        "int8_n": 71,
+        "int8_pct": 57.7465,
+        "advantage_images": 14,
+        "advantage_pct_points": 19.7
+      },
+      "pgd_stronger_1": {
+        "float_evaded": 64,
+        "float_n": 71,
+        "float_pct": 90.1408,
+        "int8_evaded": 51,
+        "int8_n": 71,
+        "int8_pct": 71.831,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "square_4": {
+        "float_evaded": 27,
+        "float_n": 71,
+        "float_pct": 38.0282,
+        "int8_evaded": 13,
+        "int8_n": 71,
+        "int8_pct": 18.3099,
+        "advantage_images": 14,
+        "advantage_pct_points": 19.7
+      },
+      "square_8": {
+        "float_evaded": 39,
+        "float_n": 71,
+        "float_pct": 54.9296,
+        "int8_evaded": 24,
+        "int8_n": 71,
+        "int8_pct": 33.8028,
+        "advantage_images": 15,
+        "advantage_pct_points": 21.1
+      }
+    },
+    "TensorRT Q/DQ": {
+      "pgd_1": {
+        "float_evaded": 55,
+        "float_n": 71,
+        "float_pct": 77.4648,
+        "int8_evaded": 42,
+        "int8_n": 71,
+        "int8_pct": 59.1549,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "pgd_stronger_1": {
+        "float_evaded": 64,
+        "float_n": 71,
+        "float_pct": 90.1408,
+        "int8_evaded": 49,
+        "int8_n": 71,
+        "int8_pct": 69.0141,
+        "advantage_images": 15,
+        "advantage_pct_points": 21.1
+      },
+      "square_4": {
+        "float_evaded": 27,
+        "float_n": 71,
+        "float_pct": 38.0282,
+        "int8_evaded": 14,
+        "int8_n": 71,
+        "int8_pct": 19.7183,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "square_8": {
+        "float_evaded": 39,
+        "float_n": 71,
+        "float_pct": 54.9296,
+        "int8_evaded": 26,
+        "int8_n": 71,
+        "int8_pct": 36.6197,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      }
+    },
+    "TensorRT compressed": {
+      "pgd_1": {
+        "float_evaded": 55,
+        "float_n": 71,
+        "float_pct": 77.4648,
+        "int8_evaded": 42,
+        "int8_n": 71,
+        "int8_pct": 59.1549,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "pgd_stronger_1": {
+        "float_evaded": 64,
+        "float_n": 71,
+        "float_pct": 90.1408,
+        "int8_evaded": 50,
+        "int8_n": 71,
+        "int8_pct": 70.4225,
+        "advantage_images": 14,
+        "advantage_pct_points": 19.7
+      },
+      "square_4": {
+        "float_evaded": 27,
+        "float_n": 71,
+        "float_pct": 38.0282,
+        "int8_evaded": 14,
+        "int8_n": 71,
+        "int8_pct": 19.7183,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      },
+      "square_8": {
+        "float_evaded": 39,
+        "float_n": 71,
+        "float_pct": 54.9296,
+        "int8_evaded": 26,
+        "int8_n": 71,
+        "int8_pct": 36.6197,
+        "advantage_images": 13,
+        "advantage_pct_points": 18.3
+      }
+    }
+  },
+  "square_traces": {
+    "pytorch_fp32": {
+      "4": [
+        [
+          50,
+          14,
+          81
+        ],
+        [
+          100,
+          19,
+          81
+        ],
+        [
+          250,
+          25,
+          81
+        ],
+        [
+          500,
+          36,
+          81
+        ]
+      ],
+      "8": [
+        [
+          50,
+          30,
+          81
+        ],
+        [
+          100,
+          35,
+          81
+        ],
+        [
+          250,
+          44,
+          81
+        ],
+        [
+          500,
+          49,
+          81
+        ]
+      ]
+    },
+    "onnx_fp32": {
+      "4": [
+        [
+          50,
+          14,
+          81
+        ],
+        [
+          100,
+          19,
+          81
+        ],
+        [
+          250,
+          25,
+          81
+        ],
+        [
+          500,
+          37,
+          81
+        ]
+      ],
+      "8": [
+        [
+          50,
+          30,
+          81
+        ],
+        [
+          100,
+          35,
+          81
+        ],
+        [
+          250,
+          44,
+          81
+        ],
+        [
+          500,
+          49,
+          81
+        ]
+      ]
+    },
+    "rknn_fp16": {
+      "4": [
+        [
+          50,
+          13,
+          81
+        ],
+        [
+          100,
+          18,
+          81
+        ],
+        [
+          250,
+          25,
+          81
+        ],
+        [
+          500,
+          32,
+          81
+        ]
+      ],
+      "8": [
+        [
+          50,
+          32,
+          81
+        ],
+        [
+          100,
+          38,
+          81
+        ],
+        [
+          250,
+          47,
+          81
+        ],
+        [
+          500,
+          50,
+          81
+        ]
+      ]
+    },
+    "rknn_int8": {
+      "4": [
+        [
+          50,
+          14,
+          78
+        ],
+        [
+          100,
+          14,
+          78
+        ],
+        [
+          250,
+          15,
+          78
+        ],
+        [
+          500,
+          15,
+          78
+        ]
+      ],
+      "8": [
+        [
+          50,
+          26,
+          78
+        ],
+        [
+          100,
+          28,
+          78
+        ],
+        [
+          250,
+          28,
+          78
+        ],
+        [
+          500,
+          28,
+          78
+        ]
+      ]
+    },
+    "npu": {
+      "4": [
+        [
+          50,
+          17,
+          79
+        ],
+        [
+          100,
+          18,
+          79
+        ],
+        [
+          250,
+          18,
+          79
+        ],
+        [
+          500,
+          18,
+          79
+        ]
+      ],
+      "8": [
+        [
+          50,
+          26,
+          79
+        ],
+        [
+          100,
+          29,
+          79
+        ],
+        [
+          250,
+          29,
+          79
+        ],
+        [
+          500,
+          29,
+          79
+        ]
+      ]
+    },
+    "timm_rnv2_int8_ort_qop": {
+      "4": [
+        [
+          50,
+          12,
+          78
+        ],
+        [
+          100,
+          14,
+          78
+        ],
+        [
+          250,
+          16,
+          78
+        ],
+        [
+          500,
+          18,
+          78
+        ]
+      ],
+      "8": [
+        [
+          50,
+          26,
+          78
+        ],
+        [
+          100,
+          27,
+          78
+        ],
+        [
+          250,
+          30,
+          78
+        ],
+        [
+          500,
+          31,
+          78
+        ]
+      ]
+    },
+    "timm_rnv2_int8_ptq_ort": {
+      "4": [
+        [
+          50,
+          19,
+          79
+        ],
+        [
+          100,
+          21,
+          79
+        ],
+        [
+          250,
+          21,
+          79
+        ],
+        [
+          500,
+          22,
+          79
+        ]
+      ],
+      "8": [
+        [
+          50,
+          27,
+          79
+        ],
+        [
+          100,
+          29,
+          79
+        ],
+        [
+          250,
+          33,
+          79
+        ],
+        [
+          500,
+          34,
+          79
+        ]
+      ]
+    },
+    "timm_rnv2_int8_dq_ort": {
+      "4": [
+        [
+          50,
+          19,
+          79
+        ],
+        [
+          100,
+          21,
+          79
+        ],
+        [
+          250,
+          21,
+          79
+        ],
+        [
+          500,
+          22,
+          79
+        ]
+      ],
+      "8": [
+        [
+          50,
+          27,
+          79
+        ],
+        [
+          100,
+          29,
+          79
+        ],
+        [
+          250,
+          33,
+          79
+        ],
+        [
+          500,
+          34,
+          79
+        ]
+      ]
+    }
+  },
+  "base_model_factorial": {
+    "common_clean_n": 75,
+    "conditions": {
+      "fgsm_1": {
+        "tv_pytorch": 22,
+        "tv_ort": 22,
+        "timm_pytorch": 35,
+        "timm_ort": 35
+      },
+      "fgsm_4": {
+        "tv_pytorch": 26,
+        "tv_ort": 26,
+        "timm_pytorch": 34,
+        "timm_ort": 34
+      },
+      "pgd_1": {
+        "tv_pytorch": 71,
+        "tv_ort": 71,
+        "timm_pytorch": 59,
+        "timm_ort": 59
+      },
+      "pgd_2": {
+        "tv_pytorch": 74,
+        "tv_ort": 75,
+        "timm_pytorch": 67,
+        "timm_ort": 67
+      },
+      "pgd_4": {
+        "tv_pytorch": 75,
+        "tv_ort": 74,
+        "timm_pytorch": 72,
+        "timm_ort": 73
+      },
+      "pgd_8": {
+        "tv_pytorch": 75,
+        "tv_ort": 75,
+        "timm_pytorch": 75,
+        "timm_ort": 75
+      },
+      "square_4": {
+        "tv_pytorch": 18,
+        "tv_ort": 18,
+        "timm_pytorch": 30,
+        "timm_ort": 31
+      },
+      "square_8": {
+        "tv_pytorch": 39,
+        "tv_ort": 39,
+        "timm_pytorch": 43,
+        "timm_ort": 43
+      }
+    }
+  }
+}

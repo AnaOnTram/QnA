@@ -1,0 +1,23 @@
+{
+  "runtime": "native TensorRT",
+  "version": "10.9.0.34",
+  "provider": "CUDA device 0",
+  "engine": "/home/ross/QA/Models/resnet50/evasion_onnx/engines/timm_rnv2_int8_ptq_ort.trt109.b10.plan",
+  "engine_sha256": "67dd55b07ad581d26b31d8e8c748f179d002b7f29fa681e39151adb89f070d77",
+  "engine_build_or_load_seconds": 0.17947769165039062,
+  "configuration": {
+    "onnx_sha256": "99755d64590b5918eb31070a27688ff9848056d2d8fec8e67a7a6c64991f28aa",
+    "max_batch": 10,
+    "trt_version": "10.9.0.34",
+    "tf32": false,
+    "strongly_typed": true,
+    "workspace_bytes": 1073741824,
+    "builder_optimization_level": 3
+  },
+  "layer_inspection": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_ptq_ort/tensorrt_layers.json",
+  "convolution_weight_types": {
+    "Int8": 54
+  },
+  "cpu_fallback": false,
+  "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU"
+}

@@ -1,0 +1,379 @@
+{
+  "model": "pytorch_fp32",
+  "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "checkpoint": "/home/ross/QA/Models/mobilenetV2/pytorch/mobilenet_v2-b0353104.pth",
+  "checkpoint_sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+  "config": {
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_queries": 500,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "seed": 20261030,
+    "resize": 256,
+    "population": "same stratified Imagenette validation images as previous experiments",
+    "n": 100
+  },
+  "clean": {
+    "correct": 83,
+    "n": 100
+  },
+  "runtime": {
+    "torch": "2.14.1+cu130",
+    "device": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+    "dtype": "FP32",
+    "tf32": false
+  },
+  "gradient": {
+    "native_runtime_autograd": true,
+    "method": "Native PyTorch autograd on the FP32 source ONNX graph replica; validated against the original checkpoint.",
+    "exact_forward": true,
+    "finite_nonzero": true,
+    "replica_top1_agreement": 100,
+    "mean_absolute_logit_difference": 0.0,
+    "sign_direction_probe": {
+      "n": 100,
+      "eps_255": 8,
+      "prediction_flips": {
+        "gradient": 92,
+        "random": 15,
+        "negative_gradient": 20
+      },
+      "zero_gradient_images": 0,
+      "min_gradient_l1": 1.8099324705644904e-08
+    }
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 1,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 76,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 7,
+      "attack_success_pct": 91.56626506024097,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0.5333993434906006
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 10.244017124176025
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 1.8596649169921875e-05,
+      "steps": 100,
+      "restarts": 5,
+      "additional_survivor_n": 0
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 0,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 83,
+      "attack_success_pct": 0.0,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 77,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 6,
+      "attack_success_pct": 92.7710843373494,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0.48325681686401367
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 10.385069608688354
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 1,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 80,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 3,
+      "attack_success_pct": 96.3855421686747,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0.48961520195007324
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 10.45880389213562
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 38,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 45,
+      "attack_success_pct": 45.78313253012048,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 33.36921763420105,
+      "query_budget": 500,
+      "total_attack_queries": 27327,
+      "query_trace": [
+        {
+          "query_budget": 50,
+          "fooled": 19,
+          "eligible": 83
+        },
+        {
+          "query_budget": 100,
+          "fooled": 21,
+          "eligible": 83
+        },
+        {
+          "query_budget": 250,
+          "fooled": 31,
+          "eligible": 83
+        },
+        {
+          "query_budget": 500,
+          "fooled": 38,
+          "eligible": 83
+        }
+      ]
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 1,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 79,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 4,
+      "attack_success_pct": 95.18072289156626,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0.4761161804199219
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 10.442207336425781
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 71,
+      "execution": {
+        "hostname": "Precision",
+        "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+        "torch": "2.14.1+cu130",
+        "python": "/home/ross/QA/venv/bin/python"
+      },
+      "robust_correct": 12,
+      "attack_success_pct": 85.5421686746988,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 12.936076402664185,
+      "query_budget": 500,
+      "total_attack_queries": 10758,
+      "query_trace": [
+        {
+          "query_budget": 50,
+          "fooled": 44,
+          "eligible": 83
+        },
+        {
+          "query_budget": 100,
+          "fooled": 51,
+          "eligible": 83
+        },
+        {
+          "query_budget": 250,
+          "fooled": 66,
+          "eligible": 83
+        },
+        {
+          "query_budget": 500,
+          "fooled": 71,
+          "eligible": 83
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "execution": {
+    "hostname": "Precision",
+    "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+    "torch": "2.14.1+cu130",
+    "python": "/home/ross/QA/venv/bin/python"
+  },
+  "execution_segments": [
+    {
+      "hostname": "Precision",
+      "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+      "torch": "2.14.1+cu130",
+      "python": "/home/ross/QA/venv/bin/python"
+    }
+  ],
+  "elapsed_seconds_current_process": 94.23827838897705
+}

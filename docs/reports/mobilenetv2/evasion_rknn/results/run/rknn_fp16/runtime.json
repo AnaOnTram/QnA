@@ -1,0 +1,72 @@
+{
+  "runtime": "2.5.0 (74ea630ce8@2026-09-30T09:41:17)",
+  "driver": "0.9.8",
+  "input": {
+    "ret": 0,
+    "name": "input",
+    "dtype": "FP16",
+    "layout": "NHWC",
+    "qnt_type": 2,
+    "scale": 1,
+    "zero_point": 0,
+    "size": 301056,
+    "dims": [
+      1,
+      224,
+      224,
+      3
+    ]
+  },
+  "output": {
+    "ret": 0,
+    "name": "logits",
+    "dtype": "FP16",
+    "layout": "UNDEFINED",
+    "qnt_type": 2,
+    "scale": 1,
+    "zero_point": 0,
+    "size": 2000,
+    "dims": [
+      1,
+      1000
+    ]
+  },
+  "native_input": {
+    "ret": 0,
+    "name": "input",
+    "dtype": "FP16",
+    "layout": "NHWC",
+    "qnt_type": 2,
+    "scale": 1,
+    "zero_point": 0,
+    "size": 301056,
+    "dims": [
+      1,
+      224,
+      224,
+      3
+    ]
+  },
+  "native_output": {
+    "ret": 0,
+    "name": "logits",
+    "dtype": "FP16",
+    "layout": "UNDEFINED",
+    "qnt_type": 2,
+    "scale": 1,
+    "zero_point": 0,
+    "size": 2048,
+    "dims": [
+      1,
+      1000
+    ]
+  },
+  "workers": 3,
+  "weight_bytes": 7021824,
+  "internal_bytes": 3411968,
+  "model_sha256": "b7a1684245b943a0aa8a02c60fccc2b898b01f4941ac6bc5c421c07c9dac5eaf",
+  "board": "ross@192.168.1.39",
+  "native_runtime_autograd": false,
+  "cpu_fallback": false,
+  "execution": "native RKNN C API on Rock 5C NPU"
+}

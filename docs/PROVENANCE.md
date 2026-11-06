@@ -1,7 +1,8 @@
 # Provenance and packaging scope
 
-This repository contains standalone copies of existing weights. Packaging did
-not train, quantize, convert, rebuild or run the models. Every copied file was
+This repository contains standalone copies of existing weights and their evasion
+attack reports, figures and compact result evidence. Packaging did
+not train, quantize, convert, rebuild or run the models. Every copied weight was
 checked by SHA-256 against its source; previously pinned digests were also checked
 where available. Source files were read without changing their contents or mtimes.
 
@@ -33,7 +34,10 @@ The local source records used to interpret these files include:
 - `QA/Models/mobilenetV2/rknn/README.md` and `evasion_trt/README.md`.
 
 These source documents remain in place. Relevant runtime and quantization details
-are summarized here; experiments and their outputs are not copied into this repo.
+are summarized here. [The report archive](reports/README.md) also retains the
+evasion reports, figures, comparison tables, methodology and compact validation
+evidence. Its own manifest records source and packaged hashes; only local report
+links were adjusted. Original source files remain unchanged.
 
 ## Included and excluded artifacts
 
@@ -45,8 +49,10 @@ does not make it a TorchVision ResNet-50 artifact.
 Duplicate canonical ONNX files and duplicate RKNN binaries are represented by
 one copy each. Toolkit-generated `check*.onnx`, scratch builds, reproduced export
 intermediates, calibration datasets, adversarial tensors, evaluation samples,
-logs, figures, scripts, SDKs, environments and unrelated vendored model bundles
-are excluded. Only the final static NHWC TFLite / Edge TPU pair is retained.
+full experiment logs, scripts, SDKs, environments and unrelated vendored model
+bundles are excluded. Report figures and compact JSON/CSV result evidence are
+included as documentation. Only the final static NHWC TFLite / Edge TPU weight
+pair is retained.
 
 MobileNetV2's generic legacy `trt/mobilenetv2.engine` is excluded because its
 build identity is not established by the per-precision deployment records. The

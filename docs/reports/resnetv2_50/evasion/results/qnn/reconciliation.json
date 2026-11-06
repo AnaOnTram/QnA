@@ -1,0 +1,102 @@
+{
+  "dir": "/home/ross/QA/Models/resnet50/evasion/results/qnn",
+  "csv_rows": 2800,
+  "attack_conditions": 28,
+  "max_linf_violations": 0,
+  "max_linf_excess_255": 7.510185241699219e-06,
+  "bound_tolerance_255": 0.00025499999999999996,
+  "paired_float_vs_device": {
+    "fgsm@1": {
+      "common_clean_n": 89,
+      "float_evaded": 63,
+      "device_evaded": 61,
+      "both_evaded": 61,
+      "float_only_evaded": 2,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.5
+    },
+    "fgsm@2": {
+      "common_clean_n": 89,
+      "float_evaded": 70,
+      "device_evaded": 66,
+      "both_evaded": 66,
+      "float_only_evaded": 4,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 2.25
+    },
+    "fgsm@4": {
+      "common_clean_n": 89,
+      "float_evaded": 71,
+      "device_evaded": 70,
+      "both_evaded": 70,
+      "float_only_evaded": 1,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.0
+    },
+    "fgsm@8": {
+      "common_clean_n": 89,
+      "float_evaded": 71,
+      "device_evaded": 70,
+      "both_evaded": 70,
+      "float_only_evaded": 1,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.0
+    },
+    "pgd@1": {
+      "common_clean_n": 89,
+      "float_evaded": 89,
+      "device_evaded": 89,
+      "both_evaded": 89,
+      "float_only_evaded": 0,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.0
+    },
+    "pgd@2": {
+      "common_clean_n": 89,
+      "float_evaded": 89,
+      "device_evaded": 89,
+      "both_evaded": 89,
+      "float_only_evaded": 0,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.0
+    },
+    "pgd@4": {
+      "common_clean_n": 89,
+      "float_evaded": 89,
+      "device_evaded": 89,
+      "both_evaded": 89,
+      "float_only_evaded": 0,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.0
+    },
+    "pgd@8": {
+      "common_clean_n": 89,
+      "float_evaded": 89,
+      "device_evaded": 89,
+      "both_evaded": 89,
+      "float_only_evaded": 0,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 0.0
+    },
+    "square@4": {
+      "common_clean_n": 89,
+      "float_evaded": 31,
+      "device_evaded": 10,
+      "both_evaded": 10,
+      "float_only_evaded": 21,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 19.047619047619047
+    },
+    "square@8": {
+      "common_clean_n": 89,
+      "float_evaded": 63,
+      "device_evaded": 34,
+      "both_evaded": 34,
+      "float_only_evaded": 29,
+      "device_only_evaded": 0,
+      "mcnemar_chi2": 27.03448275862069
+    }
+  },
+  "problems": [],
+  "passed": true
+}

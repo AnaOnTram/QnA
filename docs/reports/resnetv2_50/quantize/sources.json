@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "canonical_base": "rnv2_50",
+  "purpose": "Pinned provenance graph for the unified-base robustness study. The primary matrix is built only on timm ResNetV2-50 (rnv2_50); the TorchVision family is retained as a secondary cross-architecture replication. Everything below is checked by quantize/verify_sources.py.",
+  "updated": "2026-11-04",
+  "bases": {
+    "rnv2_50": {
+      "family": "timm",
+      "arch": "resnetv2_50",
+      "tag": "a1h_in1k",
+      "role": "canonical",
+      "checkpoint": {
+        "path": "/home/ross/.cache/huggingface/hub/models--timm--resnetv2_50.a1h_in1k/snapshots/a9035ec8691ab8c6eb6035aa3930c37583bcee5b/model.safetensors",
+        "sha256": "b809e8c09f4a1cf2168adf089c86c17fe88521b85455db662c0b2d42f489a61b",
+        "external": true
+      },
+      "onnx": {
+        "path": "onnx/resnetv2_50.onnx",
+        "sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "opset": 17,
+        "nodes": 171,
+        "initializers": 251,
+        "batch_normalization_nodes": 49,
+        "aliases": [
+          "rknn/resnetv2_50.onnx",
+          "rknn/NPU/resnet/resnetv2_50.onnx",
+          "rknn/NPU/resnet/resnetV2-50_RKNN/resnetv2_50.onnx"
+        ],
+        "reproducible_by": "quantize/export_timm_onnx.py"
+      },
+      "preprocessing": {
+        "resize": 232,
+        "crop": 224,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+        "interpolation": "bilinear",
+        "note": "Shared protocol, not the checkpoint's native recipe (bicubic 236, mean=std=0.5); kept because every NPU artifact encodes this domain. Measured cost ~3-4 clean images/100."
+      }
+    },
+    "tv_v2": {
+      "family": "torchvision",
+      "arch": "resnet50",
+      "tag": "IMAGENET1K_V2",
+      "role": "secondary",
+      "checkpoint": {
+        "path": "Pytorch/resnet50-11ad3fa6.pth",
+        "sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca"
+      },
+      "onnx": {
+        "path": "quantize/artifacts/fp32_v2.onnx",
+        "sha256": "bbe0d27db128eda60ab63db83f2e2cd5557620bee8f6123e9a6912971d3a66bc",
+        "opset": 18,
+        "nodes": 122,
+        "initializers": 108,
+        "batch_normalization_nodes": 0
+      },
+      "preprocessing": {
+        "resize": 232,
+        "crop": 224,
+        "mean": [0.485, 0.456, 0.406],
+        "std": [0.229, 0.224, 0.225],
+        "interpolation": "bilinear"
+      }
+    }
+  },
+  "artifacts": {
+    "discovery": "quantize/artifacts/timm_rnv2_*.onnx with a sibling *.meta.json",
+    "rule": "meta.source_sha256 must equal bases.rnv2_50.onnx.sha256 (or the derived artifact's own sha256 when the source is another timm artifact); meta.sha256 must equal the file digest; meta.base_model must be timm/resnetv2_50.a1h_in1k",
+    "expected": [
+      "timm_rnv2_fp32",
+      "timm_rnv2_fp16",
+      "timm_rnv2_int8_ort_qop",
+      "timm_rnv2_int8_ptq_ort",
+      "timm_rnv2_int8_dq_ort"
+    ]
+  },
+  "deployments": [
+    {
+      "id": "qnn.rnv2.dlc",
+      "runtime": "Qualcomm QNN HTP (QCS6490), QAIRT 2.42.0.251225",
+      "kind": "INT8 DLC",
+      "path": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/model/output/resnetv2_50_int8.dlc",
+      "sha256": "548940e753b83ec5c83284619fc3003c3f68726bec53a4e88653d6ac18d956ef",
+      "external": true,
+      "derives_from": "rnv2_50",
+      "built_by": "qairt-converter --source_model_input_shape input 1,3,224,224; qairt-quantizer",
+      "evidence": "evasion/results/qnn_v2/dlc_review.json"
+    },
+    {
+      "id": "qnn.rnv2.context",
+      "runtime": "Qualcomm QNN HTP (QCS6490), QAIRT 2.42.0.251225",
+      "kind": "INT8 context binary",
+      "path": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/model/output/resnetv2_50_quantized.bin",
+      "sha256": "928508ae776e277d81451176d71eea80ec24679f1cf9b038f08758979f47cc9a",
+      "external": true,
+      "derives_from": "rnv2_50",
+      "built_by": "qnn-context-binary-generator (vtcm_mb 2, dsp_arch v68, soc_id 35)",
+      "evidence": "evasion/configs/resnetv2_50_graph_spec.json"
+    },
+    {
+      "id": "rknn.fp16",
+      "runtime": "Rockchip RKNN NPU (RK3588), rknn-toolkit2 2.5.0",
+      "kind": "FP16 rknn",
+      "path": "rknn/NPU/resnet/resnetv2_50.rknn",
+      "sha256": "e997bb14f08434d1d193f65e44a77d4d67241fcff11e1d8429b7e6f0ff08ef1f",
+      "derives_from": "rnv2_50",
+      "evidence": "evasion_rknn/results/review/review.json"
+    },
+    {
+      "id": "rknn.int8",
+      "runtime": "Rockchip RKNN NPU (RK3588), rknn-toolkit2 2.5.0",
+      "kind": "INT8 rknn PTQ (256-image calibration)",
+      "path": "rknn/NPU/resnet/resnetv2_50_int8.rknn",
+      "sha256": "f71ab0e12fcba8d2d6f5eccfaaa11280e165965ca2c31332a483093de759bf6a",
+      "derives_from": "rnv2_50",
+      "evidence": "evasion_rknn/results/review/review.json"
+    },
+    {
+      "id": "qnn.v1.context",
+      "runtime": "Qualcomm QNN HTP (QCS6490), QAIRT 2.37.1",
+      "kind": "INT8 context binary (external, TorchVision V1 lineage)",
+      "path": "board:~/resnet50_qairt/6490/resnet50_aimet_quantized_6490.bin",
+      "sha256": "65f6282958ab7df304261ae2fe5532cdae668ff4940d4dd7cef8e24dfa887cfd",
+      "external": true,
+      "derives_from": "unknown (ModelScope ZIFENG278/resnet50_qairt; no ONNX/DLC/encodings/calibration shipped)",
+      "status": "secondary-only; irreproducible; retained as a cross-family anchor, not in the primary timm matrix"
+    }
+  ],
+  "known_gaps": [
+    "No hash-linked chain from the local QNN DLC to the attack-time board binary for QNN V1 (external package, no source).",
+    "Board context binaries are verified by their recorded sha256 each run (evasion config graph spec) but are not present locally for re-hashing.",
+    "The RKNN review validates model identity (251/251 initializers) and board hashes, not who built the artifact; a vendored HF bundle contains byte-identical prebuilt .rknn files."
+  ]
+}

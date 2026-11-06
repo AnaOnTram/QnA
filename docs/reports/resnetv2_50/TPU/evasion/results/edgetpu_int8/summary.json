@@ -1,0 +1,396 @@
+{
+  "model": "edgetpu_int8",
+  "description": "Coral Edge TPU (USB Accelerator), onnx2tf int8 NHWC, compiler 16.0.384591198",
+  "source": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc_edgetpu.tflite",
+  "checkpoint": "/home/ross/.cache/huggingface/hub/models--timm--resnetv2_50.a1h_in1k/snapshots/a9035ec8691ab8c6eb6035aa3930c37583bcee5b/model.safetensors",
+  "config": {
+    "seed": 20261030,
+    "n": 100,
+    "resize": 232,
+    "crop": 224,
+    "batch_size": 10,
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "square_queries": 500,
+    "bpda": "deployment forward, FP32 surrogate backward",
+    "population": "imagenette2-320 val, same 100 images as the other arms"
+  },
+  "clean": {
+    "correct": 80,
+    "n": 100,
+    "accuracy_pct": 80.0,
+    "fp32_correct": 81,
+    "fp32_accuracy_pct": 81.0,
+    "common_clean_n": 75,
+    "top1_agreement_with_fp32": 0.8299999833106995
+  },
+  "runtime": {
+    "runtime": "Edge TPU (Coral USB Accelerator)",
+    "backend": "tpu",
+    "model": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc_edgetpu.tflite",
+    "model_bytes": 26542720,
+    "tensorflow": "2.19.1",
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "scale": 0.003921568859368563,
+      "zero_point": 0,
+      "quantized": true
+    },
+    "output": {
+      "shape": [
+        1,
+        1000
+      ],
+      "dtype": "uint8",
+      "scale": 0.10331345349550247,
+      "zero_point": 203,
+      "quantized": true
+    },
+    "harness_normalization": {
+      "baked_into": "stem conv",
+      "mean": [
+        0.48500001430511475,
+        0.4560000002384186,
+        0.4059999883174896
+      ],
+      "std": [
+        0.2290000021457672,
+        0.2240000069141388,
+        0.22499999403953552
+      ],
+      "caller_contract": "pass pixel-space [0,1] tensors, unnormalized"
+    },
+    "gradients": false,
+    "libedgetpu": "libedgetpu.so.1",
+    "runtime_version": "BuildLabel(COMPILER=13.3.0,DATE=redacted,TIME=redacted), RuntimeVersion(14)",
+    "devices": [
+      {
+        "type": "APEX_USB",
+        "path": "/sys/bus/usb/devices/2-3.1"
+      }
+    ],
+    "delegated_ops": [
+      "edgetpu-custom-op",
+      "DELEGATE"
+    ]
+  },
+  "environment": {
+    "python": "/tmp/tpu_rt/bin/python",
+    "torch": "2.15.0+cu132",
+    "cuda": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+    "host": "Precision",
+    "date": "2026-11-05T21:24:43"
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 3,
+      "robust_correct": 77,
+      "robust_accuracy_pct": 77.0,
+      "attack_success_pct": 3.750000238418579,
+      "common_clean_n": 75,
+      "common_clean_fooled": 2,
+      "common_clean_success_pct": 2.6666667461395264,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0.0,
+      "fp32_fooled": 5,
+      "fp32_attack_success_pct": 6.25
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 28,
+      "robust_correct": 52,
+      "robust_accuracy_pct": 52.0,
+      "attack_success_pct": 35.0,
+      "common_clean_n": 75,
+      "common_clean_fooled": 23,
+      "common_clean_success_pct": 30.666667938232422,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 14.749524593353271,
+      "fp32_fooled": 39,
+      "fp32_attack_success_pct": 48.75
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 45,
+      "robust_correct": 35,
+      "robust_accuracy_pct": 35.0,
+      "attack_success_pct": 56.25,
+      "common_clean_n": 75,
+      "common_clean_fooled": 40,
+      "common_clean_success_pct": 53.333335876464844,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 222.27570819854736,
+      "fp32_fooled": 61,
+      "fp32_attack_success_pct": 76.25
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 1,
+      "robust_correct": 79,
+      "robust_accuracy_pct": 79.0,
+      "attack_success_pct": 1.25,
+      "common_clean_n": 75,
+      "common_clean_fooled": 1,
+      "common_clean_success_pct": 1.3333333730697632,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0.0,
+      "fp32_fooled": 5,
+      "fp32_attack_success_pct": 6.25
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 33,
+      "robust_correct": 47,
+      "robust_accuracy_pct": 47.0,
+      "attack_success_pct": 41.25,
+      "common_clean_n": 75,
+      "common_clean_fooled": 28,
+      "common_clean_success_pct": 37.33333206176758,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 14.63834834098816,
+      "fp32_fooled": 40,
+      "fp32_attack_success_pct": 50.0
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 57,
+      "robust_correct": 23,
+      "robust_accuracy_pct": 23.0,
+      "attack_success_pct": 71.25,
+      "common_clean_n": 75,
+      "common_clean_fooled": 52,
+      "common_clean_success_pct": 69.33333587646484,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 222.3289918899536,
+      "fp32_fooled": 69,
+      "fp32_attack_success_pct": 86.25
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 2,
+      "robust_correct": 78,
+      "robust_accuracy_pct": 78.0,
+      "attack_success_pct": 2.5,
+      "common_clean_n": 75,
+      "common_clean_fooled": 1,
+      "common_clean_success_pct": 1.3333333730697632,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0.0,
+      "fp32_fooled": 5,
+      "fp32_attack_success_pct": 6.25
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 36,
+      "robust_correct": 44,
+      "robust_accuracy_pct": 44.0,
+      "attack_success_pct": 45.0,
+      "common_clean_n": 75,
+      "common_clean_fooled": 31,
+      "common_clean_success_pct": 41.33333206176758,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 14.589565515518188,
+      "fp32_fooled": 38,
+      "fp32_attack_success_pct": 47.5
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 66,
+      "robust_correct": 14,
+      "robust_accuracy_pct": 14.0,
+      "attack_success_pct": 82.5,
+      "common_clean_n": 75,
+      "common_clean_fooled": 61,
+      "common_clean_success_pct": 81.33333587646484,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 222.4371693134308,
+      "fp32_fooled": 76,
+      "fp32_attack_success_pct": 95.0
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 3,
+      "robust_correct": 77,
+      "robust_accuracy_pct": 77.0,
+      "attack_success_pct": 3.750000238418579,
+      "common_clean_n": 75,
+      "common_clean_fooled": 2,
+      "common_clean_success_pct": 2.6666667461395264,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0.0,
+      "fp32_fooled": 7,
+      "fp32_attack_success_pct": 8.75
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 35,
+      "robust_correct": 45,
+      "robust_accuracy_pct": 45.0,
+      "attack_success_pct": 43.75,
+      "common_clean_n": 75,
+      "common_clean_fooled": 30,
+      "common_clean_success_pct": 40.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 14.621257543563843,
+      "fp32_fooled": 38,
+      "fp32_attack_success_pct": 47.5
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 79,
+      "robust_correct": 1,
+      "robust_accuracy_pct": 1.0,
+      "attack_success_pct": 98.75,
+      "common_clean_n": 75,
+      "common_clean_fooled": 74,
+      "common_clean_success_pct": 98.66667175292969,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 222.76035451889038,
+      "fp32_fooled": 79,
+      "fp32_attack_success_pct": 98.75
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 21,
+      "robust_correct": 59,
+      "robust_accuracy_pct": 58.999996185302734,
+      "attack_success_pct": 26.249998092651367,
+      "common_clean_n": 75,
+      "common_clean_fooled": 17,
+      "common_clean_success_pct": 22.666667938232422,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 1400.7045080661774,
+      "queries": {
+        "max": 500,
+        "mean": 306.989990234375
+      },
+      "fp32_fooled": 4,
+      "fp32_attack_success_pct": 5.0,
+      "query_trace": [
+        {
+          "query_budget": 50,
+          "fooled": 14,
+          "eligible": 80
+        },
+        {
+          "query_budget": 100,
+          "fooled": 16,
+          "eligible": 80
+        },
+        {
+          "query_budget": 250,
+          "fooled": 20,
+          "eligible": 80
+        },
+        {
+          "query_budget": 500,
+          "fooled": 21,
+          "eligible": 80
+        }
+      ]
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 31,
+      "robust_correct": 49,
+      "robust_accuracy_pct": 49.0,
+      "attack_success_pct": 38.75,
+      "common_clean_n": 75,
+      "common_clean_fooled": 26,
+      "common_clean_success_pct": 34.66666793823242,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 1154.4384276866913,
+      "queries": {
+        "max": 500,
+        "mean": 253.77999877929688
+      },
+      "fp32_fooled": 8,
+      "fp32_attack_success_pct": 10.0,
+      "query_trace": [
+        {
+          "query_budget": 50,
+          "fooled": 25,
+          "eligible": 80
+        },
+        {
+          "query_budget": 100,
+          "fooled": 27,
+          "eligible": 80
+        },
+        {
+          "query_budget": 250,
+          "fooled": 31,
+          "eligible": 80
+        },
+        {
+          "query_budget": 500,
+          "fooled": 31,
+          "eligible": 80
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "elapsed_seconds": 3571.5148718357086,
+  "last_latency_ms": 44.884809001814574,
+  "n_tpu_inferences": 75977
+}

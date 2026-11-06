@@ -1,0 +1,50 @@
+{
+  "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/notebook/resnetv2_50.onnx",
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "population": "100 retained Imagenette images, resize 232, center crop 224, ImageNet normalization",
+  "source_clean_correct": 81,
+  "device_clean_correct": 79,
+  "source_device_top1_agreement": 85,
+  "source_device_mean_per_image_pearson": 0.9452690508621439,
+  "reconstructed_timm_initializer_tensors": 251,
+  "reconstructed_timm_onnx_max_abs_diff_first_10": 1.1444091796875e-05,
+  "square_paired": {
+    "4.0": {
+      "n": 73,
+      "float_evaded": 17,
+      "device_evaded": 13,
+      "discordant": [
+        9,
+        5
+      ],
+      "exact_mcnemar_p": 0.4239501953125
+    },
+    "8.0": {
+      "n": 73,
+      "float_evaded": 36,
+      "device_evaded": 23,
+      "discordant": [
+        16,
+        3
+      ],
+      "exact_mcnemar_p": 0.004425048828125
+    }
+  },
+  "retained_device_attack_union": {
+    "4.0": {
+      "eligible": 79,
+      "evaded": 28,
+      "success_pct": 35.44303797468354
+    },
+    "8.0": {
+      "eligible": 79,
+      "evaded": 40,
+      "success_pct": 50.63291139240506
+    }
+  },
+  "limitations": [
+    "No new board inference or attack was performed.",
+    "Local source artifacts and retained device logits do not prove a hash-linked source-to-board binary chain.",
+    "Clean output agreement does not establish gradient fidelity or robustness."
+  ]
+}

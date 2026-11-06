@@ -10,6 +10,7 @@ below with the intended account or organization; use a new empty destination.
 cd ~/QA/model-weights
 export PATH="$(git rev-parse --absolute-git-dir)/tools/bin:$PATH"
 sha256sum --check SHA256SUMS
+sha256sum --check docs/reports/SHA256SUMS
 git lfs fsck
 git status --short
 ```
@@ -58,9 +59,10 @@ hf upload NAMESPACE/model-weights . . --repo-type model \
 ```
 
 `README.md` is already a Hub model card with image-classification metadata. The
-allowlist sends weights and documentation and excludes the local `.git` directory
-and its tooling. Verify that the remote file inventory and checksums match the
-local manifest. Repeat `hf upload` after each committed update; it uploads file
+allowlist sends weights, documentation and the complete `docs/reports/` archive,
+including figures and compact result evidence. It excludes the local `.git`
+directory and its tooling. Verify both the weight and report checksum ledgers
+against the uploaded files. Repeat `hf upload` after each committed update; it uploads file
 changes but does **not** mirror local Git commit IDs or history. A Hub upload also
 does not automatically remove remotely retained files that were deleted locally;
 review such removals separately.

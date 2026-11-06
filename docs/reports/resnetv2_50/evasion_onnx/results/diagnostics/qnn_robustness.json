@@ -1,0 +1,431 @@
+{
+  "scope": "Recorded outcomes on 78 shared clean-correct images; input-grid inspection uses saved model artifacts.",
+  "comparisons": [
+    {
+      "model": "qnn_htp_v1",
+      "label": "QNN HTP \u00b7 V1",
+      "float_reference": "pytorch_fp32_v1_resize232",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 78,
+      "baseline_fooled": 78,
+      "baseline_asr_pct": 100.0,
+      "best_recorded_fooled": 78,
+      "best_recorded_asr_pct": 100.0,
+      "additional_survivor_check_recorded": false,
+      "baseline_float_minus_quantized_pp": 0.0
+    },
+    {
+      "model": "pytorch_int8_v2",
+      "label": "PyTorch FBGEMM \u00b7 V2",
+      "float_reference": "pytorch_fp32_parent",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 71,
+      "baseline_fooled": 57,
+      "baseline_asr_pct": 73.07692307692308,
+      "best_recorded_fooled": 67,
+      "best_recorded_asr_pct": 85.8974358974359,
+      "additional_survivor_check_recorded": true,
+      "baseline_float_minus_quantized_pp": 17.948717948717942
+    },
+    {
+      "model": "onnx_int8_ort_qop_v2",
+      "label": "ORT QOperator \u00b7 V2",
+      "float_reference": "onnx_fp32_v2",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 74,
+      "baseline_fooled": 61,
+      "baseline_asr_pct": 78.2051282051282,
+      "best_recorded_fooled": 74,
+      "best_recorded_asr_pct": 94.87179487179488,
+      "additional_survivor_check_recorded": true,
+      "baseline_float_minus_quantized_pp": 16.66666666666667
+    },
+    {
+      "model": "onnx_int8_ptq_ort",
+      "label": "TensorRT Q/DQ \u00b7 V2",
+      "float_reference": "onnx_fp32_v2",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 74,
+      "baseline_fooled": 50,
+      "baseline_asr_pct": 64.1025641025641,
+      "best_recorded_fooled": 62,
+      "best_recorded_asr_pct": 79.48717948717949,
+      "additional_survivor_check_recorded": true,
+      "baseline_float_minus_quantized_pp": 30.769230769230774
+    },
+    {
+      "model": "onnx_int8_dq_ort",
+      "label": "TensorRT compressed Q/DQ \u00b7 V2",
+      "float_reference": "onnx_fp32_v2",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 74,
+      "baseline_fooled": 49,
+      "baseline_asr_pct": 62.82051282051282,
+      "best_recorded_fooled": 62,
+      "best_recorded_asr_pct": 79.48717948717949,
+      "additional_survivor_check_recorded": true,
+      "baseline_float_minus_quantized_pp": 32.05128205128206
+    },
+    {
+      "model": "onnx_torchptq_v2_bnfused",
+      "label": "TensorRT BN-folded \u00b7 V2",
+      "float_reference": "onnx_fp32_v2",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 74,
+      "baseline_fooled": 50,
+      "baseline_asr_pct": 64.1025641025641,
+      "best_recorded_fooled": 62,
+      "best_recorded_asr_pct": 79.48717948717949,
+      "additional_survivor_check_recorded": true,
+      "baseline_float_minus_quantized_pp": 30.769230769230774
+    },
+    {
+      "model": "onnx_torchptq_v2_residual",
+      "label": "TensorRT unfused-BN \u00b7 V2",
+      "float_reference": "onnx_fp32_v2",
+      "shared_clean_n": 78,
+      "float_baseline_fooled": 74,
+      "baseline_fooled": 50,
+      "baseline_asr_pct": 64.1025641025641,
+      "best_recorded_fooled": 62,
+      "best_recorded_asr_pct": 79.48717948717949,
+      "additional_survivor_check_recorded": true,
+      "baseline_float_minus_quantized_pp": 30.769230769230774
+    }
+  ],
+  "input_quantizers": {
+    "qnn_htp_v1": {
+      "scale": 0.01865844801068306,
+      "zero_point": 114,
+      "dtype": "uint8",
+      "pixel_steps_255": [
+        1.0895600715838374,
+        1.0657705503702164,
+        1.0705284546129408
+      ],
+      "output_scale": 0.16778522729873657,
+      "internal_quantizer_inventory": "Not available in the saved context-binary metadata."
+    },
+    "pytorch_int8_v2": {
+      "scale": 0.03740893304347992,
+      "zero_point": 57,
+      "dtype": "uint8",
+      "pixel_steps_255": [
+        2.18449464507401,
+        2.1367982554435727,
+        2.1463375333696604
+      ],
+      "output_scale": 0.10589570552110672
+    },
+    "onnx_int8_ort_qop_v2": {
+      "scale": 0.01865844801068306,
+      "zero_point": 114,
+      "dtype": "uint8",
+      "pixel_steps_255": [
+        1.0895600715838374,
+        1.0657705503702164,
+        1.0705284546129408
+      ],
+      "output_op": "DequantizeLinear",
+      "output_scale": 0.051904141902923584
+    },
+    "onnx_int8_ptq_ort": {
+      "scale": 0.020787402987480164,
+      "zero_point": 0,
+      "dtype": "int8",
+      "pixel_steps_255": [
+        1.2138803974539043,
+        1.187376458644867,
+        1.1926772464066744
+      ],
+      "output_op": "Gemm",
+      "output_scale": null
+    },
+    "onnx_int8_dq_ort": {
+      "scale": 0.020787402987480164,
+      "zero_point": 0,
+      "dtype": "int8",
+      "pixel_steps_255": [
+        1.2138803974539043,
+        1.187376458644867,
+        1.1926772464066744
+      ],
+      "output_op": "Gemm",
+      "output_scale": null
+    },
+    "onnx_torchptq_v2_bnfused": {
+      "scale": 0.020787402987480164,
+      "zero_point": 0,
+      "dtype": "int8",
+      "pixel_steps_255": [
+        1.2138803974539043,
+        1.187376458644867,
+        1.1926772464066744
+      ],
+      "output_op": "Gemm",
+      "output_scale": null
+    },
+    "onnx_torchptq_v2_residual": {
+      "scale": 0.020787402987480164,
+      "zero_point": 0,
+      "dtype": "int8",
+      "pixel_steps_255": [
+        1.2138803974539043,
+        1.187376458644867,
+        1.1926772464066744
+      ],
+      "output_op": "Gemm",
+      "output_scale": null
+    }
+  },
+  "replica_checks": {
+    "onnx_int8_ort_qop_v2": {
+      "native_runtime_autograd": false,
+      "method": "BPDA: ONNX graph replica with straight-through quantization",
+      "replica_clean_agreement_pct": 98.0,
+      "mean_absolute_logit_difference": 0.026159686967730522,
+      "max_absolute_logit_difference": 0.622849702835083,
+      "exact_runtime_forward_verified": true,
+      "probe_all_finite": true,
+      "probe_zero_gradient_images": 0,
+      "probe_gradient_l1_min": 52.48871994018555,
+      "replica_dynamic_ops": {
+        "QuantizeLinear": 2,
+        "QLinearConv": 53,
+        "MaxPool": 1,
+        "QLinearAdd": 16,
+        "QLinearGlobalAveragePool": 1,
+        "DequantizeLinear": 2,
+        "Flatten": 1,
+        "QGemm": 1
+      }
+    },
+    "onnx_int8_ptq_ort": {
+      "native_runtime_autograd": false,
+      "method": "BPDA: ONNX graph replica with straight-through quantization",
+      "replica_clean_agreement_pct": 100.0,
+      "mean_absolute_logit_difference": 0.045135267078876495,
+      "max_absolute_logit_difference": 0.999072790145874,
+      "exact_runtime_forward_verified": true,
+      "probe_all_finite": true,
+      "probe_zero_gradient_images": 0,
+      "probe_gradient_l1_min": 65.31378173828125,
+      "replica_dynamic_ops": {
+        "QuantizeLinear": 55,
+        "DequantizeLinear": 55,
+        "Conv": 53,
+        "Relu": 49,
+        "MaxPool": 1,
+        "Add": 16,
+        "GlobalAveragePool": 1,
+        "Flatten": 1,
+        "Gemm": 1
+      }
+    },
+    "onnx_int8_dq_ort": {
+      "native_runtime_autograd": false,
+      "method": "BPDA: ONNX graph replica with straight-through quantization",
+      "replica_clean_agreement_pct": 100.0,
+      "mean_absolute_logit_difference": 0.04506572335958481,
+      "max_absolute_logit_difference": 0.999072790145874,
+      "exact_runtime_forward_verified": true,
+      "probe_all_finite": true,
+      "probe_zero_gradient_images": 0,
+      "probe_gradient_l1_min": 65.31378173828125,
+      "replica_dynamic_ops": {
+        "QuantizeLinear": 55,
+        "DequantizeLinear": 55,
+        "Conv": 53,
+        "Relu": 49,
+        "MaxPool": 1,
+        "Add": 16,
+        "GlobalAveragePool": 1,
+        "Flatten": 1,
+        "Gemm": 1
+      }
+    },
+    "onnx_torchptq_v2_bnfused": {
+      "native_runtime_autograd": false,
+      "method": "BPDA: ONNX graph replica with straight-through quantization",
+      "replica_clean_agreement_pct": 96.0,
+      "mean_absolute_logit_difference": 0.052360501140356064,
+      "max_absolute_logit_difference": 0.9970384836196899,
+      "exact_runtime_forward_verified": true,
+      "probe_all_finite": true,
+      "probe_zero_gradient_images": 0,
+      "probe_gradient_l1_min": 60.41542434692383,
+      "replica_dynamic_ops": {
+        "QuantizeLinear": 72,
+        "DequantizeLinear": 72,
+        "Conv": 53,
+        "BatchNormalization": 1,
+        "Relu": 49,
+        "MaxPool": 1,
+        "Cast": 16,
+        "Add": 16,
+        "GlobalAveragePool": 1,
+        "Flatten": 1,
+        "Gemm": 1
+      }
+    },
+    "onnx_torchptq_v2_residual": {
+      "native_runtime_autograd": false,
+      "method": "BPDA: ONNX graph replica with straight-through quantization",
+      "replica_clean_agreement_pct": 97.0,
+      "mean_absolute_logit_difference": 0.05482601746916771,
+      "max_absolute_logit_difference": 1.0064362287521362,
+      "exact_runtime_forward_verified": true,
+      "probe_all_finite": true,
+      "probe_zero_gradient_images": 0,
+      "probe_gradient_l1_min": 67.6363296508789,
+      "replica_dynamic_ops": {
+        "QuantizeLinear": 72,
+        "DequantizeLinear": 72,
+        "Conv": 53,
+        "BatchNormalization": 53,
+        "Relu": 49,
+        "MaxPool": 1,
+        "Cast": 16,
+        "Add": 16,
+        "GlobalAveragePool": 1,
+        "Flatten": 1,
+        "Gemm": 1
+      }
+    }
+  },
+  "qnn_pgd_transfer": [
+    {
+      "source": "fp32_v1",
+      "target": "npu",
+      "attack": "pgd",
+      "eps_255": 1.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.5
+    },
+    {
+      "source": "npu",
+      "target": "fp32_v1",
+      "attack": "pgd",
+      "eps_255": 1.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.2
+    },
+    {
+      "source": "fp32_v1",
+      "target": "npu",
+      "attack": "pgd",
+      "eps_255": 2.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.5
+    },
+    {
+      "source": "npu",
+      "target": "fp32_v1",
+      "attack": "pgd",
+      "eps_255": 2.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.2
+    },
+    {
+      "source": "fp32_v1",
+      "target": "npu",
+      "attack": "pgd",
+      "eps_255": 4.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.5
+    },
+    {
+      "source": "npu",
+      "target": "fp32_v1",
+      "attack": "pgd",
+      "eps_255": 4.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.2
+    },
+    {
+      "source": "fp32_v1",
+      "target": "npu",
+      "attack": "pgd",
+      "eps_255": 8.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.6
+    },
+    {
+      "source": "npu",
+      "target": "fp32_v1",
+      "attack": "pgd",
+      "eps_255": 8.0,
+      "n": 100,
+      "clean_correct": 89,
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0.0,
+      "fooled": 89,
+      "attack_success_pct": 100.0,
+      "seconds": 0.2
+    }
+  ],
+  "limitations": [
+    "Same input grid does not mean the same weights, internal activation encodings or decision boundary.",
+    "Paired baseline differences are descriptive, not causal contributions of checkpoint versus quantization.",
+    "Clean replica agreement does not measure adversarial gradient fidelity.",
+    "QNN internal activation/weight encodings and calibration manifest are absent from the inspected deployment package.",
+    "Residual attack survival is not certified robustness; no new attacks were run."
+  ],
+  "research_sources": [
+    "https://arxiv.org/abs/1802.00420",
+    "https://arxiv.org/abs/2003.13511",
+    "https://qualcomm.github.io/aimet-pages/releases/2.35.0/techniques/encoding_spec.html"
+  ],
+  "source_sha256": {
+    "evasion_onnx/scripts/analyze_qnn_robustness.py": "0893702fb765ab851b2b269236c1c3b9c36f6b7a10547a048e120c4b58b786f7",
+    "evasion_onnx/results/comparisons/qnn.json": "3d4ce4b54accd02dbd6181b7feb717161228e6d031c1a6ebec27583b6bd69edc",
+    "evasion/results/qnn/summary.json": "043a2f32c6aaa58902699bc128569b2603e2bf46045442e96b9a4f13bf2a139f",
+    "evasion/results/validation/qnn_deployment_package.json": "797a12cc00be748b443f042f12545364bfa6e4ec5446ec970702ff4e434c4fe6",
+    "Pytorch/resnet50_fbgemm-23753f79.pth": "23753f790ed53f950d72eac5aee7046ebdfbb6db96c141e3d6ff2f65c529f7ca",
+    "quantize/artifacts/int8_ort_qop_v2.onnx": "ca70a0992c2ae990bfc73d2e84b9e939604989e6a420fbeeeab24392d46449db",
+    "evasion_onnx/results/int8_ort_qop_v2/summary.json": "1186937e2bbc6e3393956a4ccf2317dc1dff83ab166d08686dcb5f3bfa0f15b0",
+    "quantize/artifacts/int8_ptq_ort.onnx": "429c22e49ec4a5a96d631183d74a5e090acbb28cabb6806b528cc969cc820763",
+    "evasion_onnx/results/int8_ptq_ort/summary.json": "df80d546a7d7f580116f802565a0c0d3a7ea308a9d7f8f32b5292b024b1bdf50",
+    "quantize/artifacts/int8_dq_ort.onnx": "650c4ba5006b493e39c7a2ba97d9e76c80363a87f3385e5ae49dbb02c5576174",
+    "evasion_onnx/results/int8_dq_ort/summary.json": "5186e16709c0db9bc0be96536599c7cefe4b371aeb712209b83d1a22efa31959",
+    "quantize/artifacts/torchptq_v2_bnfused.onnx": "18b7d8c6b60c0f328a573d1bf28bf751c26d480a0154cda79eac1b2f7e8809c1",
+    "evasion_onnx/results/torchptq_v2_bnfused/summary.json": "0114d71f424bae5439908ae8c5641e0f1e7bbacf176a6525297b5d83a3400c63",
+    "quantize/artifacts/torchptq_v2_residual.onnx": "edb2147307a0aa815c1e615dc5a19852b564276b9912d3e73c8a323f19fd1fde",
+    "evasion_onnx/results/torchptq_v2_residual/summary.json": "4d65fae60f2dc6be5d3ad097260ba5d6ce484b565b748c83fd0b17830a196adc"
+  }
+}
