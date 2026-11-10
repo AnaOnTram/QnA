@@ -1,0 +1,4 @@
+{
+  "graphs": [{"graph_names": ["mobilenetv2_fp32"], "vtcm_mb": 2}],
+  "devices": [{"dsp_arch": "v68", "soc_id": 35}]
+}

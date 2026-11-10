@@ -1,0 +1,49 @@
+{
+  "eps_255": 1,
+  "primary_survivors": [
+    53
+  ],
+  "query_budget_per_survivor": 5000,
+  "seed": 20261110,
+  "additional_fooled": 0,
+  "complete": true,
+  "rounded_additional_fooled": 0,
+  "query_counts": [
+    5000
+  ],
+  "trace": [
+    {
+      "query_budget": 50,
+      "fooled": 0,
+      "eligible": 1
+    },
+    {
+      "query_budget": 100,
+      "fooled": 0,
+      "eligible": 1
+    },
+    {
+      "query_budget": 250,
+      "fooled": 0,
+      "eligible": 1
+    },
+    {
+      "query_budget": 500,
+      "fooled": 0,
+      "eligible": 1
+    },
+    {
+      "query_budget": 1000,
+      "fooled": 0,
+      "eligible": 1
+    },
+    {
+      "query_budget": 5000,
+      "fooled": 0,
+      "eligible": 1
+    }
+  ],
+  "max_linf_255": 1.0000075101852417,
+  "seconds": 41.95618200302124,
+  "context_sha256": "c7377092adbacd327409e421f867981db49e8cf0bea4013ce72b376cbb3ec6bb"
+}

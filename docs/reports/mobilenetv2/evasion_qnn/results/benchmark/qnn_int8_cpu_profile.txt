@@ -1,0 +1,58 @@
+Input Log File Location: /home/ross/mobilenetv2_qairt/6490_v242/qnn_int8_cpu/qnn-profiling-data_0.log
+Log File Created: Tue Nov 10 14:09:34 2026
+Time Scale: 1e-06
+Epoch Timestamp: 1794319774658115 Steady Clock Timestamp: 1252238243
+Generated using: 
+qnn-profile-viewer: v2.42.0.251225135753_193295
+qnn-net-run: v2.42.0.251225135753_193295
+Backend: v2.42.0.251225135753_193295
+
+Qnn Init/Prepare/Finalize/De-Init/Execute/Lib-Load Statistics:
+------------------------------------------------------------
+Init Stats:
+-----------
+    NetRun: 15020 us
+
+Compose Graphs Stats:
+--------------
+    NetRun: 12724 us
+
+Finalize Stats:
+---------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 2292 us
+    Backend (GRAPH_FINALIZE): 2287 us
+
+De-Init Stats:
+--------------
+    NetRun: 1197 us
+    Backend (null): 1 us
+
+Execute Stats (Overall):
+------------------------
+    NetRun IPS (includes IO and misc. time): 87.8709 inf/sec 
+
+Execute Stats (Average):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 10500 us
+    Backend (GRAPH_EXECUTE): 10480 us
+
+Execute Stats (Min):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 9858 us
+    Backend (GRAPH_EXECUTE): 9837 us
+
+Execute Stats (Max):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 26244 us
+    Backend (GRAPH_EXECUTE): 26225 us
+

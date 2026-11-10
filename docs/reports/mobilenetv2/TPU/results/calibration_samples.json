@@ -1,0 +1,802 @@
+[
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01440764/n01440764_10043.JPEG",
+    "sha256": "2b946ac50590b7bcfb7d56581f3ddb164d7e0f5d3337a9cda95fed5968728043"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01443537/n01443537_10092.JPEG",
+    "sha256": "9da67677bef0729d4043a61f91f3ebc1d686257696e935c766e2734d408a3fcb"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01484850/n01484850_1199.JPEG",
+    "sha256": "11cdb6742d2e0adc194e88c2350e8c636928203854ab4594764d474810df1972"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01491361/n01491361_10000.JPEG",
+    "sha256": "635ea7fff9d283b0b126a50bfba1b74b8091ff5ca7f415ff5765f96d37236e07"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01494475/n01494475_10931.JPEG",
+    "sha256": "9a52ab535db7400da2744ff4f7d491bc7ee9f78d104cf266f66101af602b1087"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01496331/n01496331_11594.JPEG",
+    "sha256": "f9517a133b9c95d643f2fdac49b1a0b3dc42149c479e1684ffb032940795a720"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01498041/n01498041_10307.JPEG",
+    "sha256": "a0c890201f9501a97eb0fe46b6267f97a960d9e964452b7f14d74c5875fce35b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01514668/n01514668_12044.JPEG",
+    "sha256": "931209af46cb5306b59fac049577d434cb55a4d0100127d4fc1a5d0943cf6d56"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01514859/n01514859_10560.JPEG",
+    "sha256": "5e73c14d5f3d88092d8b2c962b5e54aa2f5271baaf5d9c49d4b51d79f20a8d45"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01518878/n01518878_11113.JPEG",
+    "sha256": "c66cc5865fce0504267bcc24c3c84d282bf32a14feb21b5935dc636f756dcb73"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01530575/n01530575_10050.JPEG",
+    "sha256": "68f92e591c6cbbf72a477db8ea974c22db0f2b3c17e99ec55653a2421ec146dc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01531178/n01531178_10178.JPEG",
+    "sha256": "9809f30ab3827de962632a92c5cfb41c1fe5629a702a6ce453771002fde07614"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01532829/n01532829_10259.JPEG",
+    "sha256": "561b05ff2fd756cdd8f3c7c76de67b5f21fe19be7e1f647ea1aac45c8ee13b77"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01534433/n01534433_10054.JPEG",
+    "sha256": "1d5abee5f293553600433113788c84718704836f602f275ebdcb11b7e5cf7b52"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01537544/n01537544_10146.JPEG",
+    "sha256": "645e3f28c3c3cc6f991f9a18bd35a8e280eabffd87058792f87097e94aab1eff"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01558993/n01558993_11223.JPEG",
+    "sha256": "f802b04bfb69afa4d1f3958ebdd82cd45299537038dfd13937391a4dfdf4a400"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01560419/n01560419_1059.JPEG",
+    "sha256": "4450b9c825dc2307bf5cde526ab3f28427118885cac4202ed65af5fea648785c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01580077/n01580077_10340.JPEG",
+    "sha256": "9439789d87b02ecc1844180fd56e4224a2abbf899919284a3c2fa69ca73df131"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01582220/n01582220_10028.JPEG",
+    "sha256": "3344ef624027275370740e780dd48960ee143af0fc9e8a6915ddef8bb7f5b510"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01592084/n01592084_1050.JPEG",
+    "sha256": "16c11596cb0ac0fe20b3e0a8d1d4cd1324a736a0d33da8aa3aebe088615f65c6"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01601694/n01601694_1100.JPEG",
+    "sha256": "be0c728264ecdcfe146ce237ad9e1b2fbe2069d07ea6dfaa0a4b08480a36581d"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01608432/n01608432_11447.JPEG",
+    "sha256": "9d04a1985cff5222008cb51a9b6638fdcb584697b7624e2c9d0c64bfda9b5172"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01614925/n01614925_11265.JPEG",
+    "sha256": "addf9d8d1a375d5aee73f8a5d85524d3d98403ca7f220a6c46ac25c51c5254ee"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01616318/n01616318_118.JPEG",
+    "sha256": "883b5943edf8421be2e49ce77977f0d5439c405ac7651e0cd1181c1b5396b25f"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01622779/n01622779_1134.JPEG",
+    "sha256": "13e9c13f0cfef7c736c1f03c57291a5c5d87db944b7c0ee704643a78440d2734"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01629819/n01629819_10836.JPEG",
+    "sha256": "5a132bf78aaa3e24da9c3954ced8af32009084000fcc51c9b0f911ae336f3a65"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01630670/n01630670_10283.JPEG",
+    "sha256": "77e4e6ebec9126f3c82c99a97e8ed63b653b73bde513dbd4594aaf3aa8f58856"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01631663/n01631663_10434.JPEG",
+    "sha256": "d49b12ae0273577bd2a7e872e04e38848b9d5f02d6894105eed95ac687c1e978"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01632458/n01632458_1030.JPEG",
+    "sha256": "3d06b48a89aa15c0612892fffaa8379ad6b0e5d673d4c0a9bf5f22c64145c622"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01632777/n01632777_10139.JPEG",
+    "sha256": "635905315e8293c540bd15241aa8c6ebedfaf6331ea5d99ec25f35e85ff84ae9"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01641577/n01641577_12252.JPEG",
+    "sha256": "d41f68ad79dd2e7232311e0bd462bcf3601d78ff0b4bf3def8e94e6058bce5aa"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01644373/n01644373_10807.JPEG",
+    "sha256": "00ce581a4f4731b828854c9050af118a312f253eda5315c53b593a8061756e4c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01644900/n01644900_11123.JPEG",
+    "sha256": "51ad764b7dc1d94a61230f641d385ddf5be3223e2ca97abf67a3e4c04c21c767"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01664065/n01664065_1243.JPEG",
+    "sha256": "3e6c389f1dcf559733e3109e99fa413c357fb8a46e0a14ca994b23b3a051c4d3"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01665541/n01665541_10230.JPEG",
+    "sha256": "dfc986415d46d7ad080a3373bcebe72034c2ae4d137802e16e17d83a6c389efe"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01667114/n01667114_10219.JPEG",
+    "sha256": "38ce769df556a792e8c26e828be3d80d427d6631c4cf69b41cf1524a5b7136bf"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01667778/n01667778_11505.JPEG",
+    "sha256": "f10a32cf367ac849445aeae087e82cbefca46a8938de79bf3b6e9a6ce8ef88c7"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01669191/n01669191_1457.JPEG",
+    "sha256": "e542340fc3d9c35286ad7641211e37657cd84b3b26d5dc7704c718d67c9571d5"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01675722/n01675722_10700.JPEG",
+    "sha256": "bce29e4b8cf06406d2a3b8f92dfd3fc87f37291613e359288a385418665259dc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01677366/n01677366_10388.JPEG",
+    "sha256": "20bae443d2eca3fb24642bd8c85a75f95f17247e9b4b6eb1de957d78bfe96423"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01682714/n01682714_10219.JPEG",
+    "sha256": "c93da31b1f8a792cdae8ba00fdb9373746eaee3ea6ed0d444d85772f02ad15b7"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01685808/n01685808_1008.JPEG",
+    "sha256": "a5c6ea6ab4560ddb66d9f8475da01c1c45666954e5fffc98169a228eceaa9edc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01687978/n01687978_10641.JPEG",
+    "sha256": "3c0da7401b64c42dc762ceb485bb0f0b31c927de7ca4cacf7a51541904c1bd71"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01688243/n01688243_10090.JPEG",
+    "sha256": "283ff4e9bb18dac89ff8014c6a58f4a27d0df0779f4fbc713d0f12123b5e20ae"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01689811/n01689811_11357.JPEG",
+    "sha256": "cb2095b5a72c0f293302bf266f41a6e1f7445dd7746925f7d9dc6a5d5f20ac79"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01692333/n01692333_10166.JPEG",
+    "sha256": "5f9428409ce573ad1bc7bfd9440c82ecbb65b8bf4a849698d07c3e1258ceca89"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01693334/n01693334_10102.JPEG",
+    "sha256": "fdecd3b16c057417247dbe274f6abde388e75b82e10ae14a8a4e988b05e6d2fe"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01694178/n01694178_10247.JPEG",
+    "sha256": "734938731438d6af146f4ea4af64da817ee28605117e443a4b4ea58260913632"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01695060/n01695060_10369.JPEG",
+    "sha256": "6dc4690fd0cfc2559c233ac19b4d8ad5c66a7a7076aa865b0e94b3560ce003d8"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01697457/n01697457_10610.JPEG",
+    "sha256": "102617571c55c07ac3ba5045da6d69b0b885220cc259a46d3b70b2e137a60779"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01698640/n01698640_10136.JPEG",
+    "sha256": "17665602318452451c4fb6d7a0ee00b44b6e98524c931a5653e4cd9bb6975a2c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01704323/n01704323_10136.JPEG",
+    "sha256": "4da2ed6b94a619942e870f5003fa4b3a617deee9ede75a81ed05c1372c4aacaa"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01728572/n01728572_10846.JPEG",
+    "sha256": "91372edc36efd6cfbbddf072d537dcdc2c3eb44fade264270d916711bb362332"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01728920/n01728920_10419.JPEG",
+    "sha256": "dcfa695b24997b024bf1572d2b9f4a31c309428267e016290e3b11c6a489220b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01729322/n01729322_11630.JPEG",
+    "sha256": "8d1907ce23701339272edb8494f0f7a47e1415ac5f968775736c904f34ee16f4"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01729977/n01729977_10241.JPEG",
+    "sha256": "b2a9f6febdb765257faf32521aaf815cdacd634850b4138bb64d9040e4bb4456"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01734418/n01734418_1011.JPEG",
+    "sha256": "7c9cb02cdca1de4cc67abcb3b9880324f06a7cf553ace183e6e4de8c23552b71"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01735189/n01735189_10662.JPEG",
+    "sha256": "949ea7efeebd31012aa15c26b090b26a9db0ac12e2caeaa8d462e6d98da8a34a"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01737021/n01737021_11912.JPEG",
+    "sha256": "e55b2c6542409727e6b59ac49d454ae03a8f9f4977a4afce15c2abf117044a50"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01739381/n01739381_1050.JPEG",
+    "sha256": "b85174fc887fb143646883d17637ebd8831e1f7ca4d3e6071fc34e01074fbd54"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01740131/n01740131_10830.JPEG",
+    "sha256": "cb5a3a95d156eaff789af6542e898d3feef775470c352d7f8d8145f1bf38497c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01742172/n01742172_10039.JPEG",
+    "sha256": "554c8dea5f4e062d25561b6a80862578fc41849c6c3781fe66b3845954f57db6"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01744401/n01744401_10908.JPEG",
+    "sha256": "9f634ea4b2de037189ce8a0695d4ea62ebe584cb35391681fdf8d5ddd815db00"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01748264/n01748264_1014.JPEG",
+    "sha256": "f6aa49e9fc7f545b2c9cd0821e49c06fcdec8100c983507c1cc75c65d5b1c67e"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01749939/n01749939_10820.JPEG",
+    "sha256": "ef78324df137f6e51d0ae979a9ebf20b3c70fde1e514d07e010c04c4653a70b3"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01751748/n01751748_13214.JPEG",
+    "sha256": "c4da249191a8193b438fa5785115c273fa16f203d0b5974adb56ba5a9ceea224"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01753488/n01753488_10466.JPEG",
+    "sha256": "fa0342d7752429737b7001af9deb45c0d34ec9fac0df2a6053438332b5b61b16"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01755581/n01755581_10012.JPEG",
+    "sha256": "f288406cd7ca9bd117c2b93c6f696a5a8e1a1cca1fe829a0c5912e0193cf6914"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01756291/n01756291_10414.JPEG",
+    "sha256": "66ca2f3669a7bb01da1a08ff7fd848dc8fb21cc95f8088ed0e9d70a255032973"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01768244/n01768244_10346.JPEG",
+    "sha256": "9cd17423f07daa9491884b474f51a7b6d51e67d54025fadc91a300475d7bdc38"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01770081/n01770081_10193.JPEG",
+    "sha256": "31f402d43be6f69c3c16d4288d2a512898587836c2d0ff41730d2f171cf38de0"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01770393/n01770393_10666.JPEG",
+    "sha256": "74162116722c1db9e384fad3038d7f66e2b2af003ce43d2024fc8b251a506fe7"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01773157/n01773157_10035.JPEG",
+    "sha256": "651a251162825ec2833a8515f91307ebfc9bf4fdc828533b3bf06ece57771cd4"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01773549/n01773549_1017.JPEG",
+    "sha256": "a1d28b17bdbcdc98f818f8c81679319ca992bb8a38e4be042377ad93a723ef61"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01773797/n01773797_1268.JPEG",
+    "sha256": "57fe68c5eb05e6b09703d73e379f3adb50eab5318139d735b442828b0d3b504c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01774384/n01774384_10693.JPEG",
+    "sha256": "43709a82b6f5f58c4d5301a50df61e4eed55a28464ebc680cbdeb3b365500aee"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01774750/n01774750_10026.JPEG",
+    "sha256": "c7be6bf1fcd62afdf9cfdc9267a89f9659255d6b14ed2ae1107feeea269b87bd"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01775062/n01775062_1040.JPEG",
+    "sha256": "e4d83d4c9c03e5cf8bcadde399b3a5f715235566d94d4d33d2fbc085951e9f04"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01776313/n01776313_10952.JPEG",
+    "sha256": "561eb9e53437b0216096241895fd35b87b3a9a01aa0d57f35f72ca2a2e3c8d64"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01784675/n01784675_10102.JPEG",
+    "sha256": "05ed795c3e0710331c885d8444212f27c9a1f3ca0d68a09c6d23d4a7d734a747"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01795545/n01795545_10484.JPEG",
+    "sha256": "6d073edcf538aa5959651ba3655a1664f05a4e8b2c2513a6c4a310c6371535ef"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01796340/n01796340_11430.JPEG",
+    "sha256": "1293e024945ea1dfa646a38585905e5e8b3582c92cbaa4aa368976915be4b2eb"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01797886/n01797886_10054.JPEG",
+    "sha256": "d63d99b5a4dd6b62f4569f38658be0dbf560ada4cbd5e25b53f5c75b3b560fb5"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01798484/n01798484_1010.JPEG",
+    "sha256": "9d9016e838c5824e739deb0490c2740d34082be4068bc4f5d1281f9c355b0aa8"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01806143/n01806143_11754.JPEG",
+    "sha256": "be791a80846035bccaf8787db033c5642780c0dcaafdeb52b24cb484fcc5bee2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01806567/n01806567_1067.JPEG",
+    "sha256": "609a4c479976bec005b68611224c46f8cc8646b78b82ab26fc7bf55dbbf17a12"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01807496/n01807496_10197.JPEG",
+    "sha256": "bde06d59266f6fad345f336062d7a9ddc9b307fafbe1df561f5c4ca701fa29ab"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01817953/n01817953_10070.JPEG",
+    "sha256": "2cfe308329c30d90c9400f8b0ab2a112591336827fb9fffc63c21a303d4277d8"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01818515/n01818515_10.JPEG",
+    "sha256": "1d71fa05f8411f3d36b6aa653de232c807cda1ed65d2ab6414dde687ce74905e"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01819313/n01819313_111.JPEG",
+    "sha256": "70aec1b1087a7249615fabec9bd44dfe95a372d471bf6c9001907e966585a40c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01820546/n01820546_1059.JPEG",
+    "sha256": "db64a9d79dfdcddfd4b07c7fd0142a284802708ce8dd86239ac74a4b3594dab2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01824575/n01824575_1956.JPEG",
+    "sha256": "ec8f4770010d855e6ac27869d06763fe9308fcf1501a80fcf8f8af3f3d2e8a7c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01828970/n01828970_10475.JPEG",
+    "sha256": "58150407320891dd6490e65110586c313a4aec5a5278beeae4bedf29bca0dba1"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01829413/n01829413_1138.JPEG",
+    "sha256": "3197585560945f0a4430b30764f53774c0d479b82b662e343fec251161174e0c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01833805/n01833805_1070.JPEG",
+    "sha256": "5b62e5f1db260cd94b6770c1243b5b718c3dccb866355df5d27caf237974fdfc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01843065/n01843065_10830.JPEG",
+    "sha256": "bde439bd30838b9b719ca2e020608cce6fc94e577abb3e6f0d4858c27941d008"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01843383/n01843383_10578.JPEG",
+    "sha256": "dded3b6e1ff9848e669eeba15e49138d5d2b05b689aa80483ed650db7c8ca51a"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01847000/n01847000_10361.JPEG",
+    "sha256": "effaaa14228d47c3e468cc91a9acd61a988a76e24e269b649221167096a4eaf0"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01855032/n01855032_1067.JPEG",
+    "sha256": "a21ed9e56a1398c104b670bb0b816876e937b56a567cabf96752812fcb2e0190"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01855672/n01855672_10102.JPEG",
+    "sha256": "d0dc4b67c7908211c0eccb06032804c8330776c1e5366ca0e006463d8e4ad3f8"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01860187/n01860187_12239.JPEG",
+    "sha256": "cf44e25d34da180cab77243b9323b75a20466d61e4434f182c063997ac1559b4"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01871265/n01871265_1027.JPEG",
+    "sha256": "763b4e7450e9f7f5f1451bf07e67afa55ff124b2fcb6150dff7b7204ef0bcecd"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01872401/n01872401_1010.JPEG",
+    "sha256": "eec6cc7710b73208b5be86ce9856174cf9e8deff824dd6f2d5f9ece491535d69"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01873310/n01873310_10066.JPEG",
+    "sha256": "3d139bffe83fb62220a4144a459267aa1455414c94bcb0ecb147342856dcd7b2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01877812/n01877812_10564.JPEG",
+    "sha256": "02b15fb311f2cf93a5d53fe71e8bda9a6690c960258a6dc63a483cee57be6b80"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01882714/n01882714_10051.JPEG",
+    "sha256": "e12cae16818838a725c27fc22b04a55d4ea71ed0eadb20cab507888cd9e4441b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01883070/n01883070_1368.JPEG",
+    "sha256": "2cb563357746ccc0eda93526b208bd89b394b9eee52b2e893e962aba1c62b1eb"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01910747/n01910747_10039.JPEG",
+    "sha256": "8c463288c97ec0c85717306ebd9e2711bce42d0be39f71a24709d2127b5574fd"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01914609/n01914609_11380.JPEG",
+    "sha256": "dc5d443b17137c9470b4a5ddae7cc6ae027b4f8eca3f3a850f4aa815435de2cc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01917289/n01917289_1131.JPEG",
+    "sha256": "459895570544c6657fdbb41c9c317fc8ece012fc16db1e3d12db77cb360715d0"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01924916/n01924916_10008.JPEG",
+    "sha256": "033807ecd6f93707608c2971cecd90c8f4f7a06fc38054843b9f51c37aaa783b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01930112/n01930112_10103.JPEG",
+    "sha256": "918383e0f4a3b015ad5687be68f696a4d52cd698a78b061ea32fc77ec5e632dd"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01943899/n01943899_10759.JPEG",
+    "sha256": "b95b07b2a05ae4dda7184ad714aa124a507318e814543c6fe96ebc1187c2901e"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01944390/n01944390_10537.JPEG",
+    "sha256": "da0d70a559972ae97228ccd55275b5c7dd69167b61c204753132a02002ad93d1"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01945685/n01945685_10889.JPEG",
+    "sha256": "6f45f63aa1c4c626a44440a6c59fdfcc2cb537d425339e5b3d9ceba27fd46ea0"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01950731/n01950731_10662.JPEG",
+    "sha256": "b52d40a52b152a37e9c10c6249f52b71edc3acf21cc02106472a1f23bb3b6a3b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01955084/n01955084_10052.JPEG",
+    "sha256": "16e0b4b2a46e1b01969c75e2ab7c09e380a498c46612e411e4574aa8423e5877"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01968897/n01968897_11697.JPEG",
+    "sha256": "bfff02be60a5aeb20cb9c61ad7b57ced31a30291691a7c6de3873bf2eb2ef304"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01978287/n01978287_10623.JPEG",
+    "sha256": "818b0153fa784dcb563b3c61f2d35c12f7ded83cca6af4f61122583f6eae2bec"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01978455/n01978455_10373.JPEG",
+    "sha256": "0af194aa422911ba0735805c532621d2892c37ba44f3a179eeeb76d507394157"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01980166/n01980166_1168.JPEG",
+    "sha256": "0be116f0a52a9e248611473eb10c5c4a8c4b4f887111301a3d9ac05c881ba0a1"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01981276/n01981276_10964.JPEG",
+    "sha256": "77c0e8368c0e386517590ae5a6827db5bca1de8eb2cd41dd8b1dd5f66c6149d1"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01983481/n01983481_10085.JPEG",
+    "sha256": "eaf833f44a9aaa9c1db6f8dd1bb833e8490c89bd4ca4c8abe52168ddad53e25b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01984695/n01984695_11588.JPEG",
+    "sha256": "26266657facec163b7028eb49726220004c22506fb1495e15ed5508f873cd682"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01985128/n01985128_12266.JPEG",
+    "sha256": "f35d2007ced058b9cf2f242c27bdffe632df2676a6f8d83d55846efef748fa8c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01986214/n01986214_10318.JPEG",
+    "sha256": "51c0bc210653e1eb6c654995183cde4cdabc046a1b627a188f45fe047a831c53"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n01990800/n01990800_10307.JPEG",
+    "sha256": "fb497da23051d3d887f07df11c5a37ab7c5f8fb8d739e4ef0a120e410b5c2fe2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02002556/n02002556_11318.JPEG",
+    "sha256": "e01aa0592c008112706c21b4aa5c7c27bd8da7f8ac811fe933399f72a95827eb"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02002724/n02002724_1040.JPEG",
+    "sha256": "f1059d884e9d8d7cfc78d393d913b5b7283d91a8ad10b47def86ad433dcc897f"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02006656/n02006656_10267.JPEG",
+    "sha256": "349a6a4c4f83712084cec8a11df78018ecb5b6d010cf9f87195ff962d7fbe6bc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02007558/n02007558_10911.JPEG",
+    "sha256": "cd44c6b27bd28bc017743f067e596022dd75295dc26b00f9022592421fe3faf8"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02009229/n02009229_1246.JPEG",
+    "sha256": "bb7dc5bf654ab11768a60715aa43148239f3156ed23b9686dfe5f5456486b519"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02009912/n02009912_11179.JPEG",
+    "sha256": "9c7056326f6c475d6448494b57fbb3ceb1974238739d91b42b56852c14652069"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02011460/n02011460_10676.JPEG",
+    "sha256": "605fdd8eb9213800244e35c9c303a621ddbe28c3d03a965c055d511cdc6156f2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02012849/n02012849_10238.JPEG",
+    "sha256": "ebdc5d0c1d6f0d478812e86e2603e8b2832143a328948712c4f99aa2ef3e37c0"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02013706/n02013706_10008.JPEG",
+    "sha256": "4e73285b4b2fe56b1238b7d5484d516c7a83b5c753e3bb5db9001e7ab4578b17"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02017213/n02017213_12143.JPEG",
+    "sha256": "d6e2966b7bb2aae08c7714596ee68e30612a6470ed7eda86e56d2fe828cf9f66"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02018207/n02018207_10067.JPEG",
+    "sha256": "5fd678148d83ae146a7f68abe50194982ac6c27208311d4a96e7bac886da253d"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02018795/n02018795_11417.JPEG",
+    "sha256": "5f50d7baf24d9a1f77b097b7cba8fa465d762251287085ace0c95a242f2ee068"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02025239/n02025239_10662.JPEG",
+    "sha256": "afa2c117a81aee995c9eb2774f3c7c8b3c0107de8a173a3d918336b6581ddc66"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02027492/n02027492_1302.JPEG",
+    "sha256": "40f6728af17010ca4365041d6aac04c29cb3eab108551358f318054f29647512"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02028035/n02028035_11338.JPEG",
+    "sha256": "8676f1d50e7b9c8ad349fb72a22b663dda488db65185bca9672444b3415dc81c"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02033041/n02033041_10490.JPEG",
+    "sha256": "a37428485b37c9cdf5ca47f56ad505d1e198e1b3c41d8f43e456394a0a2b9cd4"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02037110/n02037110_10730.JPEG",
+    "sha256": "8a6adf9db57b15720e18ef89c3e457fcb18a65ed754beb1d6ea240c4c3410eab"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02051845/n02051845_10390.JPEG",
+    "sha256": "c3fe85acdef6374803851fe45ec6017eed214aeda94fdc4f451361c18d5a3863"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02056570/n02056570_10004.JPEG",
+    "sha256": "0bf62271e2d47a95bf907da711cfef4599b8bd0fe2bb66c5e9c95e047cf6b6b3"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02058221/n02058221_10898.JPEG",
+    "sha256": "cac3aa5321e79027c1901e2a19e9d3e9b94b28e85c769ca64b88ca2124383d6a"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02066245/n02066245_10090.JPEG",
+    "sha256": "6cae6050db195b05f8cacdcf5bf6819433d390140028c0fda8ab8c1e6ccb91f4"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02071294/n02071294_11021.JPEG",
+    "sha256": "809048acfa22d4b58d6a419c376e874a361ede1ed50f11631ca3fd16bda7aca9"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02074367/n02074367_1016.JPEG",
+    "sha256": "5995550abd23712be9095373c773c479e80ce65d4ba94db4329caf2794639f2b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02077923/n02077923_1013.JPEG",
+    "sha256": "f6535271a003744f85767febbeb48a92deca117d5786f99d127f48fb8a36440d"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02085620/n02085620_10011.JPEG",
+    "sha256": "cbcf3a97f677ba1ae23ffe802ad11365e2ea724d45a161fc224874efe5799758"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02085782/n02085782_10719.JPEG",
+    "sha256": "57520cf0d3807fdab5081a174440b1a84d8a757476d6add8169bf2c1375dd710"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02085936/n02085936_10008.JPEG",
+    "sha256": "a016f747be8ffcdef0f275f38f48c35e3a8daadd254e11ebbd1a519f48a5ab95"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02086079/n02086079_10629.JPEG",
+    "sha256": "bf8f75fbebddd648f80d5b9148cc5392b99d1202561be719650f50268726d619"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02086240/n02086240_1001.JPEG",
+    "sha256": "9587496667e75fd19890e0bb65992df2068bd41c02fd0a5a98460d4bfdfb4063"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02086646/n02086646_1339.JPEG",
+    "sha256": "129d33fc8935566cb0aa0c065ed7b02a2866d8a778f67fb25dce0c80c42d8faf"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02086910/n02086910_10396.JPEG",
+    "sha256": "1b3d8b7071afd80866fb750156b69489c3afd56c392fefbde2d0b4c4a9eeb2cf"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02087046/n02087046_10781.JPEG",
+    "sha256": "f5a7a54551c4433765f0313947ad621d0a7a8ea6041c345daf30a2d439c073a6"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02087394/n02087394_10725.JPEG",
+    "sha256": "ff90c2bfa1260ea9797855a0926e8962ff0e01ccee58a314ca6032682e289aa2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02088094/n02088094_1045.JPEG",
+    "sha256": "81a1a541dd17495f3b2a4568353a24151c914bbc625198902e32c31dd4ce6135"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02088238/n02088238_10135.JPEG",
+    "sha256": "ef8348b6cea7c893fbc08cc216a7236a3bda91c23d2eb821f7b99666dd18612f"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02088364/n02088364_1168.JPEG",
+    "sha256": "7a49e8e61fab6110d4f05df3e4af07d6235851d568dc03a2f48c14425ac5c7e6"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02088466/n02088466_1011.JPEG",
+    "sha256": "d9788c8aed10f5593ada8e7779664b934757550b8a6a20de6549eb614d3818dc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02088632/n02088632_162.JPEG",
+    "sha256": "3f08baea7d136ce4d950ed7da63214c87a72f4f4caa55a6fba22c457527037cc"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02089078/n02089078_10032.JPEG",
+    "sha256": "1fe2802a64cd9223d92e5c9b341887241a10acd785a9e2b60ac7730841c575e2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02089867/n02089867_1178.JPEG",
+    "sha256": "ed058f44f6131c643a0cf96089e208717a8c989254ebee24cf2f00500c700c72"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02089973/n02089973_10124.JPEG",
+    "sha256": "eee215451c75c27ab3743230c22f07fd7a61c1fd02b3658037f2aaa8d2cf58e0"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02090379/n02090379_1012.JPEG",
+    "sha256": "fed059c9ce79cb18b0487e8b1772e29676b2957b695cfb7dbb66aa01ecf56177"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02090622/n02090622_10216.JPEG",
+    "sha256": "131bb2ee376b2acc9ba0485f6b5dd72fe156c96e8eb41d0c57b44e676d88cc66"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02090721/n02090721_1437.JPEG",
+    "sha256": "3785849120e137edf2fc9a728992136f43bab896f21426894444df59d14aff68"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02091032/n02091032_10815.JPEG",
+    "sha256": "8f465baff795958e91336f3f3e2d4a21c7f9dc8b4e573df8375e175076fde9e1"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02091134/n02091134_10124.JPEG",
+    "sha256": "84d9741264efde8bb7ba5ed40b339a269632acc8a4ac5009dc29fdc2d98d5657"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02091244/n02091244_11118.JPEG",
+    "sha256": "4c5e6e73ec4e9dc482a163751210bc1dd25e0aebb15d8e677f7544c07718de5a"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02091467/n02091467_1018.JPEG",
+    "sha256": "ba4f97613b411c5f15b655d055794b6f804ada10c7f181f50ba40d6cf4838d4f"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02091635/n02091635_11045.JPEG",
+    "sha256": "9c2b2284559f7bdecc360ad3c37b5ea2dd1f60ad4c1b9e150d8c48d315d64e46"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02091831/n02091831_10440.JPEG",
+    "sha256": "654d4c7f3ea95e1dc62dfa4234ea92ed385641a8480b919a66ea76f4c1cc2742"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02092002/n02092002_1018.JPEG",
+    "sha256": "0ef259da8f89e9d6503e32895ed88a5e386a9aec9ab46e0a4ba03ca031980e80"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02092339/n02092339_1104.JPEG",
+    "sha256": "e453a7b99a5c73be7e57070614fbcee0147bffb99c3bd7fc49ab037071c9ef38"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02093256/n02093256_10320.JPEG",
+    "sha256": "2c812398e3cae4fbb1c0c4469f090bc2d316fcb340b56c58d03ea46c14587c42"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02093428/n02093428_10832.JPEG",
+    "sha256": "ae52bb09aed0ab8aead9f21e64d300d41e32ce321ee6d4c5ba59649c3952dae4"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02093647/n02093647_1172.JPEG",
+    "sha256": "e1ee69f09ea300d77b563af42bab2cd7481e67a67769587bae35d95e1a794bae"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02093754/n02093754_1197.JPEG",
+    "sha256": "783feced022ac1fd0bb6ef7b49c370421941e93d33f775b75f23247783f4c82a"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02093859/n02093859_107.JPEG",
+    "sha256": "58ab82743236349649b04d1f1c96e0d4eea5740799ce205d1ae11bd8857961b1"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02093991/n02093991_1006.JPEG",
+    "sha256": "25451e54747983342b6e8535c31173e42e2352c8d4bb229fb868b1864448a2d2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02094114/n02094114_1662.JPEG",
+    "sha256": "1bd1d827ac5473292cb8c12bdb6280c2d3ca0d24d21a6c10bb9014aee9ccaa11"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02094258/n02094258_1044.JPEG",
+    "sha256": "eec34a5196e521eecb0e53e29d01e71fd76b7a9d1ded667b0a023472c089e1c3"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02094433/n02094433_10736.JPEG",
+    "sha256": "89355318e2a40183980a38fa1d3eab01543abff31cb0f22b9a165c13da157013"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02095314/n02095314_1051.JPEG",
+    "sha256": "20d159e2c0c354298d3851f58ec68e8f234869cabf4ef39359126c0ea531b145"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02095570/n02095570_10406.JPEG",
+    "sha256": "bf68500bc78f60e2ff890ccc4b9e4fc1a96a76d9c50182bc217356ab4b9e213e"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02095889/n02095889_10539.JPEG",
+    "sha256": "2f71e8d519274935538b01fe730d355f6bcace32c6e83a76b9ff921d8c21593a"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02096051/n02096051_1160.JPEG",
+    "sha256": "d186b4848934dd2c364a5085907094ffe86cbd9cdb147ccb0c27b9ec2ee83546"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02096177/n02096177_10144.JPEG",
+    "sha256": "359405a38c1c14698721ed0cc8cc867a41bbe54d9b05fd0c5d7609a640b9eb85"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02096294/n02096294_1168.JPEG",
+    "sha256": "ae22aec52e0fcd8ac312234a218606c70921cd86d732d40eb7dc460d92eceb85"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02096437/n02096437_1006.JPEG",
+    "sha256": "9286245ee6e938eebeffea71c961e91a919b158374265a05316978c73bc2590d"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02096585/n02096585_10516.JPEG",
+    "sha256": "5f776bc3d192dee3d7f002243456535e1fc20c6c925e61db5e0f28743356b1c2"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02097047/n02097047_1007.JPEG",
+    "sha256": "d3955f93eb35a1eb9ead3cbb527f8d25420245b1a028df6e432414ad1f0f5a58"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02097130/n02097130_10028.JPEG",
+    "sha256": "e4964290b0dadfb70d6096b1572a841e3ca9721e8eb0e5e4433c3888aa417bed"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02097209/n02097209_1092.JPEG",
+    "sha256": "ed807ac8dd63d9691732b45105c2b8341fe890ff9e8b9f424ed927359c43394b"
+  },
+  {
+    "path": "/home/ross/QA/datasets/imagenetmini-1000/imagenet-mini/train/n02097298/n02097298_10020.JPEG",
+    "sha256": "07507776d344ff3bbada81dc3716bc1277fe54176cb46d9b692eb9929d85dee5"
+  }
+]

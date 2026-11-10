@@ -1,0 +1,18 @@
+{
+  "versions": {
+    "onnx2tf": "2.6.9",
+    "tensorflow": "2.21.0",
+    "tf-keras": "2.21.0",
+    "onnx": "1.20.1",
+    "onnxruntime": "1.26.0",
+    "onnxsim": "0.6.5",
+    "numpy": "2.2.6",
+    "pillow": "13.0.0",
+    "protobuf": "7.35.1"
+  },
+  "compiler": "/home/ross/QA/Models/resnet50/TPU/tools/edgetpu_compiler_16.0/bin/edgetpu_compiler",
+  "compiler_version": "Edge TPU Compiler version 16.0.384591198",
+  "compiler_sha256": "e6e3b1babbc1a54a2880e04ac6cbf3d6993ca25085fb12c775733c9e419d0bdd",
+  "runtime_package": "libedgetpu1-std 16.0tf2.19.1-1.ubuntu24.04",
+  "created_date_hong_kong": "2026-11-10"
+}

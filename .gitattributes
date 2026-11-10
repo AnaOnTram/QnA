@@ -12,3 +12,6 @@ SHA256SUMS text eol=lf
 *.engine filter=lfs diff=lfs merge=lfs -text
 *.tflite filter=lfs diff=lfs merge=lfs -text
 *.mlmodel filter=lfs diff=lfs merge=lfs -text
+# Preserve original evidence bytes and checksum validity across checkouts.
+docs/reports/mobilenetv2/TPU/**/*.csv -text
+docs/reports/mobilenetv2/evasion_qnn/**/*.csv -text

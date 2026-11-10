@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "deployment_counts": {
+    "mobilenetv2": 20,
+    "resnetv2_50": 19
+  },
+  "conditions_reconciled": 842,
+  "original_summary_hashes_verified": 39,
+  "cohort_sha256_and_label_matches": 100,
+  "coreml_matrices_checked": 2,
+  "shared_effect_cells": 24,
+  "supplementary_seed_cells": 24,
+  "figures_generated": 5,
+  "full_combined_shared_population_available": false,
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "limitations": [
+    "No fresh inference or candidate replay performed.",
+    "No per-image Core ML data in this archive; no combined 19/20-arm clean intersection or paired model-effect confidence interval is claimed."
+  ]
+}

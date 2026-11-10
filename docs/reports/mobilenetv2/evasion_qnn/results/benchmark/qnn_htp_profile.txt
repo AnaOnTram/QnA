@@ -1,0 +1,77 @@
+Input Log File Location: /home/ross/mobilenetv2_qairt/6490_v242/qnn_htp/qnn-profiling-data_0.log
+Log File Created: Tue Nov 10 14:09:37 2026
+Time Scale: 1e-06
+Epoch Timestamp: 1794319777208567 Steady Clock Timestamp: 1254788696
+Generated using: 
+qnn-profile-viewer: v2.42.0.251225135753_193295
+qnn-net-run: v2.42.0.251225135753_193295
+Backend: v2.42.0.251225135753_193295
+
+Qnn Init/Prepare/Finalize/De-Init/Execute/Lib-Load Statistics:
+------------------------------------------------------------
+Init Stats:
+-----------
+    NetRun: 5262 us
+    Backend (RPC (load binary) time): 2942 us
+    Backend (QNN accelerator (load binary) time): 2464 us
+    Backend (Accelerator (load binary) time): 2094 us
+    Backend (QNN (load binary) time): 5231 us
+
+Compose Graphs Stats:
+--------------
+    NetRun: 0 us
+
+Finalize Stats:
+---------------
+
+De-Init Stats:
+--------------
+    NetRun: 2169 us
+    Backend (RPC (deinit) time): 1015 us
+    Backend (QNN Accelerator (deinit) time): 396 us
+    Backend (Accelerator (deinit) time): 377 us
+    Backend (QNN (deinit) time): 2158 us
+
+Execute Stats (Overall):
+------------------------
+    NetRun IPS (includes IO and misc. time): 367.3407 inf/sec 
+
+Execute Stats (Average):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 1040 us
+    Backend (Number of HVX threads used): 4 count
+    Backend (RPC (execute) time): 960 us
+    Backend (QNN accelerator (execute) time): 565 us
+    Backend (Accelerator (execute) time): 544 us
+    Backend (Accelerator (execute excluding wait) time): 529 us
+    Backend (QNN (execute) time): 1025 us
+
+Execute Stats (Min):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 721 us
+    Backend (Number of HVX threads used): 4 count
+    Backend (RPC (execute) time): 679 us
+    Backend (QNN accelerator (execute) time): 520 us
+    Backend (Accelerator (execute) time): 500 us
+    Backend (Accelerator (execute excluding wait) time): 485 us
+    Backend (QNN (execute) time): 713 us
+
+Execute Stats (Max):
+------------------------
+Total Inference Time: 
+---------------------
+Graph 0 (mobilenetv2_fp32):
+    NetRun: 1518 us
+    Backend (Number of HVX threads used): 4 count
+    Backend (RPC (execute) time): 1425 us
+    Backend (QNN accelerator (execute) time): 595 us
+    Backend (Accelerator (execute) time): 576 us
+    Backend (Accelerator (execute excluding wait) time): 562 us
+    Backend (QNN (execute) time): 1500 us
+

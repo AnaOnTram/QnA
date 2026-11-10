@@ -1,0 +1,261 @@
+{
+  "target": "pytorch_fp32",
+  "config": {
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_queries": 500,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "seed": 20261030,
+    "n": 100
+  },
+  "identity": {
+    "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+    "checkpoint_sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+    "context_sha256": null,
+    "rgb_sha256": "ce0f94298fbda071fdd57af0de1af4ac83ed752c4e70456d92a7d9e5b0bf3221"
+  },
+  "clean": {
+    "n": 100,
+    "correct": 83
+  },
+  "runtime": {
+    "device": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+    "torch": "2.14.1+cu130"
+  },
+  "gradient": {
+    "method": "Native FP32 autograd",
+    "replica_onnx_max_abs": 1.9073486328125e-05,
+    "clean_replica_top1_agreement": 100,
+    "exact_forward": true,
+    "finite_nonzero": true
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "clean_correct": 83,
+      "fooled": 1,
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "rounded_fooled": 1,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "clean_correct": 83,
+      "fooled": 76,
+      "robust_correct": 7,
+      "attack_success_pct": 91.56626506024097,
+      "rounded_fooled": 76,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0.5457427501678467
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "rounded_fooled": 83,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 10.104830026626587
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "rounded_fooled": 83,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 1.6927719116210938e-05,
+      "steps": 100,
+      "restarts": 5,
+      "additional_survivors": 0
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "clean_correct": 83,
+      "fooled": 0,
+      "robust_correct": 83,
+      "attack_success_pct": 0.0,
+      "rounded_fooled": 1,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "clean_correct": 83,
+      "fooled": 77,
+      "robust_correct": 6,
+      "attack_success_pct": 92.7710843373494,
+      "rounded_fooled": 77,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0.49167847633361816
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "rounded_fooled": 83,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 10.231906414031982
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "clean_correct": 83,
+      "fooled": 1,
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "rounded_fooled": 0,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "clean_correct": 83,
+      "fooled": 80,
+      "robust_correct": 3,
+      "attack_success_pct": 96.3855421686747,
+      "rounded_fooled": 80,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0.4911322593688965
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "rounded_fooled": 83,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 10.319051027297974
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "clean_correct": 83,
+      "fooled": 38,
+      "robust_correct": 45,
+      "attack_success_pct": 45.78313253012048,
+      "rounded_fooled": 38,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 31.9234778881073,
+      "query_budget": 500,
+      "total_attack_queries": 27327,
+      "trace": [
+        {
+          "query_budget": 50,
+          "fooled": 19,
+          "eligible": 83
+        },
+        {
+          "query_budget": 100,
+          "fooled": 21,
+          "eligible": 83
+        },
+        {
+          "query_budget": 250,
+          "fooled": 31,
+          "eligible": 83
+        },
+        {
+          "query_budget": 500,
+          "fooled": 38,
+          "eligible": 83
+        }
+      ]
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "clean_correct": 83,
+      "fooled": 1,
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "rounded_fooled": 1,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "clean_correct": 83,
+      "fooled": 79,
+      "robust_correct": 4,
+      "attack_success_pct": 95.18072289156626,
+      "rounded_fooled": 79,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0.4750034809112549
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "rounded_fooled": 83,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 10.307220220565796
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "clean_correct": 83,
+      "fooled": 71,
+      "robust_correct": 12,
+      "attack_success_pct": 85.5421686746988,
+      "rounded_fooled": 71,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 12.621595859527588,
+      "query_budget": 500,
+      "total_attack_queries": 10758,
+      "trace": [
+        {
+          "query_budget": 50,
+          "fooled": 44,
+          "eligible": 83
+        },
+        {
+          "query_budget": 100,
+          "fooled": 51,
+          "eligible": 83
+        },
+        {
+          "query_budget": 250,
+          "fooled": 66,
+          "eligible": 83
+        },
+        {
+          "query_budget": 500,
+          "fooled": 71,
+          "eligible": 83
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "elapsed_seconds": 92.82374167442322
+}

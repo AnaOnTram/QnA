@@ -1,0 +1,458 @@
+[
+  {
+    "model": "resnetv2_50",
+    "arm": "fp16_cpu_only",
+    "eps_255": 4,
+    "n": 82,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      24,
+      26,
+      30
+    ],
+    "mean_pct": 32.520325203252035,
+    "min_pct": 29.26829268292683,
+    "max_pct": 36.58536585365854
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "fp16_cpu_only",
+    "eps_255": 8,
+    "n": 82,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      47,
+      46,
+      42
+    ],
+    "mean_pct": 54.8780487804878,
+    "min_pct": 51.21951219512195,
+    "max_pct": 57.31707317073171
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "fp16_cpu_and_gpu",
+    "eps_255": 4,
+    "n": 82,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      34,
+      37,
+      32
+    ],
+    "mean_pct": 41.86991869918699,
+    "min_pct": 39.02439024390244,
+    "max_pct": 45.1219512195122
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "fp16_cpu_and_gpu",
+    "eps_255": 8,
+    "n": 82,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      49,
+      47,
+      47
+    ],
+    "mean_pct": 58.13008130081301,
+    "min_pct": 57.31707317073171,
+    "max_pct": 59.75609756097561
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "fp16_cpu_and_ne",
+    "eps_255": 4,
+    "n": 82,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      34,
+      34,
+      34
+    ],
+    "mean_pct": 41.46341463414634,
+    "min_pct": 41.46341463414634,
+    "max_pct": 41.46341463414634
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "fp16_cpu_and_ne",
+    "eps_255": 8,
+    "n": 82,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      46,
+      49,
+      48
+    ],
+    "mean_pct": 58.13008130081301,
+    "min_pct": 56.09756097560975,
+    "max_pct": 59.75609756097561
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "int8_cpu_only",
+    "eps_255": 4,
+    "n": 81,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      25,
+      25,
+      26
+    ],
+    "mean_pct": 31.275720164609055,
+    "min_pct": 30.864197530864196,
+    "max_pct": 32.098765432098766
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "int8_cpu_only",
+    "eps_255": 8,
+    "n": 81,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      43,
+      42,
+      41
+    ],
+    "mean_pct": 51.851851851851855,
+    "min_pct": 50.617283950617285,
+    "max_pct": 53.08641975308642
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "int8_cpu_and_gpu",
+    "eps_255": 4,
+    "n": 81,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      30,
+      36,
+      34
+    ],
+    "mean_pct": 41.1522633744856,
+    "min_pct": 37.03703703703704,
+    "max_pct": 44.44444444444444
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "int8_cpu_and_gpu",
+    "eps_255": 8,
+    "n": 81,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      46,
+      45,
+      49
+    ],
+    "mean_pct": 57.61316872427984,
+    "min_pct": 55.55555555555556,
+    "max_pct": 60.49382716049383
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "int8_cpu_and_ne",
+    "eps_255": 4,
+    "n": 81,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      31,
+      34,
+      36
+    ],
+    "mean_pct": 41.56378600823045,
+    "min_pct": 38.27160493827161,
+    "max_pct": 44.44444444444444
+  },
+  {
+    "model": "resnetv2_50",
+    "arm": "int8_cpu_and_ne",
+    "eps_255": 8,
+    "n": 81,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      46,
+      46,
+      52
+    ],
+    "mean_pct": 59.25925925925926,
+    "min_pct": 56.79012345679013,
+    "max_pct": 64.19753086419753
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "fp16_cpu_only",
+    "eps_255": 4,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      21,
+      23,
+      24
+    ],
+    "mean_pct": 27.309236947791163,
+    "min_pct": 25.301204819277107,
+    "max_pct": 28.91566265060241
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "fp16_cpu_only",
+    "eps_255": 8,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      51,
+      52,
+      52
+    ],
+    "mean_pct": 62.24899598393574,
+    "min_pct": 61.44578313253012,
+    "max_pct": 62.65060240963855
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "fp16_cpu_and_gpu",
+    "eps_255": 4,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      38,
+      39,
+      37
+    ],
+    "mean_pct": 45.78313253012048,
+    "min_pct": 44.57831325301205,
+    "max_pct": 46.98795180722892
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "fp16_cpu_and_gpu",
+    "eps_255": 8,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      70,
+      68,
+      73
+    ],
+    "mean_pct": 84.73895582329317,
+    "min_pct": 81.92771084337349,
+    "max_pct": 87.95180722891567
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "fp16_cpu_and_ne",
+    "eps_255": 4,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      29,
+      30,
+      30
+    ],
+    "mean_pct": 35.7429718875502,
+    "min_pct": 34.93975903614458,
+    "max_pct": 36.144578313253014
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "fp16_cpu_and_ne",
+    "eps_255": 8,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      61,
+      63,
+      58
+    ],
+    "mean_pct": 73.09236947791165,
+    "min_pct": 69.87951807228916,
+    "max_pct": 75.90361445783132
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "int8_cpu_only",
+    "eps_255": 4,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      21,
+      25,
+      21
+    ],
+    "mean_pct": 26.907630522088354,
+    "min_pct": 25.301204819277107,
+    "max_pct": 30.120481927710845
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "int8_cpu_only",
+    "eps_255": 8,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      50,
+      53,
+      49
+    ],
+    "mean_pct": 61.04417670682731,
+    "min_pct": 59.036144578313255,
+    "max_pct": 63.855421686746986
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "int8_cpu_and_gpu",
+    "eps_255": 4,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      36,
+      38,
+      36
+    ],
+    "mean_pct": 44.17670682730924,
+    "min_pct": 43.373493975903614,
+    "max_pct": 45.78313253012048
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "int8_cpu_and_gpu",
+    "eps_255": 8,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      72,
+      71,
+      70
+    ],
+    "mean_pct": 85.5421686746988,
+    "min_pct": 84.33734939759036,
+    "max_pct": 86.74698795180723
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "int8_cpu_and_ne",
+    "eps_255": 4,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      30,
+      28,
+      29
+    ],
+    "mean_pct": 34.93975903614458,
+    "min_pct": 33.734939759036145,
+    "max_pct": 36.144578313253014
+  },
+  {
+    "model": "mobilenetv2",
+    "arm": "int8_cpu_and_ne",
+    "eps_255": 8,
+    "n": 83,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "fooled_by_seed": [
+      63,
+      65,
+      60
+    ],
+    "mean_pct": 75.50200803212851,
+    "min_pct": 72.28915662650603,
+    "max_pct": 78.3132530120482
+  }
+]

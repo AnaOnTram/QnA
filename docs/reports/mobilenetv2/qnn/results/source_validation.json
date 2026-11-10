@@ -1,0 +1,115 @@
+{
+  "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "checkpoint_sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+  "calibration": [
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00001742.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00001742.raw",
+      "sha256": "13ce134f8a4dfa7353e9c8ae3023c1528db3c821164e59c90e3a99cf0f09b9c2"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00013248.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00013248.raw",
+      "sha256": "a63a603180743375778796124d85ab7c03e4e9bdfab83cc186ff17c083cc9c4e"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00026135.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00026135.raw",
+      "sha256": "5cda8ad7810d338c1cf2c040364968439490ba0ceb0c93a9b7c1c2626889d8db"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00006718.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00006718.raw",
+      "sha256": "27a27a215366847088badac9dc6eea6dd657aed5532d4727cafaa19076c1ae49"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00047248.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00047248.raw",
+      "sha256": "2e9c0a3e07f0dd45e65f06835988807922c657fb584d29d6b0feaf1372ff61fc"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00011035.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00011035.raw",
+      "sha256": "509f9a5d23a9be4862d9ab25aabc8a1ebe8e8686ea1a234085f7172f3b46cfa0"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00020645.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00020645.raw",
+      "sha256": "fa25dc01660e84950ca3cd3409f4206c1d063b3a82140b7d6d9d78e130a54980"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00013737.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00013737.raw",
+      "sha256": "8791dfcf84ad70322d6062a72226888884631af3f8b407d3b00fa16f06b711c7"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00014410.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00014410.raw",
+      "sha256": "b3308471a3903fdf4b55eb2decbff3436006db4eb0f20b2937ce8ddaf760fb37"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00006168.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00006168.raw",
+      "sha256": "11d56d963ae2898178205b3b2f84c23d72edeec56256605c2c1378ae6f1584b3"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00046320.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00046320.raw",
+      "sha256": "ce9d1084ca1e6a6631e0a14893fe79d6be68a1f945444cf36ce32b2fe507eeaf"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00020752.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00020752.raw",
+      "sha256": "1de189642be4d37d9a0bc1fbf2017f121c078ee1b83f3268ecfa1c86b3df4854"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00000994.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00000994.raw",
+      "sha256": "5685d3fd1f83ee133689bb0fdc3d2cad1aaf6c2a642d15dcc828dddef4d85c19"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00036607.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00036607.raw",
+      "sha256": "2f05c954f0b8a3ee27bc7edc47e0f7703bd80b96d7a8924611ee5abf5d75bda0"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00001946.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00001946.raw",
+      "sha256": "153d51c2bc6ac4c95f525463b4a800bd972685d83bf8c3a3d0e76ac64688887b"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00016595.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00016595.raw",
+      "sha256": "d657df458f143278d64d1deea8960364cd95540a4269a27c0a28c893f098e05b"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00030616.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00030616.raw",
+      "sha256": "35d352c412d4f6c2db40efcf83ffe115cc3dcedf7e343d57b85418d8e1691cf5"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00009111.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00009111.raw",
+      "sha256": "b58876f03f08e4596b47efd026588b7fd7b5d910a6e6853b55b6517f0644a9e2"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00026419.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00026419.raw",
+      "sha256": "c38895e795d4329275d0a024b2f30fe7ac6f9d3431a5d3238ca388859374b9dc"
+    },
+    {
+      "source": "/home/ross/qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/data/calibration_raws/ILSVRC2012_val_00013632.raw",
+      "path": "/home/ross/QA/Models/mobilenetV2/qnn/data/calibration/ILSVRC2012_val_00013632.raw",
+      "sha256": "b220b1c9125505f1edff3a6772a37bf700702a215e431d37b3abde769e0f9c7f"
+    }
+  ],
+  "calibration_count": 20,
+  "calibration_list_source_sha256": "96f95fa5777aef768d10c9da36782f3064d18e6e0ac48b0f9f38bacfff43d6f8",
+  "calibration_recipe": "Exact 20 ResNet QNN float32 NCHW raw files, same order; square center crop, bilinear 224, saved/reloaded JPEG, ImageNet normalization",
+  "evaluation_preprocessing": "RGB; Resize shorter side 256 BICUBIC antialias; CenterCrop 224; ImageNet normalization",
+  "evaluation_count": 100,
+  "evaluation_calibration_content_overlap": 0,
+  "onnx_correct": 83,
+  "previous_reference_bit_exact": true
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_rknn/results/run/pytorch_fp32/summary.json",
+    "source_sha256": "61f1052098c1f90a32a27594abbd6980e71b834ff6fe9a763c1dd622f5d365d9",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 1500,
+    "conditions": 15
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_trt/results/fp32/summary.json",
+    "source_sha256": "a56b5a98a7f3ac938e0bee9a4de595ca588449037eb1d4dbb193d90d44b1a9cc",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 1500,
+    "conditions": 15
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_trt/results/fp16/summary.json",
+    "source_sha256": "e2181330553c712e1774200488a6ba47c9d8e76f693af6b4573db229f5ac18d1",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_trt/results/fp8/summary.json",
+    "source_sha256": "9ef3f8995ca228eba3543eaa759078e1c343bdba4e05a19135bc1ad132b660a7",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_trt/results/int8/summary.json",
+    "source_sha256": "866d86c9e6eaf2999c9b77094454cfdbdae430ec61a2a18effb7092e14c3f261",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_trt/results/int4/summary.json",
+    "source_sha256": "ebb7def4461fc1bfbf34c11eead7e74b62de2f6dac457ca45568ca1c2e9f1882",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_rknn/results/run/rknn_fp16/summary.json",
+    "source_sha256": "a43b78735fde2ef95fd83b710a33d61945df2046aa727e8d2a47d93c0d668486",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_rknn/results/run/rknn_int8/summary.json",
+    "source_sha256": "c25582c2a393e6ab0d4e626a087b0f66e562116c7143c448a3a645acfbc892e9",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/mobilenetV2/evasion_qnn/results/run/qnn_htp/summary.json",
+    "source_sha256": "501fb4479bf417610a5918ff3c0ecc684e4d5df3287be118505c12b65750a8e6",
+    "method": "Summary-only import; prior native evidence retained, no fresh per-image audit in this report"
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/fp32_cpu_only/summary.json",
+    "source_sha256": "44a49a3274f70280fad3bd4199c785a9217e80296849d8bdb002aa0ea6ab9702",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 15
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/fp32_cpu_and_gpu/summary.json",
+    "source_sha256": "4a5fd37b5486e2de4159712b317c23189f00f5df88e1155655911a3d8e9bcb94",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/fp32_cpu_and_ne/summary.json",
+    "source_sha256": "767ae6159b6e59de7cd6c2276b9365f7c8045068e884f15a8688509995f0e8ec",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/fp16_cpu_only/summary.json",
+    "source_sha256": "62901e2583483fb90fe7edc057277cd3f9188c513ed56706d2b94f53b498e07c",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/fp16_cpu_and_gpu/summary.json",
+    "source_sha256": "2fddab7789cb9c90a23ba06f7e4c5933c2f89a4f9596c9f995ad58b92a177aa6",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/fp16_cpu_and_ne/summary.json",
+    "source_sha256": "c72dc3d2084a62fdd533aad1c6b81aa6a85eb79c9e234b2785236b92794605e0",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/int8_cpu_only/summary.json",
+    "source_sha256": "aa0d8356d00dae372653db63d41c92829e240fa2e28804a668b1eb7a867c839a",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/int8_cpu_and_gpu/summary.json",
+    "source_sha256": "0878c134f069bcd8294b206d54e8b1147fd8675f173e5ad1e677f2bceb0e10da",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/mobilenetv2/evasion_coreml/results/int8_cpu_and_ne/summary.json",
+    "source_sha256": "e3797355aad284f4fda14737ca4d326f34c9f5bde8307733c88afcf60bf1e0e1",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_rknn/results/run/pytorch_fp32/summary.json",
+    "source_sha256": "961ea9a6ecbd0422bd2006b5781fb7f6fda497b44c87754917757b19b372ce2f",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 1500,
+    "conditions": 15
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_rknn/results/run/onnx_fp32/summary.json",
+    "source_sha256": "f35d035d86817503d65a4e2aed28c800800ded4936fff57ab81bed1f7e436612",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_rknn/results/run/rknn_fp16/summary.json",
+    "source_sha256": "dcf7b85fb7799759d8e4c5e5bde7d0035c4c274c64d90e5ee7f6ae4a471402f4",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_rknn/results/run/rknn_int8/summary.json",
+    "source_sha256": "7bc55aec559752f54ffcaad43bfa8ee14e41209d25c775e8c110b2964a2d1e02",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_fp16/summary.json",
+    "source_sha256": "315f2596c2ad0b12c3a3eb78625873d829c7a85ea82b93224b97d0f2c124ed96",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_ort_qop/summary.json",
+    "source_sha256": "e1896660bc21f9bb224459b25b7e4702e0a75ec724b5a466a17cbbd7f67398a7",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_ptq_ort/summary.json",
+    "source_sha256": "ff5e394742eb3823c119227d2e46e60be232787bbcc9d229fa56bc86c13f490b",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion_onnx/results/timm_rnv2_int8_dq_ort/summary.json",
+    "source_sha256": "f4de51f330445e88a1ecc14feedd36eeec69ced699f83256f486cbec774e4b95",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 2300,
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/evasion/results/qnn_v2_matched/run/summary.json",
+    "source_sha256": "4cdfe8609f44df1eeabca1ee5a34cdf2ea8f8aa9a075c53642668ff23efedc5b",
+    "method": "Per-image CSV counts, bounds and query caps reconciled",
+    "rows": 1500,
+    "conditions": 15
+  },
+  {
+    "source": "/home/ross/QA/Models/resnet50/TPU/evasion/results/edgetpu_int8/summary.json",
+    "source_sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
+    "method": "Summary-only import; prior native evidence retained, no fresh per-image audit in this report"
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp32_cpu_only/summary.json",
+    "source_sha256": "4d34f8a46f0d484a473cb3011488fa5c79d8ccc559999d5bf8e3df2e3c1ff2ff",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 15
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp32_cpu_and_gpu/summary.json",
+    "source_sha256": "9e8f8e04832d65cf1c15adeb935d71d48a3819b8b0481e05c3a34417e07a720e",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp32_cpu_and_ne/summary.json",
+    "source_sha256": "24814888b89613cedbf84c4672dcd913a1f5a4f25590417dca6625024f719d1b",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp16_cpu_only/summary.json",
+    "source_sha256": "6a960dd1d57b6d43cee8e70596f375c1d8e0b9a464f269101c6b49726322a520",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp16_cpu_and_gpu/summary.json",
+    "source_sha256": "e86149147a8271c8dfdd1e2ae1e9ffeb781e4b2ec5ef70150382356eea87ca37",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp16_cpu_and_ne/summary.json",
+    "source_sha256": "ae8ab13a9e4eb0a3562aca9890bec5318ce315d4cce597d9f45ae5468ac3eee9",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/int8_cpu_only/summary.json",
+    "source_sha256": "54f8ba430ba9e6aa89e3900ea4bf0e848c0f654ddda216e0b9422165f706162d",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/int8_cpu_and_gpu/summary.json",
+    "source_sha256": "0cedc852b6d126149ba4a1c035d862af7b1cd548806c40a235e9c15dc9ea7f6a",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  },
+  {
+    "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/int8_cpu_and_ne/summary.json",
+    "source_sha256": "2f67f995d94ab9dd901e78e52a5960c9f6f4de743d3bf9c521615fc3e4df2579",
+    "method": "Retained independently reconciled comparison matrix agrees with summary",
+    "conditions": 23
+  }
+]

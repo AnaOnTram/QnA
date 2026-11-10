@@ -8,6 +8,10 @@ files use ordinary Git. Documentation, report figures, compact JSON/CSV evidence
 `manifest.json` and `SHA256SUMS` use regular Git. The report archive has its own
 manifest and checksum ledger under `docs/reports/`.
 
+The MobileNetV2 TPU/QNN evidence CSVs explicitly disable newline conversion in
+`.gitattributes`, preserving the original source bytes and SHA-256 values across
+checkouts. They remain ordinary Git files, not LFS objects.
+
 ## This local checkout
 
 The original machine had no Git LFS on PATH. Git LFS **3.8.1** was downloaded
@@ -54,7 +58,7 @@ For a smaller checkout, fetch one model family:
 git lfs pull --include='weights/resnetv2_50/**' --exclude=''
 ```
 
-Full `SHA256SUMS` verification requires all 48 manifest-listed files, including
+Full `SHA256SUMS` verification requires all 53 manifest-listed files, including
 the component files of all eight Core ML packages. Download all LFS payloads first.
 A text LFS pointer in place of a binary indicates its payload has not been fetched.
 The report checksum ledger is independent of the weight ledger. If an archived

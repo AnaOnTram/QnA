@@ -125,6 +125,23 @@ recorded native encoding is `clip(round(x / scale) + 114, 0, 255)`. Query the
 context tensor metadata and use the matching QAIRT backend and target libraries.
 The original harness used QNN float-input handling to encode normalized floats.
 
+MobileNetV2 now includes `weights/mobilenetv2/qnn/mobilenetv2_fp32.dlc`,
+`mobilenetv2_int8.dlc` and `mobilenetv2_quantized.bin`, using the same QAIRT
+version and QCS6490/v68/SoC 35/2 MiB VTCM target. The graph name is
+`mobilenetv2_fp32` even for the INT8 context. Default `qnn-net-run` float-input
+mode takes normalized float32 NCHW `[1,3,224,224]` and returns dequantized
+float32 logits `[1,1000]`. Normalization remains external. Native input is UINT8
+with scale `0.018658448011`, offset `-114`; native output is UINT8 with scale
+`0.149840772152`, offset `-71`, using `real = (code + offset) * scale`.
+
+The retained build uses the original 20 ResNet QNN calibration raws with default
+asymmetric min-max W8A8/bias8 settings, per-channel/per-row disabled and the
+default dynamic 16-bit weight option enabled. On the 100-image cohort, FP32 DLC
+preserves 100/100 ONNX predictions, whereas INT8 HTP is correct on 78/100.
+The broader held-out set excludes 20 calibration-overlapping images: FP32
+2761/3903 and INT8 HTP 2665/3903. See [conversion and encodings](reports/mobilenetv2/qnn/README.md)
+and [Q6A performance, accuracy and evasion](reports/mobilenetv2/evasion_qnn/REPORT.md).
+
 ## TensorFlow Lite and Coral Edge TPU
 
 Use `tflite/resnetv2_50_int8_nhwc.tflite` for a CPU TFLite interpreter and
@@ -137,3 +154,20 @@ before interpreting logits.
 The source documentation records 200 calibration images and Edge TPU compiler
 **16.0.384591198**, with 114/114 operations mapped to one TPU subgraph. The old
 dynamic NCHW TFLite and intermediate TensorFlow SavedModel are excluded.
+
+MobileNetV2 has its own final pair in `weights/mobilenetv2/tflite/` and
+`weights/mobilenetv2/edgetpu/`: `mobilenetv2_int8_nhwc.tflite` and
+`mobilenetv2_int8_nhwc_edgetpu.tflite`. Their input is also raw RGB UINT8 NHWC
+`[1,224,224,3]`, scale `0.003921568859368563`, zero point 0, with ImageNet
+normalization embedded before the padded stem. Use the MobileNet resize/crop
+recipe above. Output is UINT8 `[1,1000]`, scale `0.1706031858921051`, zero point
+84; dequantize as `(code - 84) * scale`.
+
+The MobileNet conversion used 200 ImageNet-mini training calibration images,
+onnx2tf 2.6.9 / TensorFlow 2.21.0, and Edge TPU compiler 16.0.384591198.
+73/73 operations map to one TPU subgraph. Recorded TensorFlow CPU 2.19.1 and
+Coral hardware validation give 81/100 and 79/100 correct respectively, versus
+83/100 for the source ONNX. These are distinct runtime results. See
+[conversion and hardware validation](reports/mobilenetv2/TPU/README.md),
+[evasion report](reports/mobilenetv2/TPU/evasion/EVASION_TPU_REPORT.md) and
+[archive/helper usage](reports/mobilenetv2/ARCHIVE.md).

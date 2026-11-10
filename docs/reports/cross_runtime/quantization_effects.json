@@ -1,0 +1,242 @@
+[
+  {
+    "model": "resnetv2_50",
+    "pair": "RKNN FP16 \u2192 INT8",
+    "condition": "pgd@1",
+    "float_fooled": 55,
+    "quantized_fooled": 45,
+    "shared_n": 71,
+    "reduction_pp": 14.084507042253522,
+    "source": "resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "RKNN FP16 \u2192 INT8",
+    "condition": "pgd@1",
+    "float_fooled": 80,
+    "quantized_fooled": 80,
+    "shared_n": 80,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_rknn/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU: FP16 \u2192 W8A16",
+    "condition": "pgd@1",
+    "float_fooled": 65,
+    "quantized_fooled": 63,
+    "shared_n": 81,
+    "reduction_pp": 2.4691358024691357,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+    "condition": "pgd@1",
+    "float_fooled": 66,
+    "quantized_fooled": 67,
+    "shared_n": 81,
+    "reduction_pp": -1.2345679012345678,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+    "condition": "pgd@1",
+    "float_fooled": 66,
+    "quantized_fooled": 65,
+    "shared_n": 81,
+    "reduction_pp": 1.2345679012345678,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU: FP16 \u2192 W8A16",
+    "condition": "pgd@1",
+    "float_fooled": 82,
+    "quantized_fooled": 82,
+    "shared_n": 82,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+    "condition": "pgd@1",
+    "float_fooled": 82,
+    "quantized_fooled": 82,
+    "shared_n": 82,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+    "condition": "pgd@1",
+    "float_fooled": 82,
+    "quantized_fooled": 82,
+    "shared_n": 82,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "RKNN FP16 \u2192 INT8",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 64,
+    "quantized_fooled": 51,
+    "shared_n": 71,
+    "reduction_pp": 18.309859154929576,
+    "source": "resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "RKNN FP16 \u2192 INT8",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 80,
+    "quantized_fooled": 80,
+    "shared_n": 80,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_rknn/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU: FP16 \u2192 W8A16",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 75,
+    "quantized_fooled": 75,
+    "shared_n": 81,
+    "reduction_pp": 0.0,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 74,
+    "quantized_fooled": 75,
+    "shared_n": 81,
+    "reduction_pp": -1.2345679012345678,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 75,
+    "quantized_fooled": 74,
+    "shared_n": 81,
+    "reduction_pp": 1.2345679012345678,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU: FP16 \u2192 W8A16",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 82,
+    "quantized_fooled": 82,
+    "shared_n": 82,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 82,
+    "quantized_fooled": 82,
+    "shared_n": 82,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+    "condition": "pgd_stronger@1",
+    "float_fooled": 82,
+    "quantized_fooled": 82,
+    "shared_n": 82,
+    "reduction_pp": 0.0,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "RKNN FP16 \u2192 INT8",
+    "condition": "square@8",
+    "float_fooled": 40,
+    "quantized_fooled": 21,
+    "shared_n": 71,
+    "reduction_pp": 26.760563380281692,
+    "source": "resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "RKNN FP16 \u2192 INT8",
+    "condition": "square@8",
+    "float_fooled": 67,
+    "quantized_fooled": 46,
+    "shared_n": 80,
+    "reduction_pp": 26.25,
+    "source": "mobilenetv2/evasion_rknn/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU: FP16 \u2192 W8A16",
+    "condition": "square@8",
+    "float_fooled": 42,
+    "quantized_fooled": 43,
+    "shared_n": 81,
+    "reduction_pp": -1.2345679012345678,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+    "condition": "square@8",
+    "float_fooled": 48,
+    "quantized_fooled": 46,
+    "shared_n": 81,
+    "reduction_pp": 2.4691358024691357,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "resnetv2_50",
+    "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+    "condition": "square@8",
+    "float_fooled": 48,
+    "quantized_fooled": 49,
+    "shared_n": 81,
+    "reduction_pp": -1.2345679012345678,
+    "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU: FP16 \u2192 W8A16",
+    "condition": "square@8",
+    "float_fooled": 51,
+    "quantized_fooled": 53,
+    "shared_n": 82,
+    "reduction_pp": -2.4390243902439024,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+    "condition": "square@8",
+    "float_fooled": 70,
+    "quantized_fooled": 69,
+    "shared_n": 82,
+    "reduction_pp": 1.2195121951219512,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  },
+  {
+    "model": "mobilenetv2",
+    "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+    "condition": "square@8",
+    "float_fooled": 60,
+    "quantized_fooled": 62,
+    "shared_n": 82,
+    "reduction_pp": -2.4390243902439024,
+    "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+  }
+]

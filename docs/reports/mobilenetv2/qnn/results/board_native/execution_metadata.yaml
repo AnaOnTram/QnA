@@ -1,0 +1,17 @@
+---
+timestamp: 526311305
+command: ./qnn-net-run --backend ./libQnnHtp.so --retrieve_context ./mobilenetv2_quantized.bin --input_list smoke_list.txt --output_dir output_native --use_native_output_files
+execution_mode: synchronous
+inferences_completed: 1
+graphs:
+  - graph_name: mobilenetv2_fp32
+    input_tensors:
+    - tensor_name: input
+      id: 1
+      datatype: QNN_DATATYPE_UFIXED_POINT_8
+      dimensions: [1,3,224,224]
+    output_tensors:
+    - tensor_name: logits
+      id: 367
+      datatype: QNN_DATATYPE_UFIXED_POINT_8
+      dimensions: [1,1000]

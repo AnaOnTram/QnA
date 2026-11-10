@@ -4,6 +4,11 @@ Legacy weight files are standalone copies. Core ML packages must retain all of t
 
 | File | Runtime | Precision | MiB |
 | --- | --- | --- | ---: |
+| [weights/mobilenetv2/edgetpu/mobilenetv2_int8_nhwc_edgetpu.tflite](../weights/mobilenetv2/edgetpu/mobilenetv2_int8_nhwc_edgetpu.tflite) | Coral Edge TPU | INT8 with UINT8 I/O | 4.04 |
+| [weights/mobilenetv2/qnn/mobilenetv2_fp32.dlc](../weights/mobilenetv2/qnn/mobilenetv2_fp32.dlc) | Qualcomm QAIRT 2.42.0.251225 CPU | FP32 | 13.42 |
+| [weights/mobilenetv2/qnn/mobilenetv2_int8.dlc](../weights/mobilenetv2/qnn/mobilenetv2_int8.dlc) | Qualcomm QNN CPU / HTP, QAIRT 2.42.0.251225 | INT8 | 3.44 |
+| [weights/mobilenetv2/qnn/mobilenetv2_quantized.bin](../weights/mobilenetv2/qnn/mobilenetv2_quantized.bin) | Qualcomm QNN HTP (QCS6490), QAIRT 2.42.0.251225 | INT8 | 5.25 |
+| [weights/mobilenetv2/tflite/mobilenetv2_int8_nhwc.tflite](../weights/mobilenetv2/tflite/mobilenetv2_int8_nhwc.tflite) | TensorFlow Lite CPU | INT8 with UINT8 I/O | 3.83 |
 | [weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx](../weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx) | ONNX Runtime / TensorRT | FP32 | 13.55 |
 | [weights/mobilenetv2/pytorch/mobilenet_v2-b0353104.pth](../weights/mobilenetv2/pytorch/mobilenet_v2-b0353104.pth) | PyTorch | FP32 | 13.55 |
 | [weights/mobilenetv2/rknn/mobilenetv2.rknn](../weights/mobilenetv2/rknn/mobilenetv2.rknn) | Rockchip RKNN Toolkit2 2.5.0 / RK3588 | FP16 | 7.20 |

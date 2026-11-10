@@ -1,0 +1,44 @@
+{
+  "model": "/home/ross/QA/Models/mobilenetV2/TPU/mobilenetv2_int8_nhwc_edgetpu.tflite",
+  "sha256": "1222a555cbf173a7c0f810991f44d877bdf7908ec80358903da2ab32c9d27070",
+  "bytes": 4231808,
+  "backend": "tpu",
+  "tensorflow": "2.19.1",
+  "num_threads": 1,
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "uint8",
+    "scale": 0.003921568859368563,
+    "zero_point": 0
+  },
+  "output": {
+    "shape": [
+      1,
+      1000
+    ],
+    "dtype": "uint8",
+    "scale": 0.1706031858921051,
+    "zero_point": 84
+  },
+  "preprocessing": "Raw RGB uint8 NHWC; ImageNet normalization is inside graph before padded stem",
+  "operations": [
+    "edgetpu-custom-op",
+    "DELEGATE"
+  ],
+  "edgetpu": {
+    "version": "BuildLabel(COMPILER=13.3.0,DATE=redacted,TIME=redacted), RuntimeVersion(14)",
+    "devices": [
+      {
+        "type": 1,
+        "path": "/sys/bus/usb/devices/2-1"
+      }
+    ]
+  },
+  "n_inferences": 66607,
+  "latency_ms_median": 3.9933660009410232
+}

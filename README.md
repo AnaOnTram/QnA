@@ -8,6 +8,7 @@ tags:
   - rknn
   - qnn
   - tflite
+  - edgetpu
   - quantized
   - coreml
 ---
@@ -19,8 +20,9 @@ Pretrained **timm ResNetV2-50 (`resnetv2_50.a1h_in1k`)** and **MobileNetV2
 artifacts, plus their evasion attack reports and supporting figures/evidence.
 This snapshot was assembled on 6 November 2026 (Hong Kong time).
 
-32 model artifacts represented by 48 files, **1,061,320,331 bytes** (1012.15 MiB),
-including eight Core ML packages (four per model) added on 10 November 2026. Binary model data is
+37 model artifacts represented by 53 files, **1,092,744,779 bytes** (1042.12 MiB),
+including eight Core ML packages (four per model) and five MobileNetV2 TFLite,
+Edge TPU and QNN artifacts added on 10 November 2026. Binary model data is
 tracked with Git LFS. Package JSON manifests, reports, figures, compact result
 evidence, checksums and provenance manifests use ordinary Git.
 
@@ -32,9 +34,9 @@ evidence, checksums and provenance manifests use ordinary Git.
 | TensorRT compiled engines | Two INT8 plans, TensorRT 10.9, batch profile max 10 | Documented deployment engines absent locally; graphs included |
 | Apple Core ML | FP32, FP16, INT8 weight-only, experimental INT4 weight-only; iOS 18 / macOS 15+ | FP32, FP16, INT8 weight-only, experimental INT4 weight-only; iOS 18 / macOS 15+ |
 | Rockchip RKNN, RK3588 | FP16, INT8 | FP16, INT8; opset-19 conversion source |
-| Qualcomm QAIRT / QNN | FP32 DLC, INT8 DLC, QCS6490 INT8 context | No local artifact |
-| TensorFlow Lite CPU | Static NHWC INT8, UINT8 I/O | No local artifact |
-| Coral Edge TPU | Compiled static NHWC INT8, UINT8 I/O | No local artifact |
+| Qualcomm QAIRT / QNN | FP32 DLC, INT8 DLC, QCS6490 INT8 context | FP32 DLC, INT8 DLC, QCS6490 INT8 context |
+| TensorFlow Lite CPU | Static NHWC INT8, UINT8 I/O | Static NHWC INT8, UINT8 I/O |
+| Coral Edge TPU | Compiled static NHWC INT8, UINT8 I/O | Compiled static NHWC INT8, UINT8 I/O |
 
 TorchVision **ResNet-50** is excluded. MobileNetV2 retains its original
 TorchVision checkpoint. ResNetV2-50 and MobileNetV2 are separate model families.
@@ -44,7 +46,11 @@ TorchVision checkpoint. ResNetV2-50 and MobileNetV2 are separate model families.
 - [Evasion attack reports](docs/reports/README.md): unified timm comparison, Edge TPU,
   MobileNetV2 TensorRT and RKNN reports, and new Core ML studies of both models on
   CPU, CPU+GPU and CPU+Neural Engine, with figures, matrices and validation evidence.
+- New cross-runtime syntheses: [ResNetV2-50, 19 configurations](docs/reports/resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md),
+  [MobileNetV2, 20 configurations](docs/reports/mobilenetv2/MOBILENETV2_REPORT.md), and
+  [how runtime and quantization effects differ between models](docs/reports/CROSS_MODEL_REPORT.md).
 - [Core ML conversion and validation](docs/coreml/README.md): four packages per model, reproduction scripts, input contracts and measured quantization drift.
+- [MobileNetV2 TPU and QNN archive](docs/reports/mobilenetv2/ARCHIVE.md): conversion, hardware validation, performance and evasion reports, runtime helpers and retained evidence.
 - [Artifact catalog](docs/CATALOG.md): every included file, runtime, precision and size.
 - [Runtime and preprocessing notes](docs/RUNTIMES.md): input contracts and deployment limits.
 - [Provenance and scope](docs/PROVENANCE.md): sources, quantization recipes and exclusions.
@@ -63,7 +69,8 @@ sha256sum --check docs/reports/SHA256SUMS
 ```
 
 This archive contains weights, attack reports, figures and compact result evidence.
-It also includes Core ML conversion and validation scripts. It contains no
+It also includes Core ML conversion and validation scripts and the MobileNetV2
+TPU/QNN conversion and runtime helpers. It contains no
 datasets, calibration images, attack implementation, adversarial candidate
 tensors, full experiment logs, virtual environments or SDKs.
 Use the appropriate runtime and model architecture; there is no single

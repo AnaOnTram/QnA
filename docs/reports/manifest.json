@@ -1,7 +1,599 @@
 {
   "schema_version": 1,
-  "description": "Existing reports and supporting evidence; only local Markdown links adjusted for archive portability.",
+  "description": "Retained experiment reports, conversion/runtime documentation, selected helpers and compact evidence, plus newly composed cross-runtime and cross-model analyses with reproducible reporting calculations.",
   "files": [
+    {
+      "path": "CROSS_MODEL_REPORT.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "2e1b9999b81024e82344a8736aabe91bd35137045ad518cb8107e50c8a711027",
+      "bytes": 15914,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/README.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "42c295aa5b99efc4dc4d43423407d2e52496c69407f09fbed6da2d1d2f4e15ec",
+      "bytes": 3636,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/all_conditions.csv",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "f4369de6d7960b75f5b6bb0af1b580e3d1a6fc516c392b33d075ac10e69c6dcd",
+      "bytes": 192204,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/build_reports.py",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "7e83c62db34220ef8a94349be053bb61e6dc9d2c6e2a31e5758e23fc03768c89",
+      "bytes": 20479,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/chart_data.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "b986420b95b0e2bf3cd6fabb422a86311a72853ad3674ed17dfc9f11170d48a9",
+      "bytes": 102145,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/cross_model_comparisons.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "a38ae35a38e15546b8d353658f3e5ddf99364473bf32cf5dca89ee2a6d70707b",
+      "bytes": 54659,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/cross_model_table.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "81d08c092b1adcf38431c4397b9706ee76d35b0a8cbc645460ab8ae63007e2d2",
+      "bytes": 1589,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/figures/coreml_square_seed_ranges.png",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "13db027185f648a105cc8848d2c2a0e63165a0e00c1190c1d9a7297ab8a5e562",
+      "bytes": 122424,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/figures/cross_model_rates.png",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "8700fad524a3cc0aa8cefd337d3ef2850aaf59dcf562d890589048d3bfc38176",
+      "bytes": 179105,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/figures/mobilenetv2_matrix.png",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "5f06abe6e8143377aa0273495952e5f62c0c7b6e25be11519b528b8709fb193c",
+      "bytes": 530248,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/figures/quantization_model_interaction.png",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "75803b78ae3527ed552cc267949f387335f70686c11a3b86e7568535ce7dbb3d",
+      "bytes": 119791,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/figures/resnetv2_50_matrix.png",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "a0b537cd8690dda8235cbac0d971831762361f74548cb870c2e590d5736caa6b",
+      "bytes": 545867,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/inputs/resnetv2_50_qnn_summary.json",
+      "source_path_relative_to_qa": "Models/resnet50/evasion/results/qnn_v2_matched/run/summary.json",
+      "source_sha256": "4cdfe8609f44df1eeabca1ee5a34cdf2ea8f8aa9a075c53642668ff23efedc5b",
+      "packaged_sha256": "4cdfe8609f44df1eeabca1ee5a34cdf2ea8f8aa9a075c53642668ff23efedc5b",
+      "bytes": 30770,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "Byte-for-byte original experiment evidence imported for reproducible reporting"
+    },
+    {
+      "path": "cross_runtime/inputs/resnetv2_50_samples.json",
+      "source_path_relative_to_qa": "Models/resnet50/evasion_rknn/results/run/pytorch_fp32/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "Byte-for-byte original experiment evidence imported for reproducible reporting"
+    },
+    {
+      "path": "cross_runtime/mobilenetv2_coreml_shared.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "e351d15d4b2e61710133a78cd6a6e305b78f633f2be5f1dcb30741158fe654c3",
+      "bytes": 887,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/mobilenetv2_table.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "62c63d8fcd459472ed705a772b4ea220f615b36320d707837d4ffb66e0ed9b9f",
+      "bytes": 3924,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/normalized_results.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "f2b949f1f30ed9a29ba1c14ed5d335959c8c67ce1f3e21f805812eb4ebef9c1c",
+      "bytes": 260653,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/quantization_effects.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "4094ae7f45a66ea7bb6cea1a7a75e5df13e0c927d3a2c44723e3889c138e1fdf",
+      "bytes": 7052,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/resnetv2_50_coreml_shared.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "4b4011556ea0bb4f00434e8ac7a786c4168c56eeca496a4862fd55473a4ba18d",
+      "bytes": 869,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/resnetv2_50_table.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "2b88cb0c4c256c393d7a61dab901218251f997f6bb4394a36a4a2442e7764e55",
+      "bytes": 3761,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/source_index.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "5d1863f0515cd4e773dbb6d811cb4eb3a87c7e75477e638b727c8e31d2966270",
+      "bytes": 8062,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/square_seed_results.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "cab1429fbf9d51d0f12808bcbef14ba716efe20c836e5e0c72031364cb0889d8",
+      "bytes": 7398,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "cross_runtime/validation.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "af8f16db33b148abee2322b51a375427c3203acb53fc4807506f3cb1d88e4cb8",
+      "bytes": 711,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "mobilenetv2/ARCHIVE.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "bb524fb01fb6ec201ff9668a04497f4b6fabd325d46306a0d53517b789524d1f",
+      "bytes": 4943,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "Archive guide authored during packaging; not an experiment result"
+    },
+    {
+      "path": "mobilenetv2/MOBILENETV2_REPORT.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "a0441838873800e7fed4210e281ca5cf784559e68a8eb8f6bb8bc2a8c268ba43",
+      "bytes": 16131,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+    },
+    {
+      "path": "mobilenetv2/TPU/README.md",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/README.md",
+      "source_sha256": "533ba55c2cbc662e15cc055ff0e06c94772ca8385cf4749dda73c8cdff6994b0",
+      "packaged_sha256": "18546b5519b06fc801350cc2b6b694c273171fa116a318103b76d4232e8a0b37",
+      "bytes": 7908,
+      "links_adjusted": true,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/convert.sh",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/convert.sh",
+      "source_sha256": "d1e6ce1208932d60f5a77e83deecf3cb42f686fab99801ff7bda4b1186a33bf0",
+      "packaged_sha256": "d1e6ce1208932d60f5a77e83deecf3cb42f686fab99801ff7bda4b1186a33bf0",
+      "bytes": 1368,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/edgetpu_runtime.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/edgetpu_runtime.py",
+      "source_sha256": "909869d7d2dc9562573bb457a1ee7a2255fedeaa2306417711a37d9ce96b85a2",
+      "packaged_sha256": "909869d7d2dc9562573bb457a1ee7a2255fedeaa2306417711a37d9ce96b85a2",
+      "bytes": 7304,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/EVASION_TPU_REPORT.md",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/EVASION_TPU_REPORT.md",
+      "source_sha256": "e760a589b216d496e332d8fe2954cd640e13b30eaef6534a32b99f96a6005622",
+      "packaged_sha256": "a747342134495db2fd8e0a3b27a11e324ab318c05d9b1df4bd5f33216dea1778",
+      "bytes": 24903,
+      "links_adjusted": true,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/README.md",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/README.md",
+      "source_sha256": "7cea29d6c48aebcabca7e0bf0e2705cf6960ea5dc1333bbf24227693b6d0e882",
+      "packaged_sha256": "7cea29d6c48aebcabca7e0bf0e2705cf6960ea5dc1333bbf24227693b6d0e882",
+      "bytes": 223,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/figures/attack_curves.png",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/figures/attack_curves.png",
+      "source_sha256": "3f9fc5887207ad4514430b316af9c27cb5801be6ccff3fc4a1f128792d48b4b0",
+      "packaged_sha256": "3f9fc5887207ad4514430b316af9c27cb5801be6ccff3fc4a1f128792d48b4b0",
+      "bytes": 147835,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/figures/mobilenet_comparison.png",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/figures/mobilenet_comparison.png",
+      "source_sha256": "2dfaa35052bca46f5cc0167a105d076b7f7329e5b66a505da755a2f52b453764",
+      "packaged_sha256": "2dfaa35052bca46f5cc0167a105d076b7f7329e5b66a505da755a2f52b453764",
+      "bytes": 485518,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/figures/resnet_comparison.png",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/figures/resnet_comparison.png",
+      "source_sha256": "44aad32c153006c0a62196a6b56beb230bd7fe7fa87df8015f53379486aaff22",
+      "packaged_sha256": "44aad32c153006c0a62196a6b56beb230bd7fe7fa87df8015f53379486aaff22",
+      "bytes": 491085,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/figures/square_queries.png",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/figures/square_queries.png",
+      "source_sha256": "f11212e24d6aab09df8f3ca736758cb1163ce4e438644b83ec2fb7dc76fb9490",
+      "packaged_sha256": "f11212e24d6aab09df8f3ca736758cb1163ce4e438644b83ec2fb7dc76fb9490",
+      "bytes": 120650,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/comparisons/all_deployments.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/comparisons/all_deployments.csv",
+      "source_sha256": "3037588b0a8c44076eb7ddf0d5249ba796a6e5af9b44b44991249eedbe32a9ba",
+      "packaged_sha256": "3037588b0a8c44076eb7ddf0d5249ba796a6e5af9b44b44991249eedbe32a9ba",
+      "bytes": 223739,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/comparisons/all_deployments.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/comparisons/all_deployments.json",
+      "source_sha256": "73215a0e4261c98e7f2c5d2b2629980b35beb9164251fc806bebee69d871d816",
+      "packaged_sha256": "73215a0e4261c98e7f2c5d2b2629980b35beb9164251fc806bebee69d871d816",
+      "bytes": 329993,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/comparisons/historical_audit.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/comparisons/historical_audit.json",
+      "source_sha256": "6a2b9a6b4cdfec293aad43f5ab00b9b1a7231d262a8d382c0e0c8f79dc94eac8",
+      "packaged_sha256": "6a2b9a6b4cdfec293aad43f5ab00b9b1a7231d262a8d382c0e0c8f79dc94eac8",
+      "bytes": 11713,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/report_checks.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/report_checks.json",
+      "source_sha256": "eb03ffc03f7ca52c3ab246886a103199fe860dfa559ecce3315de06ef471fb49",
+      "packaged_sha256": "eb03ffc03f7ca52c3ab246886a103199fe860dfa559ecce3315de06ef471fb49",
+      "bytes": 407,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/edgetpu_int8/per_image.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/edgetpu_int8/per_image.csv",
+      "source_sha256": "4f9a88af9a0c4838295cc6aed037abd634c2e40edf0877d1ff2af0ab67627b7e",
+      "packaged_sha256": "4f9a88af9a0c4838295cc6aed037abd634c2e40edf0877d1ff2af0ab67627b7e",
+      "bytes": 170712,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/edgetpu_int8/preflight.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/edgetpu_int8/preflight.json",
+      "source_sha256": "39e7409754a1eb77c7551be58e2be858fb12b6720e78e2fab307ed41d2c7ef15",
+      "packaged_sha256": "39e7409754a1eb77c7551be58e2be858fb12b6720e78e2fab307ed41d2c7ef15",
+      "bytes": 3508,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/edgetpu_int8/runtime.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/edgetpu_int8/runtime.json",
+      "source_sha256": "7ce20bd21052495331dd18ccd968d3b1da11a6ce9900c6511fa6c45a6f18414a",
+      "packaged_sha256": "7ce20bd21052495331dd18ccd968d3b1da11a6ce9900c6511fa6c45a6f18414a",
+      "bytes": 996,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/edgetpu_int8/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/edgetpu_int8/samples.json",
+      "source_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "packaged_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "bytes": 24231,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/edgetpu_int8/summary.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/edgetpu_int8/summary.json",
+      "source_sha256": "8515f0be4aa32c95861f26345b38359099e91a5126c22e1ea9ff08644e4e7f21",
+      "packaged_sha256": "8515f0be4aa32c95861f26345b38359099e91a5126c22e1ea9ff08644e4e7f21",
+      "bytes": 14641,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/tflite_int8/per_image.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/tflite_int8/per_image.csv",
+      "source_sha256": "7caa3db07d329b5ebee45eedbae1d38afe2902e415d0071e13bcdb6561b309a8",
+      "packaged_sha256": "7caa3db07d329b5ebee45eedbae1d38afe2902e415d0071e13bcdb6561b309a8",
+      "bytes": 168402,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/tflite_int8/preflight.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/tflite_int8/preflight.json",
+      "source_sha256": "b2a2a60519c8f1f5976600b09aafee19fb448f216886ee8a0b368d0e87df17ba",
+      "packaged_sha256": "b2a2a60519c8f1f5976600b09aafee19fb448f216886ee8a0b368d0e87df17ba",
+      "bytes": 4589,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/tflite_int8/runtime.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/tflite_int8/runtime.json",
+      "source_sha256": "3d55d2c7efed045411496d54edea4f86dee408440c050b8c6db8b6dd1910b330",
+      "packaged_sha256": "3d55d2c7efed045411496d54edea4f86dee408440c050b8c6db8b6dd1910b330",
+      "bytes": 1952,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/tflite_int8/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/tflite_int8/samples.json",
+      "source_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "packaged_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "bytes": 24231,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/run/tflite_int8/summary.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/run/tflite_int8/summary.json",
+      "source_sha256": "2f9c6e65ca3ffe80b1104970c8347a39f3ecb7431f4563dc6808af2049c2553c",
+      "packaged_sha256": "2f9c6e65ca3ffe80b1104970c8347a39f3ecb7431f4563dc6808af2049c2553c",
+      "bytes": 15723,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/verification/candidate_sha256.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/verification/candidate_sha256.json",
+      "source_sha256": "53b4f00e0e2c14d91a6e629e669ca26bf1c002b8b0260c631a9d8fa8dc6d41cb",
+      "packaged_sha256": "53b4f00e0e2c14d91a6e629e669ca26bf1c002b8b0260c631a9d8fa8dc6d41cb",
+      "bytes": 9638,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/evasion/results/verification/verification.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/verification/verification.json",
+      "source_sha256": "2147b04a747641fb9ea43bd02673098385f83303840b594c767f5c34b4067387",
+      "packaged_sha256": "2147b04a747641fb9ea43bd02673098385f83303840b594c767f5c34b4067387",
+      "bytes": 89375,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/logs/compiler.log",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/logs/compiler.log",
+      "source_sha256": "ff277c935b0f96764296500fbb1244a33515173ace465a8f59872fcafb8101fe",
+      "packaged_sha256": "ff277c935b0f96764296500fbb1244a33515173ace465a8f59872fcafb8101fe",
+      "bytes": 1365,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/mobilenetv2_int8_nhwc_edgetpu.log",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/mobilenetv2_int8_nhwc_edgetpu.log",
+      "source_sha256": "c110dfb71f3ee1649ae233843d7407c3ed7de51f368872d1bd57a0a90b820c4c",
+      "packaged_sha256": "c110dfb71f3ee1649ae233843d7407c3ed7de51f368872d1bd57a0a90b820c4c",
+      "bytes": 796,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/prepare.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/prepare.py",
+      "source_sha256": "d78d40e0fa4f735f15aef537b166dcc0468b0885b287c649482d4428786d7ab0",
+      "packaged_sha256": "d78d40e0fa4f735f15aef537b166dcc0468b0885b287c649482d4428786d7ab0",
+      "bytes": 6151,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/requirements-convert.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/requirements-convert.txt",
+      "source_sha256": "a867f69b2748dfb637e8f43606291def730601988c07ad04ffd25d2facdec263",
+      "packaged_sha256": "a867f69b2748dfb637e8f43606291def730601988c07ad04ffd25d2facdec263",
+      "bytes": 124,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/requirements-runtime.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/requirements-runtime.txt",
+      "source_sha256": "f67451a451f6d6355a3813f5fa9a0447ffc5b6ced3070b9c82b351e09579639a",
+      "packaged_sha256": "f67451a451f6d6355a3813f5fa9a0447ffc5b6ced3070b9c82b351e09579639a",
+      "bytes": 51,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/calibration_samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/calibration_samples.json",
+      "source_sha256": "130750996696f1fbcecd0f7ef2b299fc4369d46855d9c44b2f5dd6aac54c0526",
+      "packaged_sha256": "130750996696f1fbcecd0f7ef2b299fc4369d46855d9c44b2f5dd6aac54c0526",
+      "bytes": 39338,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/conversion_environment.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/conversion_environment.json",
+      "source_sha256": "361f500dd42f8f42dc15b3231eea434a7941982f2e308ea472c8b1b3fe7b4a7b",
+      "packaged_sha256": "361f500dd42f8f42dc15b3231eea434a7941982f2e308ea472c8b1b3fe7b4a7b",
+      "bytes": 612,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/cpu/runtime.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/cpu/runtime.json",
+      "source_sha256": "21505f53d1db6c575acd44faddb8c79d69560b17a857ba8accd2e63fbe4e1886",
+      "packaged_sha256": "21505f53d1db6c575acd44faddb8c79d69560b17a857ba8accd2e63fbe4e1886",
+      "bytes": 1950,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/samples.json",
+      "source_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "packaged_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "bytes": 24231,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/source_validation.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/source_validation.json",
+      "source_sha256": "76d86bf997df41ca387c6127202fe7465a7b96456484ca016020d2bfaad1f6ec",
+      "packaged_sha256": "76d86bf997df41ca387c6127202fe7465a7b96456484ca016020d2bfaad1f6ec",
+      "bytes": 1067,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/tpu/runtime.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/tpu/runtime.json",
+      "source_sha256": "1d94bc10acb3ea09033a08296e0b92f79d79fe753835ca6df96e2cbcc27a43c9",
+      "packaged_sha256": "1d94bc10acb3ea09033a08296e0b92f79d79fe753835ca6df96e2cbcc27a43c9",
+      "bytes": 993,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/results/validation.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/results/validation.json",
+      "source_sha256": "dbec16a846be0fab3e86c35097a2d8e58f6c786360f815781ae865702ad8d208",
+      "packaged_sha256": "dbec16a846be0fab3e86c35097a2d8e58f6c786360f815781ae865702ad8d208",
+      "bytes": 6776,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/TPU/validate.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/TPU/validate.py",
+      "source_sha256": "3381222c4cc5b1fc2be3fa5b9da347fc999d4738054f7408e64546107f32184e",
+      "packaged_sha256": "3381222c4cc5b1fc2be3fa5b9da347fc999d4738054f7408e64546107f32184e",
+      "bytes": 5997,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
     {
       "path": "mobilenetv2/evasion_coreml/README.md",
       "source_path_relative_to_aisr": null,
@@ -217,6 +809,375 @@
       "bytes": 10328,
       "links_adjusted": false,
       "experiment": "Core ML evasion, run locally 2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/README.md",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/README.md",
+      "source_sha256": "d20aa428e97b3bdf4a5977a63c2a3082df189a251b7abc788ee8c8f8c02e12f1",
+      "packaged_sha256": "d20aa428e97b3bdf4a5977a63c2a3082df189a251b7abc788ee8c8f8c02e12f1",
+      "bytes": 9234,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/REPORT.md",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/REPORT.md",
+      "source_sha256": "7e3779fef53f64d185df36c1b50d521776a20007e5d416d99ead405dc99143f3",
+      "packaged_sha256": "7e3779fef53f64d185df36c1b50d521776a20007e5d416d99ead405dc99143f3",
+      "bytes": 5547,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/figures/evasion.png",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/figures/evasion.png",
+      "source_sha256": "f56afe0a0a6f993b2c710c532dfd94340e0c535be04f44c0206ce68628e68f3b",
+      "packaged_sha256": "f56afe0a0a6f993b2c710c532dfd94340e0c535be04f44c0206ce68628e68f3b",
+      "bytes": 122866,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/figures/performance.png",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/figures/performance.png",
+      "source_sha256": "2bb909fdf34827208aa57195876e2d36c27624f535e060143fe280c6feae5c7e",
+      "packaged_sha256": "2bb909fdf34827208aa57195876e2d36c27624f535e060143fe280c6feae5c7e",
+      "bytes": 94185,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_htp_1.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_htp_1.json",
+      "source_sha256": "7b6d8ea98233f2b440f73ce4d52bcb7a55331afa7bedb4befe5695805ea0cb83",
+      "packaged_sha256": "7b6d8ea98233f2b440f73ce4d52bcb7a55331afa7bedb4befe5695805ea0cb83",
+      "bytes": 13538,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_htp_2.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_htp_2.json",
+      "source_sha256": "f6fbe0a53445899b45e00dc05fa12959455e35bcba39299dfb2f783fe934b65c",
+      "packaged_sha256": "f6fbe0a53445899b45e00dc05fa12959455e35bcba39299dfb2f783fe934b65c",
+      "bytes": 13566,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_htp_final1.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_htp_final1.json",
+      "source_sha256": "8e83c42b438a4b49b9a455b2fcb9292b44086464934431f7a0a1c180824c9f36",
+      "packaged_sha256": "8e83c42b438a4b49b9a455b2fcb9292b44086464934431f7a0a1c180824c9f36",
+      "bytes": 13561,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_htp_final2.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_htp_final2.json",
+      "source_sha256": "9a04f7f1824ff99871299d388f8736fbdb51b06523185281ffc792cd8d83aa9e",
+      "packaged_sha256": "9a04f7f1824ff99871299d388f8736fbdb51b06523185281ffc792cd8d83aa9e",
+      "bytes": 13554,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_htp_graph_1.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_htp_graph_1.txt",
+      "source_sha256": "77cfe6180f70fd76687b20908e59954d85051f5f87cde5d7bfae9bbacb3110ef",
+      "packaged_sha256": "77cfe6180f70fd76687b20908e59954d85051f5f87cde5d7bfae9bbacb3110ef",
+      "bytes": 2737,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_htp_graph_final.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_htp_graph_final.txt",
+      "source_sha256": "e33e32e76deecbac15b2e9bb61b66db0639f41a0e0d74a9e756c12c63331f21a",
+      "packaged_sha256": "e33e32e76deecbac15b2e9bb61b66db0639f41a0e0d74a9e756c12c63331f21a",
+      "bytes": 5137,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_ort1_1.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_ort1_1.json",
+      "source_sha256": "4e330b7b3f992482d1ca4ba5cbf7345c95529df315f785060d15357af40d5e38",
+      "packaged_sha256": "4e330b7b3f992482d1ca4ba5cbf7345c95529df315f785060d15357af40d5e38",
+      "bytes": 13785,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_ort1_2.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_ort1_2.json",
+      "source_sha256": "8d8b5dff1b1b9691e81e26aced498e6680ea53c941d1c464110b3e534dee8044",
+      "packaged_sha256": "8d8b5dff1b1b9691e81e26aced498e6680ea53c941d1c464110b3e534dee8044",
+      "bytes": 13769,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_ort4_1.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_ort4_1.json",
+      "source_sha256": "4ee6a3a7edcdd3abd24257aeb4aa965f2b968c7d91593804b73f12e2f54f6dca",
+      "packaged_sha256": "4ee6a3a7edcdd3abd24257aeb4aa965f2b968c7d91593804b73f12e2f54f6dca",
+      "bytes": 13785,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/benchmark_ort4_2.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/benchmark_ort4_2.json",
+      "source_sha256": "04e4a19e08493a663423a91fef62052019c5dde000abd7e877ee3d06864ec072",
+      "packaged_sha256": "04e4a19e08493a663423a91fef62052019c5dde000abd7e877ee3d06864ec072",
+      "bytes": 13773,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_fp32_cpu_memory.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_fp32_cpu_memory.json",
+      "source_sha256": "8957d8b74f10e0692878a4ec6899ef7cd69e1afeb029731cf22c57d0e79c33f7",
+      "packaged_sha256": "8957d8b74f10e0692878a4ec6899ef7cd69e1afeb029731cf22c57d0e79c33f7",
+      "bytes": 2887,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_fp32_cpu_profile.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_fp32_cpu_profile.csv",
+      "source_sha256": "614ad7aa32fda6e604a4f418140894ff3b8651f04aeb88cfce499db5e75df5bb",
+      "packaged_sha256": "614ad7aa32fda6e604a4f418140894ff3b8651f04aeb88cfce499db5e75df5bb",
+      "bytes": 27328,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_fp32_cpu_profile.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_fp32_cpu_profile.txt",
+      "source_sha256": "5327b0e56fd97f9bb3558756cc94ec08e2941fc41f5ba9e44eabd2450fc9aca5",
+      "packaged_sha256": "5327b0e56fd97f9bb3558756cc94ec08e2941fc41f5ba9e44eabd2450fc9aca5",
+      "bytes": 1455,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_htp_memory.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_htp_memory.json",
+      "source_sha256": "e9016dbb1dc4f1f59c46ab38f02dc33cee48ae8ad3b9a33eefb861ccfdef3369",
+      "packaged_sha256": "e9016dbb1dc4f1f59c46ab38f02dc33cee48ae8ad3b9a33eefb861ccfdef3369",
+      "bytes": 2848,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_htp_profile.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_htp_profile.csv",
+      "source_sha256": "a90292b262b02787e9257f3a877c895f2c6902d03b74fad9044a05bd7eed22c7",
+      "packaged_sha256": "a90292b262b02787e9257f3a877c895f2c6902d03b74fad9044a05bd7eed22c7",
+      "bytes": 103426,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_htp_profile.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_htp_profile.txt",
+      "source_sha256": "73d90f91408c827d0c1c5422dcf54138fe8943bbde91ade6e14265631f7d3004",
+      "packaged_sha256": "73d90f91408c827d0c1c5422dcf54138fe8943bbde91ade6e14265631f7d3004",
+      "bytes": 2500,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_int8_cpu_memory.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_int8_cpu_memory.json",
+      "source_sha256": "6c87332e167eb032f337c07bc291f13e333c4b57ddbb2e3d3b053dd96d0cc781",
+      "packaged_sha256": "6c87332e167eb032f337c07bc291f13e333c4b57ddbb2e3d3b053dd96d0cc781",
+      "bytes": 2888,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_int8_cpu_profile.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_int8_cpu_profile.csv",
+      "source_sha256": "ee3dba2f148555205956de5e35c82c870dfc4c0b657c0eb30e082c3487aa6a40",
+      "packaged_sha256": "ee3dba2f148555205956de5e35c82c870dfc4c0b657c0eb30e082c3487aa6a40",
+      "bytes": 27223,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/benchmark/qnn_int8_cpu_profile.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/benchmark/qnn_int8_cpu_profile.txt",
+      "source_sha256": "3cb56ad87aa4cdb3bba2b42ec344581aaa05677a8d56dabb60021ad063b28cc6",
+      "packaged_sha256": "3cb56ad87aa4cdb3bba2b42ec344581aaa05677a8d56dabb60021ad063b28cc6",
+      "bytes": 1453,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/board_requirements.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/board_requirements.txt",
+      "source_sha256": "fe598cf691a99262bb0d918aeef936c1ca63665c1c8e7576265e3561f2ee0e3e",
+      "packaged_sha256": "fe598cf691a99262bb0d918aeef936c1ca63665c1c8e7576265e3561f2ee0e3e",
+      "bytes": 88,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/completion.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/completion.json",
+      "source_sha256": "d215bf575ec5332b5294dfb12b73d369f8e6b7ceafdb4193723c1be2e0d55063",
+      "packaged_sha256": "d215bf575ec5332b5294dfb12b73d369f8e6b7ceafdb4193723c1be2e0d55063",
+      "bytes": 5703,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/deployment.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/deployment.json",
+      "source_sha256": "aee2c8dae744d6cbaadc0bbf1d6b06afd9e0128ce09b7d2bf45e9afe5a14cecb",
+      "packaged_sha256": "aee2c8dae744d6cbaadc0bbf1d6b06afd9e0128ce09b7d2bf45e9afe5a14cecb",
+      "bytes": 29909,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/full_validation/evaluation.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/full_validation/evaluation.json",
+      "source_sha256": "da483e9eb4b73b9458f52999f6dce9f2c898273216c16f264265b14415e630f2",
+      "packaged_sha256": "da483e9eb4b73b9458f52999f6dce9f2c898273216c16f264265b14415e630f2",
+      "bytes": 991,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/full_validation/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/full_validation/samples.json",
+      "source_sha256": "1668f9afdf8dcbf622f78427100b389d4fbd8437659a52452e584b8b984b83f3",
+      "packaged_sha256": "1668f9afdf8dcbf622f78427100b389d4fbd8437659a52452e584b8b984b83f3",
+      "bytes": 866608,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/performance.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/performance.json",
+      "source_sha256": "47b288be505b31b4ed2b7442f65b268c1e5ecd2670ed2b6c3658b80554ac6e0c",
+      "packaged_sha256": "47b288be505b31b4ed2b7442f65b268c1e5ecd2670ed2b6c3658b80554ac6e0c",
+      "bytes": 3172,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/run/pytorch_fp32/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/run/pytorch_fp32/samples.json",
+      "source_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "packaged_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "bytes": 24231,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/run/pytorch_fp32/summary.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/run/pytorch_fp32/summary.json",
+      "source_sha256": "e24d4061e690c64b433e3e8f67de132ce63716a4695e45ad30a89dfe6a1f9da1",
+      "packaged_sha256": "e24d4061e690c64b433e3e8f67de132ce63716a4695e45ad30a89dfe6a1f9da1",
+      "bytes": 6193,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/run/qnn_htp/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/run/qnn_htp/samples.json",
+      "source_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "packaged_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "bytes": 24231,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/run/qnn_htp/summary.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/run/qnn_htp/summary.json",
+      "source_sha256": "501fb4479bf417610a5918ff3c0ecc684e4d5df3287be118505c12b65750a8e6",
+      "packaged_sha256": "501fb4479bf417610a5918ff3c0ecc684e4d5df3287be118505c12b65750a8e6",
+      "bytes": 13786,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/service.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/service.json",
+      "source_sha256": "3034c2344592a952d9b1ab830f9a20c601832718768c799c54ed2d53344a5564",
+      "packaged_sha256": "3034c2344592a952d9b1ab830f9a20c601832718768c799c54ed2d53344a5564",
+      "bytes": 4729,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/service_identity.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/service_identity.txt",
+      "source_sha256": "4842794598548d63a32c204727a45162af6b5e8b84fb247b88e19e173745fbb8",
+      "packaged_sha256": "4842794598548d63a32c204727a45162af6b5e8b84fb247b88e19e173745fbb8",
+      "bytes": 539,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/survivor_check/summary.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/survivor_check/summary.json",
+      "source_sha256": "35cadac444177f61604b1858ce2cd634863dd54529f8c5eaba7a1247624b60a6",
+      "packaged_sha256": "35cadac444177f61604b1858ce2cd634863dd54529f8c5eaba7a1247624b60a6",
+      "bytes": 877,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/verification/per_image.csv",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/verification/per_image.csv",
+      "source_sha256": "9eb4387b2ec94c04b50d50b2c7732cbd2fce9c20a285c38169a559964d488c0b",
+      "packaged_sha256": "9eb4387b2ec94c04b50d50b2c7732cbd2fce9c20a285c38169a559964d488c0b",
+      "bytes": 295747,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/results/verification/verification.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/results/verification/verification.json",
+      "source_sha256": "7710770ca74e7cab8aa892b9c5cd803704ca8ecd80aac04c0a891cd8cbd0c2b1",
+      "packaged_sha256": "7710770ca74e7cab8aa892b9c5cd803704ca8ecd80aac04c0a891cd8cbd0c2b1",
+      "bytes": 5394,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/scripts/qnn_scorer.c",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/scripts/qnn_scorer.c",
+      "source_sha256": "f3daaf6ae931c86c482ea8034a63632a79adddce9c0a31c8af4347d0fab1ef6a",
+      "packaged_sha256": "f3daaf6ae931c86c482ea8034a63632a79adddce9c0a31c8af4347d0fab1ef6a",
+      "bytes": 18701,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/scripts/runtime.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/scripts/runtime.py",
+      "source_sha256": "b647340475d2d0bd1ed017fd68582c57fd3e4944ac01e1dda94254a7c5c857d6",
+      "packaged_sha256": "b647340475d2d0bd1ed017fd68582c57fd3e4944ac01e1dda94254a7c5c857d6",
+      "bytes": 2491,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/evasion_qnn/scripts/serve_board.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/evasion_qnn/scripts/serve_board.py",
+      "source_sha256": "1a2a00c96f4d7844190dad22af25dbaa8d2d745d039a605c135f9102554e8e58",
+      "packaged_sha256": "1a2a00c96f4d7844190dad22af25dbaa8d2d745d039a605c135f9102554e8e58",
+      "bytes": 4670,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
     },
     {
       "path": "mobilenetv2/evasion_rknn/README.md",
@@ -539,6 +1500,159 @@
       "links_adjusted": false
     },
     {
+      "path": "mobilenetv2/qnn/README.md",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/README.md",
+      "source_sha256": "7b828c49a7295f062f01d33f62fe661c2e03da64d1d2150d79131becab0c9ed6",
+      "packaged_sha256": "f307e6a159a5d745042fc5cc7cb0503541c970e45478df4e6467c00586c4b286",
+      "bytes": 6249,
+      "links_adjusted": true,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/config_backend.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/config_backend.json",
+      "source_sha256": "395b203e710577412d81f43f717cb330edddc06d6550f41b0c71d5430f149851",
+      "packaged_sha256": "395b203e710577412d81f43f717cb330edddc06d6550f41b0c71d5430f149851",
+      "bytes": 120,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/config_file.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/config_file.json",
+      "source_sha256": "ed9d37642573103e460756a32a6e6ef03b228393a349f2376a5c5972db03dc55",
+      "packaged_sha256": "ed9d37642573103e460756a32a6e6ef03b228393a349f2376a5c5972db03dc55",
+      "bytes": 139,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/convert.sh",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/convert.sh",
+      "source_sha256": "5ffe78856d5239bfe69f145a361cef06daa26827e50a8102649bf8b357835515",
+      "packaged_sha256": "5ffe78856d5239bfe69f145a361cef06daa26827e50a8102649bf8b357835515",
+      "bytes": 1705,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/prepare.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/prepare.py",
+      "source_sha256": "507eb765bcdc9d9fc67be4ba9a56a1911c3ec2b508971eb64a2a3facbc4af10f",
+      "packaged_sha256": "507eb765bcdc9d9fc67be4ba9a56a1911c3ec2b508971eb64a2a3facbc4af10f",
+      "bytes": 3960,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/board_htp/execution_metadata.yaml",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/board_htp/execution_metadata.yaml",
+      "source_sha256": "166a1e942510c5bd625aad6ed3d30f25873fe33859ed210dc38b7285b1b74eb8",
+      "packaged_sha256": "166a1e942510c5bd625aad6ed3d30f25873fe33859ed210dc38b7285b1b74eb8",
+      "bytes": 529,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/board_native/execution_metadata.yaml",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/board_native/execution_metadata.yaml",
+      "source_sha256": "e757923bfc990d92a236b59dadaf381ef01d8c246327992afb18d5ff1e516dca",
+      "packaged_sha256": "e757923bfc990d92a236b59dadaf381ef01d8c246327992afb18d5ff1e516dca",
+      "bytes": 557,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/board_native/logits_native.raw.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/board_native/logits_native.raw.json",
+      "source_sha256": "fcc4730da0d55a58c99a228a2d36d277594fe5e5404f1a8fe16ac998e6171964",
+      "packaged_sha256": "fcc4730da0d55a58c99a228a2d36d277594fe5e5404f1a8fe16ac998e6171964",
+      "bytes": 187,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/deployment.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/deployment.json",
+      "source_sha256": "7c392b2f615154525b548af5f8444a5b8163c065609c23201244aa84361b1a88",
+      "packaged_sha256": "7c392b2f615154525b548af5f8444a5b8163c065609c23201244aa84361b1a88",
+      "bytes": 9555,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/fp32_cpu/execution_metadata.yaml",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/fp32_cpu/execution_metadata.yaml",
+      "source_sha256": "1750ea4ac6f0ebaef4fb10941c4e687ba81bdde4568e5685c9171000fbadd227",
+      "packaged_sha256": "1750ea4ac6f0ebaef4fb10941c4e687ba81bdde4568e5685c9171000fbadd227",
+      "bytes": 538,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/fp32_dlc_info.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/fp32_dlc_info.txt",
+      "source_sha256": "33db4e7df7bfe0a925cf329f837c083e4bd79d4647753e1abb3f511a133efb56",
+      "packaged_sha256": "33db4e7df7bfe0a925cf329f837c083e4bd79d4647753e1abb3f511a133efb56",
+      "bytes": 202653,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/int8_cpu/execution_metadata.yaml",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/int8_cpu/execution_metadata.yaml",
+      "source_sha256": "3053b68b53199fb7ed5e9dc2c5aaff1f21f9a9fa4d4876d4837a987c94c15e8d",
+      "packaged_sha256": "3053b68b53199fb7ed5e9dc2c5aaff1f21f9a9fa4d4876d4837a987c94c15e8d",
+      "bytes": 550,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/int8_dlc_info.txt",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/int8_dlc_info.txt",
+      "source_sha256": "0f8f3be6f06f81566c28a895c439d4ef007ac314e45e946278a27428b778eaa8",
+      "packaged_sha256": "0f8f3be6f06f81566c28a895c439d4ef007ac314e45e946278a27428b778eaa8",
+      "bytes": 347974,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/samples.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/samples.json",
+      "source_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "packaged_sha256": "7e5dd85e6c9d8ef14b0b7fd9e0eda38d9658755f2d65f340ff6078e7fd51cb47",
+      "bytes": 24231,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/source_validation.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/source_validation.json",
+      "source_sha256": "ea21e1f8d0a2b7fb9b55ca9966468a411944180bc46dd38d448afa097f1aca69",
+      "packaged_sha256": "ea21e1f8d0a2b7fb9b55ca9966468a411944180bc46dd38d448afa097f1aca69",
+      "bytes": 7502,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/results/validation.json",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/results/validation.json",
+      "source_sha256": "aec2f0109fd605aa53c7219368efefec2b1b822a3159fa672ea20fd04d1ff6a6",
+      "packaged_sha256": "aec2f0109fd605aa53c7219368efefec2b1b822a3159fa672ea20fd04d1ff6a6",
+      "bytes": 1526,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
+      "path": "mobilenetv2/qnn/validate.py",
+      "source_path_relative_to_qa": "Models/mobilenetV2/qnn/validate.py",
+      "source_sha256": "63e25e1aaa289618b702b1255adeccdcec11dc4eef29a5d773d07aadc9051312",
+      "packaged_sha256": "63e25e1aaa289618b702b1255adeccdcec11dc4eef29a5d773d07aadc9051312",
+      "bytes": 7855,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10"
+    },
+    {
       "path": "mobilenetv2/rknn/README.md",
       "source_path_relative_to_qa": "Models/mobilenetV2/rknn/README.md",
       "source_sha256": "2f14baa1445ad03dd6fa00ff35fb863718c9971b58901f75b35c61ffa4ac9975",
@@ -553,6 +1667,16 @@
       "packaged_sha256": "19dc081e733718dfb4d49908a223613931ce9bb52904ecd7c687d3b18dcf49b1",
       "bytes": 24309,
       "links_adjusted": false
+    },
+    {
+      "path": "resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "packaged_sha256": "352f857729926dd4a5e6fe5f295c2f5ece4126d216ad7695e1e550cffe95a690",
+      "bytes": 15347,
+      "links_adjusted": false,
+      "archive_date": "2026-11-10",
+      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "resnetv2_50/RESNETV2_50_REPORT.md",
@@ -1298,5 +2422,6 @@
       "bytes": 2720,
       "links_adjusted": false
     }
-  ]
+  ],
+  "updated": "2026-11-10"
 }

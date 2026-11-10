@@ -1,0 +1,59 @@
+{
+  "n": 100,
+  "onnx_correct": 83,
+  "runtimes": {
+    "fp32_cpu": {
+      "correct": 83,
+      "onnx_top1_agreement": 100,
+      "logit_mae": 1.9448296329937877e-06,
+      "logit_max_abs": 1.9073486328125e-05,
+      "mean_cosine": 0.9999999999996431,
+      "all_finite": true
+    },
+    "int8_cpu": {
+      "correct": 75,
+      "onnx_top1_agreement": 86,
+      "logit_mae": 0.5543617943369783,
+      "logit_max_abs": 15.111351013183594,
+      "mean_cosine": 0.9716344821214693,
+      "all_finite": true
+    },
+    "board_htp": {
+      "correct": 78,
+      "onnx_top1_agreement": 89,
+      "logit_mae": 0.6189933332137764,
+      "logit_max_abs": 15.111351013183594,
+      "mean_cosine": 0.964190736788425,
+      "all_finite": true
+    }
+  },
+  "artifacts": {
+    "mobilenetv2_fp32.dlc": {
+      "sha256": "d3b673fbce9e01d4db07dc78116ee3c06e819b674e76ca0e8c5a3df5f29894bc",
+      "bytes": 14071460
+    },
+    "mobilenetv2_int8.dlc": {
+      "sha256": "6a6fac46a87d2312fda0ec615baaca19c02f084d41b32f93a56e323e4b4cf6b2",
+      "bytes": 3608412
+    },
+    "mobilenetv2_quantized.bin": {
+      "sha256": "c7377092adbacd327409e421f867981db49e8cf0bea4013ce72b376cbb3ec6bb",
+      "bytes": 5500928
+    }
+  },
+  "htp_vs_int8_cpu": {
+    "top1_agreement": 90,
+    "logit_mae": 0.44823071360588074
+  },
+  "io_encodings": {
+    "input": {
+      "scale": 0.018658448011,
+      "offset": -114
+    },
+    "logits": {
+      "scale": 0.149840772152,
+      "offset": -71
+    }
+  },
+  "native_output_smoke_matches_float_output_exactly": true
+}

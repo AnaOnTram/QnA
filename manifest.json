@@ -328,6 +328,45 @@
       "source_hash_previously_pinned": false
     },
     {
+      "path": "weights/mobilenetv2/edgetpu/mobilenetv2_int8_nhwc_edgetpu.tflite",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "Coral Edge TPU",
+      "precision": "INT8 with UINT8 I/O",
+      "recipe": "Edge TPU compiler 16.0.384591198; 73/73 operations mapped to one TPU subgraph",
+      "metadata": {
+        "archive_date": "2026-11-10",
+        "build_date": "2026-11-10",
+        "source_onnx_path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+        "source_onnx_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "validation_report": "docs/reports/mobilenetv2/TPU/results/validation.json",
+        "input": {
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "uint8",
+          "scale": 0.003921568859368563,
+          "zero_point": 0
+        },
+        "output": {
+          "shape": [
+            1,
+            1000
+          ],
+          "dtype": "uint8",
+          "scale": 0.1706031858921051,
+          "zero_point": 84
+        },
+        "normalization_embedded": true
+      },
+      "bytes": 4231808,
+      "sha256": "1222a555cbf173a7c0f810991f44d877bdf7908ec80358903da2ab32c9d27070",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/TPU/mobilenetv2_int8_nhwc_edgetpu.tflite",
+      "source_hash_previously_pinned": true
+    },
+    {
       "path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
       "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
       "runtime": "ONNX Runtime / TensorRT",
@@ -350,6 +389,94 @@
       "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
       "source_path_relative_to_home": "QA/Models/mobilenetV2/pytorch/mobilenet_v2-b0353104.pth",
       "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/qnn/mobilenetv2_fp32.dlc",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "Qualcomm QAIRT 2.42.0.251225 CPU",
+      "precision": "FP32",
+      "recipe": "qairt-converter from pinned opset-20 MobileNetV2 ONNX; fixed batch 1",
+      "metadata": {
+        "archive_date": "2026-11-10",
+        "build_date": "2026-11-10",
+        "source_onnx_path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+        "source_onnx_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "validation_report": "docs/reports/mobilenetv2/qnn/results/validation.json",
+        "input": "float32 NCHW [1,3,224,224], externally ImageNet-normalized; qnn-net-run float mode handles encoding",
+        "output": "logits [1,1000]",
+        "graph_name": "mobilenetv2_fp32",
+        "normalization_embedded": false
+      },
+      "bytes": 14071460,
+      "sha256": "d3b673fbce9e01d4db07dc78116ee3c06e819b674e76ca0e8c5a3df5f29894bc",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/qnn/mobilenetv2_fp32.dlc",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/mobilenetv2/qnn/mobilenetv2_int8.dlc",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "Qualcomm QNN CPU / HTP, QAIRT 2.42.0.251225",
+      "precision": "INT8",
+      "recipe": "20 original ResNet QNN calibration raws; default asymmetric min-max W8A8/bias8; per-channel/per-row disabled; dynamic 16-bit weight option enabled",
+      "metadata": {
+        "archive_date": "2026-11-10",
+        "build_date": "2026-11-10",
+        "source_onnx_path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+        "source_onnx_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "validation_report": "docs/reports/mobilenetv2/qnn/results/validation.json",
+        "input": "float32 NCHW [1,3,224,224], externally ImageNet-normalized; qnn-net-run float mode handles encoding",
+        "output": "logits [1,1000]",
+        "graph_name": "mobilenetv2_fp32",
+        "normalization_embedded": false,
+        "native_io_encodings": {
+          "input": {
+            "scale": 0.018658448011,
+            "offset": -114
+          },
+          "logits": {
+            "scale": 0.149840772152,
+            "offset": -71
+          }
+        },
+        "native_io_dtype": "UINT8"
+      },
+      "bytes": 3608412,
+      "sha256": "6a6fac46a87d2312fda0ec615baaca19c02f084d41b32f93a56e323e4b4cf6b2",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/qnn/mobilenetv2_int8.dlc",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/mobilenetv2/qnn/mobilenetv2_quantized.bin",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "Qualcomm QNN HTP (QCS6490), QAIRT 2.42.0.251225",
+      "precision": "INT8",
+      "recipe": "qnn-context-binary-generator; HTP v68; SoC ID 35; VTCM 2 MiB",
+      "metadata": {
+        "archive_date": "2026-11-10",
+        "build_date": "2026-11-10",
+        "source_onnx_path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+        "source_onnx_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "validation_report": "docs/reports/mobilenetv2/qnn/results/validation.json",
+        "input": "float32 NCHW [1,3,224,224], externally ImageNet-normalized; qnn-net-run float mode handles encoding",
+        "output": "logits [1,1000]",
+        "graph_name": "mobilenetv2_fp32",
+        "normalization_embedded": false,
+        "native_io_encodings": {
+          "input": {
+            "scale": 0.018658448011,
+            "offset": -114
+          },
+          "logits": {
+            "scale": 0.149840772152,
+            "offset": -71
+          }
+        },
+        "native_io_dtype": "UINT8"
+      },
+      "bytes": 5500928,
+      "sha256": "c7377092adbacd327409e421f867981db49e8cf0bea4013ce72b376cbb3ec6bb",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/qnn/mobilenetv2_quantized.bin",
+      "source_hash_previously_pinned": true
     },
     {
       "path": "weights/mobilenetv2/rknn/mobilenetv2.rknn",
@@ -434,6 +561,45 @@
       "sha256": "f8990e426d29cb7221950a09e3a4f7cac221c43ed2aeaaa4d8e13057146870be",
       "source_path_relative_to_home": "QA/Models/mobilenetV2/trt/mobilenetv2_int8.onnx",
       "source_hash_previously_pinned": false
+    },
+    {
+      "path": "weights/mobilenetv2/tflite/mobilenetv2_int8_nhwc.tflite",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "TensorFlow Lite CPU",
+      "precision": "INT8 with UINT8 I/O",
+      "recipe": "Static NHWC; embedded ImageNet normalization; per-channel PTQ with 200 ImageNet-mini training images",
+      "metadata": {
+        "archive_date": "2026-11-10",
+        "build_date": "2026-11-10",
+        "source_onnx_path": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+        "source_onnx_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "validation_report": "docs/reports/mobilenetv2/TPU/results/validation.json",
+        "input": {
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "uint8",
+          "scale": 0.003921568859368563,
+          "zero_point": 0
+        },
+        "output": {
+          "shape": [
+            1,
+            1000
+          ],
+          "dtype": "uint8",
+          "scale": 0.1706031858921051,
+          "zero_point": 84
+        },
+        "normalization_embedded": true
+      },
+      "bytes": 4011840,
+      "sha256": "1aead6533836085bbe99c626cf3c7d79a3628e7a92486884d76359b13e16c249",
+      "source_path_relative_to_home": "QA/Models/mobilenetV2/TPU/mobilenetv2_int8_nhwc.tflite",
+      "source_hash_previously_pinned": true
     },
     {
       "path": "weights/resnetv2_50/coreml/resnetv2_50_fp16.mlpackage/Data/com.apple.CoreML/model.mlmodel",

@@ -1,0 +1,18 @@
+{
+  "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "checkpoint_sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+  "prepared_onnx_sha256": "abe5f164d6c960a85f2add44c1bfb2a98b25240a15e998cb6209ae01cc8f522b",
+  "calibration_n": 200,
+  "calibration_sha256": "d47f387a15ae06dfc4731c95a1be0dcfcabb3b80dd3ddbd1c9a60c6d49afe79e",
+  "calibration_content_overlap": 0,
+  "calibration_recipe": "Same 200 ImageNet-mini train images and bilinear 224x224 resize as ResNet TPU",
+  "evaluation_n": 100,
+  "evaluation_preprocessing": "RGB; Resize shorter side 256 BICUBIC antialias; CenterCrop 224; ImageNet normalization",
+  "evaluation_sha256": "28aa7d0ebd7ba2eea82a8f1cae042760a9db34bebc35668e98fa3bd765c18a03",
+  "onnx_correct": 83,
+  "wrapped_top1_agreement": 100,
+  "wrapped_logit_max_abs": 0.0,
+  "black_white_random_max_abs": 0.0,
+  "normalization": "Explicit (pixel - ImageNet mean) / std before padded stem; raw RGB float [0,1] input"
+}

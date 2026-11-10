@@ -1,0 +1,4049 @@
+{
+  "resnetv2_50_matrix": [
+    {
+      "deployment": "PyTorch FP32",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 81,
+          "success_pct": 80.24691358024691,
+          "wilson95_pct": [
+            70.29560930488834,
+            87.45917318129888
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "pgd_stronger@1": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 36,
+          "eligible": 81,
+          "success_pct": 44.44444444444444,
+          "wilson95_pct": [
+            34.119552503457854,
+            55.27242622356897
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 81,
+          "success_pct": 60.49382716049383,
+          "wilson95_pct": [
+            49.60547732360617,
+            70.43189619200982
+          ],
+          "robust_correct": 32,
+          "robust_accuracy_pct": 32
+        }
+      }
+    },
+    {
+      "deployment": "ORT CUDA FP32",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 81,
+          "success_pct": 80.24691358024691,
+          "wilson95_pct": [
+            70.29560930488834,
+            87.45917318129888
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "pgd_stronger@1": {
+          "fooled": 74,
+          "eligible": 81,
+          "success_pct": 91.35802469135803,
+          "wilson95_pct": [
+            83.22008336612947,
+            95.75074166600406
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 37,
+          "eligible": 81,
+          "success_pct": 45.67901234567901,
+          "wilson95_pct": [
+            35.2733326843646,
+            56.47598410332293
+          ],
+          "robust_correct": 44,
+          "robust_accuracy_pct": 44
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 81,
+          "success_pct": 60.49382716049383,
+          "wilson95_pct": [
+            49.60547732360617,
+            70.43189619200982
+          ],
+          "robust_correct": 32,
+          "robust_accuracy_pct": 32
+        }
+      }
+    },
+    {
+      "deployment": "RKNN FP16",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 81,
+          "success_pct": 80.24691358024691,
+          "wilson95_pct": [
+            70.29560930488834,
+            87.45917318129888
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "pgd_stronger@1": {
+          "fooled": 74,
+          "eligible": 81,
+          "success_pct": 91.35802469135803,
+          "wilson95_pct": [
+            83.22008336612947,
+            95.75074166600406
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 32,
+          "eligible": 81,
+          "success_pct": 39.50617283950617,
+          "wilson95_pct": [
+            29.568103807990187,
+            50.39452267639383
+          ],
+          "robust_correct": 49,
+          "robust_accuracy_pct": 49
+        },
+        "square@8": {
+          "fooled": 50,
+          "eligible": 81,
+          "success_pct": 61.72839506172839,
+          "wilson95_pct": [
+            50.841247547241295,
+            71.55346402903538
+          ],
+          "robust_correct": 31,
+          "robust_accuracy_pct": 31
+        }
+      }
+    },
+    {
+      "deployment": "RKNN INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 35,
+          "eligible": 78,
+          "success_pct": 44.87179487179487,
+          "wilson95_pct": [
+            34.334372317098584,
+            55.89063085943674
+          ],
+          "robust_correct": 43,
+          "robust_accuracy_pct": 43
+        },
+        "pgd@1": {
+          "fooled": 52,
+          "eligible": 78,
+          "success_pct": 66.66666666666667,
+          "wilson95_pct": [
+            55.641409712618795,
+            76.1273299636414
+          ],
+          "robust_correct": 26,
+          "robust_accuracy_pct": 26
+        },
+        "pgd_stronger@1": {
+          "fooled": 58,
+          "eligible": 78,
+          "success_pct": 74.35897435897436,
+          "wilson95_pct": [
+            63.68667271880386,
+            82.74456219265333
+          ],
+          "robust_correct": 20,
+          "robust_accuracy_pct": 20
+        },
+        "pgd@8": {
+          "fooled": 78,
+          "eligible": 78,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.30621902878059,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 15,
+          "eligible": 78,
+          "success_pct": 19.23076923076923,
+          "wilson95_pct": [
+            12.015206340148435,
+            29.334812719063528
+          ],
+          "robust_correct": 63,
+          "robust_accuracy_pct": 63
+        },
+        "square@8": {
+          "fooled": 28,
+          "eligible": 78,
+          "success_pct": 35.8974358974359,
+          "wilson95_pct": [
+            26.145561949700706,
+            46.973196785771435
+          ],
+          "robust_correct": 50,
+          "robust_accuracy_pct": 50
+        }
+      }
+    },
+    {
+      "deployment": "ORT CUDA FP16",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 42,
+          "eligible": 82,
+          "success_pct": 51.21951219512195,
+          "wilson95_pct": [
+            40.59077238820504,
+            61.73910413938009
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 82,
+          "success_pct": 79.26829268292683,
+          "wilson95_pct": [
+            69.28342703478701,
+            86.63360962725591
+          ],
+          "robust_correct": 17,
+          "robust_accuracy_pct": 17
+        },
+        "pgd_stronger@1": {
+          "fooled": 76,
+          "eligible": 82,
+          "success_pct": 92.6829268292683,
+          "wilson95_pct": [
+            84.94215619114517,
+            96.60352227433408
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 31,
+          "eligible": 82,
+          "success_pct": 37.80487804878049,
+          "wilson95_pct": [
+            28.078371592811894,
+            48.6228631313369
+          ],
+          "robust_correct": 51,
+          "robust_accuracy_pct": 51
+        },
+        "square@8": {
+          "fooled": 51,
+          "eligible": 82,
+          "success_pct": 62.19512195121951,
+          "wilson95_pct": [
+            51.37713686866311,
+            71.92162840718811
+          ],
+          "robust_correct": 31,
+          "robust_accuracy_pct": 31
+        }
+      }
+    },
+    {
+      "deployment": "ORT CPU INT8 QOperator",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 27,
+          "eligible": 78,
+          "success_pct": 34.61538461538461,
+          "wilson95_pct": [
+            25.005203906310765,
+            45.669805623295204
+          ],
+          "robust_correct": 51,
+          "robust_accuracy_pct": 51
+        },
+        "pgd@1": {
+          "fooled": 48,
+          "eligible": 78,
+          "success_pct": 61.53846153846154,
+          "wilson95_pct": [
+            50.442785608463936,
+            71.55095724433158
+          ],
+          "robust_correct": 30,
+          "robust_accuracy_pct": 30
+        },
+        "pgd_stronger@1": {
+          "fooled": 58,
+          "eligible": 78,
+          "success_pct": 74.35897435897436,
+          "wilson95_pct": [
+            63.68667271880386,
+            82.74456219265333
+          ],
+          "robust_correct": 20,
+          "robust_accuracy_pct": 20
+        },
+        "pgd@8": {
+          "fooled": 76,
+          "eligible": 78,
+          "success_pct": 97.43589743589743,
+          "wilson95_pct": [
+            91.12472996432415,
+            99.29399065272409
+          ],
+          "robust_correct": 2,
+          "robust_accuracy_pct": 2
+        },
+        "square@4": {
+          "fooled": 18,
+          "eligible": 78,
+          "success_pct": 23.076923076923077,
+          "wilson95_pct": [
+            15.125508850526876,
+            33.55575782628359
+          ],
+          "robust_correct": 60,
+          "robust_accuracy_pct": 60
+        },
+        "square@8": {
+          "fooled": 31,
+          "eligible": 78,
+          "success_pct": 39.743589743589745,
+          "wilson95_pct": [
+            29.611864644382386,
+            50.83814170868827
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT INT8 Q/DQ",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 32,
+          "eligible": 79,
+          "success_pct": 40.50632911392405,
+          "wilson95_pct": [
+            30.36627826338571,
+            51.52684600852422
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "pgd@1": {
+          "fooled": 50,
+          "eligible": 79,
+          "success_pct": 63.29113924050633,
+          "wilson95_pct": [
+            52.27691853982361,
+            73.0727074795025
+          ],
+          "robust_correct": 29,
+          "robust_accuracy_pct": 29
+        },
+        "pgd_stronger@1": {
+          "fooled": 57,
+          "eligible": 79,
+          "success_pct": 72.15189873417721,
+          "wilson95_pct": [
+            61.417550259975954,
+            80.83182643890088
+          ],
+          "robust_correct": 22,
+          "robust_accuracy_pct": 22
+        },
+        "pgd@8": {
+          "fooled": 77,
+          "eligible": 79,
+          "success_pct": 97.46835443037975,
+          "wilson95_pct": [
+            91.23141537110885,
+            99.30296326934152
+          ],
+          "robust_correct": 2,
+          "robust_accuracy_pct": 2
+        },
+        "square@4": {
+          "fooled": 22,
+          "eligible": 79,
+          "success_pct": 27.848101265822784,
+          "wilson95_pct": [
+            19.168173561099117,
+            38.58244974002403
+          ],
+          "robust_correct": 57,
+          "robust_accuracy_pct": 57
+        },
+        "square@8": {
+          "fooled": 34,
+          "eligible": 79,
+          "success_pct": 43.037974683544306,
+          "wilson95_pct": [
+            32.69382343461824,
+            54.027801031449044
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT INT8 compressed",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 32,
+          "eligible": 79,
+          "success_pct": 40.50632911392405,
+          "wilson95_pct": [
+            30.36627826338571,
+            51.52684600852422
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "pgd@1": {
+          "fooled": 50,
+          "eligible": 79,
+          "success_pct": 63.29113924050633,
+          "wilson95_pct": [
+            52.27691853982361,
+            73.0727074795025
+          ],
+          "robust_correct": 29,
+          "robust_accuracy_pct": 29
+        },
+        "pgd_stronger@1": {
+          "fooled": 58,
+          "eligible": 79,
+          "success_pct": 73.41772151898734,
+          "wilson95_pct": [
+            62.756964490079945,
+            81.90666230587557
+          ],
+          "robust_correct": 21,
+          "robust_accuracy_pct": 21
+        },
+        "pgd@8": {
+          "fooled": 77,
+          "eligible": 79,
+          "success_pct": 97.46835443037975,
+          "wilson95_pct": [
+            91.23141537110885,
+            99.30296326934152
+          ],
+          "robust_correct": 2,
+          "robust_accuracy_pct": 2
+        },
+        "square@4": {
+          "fooled": 22,
+          "eligible": 79,
+          "success_pct": 27.848101265822784,
+          "wilson95_pct": [
+            19.168173561099117,
+            38.58244974002403
+          ],
+          "robust_correct": 57,
+          "robust_accuracy_pct": 57
+        },
+        "square@8": {
+          "fooled": 34,
+          "eligible": 79,
+          "success_pct": 43.037974683544306,
+          "wilson95_pct": [
+            32.69382343461824,
+            54.027801031449044
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        }
+      }
+    },
+    {
+      "deployment": "QNN HTP INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 32,
+          "eligible": 79,
+          "success_pct": 40.50632911392405,
+          "wilson95_pct": [
+            30.36627826338571,
+            51.52684600852422
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "pgd@1": {
+          "fooled": 49,
+          "eligible": 79,
+          "success_pct": 62.0253164556962,
+          "wilson95_pct": [
+            51.00187124379016,
+            71.93350467845725
+          ],
+          "robust_correct": 30,
+          "robust_accuracy_pct": 30
+        },
+        "pgd_stronger@1": {
+          "fooled": 51,
+          "eligible": 79,
+          "success_pct": 64.55696202531645,
+          "wilson95_pct": [
+            53.55927424329845,
+            74.20460187310634
+          ],
+          "robust_correct": 28,
+          "robust_accuracy_pct": 28
+        },
+        "pgd@8": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 18,
+          "eligible": 79,
+          "success_pct": 22.78481012658228,
+          "wilson95_pct": [
+            14.926774686759646,
+            33.1668482260488
+          ],
+          "robust_correct": 61,
+          "robust_accuracy_pct": 61
+        },
+        "square@8": {
+          "fooled": 29,
+          "eligible": 79,
+          "success_pct": 36.70886075949367,
+          "wilson95_pct": [
+            26.927292520497502,
+            47.723081460176395
+          ],
+          "robust_correct": 50,
+          "robust_accuracy_pct": 50
+        }
+      }
+    },
+    {
+      "deployment": "Coral USB INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 28,
+          "eligible": 80,
+          "success_pct": 35.0,
+          "wilson95_pct": [
+            25.454550534873466,
+            45.91999335119233
+          ],
+          "robust_correct": 52,
+          "robust_accuracy_pct": 52
+        },
+        "pgd@1": {
+          "fooled": 45,
+          "eligible": 80,
+          "success_pct": 56.25,
+          "wilson95_pct": [
+            45.34113429694972,
+            66.58613908385618
+          ],
+          "robust_correct": 35,
+          "robust_accuracy_pct": 35
+        },
+        "pgd_stronger@1": null,
+        "pgd@8": {
+          "fooled": 79,
+          "eligible": 80,
+          "success_pct": 98.75,
+          "wilson95_pct": [
+            93.25372992233133,
+            99.77900244795475
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "square@4": {
+          "fooled": 21,
+          "eligible": 80,
+          "success_pct": 26.25,
+          "wilson95_pct": [
+            17.85740148850936,
+            36.81895966442818
+          ],
+          "robust_correct": 59,
+          "robust_accuracy_pct": 59
+        },
+        "square@8": {
+          "fooled": 31,
+          "eligible": 80,
+          "success_pct": 38.75,
+          "wilson95_pct": [
+            28.824565125305067,
+            49.70634278924428
+          ],
+          "robust_correct": 49,
+          "robust_accuracy_pct": 49
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP32 CPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 64,
+          "eligible": 81,
+          "success_pct": 79.01234567901234,
+          "wilson95_pct": [
+            68.93461803165967,
+            86.46282639386685
+          ],
+          "robust_correct": 17,
+          "robust_accuracy_pct": 17
+        },
+        "pgd_stronger@1": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 34,
+          "eligible": 81,
+          "success_pct": 41.97530864197531,
+          "wilson95_pct": [
+            31.83096274829863,
+            52.84633985740679
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "square@8": {
+          "fooled": 51,
+          "eligible": 81,
+          "success_pct": 62.96296296296296,
+          "wilson95_pct": [
+            52.08373389089231,
+            72.66831574604507
+          ],
+          "robust_correct": 30,
+          "robust_accuracy_pct": 30
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP32 CPU+GPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 66,
+          "eligible": 81,
+          "success_pct": 81.48148148148148,
+          "wilson95_pct": [
+            71.66841055275461,
+            88.4437099940933
+          ],
+          "robust_correct": 15,
+          "robust_accuracy_pct": 15
+        },
+        "pgd_stronger@1": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 34,
+          "eligible": 81,
+          "success_pct": 41.97530864197531,
+          "wilson95_pct": [
+            31.83096274829863,
+            52.84633985740679
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "square@8": {
+          "fooled": 51,
+          "eligible": 81,
+          "success_pct": 62.96296296296296,
+          "wilson95_pct": [
+            52.08373389089231,
+            72.66831574604507
+          ],
+          "robust_correct": 30,
+          "robust_accuracy_pct": 30
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP32 CPU+NE",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 64,
+          "eligible": 81,
+          "success_pct": 79.01234567901234,
+          "wilson95_pct": [
+            68.93461803165967,
+            86.46282639386685
+          ],
+          "robust_correct": 17,
+          "robust_accuracy_pct": 17
+        },
+        "pgd_stronger@1": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 34,
+          "eligible": 81,
+          "success_pct": 41.97530864197531,
+          "wilson95_pct": [
+            31.83096274829863,
+            52.84633985740679
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "square@8": {
+          "fooled": 51,
+          "eligible": 81,
+          "success_pct": 62.96296296296296,
+          "wilson95_pct": [
+            52.08373389089231,
+            72.66831574604507
+          ],
+          "robust_correct": 30,
+          "robust_accuracy_pct": 30
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP16 CPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 82,
+          "success_pct": 50.0,
+          "wilson95_pct": [
+            39.422828391991985,
+            60.577171608008015
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@1": {
+          "fooled": 66,
+          "eligible": 82,
+          "success_pct": 80.48780487804878,
+          "wilson95_pct": [
+            70.62981066280966,
+            87.61710252681839
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "pgd_stronger@1": {
+          "fooled": 76,
+          "eligible": 82,
+          "success_pct": 92.6829268292683,
+          "wilson95_pct": [
+            84.94215619114517,
+            96.60352227433408
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 23,
+          "eligible": 82,
+          "success_pct": 28.048780487804876,
+          "wilson95_pct": [
+            19.477150045908147,
+            38.58507245755968
+          ],
+          "robust_correct": 59,
+          "robust_accuracy_pct": 59
+        },
+        "square@8": {
+          "fooled": 43,
+          "eligible": 82,
+          "success_pct": 52.4390243902439,
+          "wilson95_pct": [
+            41.76473297995616,
+            62.89502007521409
+          ],
+          "robust_correct": 39,
+          "robust_accuracy_pct": 39
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP16 CPU+GPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 82,
+          "success_pct": 50.0,
+          "wilson95_pct": [
+            39.422828391991985,
+            60.577171608008015
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@1": {
+          "fooled": 67,
+          "eligible": 82,
+          "success_pct": 81.70731707317073,
+          "wilson95_pct": [
+            71.98781157085605,
+            88.58897814635709
+          ],
+          "robust_correct": 15,
+          "robust_accuracy_pct": 15
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 82,
+          "success_pct": 91.46341463414635,
+          "wilson95_pct": [
+            83.41245443721832,
+            95.80334750067581
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 34,
+          "eligible": 82,
+          "success_pct": 41.46341463414634,
+          "wilson95_pct": [
+            31.41656014131662,
+            52.27430416558754
+          ],
+          "robust_correct": 48,
+          "robust_accuracy_pct": 48
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 82,
+          "success_pct": 59.75609756097561,
+          "wilson95_pct": [
+            48.93645537689348,
+            69.70255684378748
+          ],
+          "robust_correct": 33,
+          "robust_accuracy_pct": 33
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP16 CPU+NE",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 82,
+          "success_pct": 50.0,
+          "wilson95_pct": [
+            39.422828391991985,
+            60.577171608008015
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@1": {
+          "fooled": 67,
+          "eligible": 82,
+          "success_pct": 81.70731707317073,
+          "wilson95_pct": [
+            71.98781157085605,
+            88.58897814635709
+          ],
+          "robust_correct": 15,
+          "robust_accuracy_pct": 15
+        },
+        "pgd_stronger@1": {
+          "fooled": 76,
+          "eligible": 82,
+          "success_pct": 92.6829268292683,
+          "wilson95_pct": [
+            84.94215619114517,
+            96.60352227433408
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 33,
+          "eligible": 82,
+          "success_pct": 40.24390243902439,
+          "wilson95_pct": [
+            30.297443156212523,
+            51.06354462310653
+          ],
+          "robust_correct": 49,
+          "robust_accuracy_pct": 49
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 82,
+          "success_pct": 59.75609756097561,
+          "wilson95_pct": [
+            48.93645537689348,
+            69.70255684378748
+          ],
+          "robust_correct": 33,
+          "robust_accuracy_pct": 33
+        }
+      }
+    },
+    {
+      "deployment": "Core ML INT8 CPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 37,
+          "eligible": 81,
+          "success_pct": 45.67901234567901,
+          "wilson95_pct": [
+            35.2733326843646,
+            56.47598410332293
+          ],
+          "robust_correct": 44,
+          "robust_accuracy_pct": 44
+        },
+        "pgd@1": {
+          "fooled": 63,
+          "eligible": 81,
+          "success_pct": 77.77777777777777,
+          "wilson95_pct": [
+            67.58471376953771,
+            85.4553925953281
+          ],
+          "robust_correct": 18,
+          "robust_accuracy_pct": 18
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 81,
+          "success_pct": 92.5925925925926,
+          "wilson95_pct": [
+            84.76712613403235,
+            96.56103695876189
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@8": {
+          "fooled": 80,
+          "eligible": 81,
+          "success_pct": 98.76543209876543,
+          "wilson95_pct": [
+            93.33311840195164,
+            99.7817349941461
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "square@4": {
+          "fooled": 24,
+          "eligible": 81,
+          "success_pct": 29.62962962962963,
+          "wilson95_pct": [
+            20.791957048345946,
+            40.31196495075244
+          ],
+          "robust_correct": 57,
+          "robust_accuracy_pct": 57
+        },
+        "square@8": {
+          "fooled": 43,
+          "eligible": 81,
+          "success_pct": 53.08641975308642,
+          "wilson95_pct": [
+            42.326718507834094,
+            63.56662664381767
+          ],
+          "robust_correct": 38,
+          "robust_accuracy_pct": 38
+        }
+      }
+    },
+    {
+      "deployment": "Core ML INT8 CPU+GPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 38,
+          "eligible": 81,
+          "success_pct": 46.91358024691358,
+          "wilson95_pct": [
+            36.43337335618233,
+            57.6732814921659
+          ],
+          "robust_correct": 43,
+          "robust_accuracy_pct": 43
+        },
+        "pgd@1": {
+          "fooled": 67,
+          "eligible": 81,
+          "success_pct": 82.71604938271605,
+          "wilson95_pct": [
+            73.05386248522878,
+            89.41559612227987
+          ],
+          "robust_correct": 14,
+          "robust_accuracy_pct": 14
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 81,
+          "success_pct": 92.5925925925926,
+          "wilson95_pct": [
+            84.76712613403235,
+            96.56103695876189
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@8": {
+          "fooled": 80,
+          "eligible": 81,
+          "success_pct": 98.76543209876543,
+          "wilson95_pct": [
+            93.33311840195164,
+            99.7817349941461
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "square@4": {
+          "fooled": 31,
+          "eligible": 81,
+          "success_pct": 38.27160493827161,
+          "wilson95_pct": [
+            28.446535970964614,
+            49.15875245275869
+          ],
+          "robust_correct": 50,
+          "robust_accuracy_pct": 50
+        },
+        "square@8": {
+          "fooled": 46,
+          "eligible": 81,
+          "success_pct": 56.79012345679013,
+          "wilson95_pct": [
+            45.937436474974945,
+            67.02792285865891
+          ],
+          "robust_correct": 35,
+          "robust_accuracy_pct": 35
+        }
+      }
+    },
+    {
+      "deployment": "Core ML INT8 CPU+NE",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 38,
+          "eligible": 81,
+          "success_pct": 46.91358024691358,
+          "wilson95_pct": [
+            36.43337335618233,
+            57.6732814921659
+          ],
+          "robust_correct": 43,
+          "robust_accuracy_pct": 43
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 81,
+          "success_pct": 80.24691358024691,
+          "wilson95_pct": [
+            70.29560930488834,
+            87.45917318129888
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "pgd_stronger@1": {
+          "fooled": 74,
+          "eligible": 81,
+          "success_pct": 91.35802469135803,
+          "wilson95_pct": [
+            83.22008336612947,
+            95.75074166600406
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 28,
+          "eligible": 81,
+          "success_pct": 34.5679012345679,
+          "wilson95_pct": [
+            25.122649531590426,
+            45.41062471015077
+          ],
+          "robust_correct": 53,
+          "robust_accuracy_pct": 53
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 81,
+          "success_pct": 60.49382716049383,
+          "wilson95_pct": [
+            49.60547732360617,
+            70.43189619200982
+          ],
+          "robust_correct": 32,
+          "robust_accuracy_pct": 32
+        }
+      }
+    }
+  ],
+  "mobilenetv2_matrix": [
+    {
+      "deployment": "PyTorch FP32",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 38,
+          "eligible": 83,
+          "success_pct": 45.78313253012048,
+          "wilson95_pct": [
+            35.48937698207064,
+            56.44995695466891
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        },
+        "square@8": {
+          "fooled": 71,
+          "eligible": 83,
+          "success_pct": 85.5421686746988,
+          "wilson95_pct": [
+            76.40819877833326,
+            91.53170089771919
+          ],
+          "robust_correct": 12,
+          "robust_accuracy_pct": 12
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT FP32",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 40,
+          "eligible": 83,
+          "success_pct": 48.19277108433735,
+          "wilson95_pct": [
+            37.763185922155515,
+            58.78224290787573
+          ],
+          "robust_correct": 43,
+          "robust_accuracy_pct": 43
+        },
+        "square@8": {
+          "fooled": 71,
+          "eligible": 83,
+          "success_pct": 85.5421686746988,
+          "wilson95_pct": [
+            76.40819877833326,
+            91.53170089771919
+          ],
+          "robust_correct": 12,
+          "robust_accuracy_pct": 12
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT FP16",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 25,
+          "eligible": 83,
+          "success_pct": 30.120481927710845,
+          "wilson95_pct": [
+            21.310689683441346,
+            40.689027446902216
+          ],
+          "robust_correct": 58,
+          "robust_accuracy_pct": 58
+        },
+        "square@8": {
+          "fooled": 63,
+          "eligible": 83,
+          "success_pct": 75.90361445783132,
+          "wilson95_pct": [
+            65.69026394404472,
+            83.82525615884097
+          ],
+          "robust_correct": 20,
+          "robust_accuracy_pct": 20
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT FP8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 72,
+          "eligible": 84,
+          "success_pct": 85.71428571428571,
+          "wilson95_pct": [
+            76.66989708237692,
+            91.63497945943307
+          ],
+          "robust_correct": 12,
+          "robust_accuracy_pct": 12
+        },
+        "pgd@1": {
+          "fooled": 84,
+          "eligible": 84,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.626827158534,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 84,
+          "eligible": 84,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.626827158534,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 84,
+          "eligible": 84,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.626827158534,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 21,
+          "eligible": 84,
+          "success_pct": 25.0,
+          "wilson95_pct": [
+            16.972312954861017,
+            35.214273465871976
+          ],
+          "robust_correct": 63,
+          "robust_accuracy_pct": 63
+        },
+        "square@8": {
+          "fooled": 46,
+          "eligible": 84,
+          "success_pct": 54.76190476190476,
+          "wilson95_pct": [
+            44.14303701382066,
+            64.96427985842067
+          ],
+          "robust_correct": 38,
+          "robust_accuracy_pct": 38
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 65,
+          "eligible": 79,
+          "success_pct": 82.27848101265823,
+          "wilson95_pct": [
+            72.42380412359361,
+            89.13957335191265
+          ],
+          "robust_correct": 14,
+          "robust_accuracy_pct": 14
+        },
+        "pgd@1": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 15,
+          "eligible": 79,
+          "success_pct": 18.9873417721519,
+          "wilson95_pct": [
+            11.858230779759438,
+            28.992641841812983
+          ],
+          "robust_correct": 64,
+          "robust_accuracy_pct": 64
+        },
+        "square@8": {
+          "fooled": 39,
+          "eligible": 79,
+          "success_pct": 49.36708860759494,
+          "wilson95_pct": [
+            38.630272176150804,
+            60.16260277530987
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        }
+      }
+    },
+    {
+      "deployment": "TensorRT INT4",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 37,
+          "eligible": 83,
+          "success_pct": 44.57831325301205,
+          "wilson95_pct": [
+            34.3613029268308,
+            55.2749835632629
+          ],
+          "robust_correct": 46,
+          "robust_accuracy_pct": 46
+        },
+        "square@8": {
+          "fooled": 71,
+          "eligible": 83,
+          "success_pct": 85.5421686746988,
+          "wilson95_pct": [
+            76.40819877833326,
+            91.53170089771919
+          ],
+          "robust_correct": 12,
+          "robust_accuracy_pct": 12
+        }
+      }
+    },
+    {
+      "deployment": "RKNN FP16",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 31,
+          "eligible": 83,
+          "success_pct": 37.34939759036145,
+          "wilson95_pct": [
+            27.719687339769372,
+            48.098314470449246
+          ],
+          "robust_correct": 52,
+          "robust_accuracy_pct": 52
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        }
+      }
+    },
+    {
+      "deployment": "RKNN INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 65,
+          "eligible": 80,
+          "success_pct": 81.25,
+          "wilson95_pct": [
+            71.34167737100688,
+            88.29468953302268
+          ],
+          "robust_correct": 15,
+          "robust_accuracy_pct": 15
+        },
+        "pgd@1": {
+          "fooled": 80,
+          "eligible": 80,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.41818704644727,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 80,
+          "eligible": 80,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.41818704644727,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 80,
+          "eligible": 80,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.41818704644727,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 20,
+          "eligible": 80,
+          "success_pct": 25.0,
+          "wilson95_pct": [
+            16.806231857542375,
+            35.48467461923397
+          ],
+          "robust_correct": 60,
+          "robust_accuracy_pct": 60
+        },
+        "square@8": {
+          "fooled": 46,
+          "eligible": 80,
+          "success_pct": 57.5,
+          "wilson95_pct": [
+            46.569289846568864,
+            67.74343821039822
+          ],
+          "robust_correct": 34,
+          "robust_accuracy_pct": 34
+        }
+      }
+    },
+    {
+      "deployment": "QNN HTP INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 60,
+          "eligible": 78,
+          "success_pct": 76.92307692307692,
+          "wilson95_pct": [
+            66.44424217371642,
+            84.87449114947313
+          ],
+          "robust_correct": 18,
+          "robust_accuracy_pct": 18
+        },
+        "pgd@1": {
+          "fooled": 77,
+          "eligible": 78,
+          "success_pct": 98.71794871794872,
+          "wilson95_pct": [
+            93.0891429982978,
+            99.77332682461663
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "pgd_stronger@1": {
+          "fooled": 77,
+          "eligible": 78,
+          "success_pct": 98.71794871794872,
+          "wilson95_pct": [
+            93.0891429982978,
+            99.77332682461663
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "pgd@8": {
+          "fooled": 78,
+          "eligible": 78,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.30621902878059,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 22,
+          "eligible": 78,
+          "success_pct": 28.205128205128204,
+          "wilson95_pct": [
+            19.425334729674017,
+            39.030928770601115
+          ],
+          "robust_correct": 56,
+          "robust_accuracy_pct": 56
+        },
+        "square@8": {
+          "fooled": 42,
+          "eligible": 78,
+          "success_pct": 53.84615384615385,
+          "wilson95_pct": [
+            42.86364394039756,
+            64.46760367720094
+          ],
+          "robust_correct": 36,
+          "robust_accuracy_pct": 36
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP32 CPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 37,
+          "eligible": 83,
+          "success_pct": 44.57831325301205,
+          "wilson95_pct": [
+            34.3613029268308,
+            55.2749835632629
+          ],
+          "robust_correct": 46,
+          "robust_accuracy_pct": 46
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP32 CPU+GPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 37,
+          "eligible": 83,
+          "success_pct": 44.57831325301205,
+          "wilson95_pct": [
+            34.3613029268308,
+            55.2749835632629
+          ],
+          "robust_correct": 46,
+          "robust_accuracy_pct": 46
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP32 CPU+NE",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 37,
+          "eligible": 83,
+          "success_pct": 44.57831325301205,
+          "wilson95_pct": [
+            34.3613029268308,
+            55.2749835632629
+          ],
+          "robust_correct": 46,
+          "robust_accuracy_pct": 46
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP16 CPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 22,
+          "eligible": 83,
+          "success_pct": 26.50602409638554,
+          "wilson95_pct": [
+            18.20441402012317,
+            36.88616077028284
+          ],
+          "robust_correct": 61,
+          "robust_accuracy_pct": 61
+        },
+        "square@8": {
+          "fooled": 52,
+          "eligible": 83,
+          "success_pct": 62.65060240963855,
+          "wilson95_pct": [
+            51.90168552955077,
+            72.28031266023063
+          ],
+          "robust_correct": 31,
+          "robust_accuracy_pct": 31
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP16 CPU+GPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 38,
+          "eligible": 83,
+          "success_pct": 45.78313253012048,
+          "wilson95_pct": [
+            35.48937698207064,
+            56.44995695466891
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        },
+        "square@8": {
+          "fooled": 71,
+          "eligible": 83,
+          "success_pct": 85.5421686746988,
+          "wilson95_pct": [
+            76.40819877833326,
+            91.53170089771919
+          ],
+          "robust_correct": 12,
+          "robust_accuracy_pct": 12
+        }
+      }
+    },
+    {
+      "deployment": "Core ML FP16 CPU+NE",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 74,
+          "eligible": 83,
+          "success_pct": 89.1566265060241,
+          "wilson95_pct": [
+            80.65953353528812,
+            94.18950848070189
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 33,
+          "eligible": 83,
+          "success_pct": 39.75903614457831,
+          "wilson95_pct": [
+            29.90893171041682,
+            50.5151649930935
+          ],
+          "robust_correct": 50,
+          "robust_accuracy_pct": 50
+        },
+        "square@8": {
+          "fooled": 61,
+          "eligible": 83,
+          "success_pct": 73.49397590361446,
+          "wilson95_pct": [
+            63.11383922971716,
+            81.79558597987683
+          ],
+          "robust_correct": 22,
+          "robust_accuracy_pct": 22
+        }
+      }
+    },
+    {
+      "deployment": "Core ML INT8 CPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 23,
+          "eligible": 83,
+          "success_pct": 27.710843373493976,
+          "wilson95_pct": [
+            19.23192775942012,
+            38.161694477631734
+          ],
+          "robust_correct": 60,
+          "robust_accuracy_pct": 60
+        },
+        "square@8": {
+          "fooled": 54,
+          "eligible": 83,
+          "success_pct": 65.06024096385542,
+          "wilson95_pct": [
+            54.344218653240915,
+            74.44387442983216
+          ],
+          "robust_correct": 29,
+          "robust_accuracy_pct": 29
+        }
+      }
+    },
+    {
+      "deployment": "Core ML INT8 CPU+GPU",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 36,
+          "eligible": 83,
+          "success_pct": 43.373493975903614,
+          "wilson95_pct": [
+            33.23916544628671,
+            54.09407359716114
+          ],
+          "robust_correct": 47,
+          "robust_accuracy_pct": 47
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        }
+      }
+    },
+    {
+      "deployment": "Core ML INT8 CPU+NE",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 75,
+          "eligible": 83,
+          "success_pct": 90.36144578313252,
+          "wilson95_pct": [
+            82.11736349852804,
+            95.0347259641078
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 31,
+          "eligible": 83,
+          "success_pct": 37.34939759036145,
+          "wilson95_pct": [
+            27.719687339769372,
+            48.098314470449246
+          ],
+          "robust_correct": 52,
+          "robust_accuracy_pct": 52
+        },
+        "square@8": {
+          "fooled": 63,
+          "eligible": 83,
+          "success_pct": 75.90361445783132,
+          "wilson95_pct": [
+            65.69026394404472,
+            83.82525615884097
+          ],
+          "robust_correct": 20,
+          "robust_accuracy_pct": 20
+        }
+      }
+    },
+    {
+      "deployment": "TFLite CPU INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 64,
+          "eligible": 81,
+          "success_pct": 79.01234567901234,
+          "wilson95_pct": [
+            68.93461803165967,
+            86.46282639386685
+          ],
+          "robust_correct": 17,
+          "robust_accuracy_pct": 17
+        },
+        "pgd@1": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 28,
+          "eligible": 81,
+          "success_pct": 34.5679012345679,
+          "wilson95_pct": [
+            25.122649531590426,
+            45.41062471015077
+          ],
+          "robust_correct": 53,
+          "robust_accuracy_pct": 53
+        },
+        "square@8": {
+          "fooled": 50,
+          "eligible": 81,
+          "success_pct": 61.72839506172839,
+          "wilson95_pct": [
+            50.841247547241295,
+            71.55346402903538
+          ],
+          "robust_correct": 31,
+          "robust_accuracy_pct": 31
+        }
+      }
+    },
+    {
+      "deployment": "Coral USB INT8",
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 61,
+          "eligible": 79,
+          "success_pct": 77.21518987341773,
+          "wilson95_pct": [
+            66.83315177395119,
+            85.07322531324036
+          ],
+          "robust_correct": 18,
+          "robust_accuracy_pct": 18
+        },
+        "pgd@1": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd@8": {
+          "fooled": 79,
+          "eligible": 79,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.36287883460773,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 26,
+          "eligible": 79,
+          "success_pct": 32.91139240506329,
+          "wilson95_pct": [
+            23.554200381797013,
+            43.853423307640846
+          ],
+          "robust_correct": 53,
+          "robust_accuracy_pct": 53
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 79,
+          "success_pct": 62.0253164556962,
+          "wilson95_pct": [
+            51.00187124379016,
+            71.93350467845725
+          ],
+          "robust_correct": 30,
+          "robust_accuracy_pct": 30
+        }
+      }
+    }
+  ],
+  "cross_model_rates": [
+    {
+      "deployment": "PyTorch FP32",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 65,
+        "eligible": 81,
+        "success_pct": 80.24691358024691,
+        "wilson95_pct": [
+          70.29560930488834,
+          87.45917318129888
+        ],
+        "robust_correct": 16,
+        "robust_accuracy_pct": 16
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 19.75308641975309
+    },
+    {
+      "deployment": "PyTorch FP32",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 49,
+        "eligible": 81,
+        "success_pct": 60.49382716049383,
+        "wilson95_pct": [
+          49.60547732360617,
+          70.43189619200982
+        ],
+        "robust_correct": 32,
+        "robust_accuracy_pct": 32
+      },
+      "mobilenet": {
+        "fooled": 71,
+        "eligible": 83,
+        "success_pct": 85.5421686746988,
+        "wilson95_pct": [
+          76.40819877833326,
+          91.53170089771919
+        ],
+        "robust_correct": 12,
+        "robust_accuracy_pct": 12
+      },
+      "mobile_minus_resnet_pp": 25.04834151420497
+    },
+    {
+      "deployment": "RKNN FP16",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 65,
+        "eligible": 81,
+        "success_pct": 80.24691358024691,
+        "wilson95_pct": [
+          70.29560930488834,
+          87.45917318129888
+        ],
+        "robust_correct": 16,
+        "robust_accuracy_pct": 16
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 19.75308641975309
+    },
+    {
+      "deployment": "RKNN FP16",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 50,
+        "eligible": 81,
+        "success_pct": 61.72839506172839,
+        "wilson95_pct": [
+          50.841247547241295,
+          71.55346402903538
+        ],
+        "robust_correct": 31,
+        "robust_accuracy_pct": 31
+      },
+      "mobilenet": {
+        "fooled": 70,
+        "eligible": 83,
+        "success_pct": 84.33734939759036,
+        "wilson95_pct": [
+          75.02486450452768,
+          90.61198772487894
+        ],
+        "robust_correct": 13,
+        "robust_accuracy_pct": 13
+      },
+      "mobile_minus_resnet_pp": 22.608954335861966
+    },
+    {
+      "deployment": "RKNN INT8",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 52,
+        "eligible": 78,
+        "success_pct": 66.66666666666667,
+        "wilson95_pct": [
+          55.641409712618795,
+          76.1273299636414
+        ],
+        "robust_correct": 26,
+        "robust_accuracy_pct": 26
+      },
+      "mobilenet": {
+        "fooled": 80,
+        "eligible": 80,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.41818704644727,
+          99.99999999999999
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 33.33333333333333
+    },
+    {
+      "deployment": "RKNN INT8",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 28,
+        "eligible": 78,
+        "success_pct": 35.8974358974359,
+        "wilson95_pct": [
+          26.145561949700706,
+          46.973196785771435
+        ],
+        "robust_correct": 50,
+        "robust_accuracy_pct": 50
+      },
+      "mobilenet": {
+        "fooled": 46,
+        "eligible": 80,
+        "success_pct": 57.5,
+        "wilson95_pct": [
+          46.569289846568864,
+          67.74343821039822
+        ],
+        "robust_correct": 34,
+        "robust_accuracy_pct": 34
+      },
+      "mobile_minus_resnet_pp": 21.602564102564102
+    },
+    {
+      "deployment": "QNN HTP INT8",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 49,
+        "eligible": 79,
+        "success_pct": 62.0253164556962,
+        "wilson95_pct": [
+          51.00187124379016,
+          71.93350467845725
+        ],
+        "robust_correct": 30,
+        "robust_accuracy_pct": 30
+      },
+      "mobilenet": {
+        "fooled": 77,
+        "eligible": 78,
+        "success_pct": 98.71794871794872,
+        "wilson95_pct": [
+          93.0891429982978,
+          99.77332682461663
+        ],
+        "robust_correct": 1,
+        "robust_accuracy_pct": 1
+      },
+      "mobile_minus_resnet_pp": 36.692632262252516
+    },
+    {
+      "deployment": "QNN HTP INT8",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 29,
+        "eligible": 79,
+        "success_pct": 36.70886075949367,
+        "wilson95_pct": [
+          26.927292520497502,
+          47.723081460176395
+        ],
+        "robust_correct": 50,
+        "robust_accuracy_pct": 50
+      },
+      "mobilenet": {
+        "fooled": 42,
+        "eligible": 78,
+        "success_pct": 53.84615384615385,
+        "wilson95_pct": [
+          42.86364394039756,
+          64.46760367720094
+        ],
+        "robust_correct": 36,
+        "robust_accuracy_pct": 36
+      },
+      "mobile_minus_resnet_pp": 17.13729308666018
+    },
+    {
+      "deployment": "Coral USB INT8",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 45,
+        "eligible": 80,
+        "success_pct": 56.25,
+        "wilson95_pct": [
+          45.34113429694972,
+          66.58613908385618
+        ],
+        "robust_correct": 35,
+        "robust_accuracy_pct": 35
+      },
+      "mobilenet": {
+        "fooled": 79,
+        "eligible": 79,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.36287883460773,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 43.75
+    },
+    {
+      "deployment": "Coral USB INT8",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 31,
+        "eligible": 80,
+        "success_pct": 38.75,
+        "wilson95_pct": [
+          28.824565125305067,
+          49.70634278924428
+        ],
+        "robust_correct": 49,
+        "robust_accuracy_pct": 49
+      },
+      "mobilenet": {
+        "fooled": 49,
+        "eligible": 79,
+        "success_pct": 62.0253164556962,
+        "wilson95_pct": [
+          51.00187124379016,
+          71.93350467845725
+        ],
+        "robust_correct": 30,
+        "robust_accuracy_pct": 30
+      },
+      "mobile_minus_resnet_pp": 23.2753164556962
+    },
+    {
+      "deployment": "Core ML FP32 CPU",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 64,
+        "eligible": 81,
+        "success_pct": 79.01234567901234,
+        "wilson95_pct": [
+          68.93461803165967,
+          86.46282639386685
+        ],
+        "robust_correct": 17,
+        "robust_accuracy_pct": 17
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 20.98765432098766
+    },
+    {
+      "deployment": "Core ML FP32 CPU",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 51,
+        "eligible": 81,
+        "success_pct": 62.96296296296296,
+        "wilson95_pct": [
+          52.08373389089231,
+          72.66831574604507
+        ],
+        "robust_correct": 30,
+        "robust_accuracy_pct": 30
+      },
+      "mobilenet": {
+        "fooled": 70,
+        "eligible": 83,
+        "success_pct": 84.33734939759036,
+        "wilson95_pct": [
+          75.02486450452768,
+          90.61198772487894
+        ],
+        "robust_correct": 13,
+        "robust_accuracy_pct": 13
+      },
+      "mobile_minus_resnet_pp": 21.374386434627397
+    },
+    {
+      "deployment": "Core ML FP32 CPU+GPU",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 66,
+        "eligible": 81,
+        "success_pct": 81.48148148148148,
+        "wilson95_pct": [
+          71.66841055275461,
+          88.4437099940933
+        ],
+        "robust_correct": 15,
+        "robust_accuracy_pct": 15
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 18.51851851851852
+    },
+    {
+      "deployment": "Core ML FP32 CPU+GPU",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 51,
+        "eligible": 81,
+        "success_pct": 62.96296296296296,
+        "wilson95_pct": [
+          52.08373389089231,
+          72.66831574604507
+        ],
+        "robust_correct": 30,
+        "robust_accuracy_pct": 30
+      },
+      "mobilenet": {
+        "fooled": 70,
+        "eligible": 83,
+        "success_pct": 84.33734939759036,
+        "wilson95_pct": [
+          75.02486450452768,
+          90.61198772487894
+        ],
+        "robust_correct": 13,
+        "robust_accuracy_pct": 13
+      },
+      "mobile_minus_resnet_pp": 21.374386434627397
+    },
+    {
+      "deployment": "Core ML FP32 CPU+NE",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 64,
+        "eligible": 81,
+        "success_pct": 79.01234567901234,
+        "wilson95_pct": [
+          68.93461803165967,
+          86.46282639386685
+        ],
+        "robust_correct": 17,
+        "robust_accuracy_pct": 17
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 20.98765432098766
+    },
+    {
+      "deployment": "Core ML FP32 CPU+NE",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 51,
+        "eligible": 81,
+        "success_pct": 62.96296296296296,
+        "wilson95_pct": [
+          52.08373389089231,
+          72.66831574604507
+        ],
+        "robust_correct": 30,
+        "robust_accuracy_pct": 30
+      },
+      "mobilenet": {
+        "fooled": 70,
+        "eligible": 83,
+        "success_pct": 84.33734939759036,
+        "wilson95_pct": [
+          75.02486450452768,
+          90.61198772487894
+        ],
+        "robust_correct": 13,
+        "robust_accuracy_pct": 13
+      },
+      "mobile_minus_resnet_pp": 21.374386434627397
+    },
+    {
+      "deployment": "Core ML FP16 CPU",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 66,
+        "eligible": 82,
+        "success_pct": 80.48780487804878,
+        "wilson95_pct": [
+          70.62981066280966,
+          87.61710252681839
+        ],
+        "robust_correct": 16,
+        "robust_accuracy_pct": 16
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 19.512195121951223
+    },
+    {
+      "deployment": "Core ML FP16 CPU",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 43,
+        "eligible": 82,
+        "success_pct": 52.4390243902439,
+        "wilson95_pct": [
+          41.76473297995616,
+          62.89502007521409
+        ],
+        "robust_correct": 39,
+        "robust_accuracy_pct": 39
+      },
+      "mobilenet": {
+        "fooled": 52,
+        "eligible": 83,
+        "success_pct": 62.65060240963855,
+        "wilson95_pct": [
+          51.90168552955077,
+          72.28031266023063
+        ],
+        "robust_correct": 31,
+        "robust_accuracy_pct": 31
+      },
+      "mobile_minus_resnet_pp": 10.21157801939465
+    },
+    {
+      "deployment": "Core ML FP16 CPU+GPU",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 67,
+        "eligible": 82,
+        "success_pct": 81.70731707317073,
+        "wilson95_pct": [
+          71.98781157085605,
+          88.58897814635709
+        ],
+        "robust_correct": 15,
+        "robust_accuracy_pct": 15
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 18.292682926829272
+    },
+    {
+      "deployment": "Core ML FP16 CPU+GPU",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 49,
+        "eligible": 82,
+        "success_pct": 59.75609756097561,
+        "wilson95_pct": [
+          48.93645537689348,
+          69.70255684378748
+        ],
+        "robust_correct": 33,
+        "robust_accuracy_pct": 33
+      },
+      "mobilenet": {
+        "fooled": 71,
+        "eligible": 83,
+        "success_pct": 85.5421686746988,
+        "wilson95_pct": [
+          76.40819877833326,
+          91.53170089771919
+        ],
+        "robust_correct": 12,
+        "robust_accuracy_pct": 12
+      },
+      "mobile_minus_resnet_pp": 25.78607111372319
+    },
+    {
+      "deployment": "Core ML FP16 CPU+NE",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 67,
+        "eligible": 82,
+        "success_pct": 81.70731707317073,
+        "wilson95_pct": [
+          71.98781157085605,
+          88.58897814635709
+        ],
+        "robust_correct": 15,
+        "robust_accuracy_pct": 15
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 18.292682926829272
+    },
+    {
+      "deployment": "Core ML FP16 CPU+NE",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 49,
+        "eligible": 82,
+        "success_pct": 59.75609756097561,
+        "wilson95_pct": [
+          48.93645537689348,
+          69.70255684378748
+        ],
+        "robust_correct": 33,
+        "robust_accuracy_pct": 33
+      },
+      "mobilenet": {
+        "fooled": 61,
+        "eligible": 83,
+        "success_pct": 73.49397590361446,
+        "wilson95_pct": [
+          63.11383922971716,
+          81.79558597987683
+        ],
+        "robust_correct": 22,
+        "robust_accuracy_pct": 22
+      },
+      "mobile_minus_resnet_pp": 13.737878342638844
+    },
+    {
+      "deployment": "Core ML INT8 CPU",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 63,
+        "eligible": 81,
+        "success_pct": 77.77777777777777,
+        "wilson95_pct": [
+          67.58471376953771,
+          85.4553925953281
+        ],
+        "robust_correct": 18,
+        "robust_accuracy_pct": 18
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 22.22222222222223
+    },
+    {
+      "deployment": "Core ML INT8 CPU",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 43,
+        "eligible": 81,
+        "success_pct": 53.08641975308642,
+        "wilson95_pct": [
+          42.326718507834094,
+          63.56662664381767
+        ],
+        "robust_correct": 38,
+        "robust_accuracy_pct": 38
+      },
+      "mobilenet": {
+        "fooled": 54,
+        "eligible": 83,
+        "success_pct": 65.06024096385542,
+        "wilson95_pct": [
+          54.344218653240915,
+          74.44387442983216
+        ],
+        "robust_correct": 29,
+        "robust_accuracy_pct": 29
+      },
+      "mobile_minus_resnet_pp": 11.973821210769003
+    },
+    {
+      "deployment": "Core ML INT8 CPU+GPU",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 67,
+        "eligible": 81,
+        "success_pct": 82.71604938271605,
+        "wilson95_pct": [
+          73.05386248522878,
+          89.41559612227987
+        ],
+        "robust_correct": 14,
+        "robust_accuracy_pct": 14
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 17.28395061728395
+    },
+    {
+      "deployment": "Core ML INT8 CPU+GPU",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 46,
+        "eligible": 81,
+        "success_pct": 56.79012345679013,
+        "wilson95_pct": [
+          45.937436474974945,
+          67.02792285865891
+        ],
+        "robust_correct": 35,
+        "robust_accuracy_pct": 35
+      },
+      "mobilenet": {
+        "fooled": 70,
+        "eligible": 83,
+        "success_pct": 84.33734939759036,
+        "wilson95_pct": [
+          75.02486450452768,
+          90.61198772487894
+        ],
+        "robust_correct": 13,
+        "robust_accuracy_pct": 13
+      },
+      "mobile_minus_resnet_pp": 27.54722594080023
+    },
+    {
+      "deployment": "Core ML INT8 CPU+NE",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 65,
+        "eligible": 81,
+        "success_pct": 80.24691358024691,
+        "wilson95_pct": [
+          70.29560930488834,
+          87.45917318129888
+        ],
+        "robust_correct": 16,
+        "robust_accuracy_pct": 16
+      },
+      "mobilenet": {
+        "fooled": 83,
+        "eligible": 83,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.57646903580263,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 19.75308641975309
+    },
+    {
+      "deployment": "Core ML INT8 CPU+NE",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 49,
+        "eligible": 81,
+        "success_pct": 60.49382716049383,
+        "wilson95_pct": [
+          49.60547732360617,
+          70.43189619200982
+        ],
+        "robust_correct": 32,
+        "robust_accuracy_pct": 32
+      },
+      "mobilenet": {
+        "fooled": 63,
+        "eligible": 83,
+        "success_pct": 75.90361445783132,
+        "wilson95_pct": [
+          65.69026394404472,
+          83.82525615884097
+        ],
+        "robust_correct": 20,
+        "robust_accuracy_pct": 20
+      },
+      "mobile_minus_resnet_pp": 15.409787297337495
+    },
+    {
+      "deployment": "TensorRT INT8 (different recipe/hardware)",
+      "condition": "pgd@1",
+      "resnet": {
+        "fooled": 50,
+        "eligible": 79,
+        "success_pct": 63.29113924050633,
+        "wilson95_pct": [
+          52.27691853982361,
+          73.0727074795025
+        ],
+        "robust_correct": 29,
+        "robust_accuracy_pct": 29
+      },
+      "mobilenet": {
+        "fooled": 79,
+        "eligible": 79,
+        "success_pct": 100.0,
+        "wilson95_pct": [
+          95.36287883460773,
+          100
+        ],
+        "robust_correct": 0,
+        "robust_accuracy_pct": 0
+      },
+      "mobile_minus_resnet_pp": 36.70886075949367
+    },
+    {
+      "deployment": "TensorRT INT8 (different recipe/hardware)",
+      "condition": "square@8",
+      "resnet": {
+        "fooled": 34,
+        "eligible": 79,
+        "success_pct": 43.037974683544306,
+        "wilson95_pct": [
+          32.69382343461824,
+          54.027801031449044
+        ],
+        "robust_correct": 45,
+        "robust_accuracy_pct": 45
+      },
+      "mobilenet": {
+        "fooled": 39,
+        "eligible": 79,
+        "success_pct": 49.36708860759494,
+        "wilson95_pct": [
+          38.630272176150804,
+          60.16260277530987
+        ],
+        "robust_correct": 40,
+        "robust_accuracy_pct": 40
+      },
+      "mobile_minus_resnet_pp": 6.329113924050631
+    }
+  ],
+  "quantization_model_interaction": [
+    {
+      "model": "resnetv2_50",
+      "pair": "RKNN FP16 \u2192 INT8",
+      "condition": "pgd@1",
+      "float_fooled": 55,
+      "quantized_fooled": 45,
+      "shared_n": 71,
+      "reduction_pp": 14.084507042253522,
+      "source": "resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "RKNN FP16 \u2192 INT8",
+      "condition": "pgd@1",
+      "float_fooled": 80,
+      "quantized_fooled": 80,
+      "shared_n": 80,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_rknn/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU: FP16 \u2192 W8A16",
+      "condition": "pgd@1",
+      "float_fooled": 65,
+      "quantized_fooled": 63,
+      "shared_n": 81,
+      "reduction_pp": 2.4691358024691357,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+      "condition": "pgd@1",
+      "float_fooled": 66,
+      "quantized_fooled": 67,
+      "shared_n": 81,
+      "reduction_pp": -1.2345679012345678,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+      "condition": "pgd@1",
+      "float_fooled": 66,
+      "quantized_fooled": 65,
+      "shared_n": 81,
+      "reduction_pp": 1.2345679012345678,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU: FP16 \u2192 W8A16",
+      "condition": "pgd@1",
+      "float_fooled": 82,
+      "quantized_fooled": 82,
+      "shared_n": 82,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+      "condition": "pgd@1",
+      "float_fooled": 82,
+      "quantized_fooled": 82,
+      "shared_n": 82,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+      "condition": "pgd@1",
+      "float_fooled": 82,
+      "quantized_fooled": 82,
+      "shared_n": 82,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "RKNN FP16 \u2192 INT8",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 64,
+      "quantized_fooled": 51,
+      "shared_n": 71,
+      "reduction_pp": 18.309859154929576,
+      "source": "resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "RKNN FP16 \u2192 INT8",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 80,
+      "quantized_fooled": 80,
+      "shared_n": 80,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_rknn/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU: FP16 \u2192 W8A16",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 75,
+      "quantized_fooled": 75,
+      "shared_n": 81,
+      "reduction_pp": 0.0,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 74,
+      "quantized_fooled": 75,
+      "shared_n": 81,
+      "reduction_pp": -1.2345679012345678,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 75,
+      "quantized_fooled": 74,
+      "shared_n": 81,
+      "reduction_pp": 1.2345679012345678,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU: FP16 \u2192 W8A16",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 82,
+      "quantized_fooled": 82,
+      "shared_n": 82,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 82,
+      "quantized_fooled": 82,
+      "shared_n": 82,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+      "condition": "pgd_stronger@1",
+      "float_fooled": 82,
+      "quantized_fooled": 82,
+      "shared_n": 82,
+      "reduction_pp": 0.0,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "RKNN FP16 \u2192 INT8",
+      "condition": "square@8",
+      "float_fooled": 40,
+      "quantized_fooled": 21,
+      "shared_n": 71,
+      "reduction_pp": 26.760563380281692,
+      "source": "resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "RKNN FP16 \u2192 INT8",
+      "condition": "square@8",
+      "float_fooled": 67,
+      "quantized_fooled": 46,
+      "shared_n": 80,
+      "reduction_pp": 26.25,
+      "source": "mobilenetv2/evasion_rknn/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU: FP16 \u2192 W8A16",
+      "condition": "square@8",
+      "float_fooled": 42,
+      "quantized_fooled": 43,
+      "shared_n": 81,
+      "reduction_pp": -1.2345679012345678,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+      "condition": "square@8",
+      "float_fooled": 48,
+      "quantized_fooled": 46,
+      "shared_n": 81,
+      "reduction_pp": 2.4691358024691357,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "resnetv2_50",
+      "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+      "condition": "square@8",
+      "float_fooled": 48,
+      "quantized_fooled": 49,
+      "shared_n": 81,
+      "reduction_pp": -1.2345679012345678,
+      "source": "resnetv2_50/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU: FP16 \u2192 W8A16",
+      "condition": "square@8",
+      "float_fooled": 51,
+      "quantized_fooled": 53,
+      "shared_n": 82,
+      "reduction_pp": -2.4390243902439024,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU+GPU: FP16 \u2192 W8A16",
+      "condition": "square@8",
+      "float_fooled": 70,
+      "quantized_fooled": 69,
+      "shared_n": 82,
+      "reduction_pp": 1.2195121951219512,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    },
+    {
+      "model": "mobilenetv2",
+      "pair": "Core ML CPU+NE: FP16 \u2192 W8A16",
+      "condition": "square@8",
+      "float_fooled": 60,
+      "quantized_fooled": 62,
+      "shared_n": 82,
+      "reduction_pp": -2.4390243902439024,
+      "source": "mobilenetv2/evasion_coreml/results/comparisons/matrix.json"
+    }
+  ],
+  "coreml_square_seed_ranges": [
+    {
+      "model": "resnetv2_50",
+      "arm": "fp16_cpu_only",
+      "eps_255": 8,
+      "n": 82,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        47,
+        46,
+        42
+      ],
+      "mean_pct": 54.8780487804878,
+      "min_pct": 51.21951219512195,
+      "max_pct": 57.31707317073171
+    },
+    {
+      "model": "resnetv2_50",
+      "arm": "fp16_cpu_and_gpu",
+      "eps_255": 8,
+      "n": 82,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        49,
+        47,
+        47
+      ],
+      "mean_pct": 58.13008130081301,
+      "min_pct": 57.31707317073171,
+      "max_pct": 59.75609756097561
+    },
+    {
+      "model": "resnetv2_50",
+      "arm": "fp16_cpu_and_ne",
+      "eps_255": 8,
+      "n": 82,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        46,
+        49,
+        48
+      ],
+      "mean_pct": 58.13008130081301,
+      "min_pct": 56.09756097560975,
+      "max_pct": 59.75609756097561
+    },
+    {
+      "model": "resnetv2_50",
+      "arm": "int8_cpu_only",
+      "eps_255": 8,
+      "n": 81,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        43,
+        42,
+        41
+      ],
+      "mean_pct": 51.851851851851855,
+      "min_pct": 50.617283950617285,
+      "max_pct": 53.08641975308642
+    },
+    {
+      "model": "resnetv2_50",
+      "arm": "int8_cpu_and_gpu",
+      "eps_255": 8,
+      "n": 81,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        46,
+        45,
+        49
+      ],
+      "mean_pct": 57.61316872427984,
+      "min_pct": 55.55555555555556,
+      "max_pct": 60.49382716049383
+    },
+    {
+      "model": "resnetv2_50",
+      "arm": "int8_cpu_and_ne",
+      "eps_255": 8,
+      "n": 81,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        46,
+        46,
+        52
+      ],
+      "mean_pct": 59.25925925925926,
+      "min_pct": 56.79012345679013,
+      "max_pct": 64.19753086419753
+    },
+    {
+      "model": "mobilenetv2",
+      "arm": "fp16_cpu_only",
+      "eps_255": 8,
+      "n": 83,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        51,
+        52,
+        52
+      ],
+      "mean_pct": 62.24899598393574,
+      "min_pct": 61.44578313253012,
+      "max_pct": 62.65060240963855
+    },
+    {
+      "model": "mobilenetv2",
+      "arm": "fp16_cpu_and_gpu",
+      "eps_255": 8,
+      "n": 83,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        70,
+        68,
+        73
+      ],
+      "mean_pct": 84.73895582329317,
+      "min_pct": 81.92771084337349,
+      "max_pct": 87.95180722891567
+    },
+    {
+      "model": "mobilenetv2",
+      "arm": "fp16_cpu_and_ne",
+      "eps_255": 8,
+      "n": 83,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        61,
+        63,
+        58
+      ],
+      "mean_pct": 73.09236947791165,
+      "min_pct": 69.87951807228916,
+      "max_pct": 75.90361445783132
+    },
+    {
+      "model": "mobilenetv2",
+      "arm": "int8_cpu_only",
+      "eps_255": 8,
+      "n": 83,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        50,
+        53,
+        49
+      ],
+      "mean_pct": 61.04417670682731,
+      "min_pct": 59.036144578313255,
+      "max_pct": 63.855421686746986
+    },
+    {
+      "model": "mobilenetv2",
+      "arm": "int8_cpu_and_gpu",
+      "eps_255": 8,
+      "n": 83,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        72,
+        71,
+        70
+      ],
+      "mean_pct": 85.5421686746988,
+      "min_pct": 84.33734939759036,
+      "max_pct": 86.74698795180723
+    },
+    {
+      "model": "mobilenetv2",
+      "arm": "int8_cpu_and_ne",
+      "eps_255": 8,
+      "n": 83,
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "fooled_by_seed": [
+        63,
+        65,
+        60
+      ],
+      "mean_pct": 75.50200803212851,
+      "min_pct": 72.28915662650603,
+      "max_pct": 78.3132530120482
+    }
+  ]
+}

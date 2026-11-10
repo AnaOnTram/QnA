@@ -1,0 +1,30 @@
+{
+  "n": 3923,
+  "classes_present": 1000,
+  "population": "All local ImageNet-mini validation images; not full ImageNet validation",
+  "preprocessing": "RGB; resize shorter side 256 bicubic antialias; center crop 224; ImageNet normalization",
+  "calibration_evaluation_overlap": 20,
+  "heldout_n": 3903,
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "context_sha256": "c7377092adbacd327409e421f867981db49e8cf0bea4013ce72b376cbb3ec6bb",
+  "seconds": 47.07145357131958,
+  "models": {
+    "fp32": {
+      "correct": 2772,
+      "top1_pct": 70.66020902370634,
+      "top5_correct": 3521,
+      "fp32_top1_agreement": 3923,
+      "heldout_correct": 2761,
+      "heldout_top1_pct": 70.74045605944146
+    },
+    "qnn_htp": {
+      "correct": 2677,
+      "top1_pct": 68.23859291358654,
+      "top5_correct": 3477,
+      "fp32_top1_agreement": 3353,
+      "heldout_correct": 2665,
+      "heldout_top1_pct": 68.28080963361516
+    }
+  },
+  "complete": true
+}

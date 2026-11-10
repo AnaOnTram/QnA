@@ -1,0 +1,251 @@
+{
+  "source": {
+    "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+    "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+    "checkpoint_sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+    "prepared_onnx_sha256": "abe5f164d6c960a85f2add44c1bfb2a98b25240a15e998cb6209ae01cc8f522b",
+    "calibration_n": 200,
+    "calibration_sha256": "d47f387a15ae06dfc4731c95a1be0dcfcabb3b80dd3ddbd1c9a60c6d49afe79e",
+    "calibration_content_overlap": 0,
+    "calibration_recipe": "Same 200 ImageNet-mini train images and bilinear 224x224 resize as ResNet TPU",
+    "evaluation_n": 100,
+    "evaluation_preprocessing": "RGB; Resize shorter side 256 BICUBIC antialias; CenterCrop 224; ImageNet normalization",
+    "evaluation_sha256": "28aa7d0ebd7ba2eea82a8f1cae042760a9db34bebc35668e98fa3bd765c18a03",
+    "onnx_correct": 83,
+    "wrapped_top1_agreement": 100,
+    "wrapped_logit_max_abs": 0.0,
+    "black_white_random_max_abs": 0.0,
+    "normalization": "Explicit (pixel - ImageNet mean) / std before padded stem; raw RGB float [0,1] input"
+  },
+  "structure": {
+    "tensors": 188,
+    "dynamic_tensors": 0,
+    "floating_tensors": 0,
+    "transpose_ops": 0,
+    "operations": {
+      "ADD": 10,
+      "CONV_2D": 35,
+      "DEPTHWISE_CONV_2D": 17,
+      "FULLY_CONNECTED": 1,
+      "MEAN": 1,
+      "MUL": 1,
+      "PAD": 5,
+      "QUANTIZE": 2,
+      "SUB": 1
+    }
+  },
+  "fp32_conversion": {
+    "n": 100,
+    "correct": 83,
+    "top5_correct": 96,
+    "top1_agreement": 100,
+    "logit_mae": 3.3360279303451534e-06,
+    "logit_max_abs": 4.57763671875e-05,
+    "mean_cosine": 1.0,
+    "min_cosine": 0.9999998807907104
+  },
+  "cpu_int8": {
+    "n": 100,
+    "correct": 81,
+    "top5_correct": 95,
+    "top1_agreement": 86,
+    "logit_mae": 0.6557092070579529,
+    "logit_max_abs": 13.508907318115234,
+    "mean_cosine": 0.9701583981513977,
+    "min_cosine": 0.920311689376831
+  },
+  "edgetpu_int8": {
+    "n": 100,
+    "correct": 79,
+    "top5_correct": 95,
+    "top1_agreement": 89,
+    "logit_mae": 0.6191666126251221,
+    "logit_max_abs": 13.508907318115234,
+    "mean_cosine": 0.9749754071235657,
+    "min_cosine": 0.9368821978569031
+  },
+  "tpu_vs_cpu_int8": {
+    "n": 100,
+    "correct": 79,
+    "top5_correct": 95,
+    "top1_agreement": 92,
+    "logit_mae": 0.5330121517181396,
+    "logit_max_abs": 4.776889801025391,
+    "mean_cosine": 0.9789486527442932,
+    "min_cosine": 0.9548709988594055
+  },
+  "cpu_runtime": {
+    "model": "/home/ross/QA/Models/mobilenetV2/TPU/mobilenetv2_int8_nhwc.tflite",
+    "sha256": "1aead6533836085bbe99c626cf3c7d79a3628e7a92486884d76359b13e16c249",
+    "bytes": 4011840,
+    "backend": "cpu",
+    "tensorflow": "2.19.1",
+    "num_threads": 1,
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "scale": 0.003921568859368563,
+      "zero_point": 0
+    },
+    "output": {
+      "shape": [
+        1,
+        1000
+      ],
+      "dtype": "uint8",
+      "scale": 0.1706031858921051,
+      "zero_point": 84
+    },
+    "preprocessing": "Raw RGB uint8 NHWC; ImageNet normalization is inside graph before padded stem",
+    "operations": [
+      "QUANTIZE",
+      "SUB",
+      "MUL",
+      "PAD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "PAD",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "PAD",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "PAD",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "PAD",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "ADD",
+      "CONV_2D",
+      "DEPTHWISE_CONV_2D",
+      "CONV_2D",
+      "CONV_2D",
+      "MEAN",
+      "FULLY_CONNECTED",
+      "QUANTIZE",
+      "DELEGATE"
+    ],
+    "n_inferences": 200,
+    "latency_ms_median": 5.6752519885776564
+  },
+  "tpu_runtime": {
+    "model": "/home/ross/QA/Models/mobilenetV2/TPU/mobilenetv2_int8_nhwc_edgetpu.tflite",
+    "sha256": "1222a555cbf173a7c0f810991f44d877bdf7908ec80358903da2ab32c9d27070",
+    "bytes": 4231808,
+    "backend": "tpu",
+    "tensorflow": "2.19.1",
+    "num_threads": 1,
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "scale": 0.003921568859368563,
+      "zero_point": 0
+    },
+    "output": {
+      "shape": [
+        1,
+        1000
+      ],
+      "dtype": "uint8",
+      "scale": 0.1706031858921051,
+      "zero_point": 84
+    },
+    "preprocessing": "Raw RGB uint8 NHWC; ImageNet normalization is inside graph before padded stem",
+    "operations": [
+      "edgetpu-custom-op",
+      "DELEGATE"
+    ],
+    "edgetpu": {
+      "version": "BuildLabel(COMPILER=13.3.0,DATE=redacted,TIME=redacted), RuntimeVersion(14)",
+      "devices": [
+        {
+          "type": 1,
+          "path": "/sys/bus/usb/devices/2-1"
+        }
+      ]
+    },
+    "n_inferences": 200,
+    "latency_ms_median": 3.969611512729898
+  },
+  "benchmark": "200 warm batch-1 invoke() calls after 10 warmups, same RGB image; excludes preprocessing and tensor copies; CPU 1 thread",
+  "cpu_latency_ms_p95": 6.444286397891118,
+  "tpu_latency_ms_p95": 4.240792441123631,
+  "artifacts": {
+    "mobilenetv2_int8_nhwc.tflite": {
+      "bytes": 4011840,
+      "sha256": "1aead6533836085bbe99c626cf3c7d79a3628e7a92486884d76359b13e16c249"
+    },
+    "mobilenetv2_int8_nhwc_edgetpu.tflite": {
+      "bytes": 4231808,
+      "sha256": "1222a555cbf173a7c0f810991f44d877bdf7908ec80358903da2ab32c9d27070"
+    }
+  },
+  "conversion_optimized_onnx_sha256": "53cf393edcbb988c9efddd0879e0142a27ae6a72fa96f2a330558dc8112db820",
+  "quantization_notes": [
+    "INT8 accuracy and agreement are descriptive pilot measurements, not application acceptance thresholds.",
+    "CPU INT8 and Edge TPU INT8 are compared separately; hardware results are authoritative for Coral deployment."
+  ],
+  "versions": {
+    "tensorflow-cpu": "2.19.1",
+    "numpy": "2.1.3",
+    "pillow": "13.0.0"
+  }
+}

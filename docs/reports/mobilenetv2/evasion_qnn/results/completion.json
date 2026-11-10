@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "implementation_sha256": {
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/verify_results.py": "634955bf856192e24237a79c35d35af7629f5a3ac21f53c6424bd08e73f78f0c",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/runtime.py": "b647340475d2d0bd1ed017fd68582c57fd3e4944ac01e1dda94254a7c5c857d6",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/summarize.py": "45cbc2e60b52f62725fbfa1c1f8190dd2bbc544f23a48bfcd1906af4a0631ccd",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/write_report.py": "61fede840101d6b3ac9cf49ffb93faf4b4977312127c54bc247936951d5e7806",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/sync_board.py": "124d3c35dda9a8be364c373745d07829e24f5dd69e57d1b39e415605fb4a466c",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/evaluate_service.py": "6f0d905f5cb9653c84dbd3ab972ef0c4e4252082df2c76669a277203cb676a23",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/finish_evaluation.py": "ff3acdbe9b9e5c30fbed4d43fb1b0fb73d10e81100194f8087b008d9bd14beb2",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/benchmark_board.py": "ac17aee699fab905bcf752f390a6d3cdbd6222ee9baaebc5cde0848bff2db6a7",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/serve_board.py": "1a2a00c96f4d7844190dad22af25dbaa8d2d745d039a605c135f9102554e8e58",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/qnn_tool_benchmark.py": "108459fe01bf3819a9f83ab10c09e5f135b46c1470be979e5173ee9a301abf53",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/qnn_scorer.c": "f3daaf6ae931c86c482ea8034a63632a79adddce9c0a31c8af4347d0fab1ef6a",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/full_validation.py": "ade33942f1f7150451d2a94ae47af1cd9c3ce6e09f0f8528c512ab1e3bb065d7",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/run_suite.py": "8b46e1f7b3eb2f858b5e1a1b66a71b5d1a68bcaf699cb49cc4e6b5318abf213e",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/check_survivors.py": "5a3e7e6285f37ed5e2eafde852bd44e72127b595b3e3e5c171ea9e9246fe0a6f",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/attacks.py": "06af231d5ba98f220cc9fe0fa31c56c4bddb755295dd474adc6ce34e59f8fd92",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/bridge.py": "0acc5f65ee7ee31a499e653159ebac70e79811147e907a344446df7c8cb854b1",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/config.py": "4a2a56709b1ede87188bec323687b410b8f444670bb677742fa00a8848383f78"
+  },
+  "required_steps": [
+    "check_survivors",
+    "verify_results",
+    "full_validation",
+    "evaluate_service",
+    "summarize",
+    "write_report"
+  ],
+  "report": "/home/ross/QA/Models/mobilenetV2/evasion_qnn/REPORT.md",
+  "measurement_implementation_sha256": {
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/verify_results.py": "634955bf856192e24237a79c35d35af7629f5a3ac21f53c6424bd08e73f78f0c",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/runtime.py": "b647340475d2d0bd1ed017fd68582c57fd3e4944ac01e1dda94254a7c5c857d6",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/summarize.py": "45cbc2e60b52f62725fbfa1c1f8190dd2bbc544f23a48bfcd1906af4a0631ccd",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/write_report.py": "7d68a57aa4d405d4dfd882a8f495dbef8c9b31e9a2d24687ab4bf08340a6d2ce",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/sync_board.py": "08458f478d33a7f65fe7bba94cba50cc6d441f2e32a65fdd498d7a59ee672b98",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/evaluate_service.py": "6f0d905f5cb9653c84dbd3ab972ef0c4e4252082df2c76669a277203cb676a23",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/finish_evaluation.py": "ff3acdbe9b9e5c30fbed4d43fb1b0fb73d10e81100194f8087b008d9bd14beb2",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/benchmark_board.py": "ac17aee699fab905bcf752f390a6d3cdbd6222ee9baaebc5cde0848bff2db6a7",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/serve_board.py": "1a2a00c96f4d7844190dad22af25dbaa8d2d745d039a605c135f9102554e8e58",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/qnn_tool_benchmark.py": "108459fe01bf3819a9f83ab10c09e5f135b46c1470be979e5173ee9a301abf53",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/qnn_scorer.c": "f3daaf6ae931c86c482ea8034a63632a79adddce9c0a31c8af4347d0fab1ef6a",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/full_validation.py": "ade33942f1f7150451d2a94ae47af1cd9c3ce6e09f0f8528c512ab1e3bb065d7",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/run_suite.py": "8b46e1f7b3eb2f858b5e1a1b66a71b5d1a68bcaf699cb49cc4e6b5318abf213e",
+    "/home/ross/QA/Models/mobilenetV2/evasion_qnn/scripts/check_survivors.py": "5a3e7e6285f37ed5e2eafde852bd44e72127b595b3e3e5c171ea9e9246fe0a6f",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/attacks.py": "06af231d5ba98f220cc9fe0fa31c56c4bddb755295dd474adc6ce34e59f8fd92",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/bridge.py": "0acc5f65ee7ee31a499e653159ebac70e79811147e907a344446df7c8cb854b1",
+    "/home/ross/QA/Models/mobilenetV2/evasion_rknn/scripts/config.py": "4a2a56709b1ede87188bec323687b410b8f444670bb677742fa00a8848383f78"
+  },
+  "post_measurement_changes": "Added active-service protection to sync_board.py; clarified report memory sampling labels and survivor grammar. Measurement and attack implementations and raw outputs unchanged."
+}

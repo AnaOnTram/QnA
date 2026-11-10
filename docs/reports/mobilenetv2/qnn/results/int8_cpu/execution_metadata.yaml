@@ -1,0 +1,17 @@
+---
+timestamp: 154684811416
+command: qnn-net-run --model libQnnModelDlc.so --backend libQnnCpu.so --dlc_path mobilenetv2_int8.dlc --input_list data/eval_list.txt --output_dir results/int8_cpu
+execution_mode: synchronous
+inferences_completed: 100
+graphs:
+  - graph_name: mobilenetv2_fp32
+    input_tensors:
+    - tensor_name: input
+      id: 1
+      datatype: QNN_DATATYPE_UFIXED_POINT_8
+      dimensions: [1,3,224,224]
+    output_tensors:
+    - tensor_name: logits
+      id: 419
+      datatype: QNN_DATATYPE_UFIXED_POINT_8
+      dimensions: [1,1000]

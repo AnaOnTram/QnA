@@ -1,0 +1,16 @@
+{
+  "report_links_verified": 59,
+  "historical_and_new_sources": 39,
+  "new_completed_runs": 2,
+  "new_conditions": 46,
+  "new_per_image_rows": 4600,
+  "native_replay_scores": 9200,
+  "figures_visually_inspected": [
+    "attack_curves.png",
+    "square_queries.png",
+    "mobilenet_comparison.png",
+    "resnet_comparison.png"
+  ],
+  "historical_data_recomputed": true,
+  "model_binaries_unchanged": true
+}

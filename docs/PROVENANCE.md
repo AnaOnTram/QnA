@@ -17,6 +17,25 @@ original artifacts; the Core ML exports have their own build and validation
 records in `docs/coreml/validation.json` (ResNetV2-50) and
 `docs/coreml/validation_mobilenetv2.json` (MobileNetV2).
 
+Also on 10 November 2026, the completed MobileNetV2 **TPU and QNN** conversions,
+hardware-validation records and evasion/performance studies were archived from
+`QA/Models/mobilenetV2/`. Five final model files were copied: a static NHWC INT8
+TFLite/Edge TPU pair and FP32 DLC, INT8 DLC and QCS6490 INT8 QNN context. All five
+match the source hashes already pinned in their conversion-validation reports.
+Archiving did not convert or execute them and did not access the Q6A board.
+The same canonical MobileNet ONNX and TorchVision checkpoint underlie both
+conversions. See [the archive guide](reports/mobilenetv2/ARCHIVE.md) for retained
+reports, validation evidence and conversion/runtime helpers.
+
+The three cross-runtime/cross-model syntheses under `docs/reports/` were then
+newly composed from the retained measurements. They reconcile 842 conditions
+from 39 hash-pinned deployment summaries and preserve study-specific common-clean
+denominators. Their reporting script, derived tables, figures and source ledger
+are under `docs/reports/cross_runtime/`. The missing matched ResNet QNN summary
+and ResNet sample ledger were copied from the original workspace to make the
+new calculations archive-local. This is reporting and arithmetic validation,
+not a new hardware experiment or candidate replay.
+
 ## Sources
 
 Paths in `manifest.json` are relative to the original user's home directory and
@@ -34,6 +53,8 @@ document provenance only. Runtime use does not depend on these original paths.
 - **QNN:** local QAIRT example output under
   `qairt/2.42.0.251225/examples/Models/resnet50_qairt_example/model/output/`.
   The directory name is historical; only `resnetv2_50_*` artifacts were copied.
+- **MobileNetV2 QNN and TPU:** `QA/Models/mobilenetV2/qnn/` and `TPU/`, with
+  subsequent Q6A studies under `evasion_qnn/` and TPU attacks under `TPU/evasion/`.
 - **Other variants:** existing `QA/Models/resnet50/` timm artifacts and
   `QA/Models/mobilenetV2/` artifacts, with their original locations in the manifest.
 
@@ -65,9 +86,12 @@ bundles are excluded. Report figures and compact JSON/CSV result evidence are
 included as documentation. Only the final static NHWC TFLite / Edge TPU weight
 pair is retained.
 
-The Core ML conversion scripts are retained as a reproducibility exception to the
-original snapshot's scripts exclusion. No calibration data or new photo files
-are included.
+The Core ML conversion scripts and selected MobileNetV2 TPU/QNN conversion,
+validation and runtime/service helpers are retained as reproducibility exceptions
+to the original snapshot's scripts exclusion. Compact compiler logs, DLC tensor
+metadata and native benchmark profile exports are also retained as documentation.
+Attack implementation, calibration data, saved logits and new photo files are
+not included. Source helper paths still describe the original workspace.
 
 MobileNetV2's generic legacy `trt/mobilenetv2.engine` is excluded because its
 build identity is not established by the per-precision deployment records. The
