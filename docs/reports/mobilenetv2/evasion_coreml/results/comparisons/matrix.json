@@ -1,0 +1,5600 @@
+{
+  "validation": {
+    "passed": true,
+    "problems": []
+  },
+  "model": "mobilenetv2",
+  "arms": {
+    "fp32_cpu_only": {
+      "precision": "fp32",
+      "unit": "CPU_ONLY",
+      "planned_op_devices": {
+        "CPU": 100
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 92,
+        "negated": 20,
+        "random": 12,
+        "n": 100
+      },
+      "elapsed_seconds": 117.9,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 37,
+          "n": 83,
+          "pct": 44.6,
+          "ci95": [
+            34.4,
+            55.3
+          ],
+          "queries_total": 26922,
+          "queries_mean_eligible": 324.4
+        },
+        "square@8": {
+          "fooled": 70,
+          "n": 83,
+          "pct": 84.3,
+          "ci95": [
+            75.0,
+            90.6
+          ],
+          "queries_total": 11082,
+          "queries_mean_eligible": 133.5
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_AND_GPU": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 3.4332275390625e-05,
+          "bit_identical": false
+        },
+        "CPU_AND_NE": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.0,
+          "bit_identical": true
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 36,
+          "n": 82,
+          "pct": 43.9,
+          "ci95": [
+            33.7,
+            54.7
+          ]
+        },
+        "square@8": {
+          "fooled": 69,
+          "n": 82,
+          "pct": 84.1,
+          "ci95": [
+            74.7,
+            90.5
+          ]
+        }
+      }
+    },
+    "fp32_cpu_and_gpu": {
+      "precision": "fp32",
+      "unit": "CPU_AND_GPU",
+      "planned_op_devices": {
+        "GPU": 100
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 92,
+        "negated": 20,
+        "random": 12,
+        "n": 100
+      },
+      "elapsed_seconds": 84.6,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 37,
+          "n": 83,
+          "pct": 44.6,
+          "ci95": [
+            34.4,
+            55.3
+          ],
+          "queries_total": 26922,
+          "queries_mean_eligible": 324.4
+        },
+        "square@8": {
+          "fooled": 70,
+          "n": 83,
+          "pct": 84.3,
+          "ci95": [
+            75.0,
+            90.6
+          ],
+          "queries_total": 11118,
+          "queries_mean_eligible": 134.0
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_ONLY": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 3.4332275390625e-05,
+          "bit_identical": false
+        },
+        "CPU_AND_NE": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 3.4332275390625e-05,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 36,
+          "n": 82,
+          "pct": 43.9,
+          "ci95": [
+            33.7,
+            54.7
+          ]
+        },
+        "square@8": {
+          "fooled": 69,
+          "n": 82,
+          "pct": 84.1,
+          "ci95": [
+            74.7,
+            90.5
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "fp32_cpu_and_ne": {
+      "precision": "fp32",
+      "unit": "CPU_AND_NE",
+      "planned_op_devices": {
+        "CPU": 100
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 92,
+        "negated": 20,
+        "random": 12,
+        "n": 100
+      },
+      "elapsed_seconds": 128.2,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 37,
+          "n": 83,
+          "pct": 44.6,
+          "ci95": [
+            34.4,
+            55.3
+          ],
+          "queries_total": 26922,
+          "queries_mean_eligible": 324.4
+        },
+        "square@8": {
+          "fooled": 70,
+          "n": 83,
+          "pct": 84.3,
+          "ci95": [
+            75.0,
+            90.6
+          ],
+          "queries_total": 11082,
+          "queries_mean_eligible": 133.5
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_ONLY": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.0,
+          "bit_identical": true
+        },
+        "CPU_AND_GPU": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 3.4332275390625e-05,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 36,
+          "n": 82,
+          "pct": 43.9,
+          "ci95": [
+            33.7,
+            54.7
+          ]
+        },
+        "square@8": {
+          "fooled": 69,
+          "n": 82,
+          "pct": 84.1,
+          "ci95": [
+            74.7,
+            90.5
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "fp16_cpu_only": {
+      "precision": "fp16",
+      "unit": "CPU_ONLY",
+      "planned_op_devices": {
+        "CPU": 102
+      },
+      "replica_agreement_pct": 99.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 92,
+        "negated": 20,
+        "random": 14,
+        "n": 100
+      },
+      "elapsed_seconds": 102.6,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 83,
+          "pct": 90.4,
+          "ci95": [
+            82.1,
+            95.0
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 78,
+          "n": 83,
+          "pct": 94.0,
+          "ci95": [
+            86.7,
+            97.4
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 22,
+          "n": 83,
+          "pct": 26.5,
+          "ci95": [
+            18.2,
+            36.9
+          ],
+          "queries_total": 30389,
+          "queries_mean_eligible": 366.1
+        },
+        "square@8": {
+          "fooled": 52,
+          "n": 83,
+          "pct": 62.7,
+          "ci95": [
+            51.9,
+            72.3
+          ],
+          "queries_total": 16091,
+          "queries_mean_eligible": 193.9
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_AND_GPU": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 99,
+          "max_abs_logit_difference": 0.36489105224609375,
+          "bit_identical": false
+        },
+        "CPU_AND_NE": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 99,
+          "max_abs_logit_difference": 0.34375,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@2": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@4": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "n": 82,
+          "pct": 90.2,
+          "ci95": [
+            81.9,
+            95.0
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "n": 82,
+          "pct": 93.9,
+          "ci95": [
+            86.5,
+            97.4
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 21,
+          "n": 82,
+          "pct": 25.6,
+          "ci95": [
+            17.4,
+            36.0
+          ]
+        },
+        "square@8": {
+          "fooled": 51,
+          "n": 82,
+          "pct": 62.2,
+          "ci95": [
+            51.4,
+            71.9
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "fp16_cpu_and_gpu": {
+      "precision": "fp16",
+      "unit": "CPU_AND_GPU",
+      "planned_op_devices": {
+        "GPU": 102
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 91,
+        "negated": 20,
+        "random": 12,
+        "n": 100
+      },
+      "elapsed_seconds": 82.2,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 83,
+          "pct": 90.4,
+          "ci95": [
+            82.1,
+            95.0
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 38,
+          "n": 83,
+          "pct": 45.8,
+          "ci95": [
+            35.5,
+            56.4
+          ],
+          "queries_total": 26763,
+          "queries_mean_eligible": 322.4
+        },
+        "square@8": {
+          "fooled": 71,
+          "n": 83,
+          "pct": 85.5,
+          "ci95": [
+            76.4,
+            91.5
+          ],
+          "queries_total": 11188,
+          "queries_mean_eligible": 134.8
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_ONLY": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 99,
+          "max_abs_logit_difference": 0.36489105224609375,
+          "bit_identical": false
+        },
+        "CPU_AND_NE": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.054225921630859375,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "n": 82,
+          "pct": 90.2,
+          "ci95": [
+            81.9,
+            95.0
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 37,
+          "n": 82,
+          "pct": 45.1,
+          "ci95": [
+            34.8,
+            55.9
+          ]
+        },
+        "square@8": {
+          "fooled": 70,
+          "n": 82,
+          "pct": 85.4,
+          "ci95": [
+            76.1,
+            91.4
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "fp16_cpu_and_ne": {
+      "precision": "fp16",
+      "unit": "CPU_AND_NE",
+      "planned_op_devices": {
+        "NeuralEngine": 102
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 91,
+        "negated": 20,
+        "random": 12,
+        "n": 100
+      },
+      "elapsed_seconds": 66.5,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "n": 83,
+          "pct": 89.2,
+          "ci95": [
+            80.7,
+            94.2
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 83,
+          "pct": 0.0,
+          "ci95": [
+            -0.0,
+            4.4
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 33,
+          "n": 83,
+          "pct": 39.8,
+          "ci95": [
+            29.9,
+            50.5
+          ],
+          "queries_total": 27150,
+          "queries_mean_eligible": 327.1
+        },
+        "square@8": {
+          "fooled": 61,
+          "n": 83,
+          "pct": 73.5,
+          "ci95": [
+            63.1,
+            81.8
+          ],
+          "queries_total": 11853,
+          "queries_mean_eligible": 142.8
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 76,
+          "n": 83,
+          "pct": 91.6,
+          "ci95": [
+            83.6,
+            95.9
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 79,
+          "n": 83,
+          "pct": 95.2,
+          "ci95": [
+            88.3,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_ONLY": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 99,
+          "max_abs_logit_difference": 0.34375,
+          "bit_identical": false
+        },
+        "CPU_AND_GPU": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.054225921630859375,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 73,
+          "n": 82,
+          "pct": 89.0,
+          "ci95": [
+            80.4,
+            94.1
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 32,
+          "n": 82,
+          "pct": 39.0,
+          "ci95": [
+            29.2,
+            49.8
+          ]
+        },
+        "square@8": {
+          "fooled": 60,
+          "n": 82,
+          "pct": 73.2,
+          "ci95": [
+            62.7,
+            81.6
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 75,
+          "n": 82,
+          "pct": 91.5,
+          "ci95": [
+            83.4,
+            95.8
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 78,
+          "n": 82,
+          "pct": 95.1,
+          "ci95": [
+            88.1,
+            98.1
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "int8_cpu_only": {
+      "precision": "int8",
+      "unit": "CPU_ONLY",
+      "planned_op_devices": {
+        "CPU": 102
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 88,
+        "negated": 21,
+        "random": 13,
+        "n": 100
+      },
+      "elapsed_seconds": 98.3,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 83,
+          "pct": 90.4,
+          "ci95": [
+            82.1,
+            95.0
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 23,
+          "n": 83,
+          "pct": 27.7,
+          "ci95": [
+            19.2,
+            38.2
+          ],
+          "queries_total": 30559,
+          "queries_mean_eligible": 368.2
+        },
+        "square@8": {
+          "fooled": 54,
+          "n": 83,
+          "pct": 65.1,
+          "ci95": [
+            54.3,
+            74.4
+          ],
+          "queries_total": 15037,
+          "queries_mean_eligible": 181.2
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 74,
+          "n": 83,
+          "pct": 89.2,
+          "ci95": [
+            80.7,
+            94.2
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_AND_GPU": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.44602203369140625,
+          "bit_identical": false
+        },
+        "CPU_AND_NE": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.46875,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@8": {
+          "fooled": 2,
+          "n": 82,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "n": 82,
+          "pct": 90.2,
+          "ci95": [
+            81.9,
+            95.0
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 22,
+          "n": 82,
+          "pct": 26.8,
+          "ci95": [
+            18.4,
+            37.3
+          ]
+        },
+        "square@8": {
+          "fooled": 53,
+          "n": 82,
+          "pct": 64.6,
+          "ci95": [
+            53.8,
+            74.1
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 73,
+          "n": 82,
+          "pct": 89.0,
+          "ci95": [
+            80.4,
+            94.1
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "int8_cpu_and_gpu": {
+      "precision": "int8",
+      "unit": "CPU_AND_GPU",
+      "planned_op_devices": {
+        "GPU": 102
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 88,
+        "negated": 21,
+        "random": 13,
+        "n": 100
+      },
+      "elapsed_seconds": 82.7,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 83,
+          "pct": 90.4,
+          "ci95": [
+            82.1,
+            95.0
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 36,
+          "n": 83,
+          "pct": 43.4,
+          "ci95": [
+            33.2,
+            54.1
+          ],
+          "queries_total": 26623,
+          "queries_mean_eligible": 320.8
+        },
+        "square@8": {
+          "fooled": 70,
+          "n": 83,
+          "pct": 84.3,
+          "ci95": [
+            75.0,
+            90.6
+          ],
+          "queries_total": 12261,
+          "queries_mean_eligible": 147.7
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 74,
+          "n": 83,
+          "pct": 89.2,
+          "ci95": [
+            80.7,
+            94.2
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_ONLY": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.44602203369140625,
+          "bit_identical": false
+        },
+        "CPU_AND_NE": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.16477203369140625,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 2,
+          "n": 82,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "n": 82,
+          "pct": 90.2,
+          "ci95": [
+            81.9,
+            95.0
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 35,
+          "n": 82,
+          "pct": 42.7,
+          "ci95": [
+            32.5,
+            53.5
+          ]
+        },
+        "square@8": {
+          "fooled": 69,
+          "n": 82,
+          "pct": 84.1,
+          "ci95": [
+            74.7,
+            90.5
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 73,
+          "n": 82,
+          "pct": 89.0,
+          "ci95": [
+            80.4,
+            94.1
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    },
+    "int8_cpu_and_ne": {
+      "precision": "int8",
+      "unit": "CPU_AND_NE",
+      "planned_op_devices": {
+        "NeuralEngine": 102
+      },
+      "replica_agreement_pct": 100.0,
+      "replica_device": "mps",
+      "sign_direction_probe": {
+        "gradient": 88,
+        "negated": 21,
+        "random": 12,
+        "n": 100
+      },
+      "elapsed_seconds": 66.9,
+      "checks": {
+        "package_hash_unchanged": true,
+        "exact_runtime_forward_verified": true,
+        "replica_gate_passed": true,
+        "native_runtime_autograd_false": true
+      },
+      "conditions": {
+        "random@1": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 75,
+          "n": 83,
+          "pct": 90.4,
+          "ci95": [
+            82.1,
+            95.0
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@2": {
+          "fooled": 1,
+          "n": 83,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.5
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@4": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "random@8": {
+          "fooled": 2,
+          "n": 83,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.4
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 31,
+          "n": 83,
+          "pct": 37.3,
+          "ci95": [
+            27.7,
+            48.1
+          ],
+          "queries_total": 26663,
+          "queries_mean_eligible": 321.2
+        },
+        "square@8": {
+          "fooled": 63,
+          "n": 83,
+          "pct": 75.9,
+          "ci95": [
+            65.7,
+            83.8
+          ],
+          "queries_total": 11474,
+          "queries_mean_eligible": 138.2
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 74,
+          "n": 83,
+          "pct": 89.2,
+          "ci95": [
+            80.7,
+            94.2
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "n": 83,
+          "pct": 92.8,
+          "ci95": [
+            85.1,
+            96.6
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "n": 83,
+          "pct": 96.4,
+          "ci95": [
+            89.9,
+            98.8
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 81,
+          "n": 83,
+          "pct": 97.6,
+          "ci95": [
+            91.6,
+            99.3
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "n": 83,
+          "pct": 100.0,
+          "ci95": [
+            95.6,
+            100.0
+          ]
+        }
+      },
+      "clean": {
+        "correct": 83,
+        "n": 100,
+        "ci95": [
+          74.5,
+          89.1
+        ]
+      },
+      "clean_other_units": {
+        "CPU_ONLY": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.46875,
+          "bit_identical": false
+        },
+        "CPU_AND_GPU": {
+          "correct": 83,
+          "top1_agreement_with_this_unit": 100,
+          "max_abs_logit_difference": 0.16477203369140625,
+          "bit_identical": false
+        }
+      },
+      "shared": {
+        "random@1": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@2": {
+          "fooled": 0,
+          "n": 82,
+          "pct": 0.0,
+          "ci95": [
+            0.0,
+            4.5
+          ]
+        },
+        "random@4": {
+          "fooled": 1,
+          "n": 82,
+          "pct": 1.2,
+          "ci95": [
+            0.2,
+            6.6
+          ]
+        },
+        "random@8": {
+          "fooled": 2,
+          "n": 82,
+          "pct": 2.4,
+          "ci95": [
+            0.7,
+            8.5
+          ]
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "n": 82,
+          "pct": 90.2,
+          "ci95": [
+            81.9,
+            95.0
+          ]
+        },
+        "fgsm@2": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "fgsm@8": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "square@4": {
+          "fooled": 30,
+          "n": 82,
+          "pct": 36.6,
+          "ci95": [
+            27.0,
+            47.4
+          ]
+        },
+        "square@8": {
+          "fooled": 62,
+          "n": 82,
+          "pct": 75.6,
+          "ci95": [
+            65.3,
+            83.6
+          ]
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 73,
+          "n": 82,
+          "pct": 89.0,
+          "ci95": [
+            80.4,
+            94.1
+          ]
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 76,
+          "n": 82,
+          "pct": 92.7,
+          "ci95": [
+            84.9,
+            96.6
+          ]
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "n": 82,
+          "pct": 96.3,
+          "ci95": [
+            89.8,
+            98.7
+          ]
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 80,
+          "n": 82,
+          "pct": 97.6,
+          "ci95": [
+            91.5,
+            99.3
+          ]
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "n": 82,
+          "pct": 100.0,
+          "ci95": [
+            95.5,
+            100.0
+          ]
+        }
+      }
+    }
+  },
+  "conditions": [
+    "random@1",
+    "random@2",
+    "random@4",
+    "random@8",
+    "fgsm@1",
+    "fgsm@2",
+    "fgsm@4",
+    "fgsm@8",
+    "pgd@1",
+    "pgd@2",
+    "pgd@4",
+    "pgd@8",
+    "pgd_stronger@1",
+    "square@4",
+    "square@8",
+    "transfer_fp32_fgsm@1",
+    "transfer_fp32_fgsm@2",
+    "transfer_fp32_fgsm@4",
+    "transfer_fp32_fgsm@8",
+    "transfer_fp32_pgd@1",
+    "transfer_fp32_pgd@2",
+    "transfer_fp32_pgd@4",
+    "transfer_fp32_pgd@8"
+  ],
+  "shared_clean_n": 82,
+  "shared_arms": [
+    "fp32_cpu_only",
+    "fp32_cpu_and_gpu",
+    "fp32_cpu_and_ne",
+    "fp16_cpu_only",
+    "fp16_cpu_and_gpu",
+    "fp16_cpu_and_ne",
+    "int8_cpu_only",
+    "int8_cpu_and_gpu",
+    "int8_cpu_and_ne"
+  ],
+  "cross_unit_portability": {
+    "fp32:CPU_ONLY->CPU_AND_GPU:fgsm@1": {
+      "fooled": 76,
+      "n": 76,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:fgsm@8": {
+      "fooled": 79,
+      "n": 79,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:square@4": {
+      "fooled": 37,
+      "n": 37,
+      "pct": 100.0,
+      "ci95": [
+        90.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_GPU:square@8": {
+      "fooled": 70,
+      "n": 70,
+      "pct": 100.0,
+      "ci95": [
+        94.8,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:fgsm@1": {
+      "fooled": 76,
+      "n": 76,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:fgsm@8": {
+      "fooled": 79,
+      "n": 79,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:square@4": {
+      "fooled": 37,
+      "n": 37,
+      "pct": 100.0,
+      "ci95": [
+        90.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_ONLY->CPU_AND_NE:square@8": {
+      "fooled": 70,
+      "n": 70,
+      "pct": 100.0,
+      "ci95": [
+        94.8,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:fgsm@1": {
+      "fooled": 76,
+      "n": 76,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:fgsm@8": {
+      "fooled": 79,
+      "n": 79,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:square@4": {
+      "fooled": 37,
+      "n": 37,
+      "pct": 100.0,
+      "ci95": [
+        90.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_ONLY:square@8": {
+      "fooled": 70,
+      "n": 70,
+      "pct": 100.0,
+      "ci95": [
+        94.8,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:fgsm@1": {
+      "fooled": 76,
+      "n": 76,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:fgsm@8": {
+      "fooled": 79,
+      "n": 79,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:square@4": {
+      "fooled": 37,
+      "n": 37,
+      "pct": 100.0,
+      "ci95": [
+        90.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_GPU->CPU_AND_NE:square@8": {
+      "fooled": 70,
+      "n": 70,
+      "pct": 100.0,
+      "ci95": [
+        94.8,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:fgsm@1": {
+      "fooled": 76,
+      "n": 76,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:fgsm@8": {
+      "fooled": 79,
+      "n": 79,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:square@4": {
+      "fooled": 37,
+      "n": 37,
+      "pct": 100.0,
+      "ci95": [
+        90.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_ONLY:square@8": {
+      "fooled": 70,
+      "n": 70,
+      "pct": 100.0,
+      "ci95": [
+        94.8,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:fgsm@1": {
+      "fooled": 76,
+      "n": 76,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:fgsm@8": {
+      "fooled": 79,
+      "n": 79,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:square@4": {
+      "fooled": 37,
+      "n": 37,
+      "pct": 100.0,
+      "ci95": [
+        90.6,
+        100.0
+      ]
+    },
+    "fp32:CPU_AND_NE->CPU_AND_GPU:square@8": {
+      "fooled": 70,
+      "n": 70,
+      "pct": 100.0,
+      "ci95": [
+        94.8,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:fgsm@1": {
+      "fooled": 74,
+      "n": 75,
+      "pct": 98.7,
+      "ci95": [
+        92.8,
+        99.8
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:fgsm@8": {
+      "fooled": 81,
+      "n": 81,
+      "pct": 100.0,
+      "ci95": [
+        95.5,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:square@4": {
+      "fooled": 17,
+      "n": 22,
+      "pct": 77.3,
+      "ci95": [
+        56.6,
+        89.9
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_GPU:square@8": {
+      "fooled": 37,
+      "n": 52,
+      "pct": 71.2,
+      "ci95": [
+        57.7,
+        81.7
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:fgsm@1": {
+      "fooled": 74,
+      "n": 75,
+      "pct": 98.7,
+      "ci95": [
+        92.8,
+        99.8
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:fgsm@8": {
+      "fooled": 81,
+      "n": 81,
+      "pct": 100.0,
+      "ci95": [
+        95.5,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:square@4": {
+      "fooled": 17,
+      "n": 22,
+      "pct": 77.3,
+      "ci95": [
+        56.6,
+        89.9
+      ]
+    },
+    "fp16:CPU_ONLY->CPU_AND_NE:square@8": {
+      "fooled": 38,
+      "n": 52,
+      "pct": 73.1,
+      "ci95": [
+        59.7,
+        83.2
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:fgsm@1": {
+      "fooled": 75,
+      "n": 75,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:fgsm@8": {
+      "fooled": 80,
+      "n": 80,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:square@4": {
+      "fooled": 27,
+      "n": 38,
+      "pct": 71.1,
+      "ci95": [
+        55.2,
+        83.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_ONLY:square@8": {
+      "fooled": 54,
+      "n": 71,
+      "pct": 76.1,
+      "ci95": [
+        65.0,
+        84.5
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:fgsm@1": {
+      "fooled": 75,
+      "n": 75,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:fgsm@8": {
+      "fooled": 80,
+      "n": 80,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:square@4": {
+      "fooled": 35,
+      "n": 38,
+      "pct": 92.1,
+      "ci95": [
+        79.2,
+        97.3
+      ]
+    },
+    "fp16:CPU_AND_GPU->CPU_AND_NE:square@8": {
+      "fooled": 63,
+      "n": 71,
+      "pct": 88.7,
+      "ci95": [
+        79.3,
+        94.2
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:fgsm@1": {
+      "fooled": 74,
+      "n": 74,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:fgsm@8": {
+      "fooled": 80,
+      "n": 80,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:square@4": {
+      "fooled": 25,
+      "n": 33,
+      "pct": 75.8,
+      "ci95": [
+        59.0,
+        87.2
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_ONLY:square@8": {
+      "fooled": 49,
+      "n": 61,
+      "pct": 80.3,
+      "ci95": [
+        68.7,
+        88.4
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:fgsm@1": {
+      "fooled": 74,
+      "n": 74,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:fgsm@8": {
+      "fooled": 80,
+      "n": 80,
+      "pct": 100.0,
+      "ci95": [
+        95.4,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:square@4": {
+      "fooled": 30,
+      "n": 33,
+      "pct": 90.9,
+      "ci95": [
+        76.4,
+        96.9
+      ]
+    },
+    "fp16:CPU_AND_NE->CPU_AND_GPU:square@8": {
+      "fooled": 57,
+      "n": 61,
+      "pct": 93.4,
+      "ci95": [
+        84.3,
+        97.4
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:fgsm@1": {
+      "fooled": 75,
+      "n": 75,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:fgsm@8": {
+      "fooled": 77,
+      "n": 77,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:square@4": {
+      "fooled": 17,
+      "n": 23,
+      "pct": 73.9,
+      "ci95": [
+        53.5,
+        87.5
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_GPU:square@8": {
+      "fooled": 36,
+      "n": 54,
+      "pct": 66.7,
+      "ci95": [
+        53.4,
+        77.8
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:fgsm@1": {
+      "fooled": 75,
+      "n": 75,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:fgsm@8": {
+      "fooled": 77,
+      "n": 77,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:square@4": {
+      "fooled": 17,
+      "n": 23,
+      "pct": 73.9,
+      "ci95": [
+        53.5,
+        87.5
+      ]
+    },
+    "int8:CPU_ONLY->CPU_AND_NE:square@8": {
+      "fooled": 36,
+      "n": 54,
+      "pct": 66.7,
+      "ci95": [
+        53.4,
+        77.8
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:fgsm@1": {
+      "fooled": 74,
+      "n": 75,
+      "pct": 98.7,
+      "ci95": [
+        92.8,
+        99.8
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:fgsm@8": {
+      "fooled": 77,
+      "n": 77,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:square@4": {
+      "fooled": 22,
+      "n": 36,
+      "pct": 61.1,
+      "ci95": [
+        44.9,
+        75.2
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_ONLY:square@8": {
+      "fooled": 54,
+      "n": 70,
+      "pct": 77.1,
+      "ci95": [
+        66.0,
+        85.4
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:fgsm@1": {
+      "fooled": 75,
+      "n": 75,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:fgsm@8": {
+      "fooled": 77,
+      "n": 77,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:square@4": {
+      "fooled": 30,
+      "n": 36,
+      "pct": 83.3,
+      "ci95": [
+        68.1,
+        92.1
+      ]
+    },
+    "int8:CPU_AND_GPU->CPU_AND_NE:square@8": {
+      "fooled": 61,
+      "n": 70,
+      "pct": 87.1,
+      "ci95": [
+        77.3,
+        93.1
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:fgsm@1": {
+      "fooled": 74,
+      "n": 75,
+      "pct": 98.7,
+      "ci95": [
+        92.8,
+        99.8
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:fgsm@8": {
+      "fooled": 77,
+      "n": 77,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:square@4": {
+      "fooled": 17,
+      "n": 31,
+      "pct": 54.8,
+      "ci95": [
+        37.8,
+        70.8
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_ONLY:square@8": {
+      "fooled": 50,
+      "n": 63,
+      "pct": 79.4,
+      "ci95": [
+        67.8,
+        87.5
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:fgsm@1": {
+      "fooled": 75,
+      "n": 75,
+      "pct": 100.0,
+      "ci95": [
+        95.1,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:fgsm@8": {
+      "fooled": 77,
+      "n": 77,
+      "pct": 100.0,
+      "ci95": [
+        95.2,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:pgd@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:pgd@2": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:pgd@4": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:pgd@8": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:pgd_stronger@1": {
+      "fooled": 83,
+      "n": 83,
+      "pct": 100.0,
+      "ci95": [
+        95.6,
+        100.0
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:square@4": {
+      "fooled": 27,
+      "n": 31,
+      "pct": 87.1,
+      "ci95": [
+        71.1,
+        94.9
+      ]
+    },
+    "int8:CPU_AND_NE->CPU_AND_GPU:square@8": {
+      "fooled": 60,
+      "n": 63,
+      "pct": 95.2,
+      "ci95": [
+        86.9,
+        98.4
+      ]
+    }
+  },
+  "clean_cross_unit": {
+    "fp32": {
+      "CPU_AND_GPU": {
+        "correct": 83,
+        "top1_agreement_with_this_unit": 100,
+        "max_abs_logit_difference": 3.4332275390625e-05,
+        "bit_identical": false
+      },
+      "CPU_AND_NE": {
+        "correct": 83,
+        "top1_agreement_with_this_unit": 100,
+        "max_abs_logit_difference": 0.0,
+        "bit_identical": true
+      }
+    },
+    "fp16": {
+      "CPU_AND_GPU": {
+        "correct": 83,
+        "top1_agreement_with_this_unit": 99,
+        "max_abs_logit_difference": 0.36489105224609375,
+        "bit_identical": false
+      },
+      "CPU_AND_NE": {
+        "correct": 83,
+        "top1_agreement_with_this_unit": 99,
+        "max_abs_logit_difference": 0.34375,
+        "bit_identical": false
+      }
+    },
+    "int8": {
+      "CPU_AND_GPU": {
+        "correct": 83,
+        "top1_agreement_with_this_unit": 100,
+        "max_abs_logit_difference": 0.44602203369140625,
+        "bit_identical": false
+      },
+      "CPU_AND_NE": {
+        "correct": 83,
+        "top1_agreement_with_this_unit": 100,
+        "max_abs_logit_difference": 0.46875,
+        "bit_identical": false
+      }
+    }
+  }
+}

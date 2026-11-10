@@ -1,6 +1,6 @@
 # Artifact catalog
 
-Each file is a standalone copy. SHA-256 digests, exact sizes, original locations and quantization details are in [manifest.json](../manifest.json). Sizes below use MiB (1,048,576 bytes).
+Legacy weight files are standalone copies. Core ML packages must retain all of their component files together. SHA-256 digests, exact sizes, original locations and quantization details are in [manifest.json](../manifest.json). Sizes below use MiB (1,048,576 bytes).
 
 | File | Runtime | Precision | MiB |
 | --- | --- | --- | ---: |
@@ -28,3 +28,20 @@ Each file is a standalone copy. SHA-256 digests, exact sizes, original locations
 | [weights/resnetv2_50/tensorrt/resnetv2_50_int8_qdq.onnx](../weights/resnetv2_50/tensorrt/resnetv2_50_int8_qdq.onnx) | TensorRT | INT8 Q/DQ | 97.93 |
 | [weights/resnetv2_50/tensorrt/resnetv2_50_int8_qdq.trt109.b10.plan](../weights/resnetv2_50/tensorrt/resnetv2_50_int8_qdq.trt109.b10.plan) | TensorRT 10.9.0.34 | INT8 | 27.85 |
 | [weights/resnetv2_50/tflite/resnetv2_50_int8_nhwc.tflite](../weights/resnetv2_50/tflite/resnetv2_50_int8_nhwc.tflite) | TensorFlow Lite CPU | INT8 with UINT8 I/O | 25.07 |
+
+## Core ML packages (added 10 November 2026)
+
+Package sizes sum their three component files. Each component is recorded in the root manifest and checksum ledger.
+
+| Package | Runtime | Precision | MiB |
+| --- | --- | --- | ---: |
+| [resnetv2_50_fp32.mlpackage](../weights/resnetv2_50/coreml/resnetv2_50_fp32.mlpackage) | Apple Core ML | FP32 | 97.65 |
+| [resnetv2_50_fp16.mlpackage](../weights/resnetv2_50/coreml/resnetv2_50_fp16.mlpackage) | Apple Core ML | FP16 | 48.88 |
+| [resnetv2_50_int8.mlpackage](../weights/resnetv2_50/coreml/resnetv2_50_int8.mlpackage) | Apple Core ML | INT8 weights / FP16 compute | 24.62 |
+| [resnetv2_50_int4.mlpackage](../weights/resnetv2_50/coreml/resnetv2_50_int4.mlpackage) | Apple Core ML | INT4 weights / FP16 compute | 13.33 |
+| [mobilenetv2_fp32.mlpackage](../weights/mobilenetv2/coreml/mobilenetv2_fp32.mlpackage) | Apple Core ML | FP32 | 13.39 |
+| [mobilenetv2_fp16.mlpackage](../weights/mobilenetv2/coreml/mobilenetv2_fp16.mlpackage) | Apple Core ML | FP16 | 6.74 |
+| [mobilenetv2_int8.mlpackage](../weights/mobilenetv2/coreml/mobilenetv2_int8.mlpackage) | Apple Core ML | INT8 weights / FP16 compute | 3.48 |
+| [mobilenetv2_int4.mlpackage](../weights/mobilenetv2/coreml/mobilenetv2_int4.mlpackage) | Apple Core ML | INT4 weights / FP16 compute | 2.01 |
+
+[Conversion procedure and validation](coreml/README.md). Both INT4 packages are experimental and showed substantial prediction drift; MobileNetV2 INT4 is severely degraded.

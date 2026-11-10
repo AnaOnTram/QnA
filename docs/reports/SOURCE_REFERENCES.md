@@ -14,3 +14,4 @@ The archive contains reports, figures and compact evidence. It excludes source c
 | `Models/mobilenetV2/evasion_trt/scripts/summarize.py` | `mobilenetv2/evasion_trt/METHODOLOGY.md` |
 | `Models/resnet50/evasion/results/qnn_v2_matched` | `resnetv2_50/evasion/README.md` |
 | `Models/resnet50/rknn/NPU/resnet/export_resnet_to_rknn.py` | `mobilenetv2/rknn/README.md` |
+| `AISR/evasion_coreml/` (harness: `config.py`, `replica.py`, `runtime.py`, `attacks.py`, `run_arm.py`, `summarize.py`, `square_seeds.py`, `figures.py`, `package_reports.py`, `run_all.sh`) | `mobilenetv2/evasion_coreml/README.md`, `resnetv2_50/evasion_coreml/README.md` |

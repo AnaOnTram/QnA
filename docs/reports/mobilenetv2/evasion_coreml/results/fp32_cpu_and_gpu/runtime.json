@@ -1,0 +1,27 @@
+{
+  "package": "/Users/ross/Documents/AISR/QnA/weights/mobilenetv2/coreml/mobilenetv2_fp32.mlpackage",
+  "package_files": [
+    {
+      "path": "Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 79138,
+      "sha256": "baba797a905498256a49204ead808c4c732c4f91c1a85e54195707a83c19e580"
+    },
+    {
+      "path": "Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 13958208,
+      "sha256": "aa51ad97912c098ae427f5707a7127907c168e2f5055dad6a6f29a142fd37a08"
+    },
+    {
+      "path": "Manifest.json",
+      "bytes": 617,
+      "sha256": "d391f28f0a9a688a02e099cbc4faf56fad91bbc43e1db321ea5d8c436c823343"
+    }
+  ],
+  "compute_units_requested": "CPU_AND_GPU",
+  "planned_op_devices": {
+    "GPU": 100
+  },
+  "coremltools": "9.0",
+  "macos": "26.6.2",
+  "machine": "arm64"
+}

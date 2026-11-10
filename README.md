@@ -9,6 +9,7 @@ tags:
   - qnn
   - tflite
   - quantized
+  - coreml
 ---
 
 # Model weights and evasion attack reports
@@ -18,9 +19,10 @@ Pretrained **timm ResNetV2-50 (`resnetv2_50.a1h_in1k`)** and **MobileNetV2
 artifacts, plus their evasion attack reports and supporting figures/evidence.
 This snapshot was assembled on 6 November 2026 (Hong Kong time).
 
-24 weight files, **841,027,645 bytes** (802.07 MiB). Every weight is tracked with
-Git LFS. Reports, figures, compact result evidence, checksums and provenance
-manifests use ordinary Git.
+32 model artifacts represented by 48 files, **1,061,320,331 bytes** (1012.15 MiB),
+including eight Core ML packages (four per model) added on 10 November 2026. Binary model data is
+tracked with Git LFS. Package JSON manifests, reports, figures, compact result
+evidence, checksums and provenance manifests use ordinary Git.
 
 | Runtime / format | timm ResNetV2-50 | MobileNetV2 |
 | --- | --- | --- |
@@ -28,6 +30,7 @@ manifests use ordinary Git.
 | ONNX Runtime | FP32, FP16, INT8 QOperator | FP32 |
 | TensorRT ONNX graphs | INT8 explicit Q/DQ, compressed INT8 Q/DQ; FP32/FP16 graphs shared from `onnx/` | FP32 shared from `onnx/`; FP16, FP8, INT8, mixed INT4 weight-only |
 | TensorRT compiled engines | Two INT8 plans, TensorRT 10.9, batch profile max 10 | Documented deployment engines absent locally; graphs included |
+| Apple Core ML | FP32, FP16, INT8 weight-only, experimental INT4 weight-only; iOS 18 / macOS 15+ | FP32, FP16, INT8 weight-only, experimental INT4 weight-only; iOS 18 / macOS 15+ |
 | Rockchip RKNN, RK3588 | FP16, INT8 | FP16, INT8; opset-19 conversion source |
 | Qualcomm QAIRT / QNN | FP32 DLC, INT8 DLC, QCS6490 INT8 context | No local artifact |
 | TensorFlow Lite CPU | Static NHWC INT8, UINT8 I/O | No local artifact |
@@ -39,7 +42,9 @@ TorchVision checkpoint. ResNetV2-50 and MobileNetV2 are separate model families.
 ## Contents
 
 - [Evasion attack reports](docs/reports/README.md): unified timm comparison, Edge TPU,
-  MobileNetV2 TensorRT and RKNN reports, figures, matrices and validation evidence.
+  MobileNetV2 TensorRT and RKNN reports, and new Core ML studies of both models on
+  CPU, CPU+GPU and CPU+Neural Engine, with figures, matrices and validation evidence.
+- [Core ML conversion and validation](docs/coreml/README.md): four packages per model, reproduction scripts, input contracts and measured quantization drift.
 - [Artifact catalog](docs/CATALOG.md): every included file, runtime, precision and size.
 - [Runtime and preprocessing notes](docs/RUNTIMES.md): input contracts and deployment limits.
 - [Provenance and scope](docs/PROVENANCE.md): sources, quantization recipes and exclusions.
@@ -58,8 +63,9 @@ sha256sum --check docs/reports/SHA256SUMS
 ```
 
 This archive contains weights, attack reports, figures and compact result evidence.
-It contains no datasets, calibration images, inference/attack implementation,
-adversarial candidate tensors, full experiment logs, virtual environments or SDKs.
+It also includes Core ML conversion and validation scripts. It contains no
+datasets, calibration images, attack implementation, adversarial candidate
+tensors, full experiment logs, virtual environments or SDKs.
 Use the appropriate runtime and model architecture; there is no single
 `from_pretrained()` entry point for this multi-model collection. See the runtime
 notes before passing inputs to the compiled models.

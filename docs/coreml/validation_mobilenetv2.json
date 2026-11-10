@@ -1,0 +1,534 @@
+{
+  "checkpoint_sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+  "environment": {
+    "python": "3.12.14 (main, Sep  3 2026, 03:46:19) [Clang 21.1.8 ]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "coremltools": "9.0"
+  },
+  "input": {
+    "name": "image",
+    "shape": [
+      1,
+      3,
+      224,
+      224
+    ],
+    "dtype": "float32",
+    "normalization_embedded": false
+  },
+  "output": {
+    "name": "logits",
+    "shape": [
+      1,
+      1000
+    ],
+    "dtype": "float32"
+  },
+  "validation": {
+    "compute_units": "CPU_ONLY",
+    "samples": [
+      "black",
+      "gray",
+      "white",
+      "gradient",
+      "checkerboard",
+      "noise_0",
+      "noise_1",
+      "noise_2",
+      "photo_0_archive",
+      "photo_0_native_torchvision"
+    ],
+    "photo_sources": [
+      {
+        "sample_prefix": "photo_0",
+        "filename": "grace_hopper.jpg",
+        "sha256": "a8ca6d734765703b09728ab47fe59f473d93ae3967fc24c7c0288c3c7adb7130"
+      }
+    ],
+    "limitation": "Smoke/parity tests on synthetic inputs and bundled photos; no labeled ImageNet accuracy or hardware performance measurement."
+  },
+  "artifacts": {
+    "fp32": {
+      "path": "weights/mobilenetv2/coreml/mobilenetv2_fp32.mlpackage",
+      "bytes": 14037963,
+      "metrics_vs_pytorch_fp32": {
+        "max_absolute_logit_error": 5.507469177246094e-05,
+        "mean_absolute_logit_error": 5.142633896321058e-06,
+        "rmse": 7.631125942416027e-06,
+        "mean_cosine_similarity": 0.999999999979299,
+        "top1_agreement": 1.0
+      },
+      "per_sample": [
+        {
+          "name": "black",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9999999998401505,
+          "max_absolute_logit_error": 5.507469177246094e-05
+        },
+        {
+          "name": "gray",
+          "pytorch_top1": 111,
+          "coreml_top1": 111,
+          "cosine_similarity": 0.9999999999780732,
+          "max_absolute_logit_error": 2.288818359375e-05
+        },
+        {
+          "name": "white",
+          "pytorch_top1": 473,
+          "coreml_top1": 473,
+          "cosine_similarity": 0.9999999999900353,
+          "max_absolute_logit_error": 1.4960765838623047e-05
+        },
+        {
+          "name": "gradient",
+          "pytorch_top1": 818,
+          "coreml_top1": 818,
+          "cosine_similarity": 0.9999999999974113,
+          "max_absolute_logit_error": 1.8835067749023438e-05
+        },
+        {
+          "name": "checkerboard",
+          "pytorch_top1": 401,
+          "coreml_top1": 401,
+          "cosine_similarity": 0.9999999999959146,
+          "max_absolute_logit_error": 2.6464462280273438e-05
+        },
+        {
+          "name": "noise_0",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9999999999983424,
+          "max_absolute_logit_error": 1.537799835205078e-05
+        },
+        {
+          "name": "noise_1",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9999999999981327,
+          "max_absolute_logit_error": 1.5288591384887695e-05
+        },
+        {
+          "name": "noise_2",
+          "pytorch_top1": 904,
+          "coreml_top1": 904,
+          "cosine_similarity": 0.9999999999982379,
+          "max_absolute_logit_error": 2.1457672119140625e-05
+        },
+        {
+          "name": "photo_0_archive",
+          "pytorch_top1": 652,
+          "coreml_top1": 652,
+          "cosine_similarity": 0.999999999998353,
+          "max_absolute_logit_error": 1.71661376953125e-05
+        },
+        {
+          "name": "photo_0_native_torchvision",
+          "pytorch_top1": 457,
+          "coreml_top1": 457,
+          "cosine_similarity": 0.9999999999983384,
+          "max_absolute_logit_error": 1.71661376953125e-05
+        }
+      ],
+      "graph": {
+        "operations": {
+          "const": 439,
+          "conv": 52,
+          "clip": 35,
+          "add": 10,
+          "reduce_mean": 1,
+          "reshape": 1,
+          "linear": 1
+        },
+        "floating_operation_output_dtypes": {
+          "FLOAT32": 276
+        },
+        "compressed_weight_tensor_dtypes": {},
+        "compressed_weight_elements": 0,
+        "specification_version": 9
+      },
+      "files": [
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_fp32.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 79138,
+          "sha256": "baba797a905498256a49204ead808c4c732c4f91c1a85e54195707a83c19e580"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_fp32.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 13958208,
+          "sha256": "aa51ad97912c098ae427f5707a7127907c168e2f5055dad6a6f29a142fd37a08"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_fp32.mlpackage/Manifest.json",
+          "bytes": 617,
+          "sha256": "d391f28f0a9a688a02e099cbc4faf56fad91bbc43e1db321ea5d8c436c823343"
+        }
+      ]
+    },
+    "fp16": {
+      "path": "weights/mobilenetv2/coreml/mobilenetv2_fp16.mlpackage",
+      "bytes": 7070144,
+      "metrics_vs_pytorch_fp32": {
+        "max_absolute_logit_error": 0.44449949264526367,
+        "mean_absolute_logit_error": 0.04103305773856118,
+        "rmse": 0.06173888542411044,
+        "mean_cosine_similarity": 0.9990882498435152,
+        "top1_agreement": 1.0
+      },
+      "per_sample": [
+        {
+          "name": "black",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.998949796213794,
+          "max_absolute_logit_error": 0.1698610782623291
+        },
+        {
+          "name": "gray",
+          "pytorch_top1": 111,
+          "coreml_top1": 111,
+          "cosine_similarity": 0.994313027062764,
+          "max_absolute_logit_error": 0.40638256072998047
+        },
+        {
+          "name": "white",
+          "pytorch_top1": 473,
+          "coreml_top1": 473,
+          "cosine_similarity": 0.9993870180481618,
+          "max_absolute_logit_error": 0.14283370971679688
+        },
+        {
+          "name": "gradient",
+          "pytorch_top1": 818,
+          "coreml_top1": 818,
+          "cosine_similarity": 0.9987241101980279,
+          "max_absolute_logit_error": 0.44449949264526367
+        },
+        {
+          "name": "checkerboard",
+          "pytorch_top1": 401,
+          "coreml_top1": 401,
+          "cosine_similarity": 0.9999343964904641,
+          "max_absolute_logit_error": 0.15015029907226562
+        },
+        {
+          "name": "noise_0",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9999223801739133,
+          "max_absolute_logit_error": 0.08777999877929688
+        },
+        {
+          "name": "noise_1",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9999159908042591,
+          "max_absolute_logit_error": 0.08222389221191406
+        },
+        {
+          "name": "noise_2",
+          "pytorch_top1": 904,
+          "coreml_top1": 904,
+          "cosine_similarity": 0.9999266597136272,
+          "max_absolute_logit_error": 0.08629047870635986
+        },
+        {
+          "name": "photo_0_archive",
+          "pytorch_top1": 652,
+          "coreml_top1": 652,
+          "cosine_similarity": 0.9999304355211128,
+          "max_absolute_logit_error": 0.21954631805419922
+        },
+        {
+          "name": "photo_0_native_torchvision",
+          "pytorch_top1": 457,
+          "coreml_top1": 457,
+          "cosine_similarity": 0.9998786842090266,
+          "max_absolute_logit_error": 0.16233539581298828
+        }
+      ],
+      "graph": {
+        "operations": {
+          "const": 441,
+          "cast": 2,
+          "conv": 52,
+          "clip": 35,
+          "add": 10,
+          "reduce_mean": 1,
+          "reshape": 1,
+          "linear": 1
+        },
+        "floating_operation_output_dtypes": {
+          "FLOAT16": 277,
+          "FLOAT32": 1
+        },
+        "compressed_weight_tensor_dtypes": {},
+        "compressed_weight_elements": 0,
+        "specification_version": 9
+      },
+      "files": [
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_fp16.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 86791,
+          "sha256": "19ed3d1d415b3bc54a2586d815b0febe405f6c653fe08b6e27686b80470c571d"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_fp16.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 6982736,
+          "sha256": "83f8c1a3fcb6f2cd2ec8cb595bb6ede8b2a14b10654091322ad306622322b5b9"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_fp16.mlpackage/Manifest.json",
+          "bytes": 617,
+          "sha256": "b2f047bf0644cfeb804128a2cb2d60ee7c21b446c202f19a6415189fb837955a"
+        }
+      ]
+    },
+    "int8": {
+      "path": "weights/mobilenetv2/coreml/mobilenetv2_int8.mlpackage",
+      "bytes": 3647809,
+      "metrics_vs_pytorch_fp32": {
+        "max_absolute_logit_error": 1.670046329498291,
+        "mean_absolute_logit_error": 0.18575751753179356,
+        "rmse": 0.250207505102442,
+        "mean_cosine_similarity": 0.9873126103991691,
+        "top1_agreement": 0.8
+      },
+      "per_sample": [
+        {
+          "name": "black",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9802249872273668,
+          "max_absolute_logit_error": 0.7900952100753784
+        },
+        {
+          "name": "gray",
+          "pytorch_top1": 111,
+          "coreml_top1": 846,
+          "cosine_similarity": 0.9516111701546424,
+          "max_absolute_logit_error": 1.670046329498291
+        },
+        {
+          "name": "white",
+          "pytorch_top1": 473,
+          "coreml_top1": 473,
+          "cosine_similarity": 0.9691284075678481,
+          "max_absolute_logit_error": 0.8152346611022949
+        },
+        {
+          "name": "gradient",
+          "pytorch_top1": 818,
+          "coreml_top1": 818,
+          "cosine_similarity": 0.9856265497076181,
+          "max_absolute_logit_error": 1.320444107055664
+        },
+        {
+          "name": "checkerboard",
+          "pytorch_top1": 401,
+          "coreml_top1": 401,
+          "cosine_similarity": 0.9964108889651645,
+          "max_absolute_logit_error": 0.767228364944458
+        },
+        {
+          "name": "noise_0",
+          "pytorch_top1": 644,
+          "coreml_top1": 644,
+          "cosine_similarity": 0.9982989626103879,
+          "max_absolute_logit_error": 0.4052567481994629
+        },
+        {
+          "name": "noise_1",
+          "pytorch_top1": 644,
+          "coreml_top1": 107,
+          "cosine_similarity": 0.9983062707388208,
+          "max_absolute_logit_error": 0.4049720764160156
+        },
+        {
+          "name": "noise_2",
+          "pytorch_top1": 904,
+          "coreml_top1": 904,
+          "cosine_similarity": 0.9985291963748157,
+          "max_absolute_logit_error": 0.4625122547149658
+        },
+        {
+          "name": "photo_0_archive",
+          "pytorch_top1": 652,
+          "coreml_top1": 652,
+          "cosine_similarity": 0.9978311523564031,
+          "max_absolute_logit_error": 0.669156551361084
+        },
+        {
+          "name": "photo_0_native_torchvision",
+          "pytorch_top1": 457,
+          "coreml_top1": 457,
+          "cosine_similarity": 0.9971585182886232,
+          "max_absolute_logit_error": 0.881239652633667
+        }
+      ],
+      "graph": {
+        "operations": {
+          "const": 388,
+          "constexpr_blockwise_shift_scale": 53,
+          "cast": 2,
+          "conv": 52,
+          "clip": 35,
+          "add": 10,
+          "reduce_mean": 1,
+          "reshape": 1,
+          "linear": 1
+        },
+        "floating_operation_output_dtypes": {
+          "FLOAT16": 277,
+          "FLOAT32": 1
+        },
+        "compressed_weight_tensor_dtypes": {
+          "INT8": 53
+        },
+        "compressed_weight_elements": 3469760,
+        "specification_version": 9
+      },
+      "files": [
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_int8.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 94344,
+          "sha256": "0a24be040d4a3059babe6c6f1a212773e9690fb403e9480b941f747d4158e324"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_int8.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 3552848,
+          "sha256": "d3dc5255ab0cecf921a20776d4fe3082513ddfb5c530400d1aa331bc7f6863f0"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_int8.mlpackage/Manifest.json",
+          "bytes": 617,
+          "sha256": "de098281af48fe0885544b3df128b15acf17678277aef92c10af94a1ebc74e7c"
+        }
+      ]
+    },
+    "int4": {
+      "path": "weights/mobilenetv2/coreml/mobilenetv2_int4.mlpackage",
+      "bytes": 2104051,
+      "metrics_vs_pytorch_fp32": {
+        "max_absolute_logit_error": 9.890896156430244,
+        "mean_absolute_logit_error": 1.5246367948725355,
+        "rmse": 1.9816208513655866,
+        "mean_cosine_similarity": 0.6629850476052944,
+        "top1_agreement": 0.3
+      },
+      "per_sample": [
+        {
+          "name": "black",
+          "pytorch_top1": 644,
+          "coreml_top1": 904,
+          "cosine_similarity": 0.5909201553207153,
+          "max_absolute_logit_error": 5.6954416036605835
+        },
+        {
+          "name": "gray",
+          "pytorch_top1": 111,
+          "coreml_top1": 868,
+          "cosine_similarity": 0.3940060433448478,
+          "max_absolute_logit_error": 9.890896156430244
+        },
+        {
+          "name": "white",
+          "pytorch_top1": 473,
+          "coreml_top1": 905,
+          "cosine_similarity": 0.5613769760904289,
+          "max_absolute_logit_error": 7.473243802785873
+        },
+        {
+          "name": "gradient",
+          "pytorch_top1": 818,
+          "coreml_top1": 854,
+          "cosine_similarity": 0.5197349911446101,
+          "max_absolute_logit_error": 6.8802303075790405
+        },
+        {
+          "name": "checkerboard",
+          "pytorch_top1": 401,
+          "coreml_top1": 401,
+          "cosine_similarity": 0.8525543501863265,
+          "max_absolute_logit_error": 5.157674551010132
+        },
+        {
+          "name": "noise_0",
+          "pytorch_top1": 644,
+          "coreml_top1": 619,
+          "cosine_similarity": 0.8180377486207953,
+          "max_absolute_logit_error": 5.722570419311523
+        },
+        {
+          "name": "noise_1",
+          "pytorch_top1": 644,
+          "coreml_top1": 619,
+          "cosine_similarity": 0.7942073620220278,
+          "max_absolute_logit_error": 5.0658159255981445
+        },
+        {
+          "name": "noise_2",
+          "pytorch_top1": 904,
+          "coreml_top1": 904,
+          "cosine_similarity": 0.7919730970539389,
+          "max_absolute_logit_error": 5.5012383460998535
+        },
+        {
+          "name": "photo_0_archive",
+          "pytorch_top1": 652,
+          "coreml_top1": 652,
+          "cosine_similarity": 0.6541936655747703,
+          "max_absolute_logit_error": 9.030675172805786
+        },
+        {
+          "name": "photo_0_native_torchvision",
+          "pytorch_top1": 457,
+          "coreml_top1": 652,
+          "cosine_similarity": 0.6528460866944825,
+          "max_absolute_logit_error": 8.835317850112915
+        }
+      ],
+      "graph": {
+        "operations": {
+          "const": 388,
+          "constexpr_blockwise_shift_scale": 53,
+          "cast": 2,
+          "conv": 52,
+          "clip": 35,
+          "add": 10,
+          "reduce_mean": 1,
+          "reshape": 1,
+          "linear": 1
+        },
+        "floating_operation_output_dtypes": {
+          "FLOAT16": 277,
+          "FLOAT32": 1
+        },
+        "compressed_weight_tensor_dtypes": {
+          "INT4": 53
+        },
+        "compressed_weight_elements": 3469760,
+        "specification_version": 9
+      },
+      "files": [
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_int4.mlpackage/Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 94330,
+          "sha256": "5f55fb8236b18b02c3165a0406acace64a5a07d22377574764ace70f83775ce2"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_int4.mlpackage/Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 2009104,
+          "sha256": "b020a9dc95d3f33bbebeb0ddc75388e8ddf3726d1852eab7057d41985a9daf85"
+        },
+        {
+          "path": "weights/mobilenetv2/coreml/mobilenetv2_int4.mlpackage/Manifest.json",
+          "bytes": 617,
+          "sha256": "ad7bdd31f4804aaff94f4739ce94300fd2a2e71cbbe586040c944e6db9465d7e"
+        }
+      ]
+    }
+  }
+}

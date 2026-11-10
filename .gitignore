@@ -18,8 +18,10 @@
 !/weights/**/*.plan
 !/weights/**/*.engine
 !/weights/**/*.tflite
+!/weights/**/*.mlpackage/**
 
 # Ignore local caches even if an upload tool creates them inside the repository.
+**/.DS_Store
 **/.cache/
 **/__pycache__/
 **/.env

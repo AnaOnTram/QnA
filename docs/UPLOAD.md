@@ -30,8 +30,8 @@ git remote add origin https://github.com/OWNER/model-weights.git
 git push -u origin main
 ```
 
-The LFS pre-push hook uploads the weight payloads. Check that all 24 files appear
-as LFS files on GitHub, and retain `SHA256SUMS` and `manifest.json` alongside them.
+The LFS pre-push hook uploads the weight payloads. Check that all binary model components appear
+as LFS files on GitHub, retain all Core ML package manifests, and keep `SHA256SUMS` and `manifest.json` alongside them.
 GitHub credentials and LFS storage/bandwidth availability belong to the
 destination account. Subsequent updates use `git push origin main` after the
 documented weight-update workflow.

@@ -1,0 +1,414 @@
+{
+  "model": "mobilenetv2",
+  "purpose": "Supplementary (not part of the protocol matrix): is the per-compute-unit Square gap systematic?\n\n1. Re-runs Square at the protocol budgets with extra seeds on every arm of the given precisions.\n2. Logit-sensitivity diagnostic: Square-style window perturbations on the shared clean-correct images,\n   recording how often the runtime margin is exactly unchanged and the smallest non-zero change.",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "seed_rule": "attack_seed(eps) + 1000*seed",
+  "arms": {
+    "fp16_cpu_only": {
+      "clean_correct": 83,
+      "square": {
+        "4": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 21,
+              "pct": 25.3,
+              "queries_total": 29494,
+              "seconds": 30.1
+            },
+            {
+              "seed": 2,
+              "fooled": 23,
+              "pct": 27.7,
+              "queries_total": 30667,
+              "seconds": 31.5
+            },
+            {
+              "seed": 3,
+              "fooled": 24,
+              "pct": 28.9,
+              "queries_total": 30229,
+              "seconds": 30.8
+            }
+          ],
+          "mean_pct": 27.3,
+          "min_pct": 25.3,
+          "max_pct": 28.9
+        },
+        "8": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 51,
+              "pct": 61.4,
+              "queries_total": 17176,
+              "seconds": 16.5
+            },
+            {
+              "seed": 2,
+              "fooled": 52,
+              "pct": 62.7,
+              "queries_total": 15907,
+              "seconds": 15.2
+            },
+            {
+              "seed": 3,
+              "fooled": 52,
+              "pct": 62.7,
+              "queries_total": 16953,
+              "seconds": 16.3
+            }
+          ],
+          "mean_pct": 62.3,
+          "min_pct": 61.4,
+          "max_pct": 62.7
+        }
+      },
+      "sensitivity_4_255": {
+        "trials_per_image": 20,
+        "stale_fraction": 0.03433734939759036,
+        "min_nonzero_margin_change": 0.0078125,
+        "median_margin_change": 0.09375
+      }
+    },
+    "fp16_cpu_and_gpu": {
+      "clean_correct": 83,
+      "square": {
+        "4": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 38,
+              "pct": 45.8,
+              "queries_total": 26694,
+              "seconds": 23.6
+            },
+            {
+              "seed": 2,
+              "fooled": 39,
+              "pct": 47.0,
+              "queries_total": 26302,
+              "seconds": 28.7
+            },
+            {
+              "seed": 3,
+              "fooled": 37,
+              "pct": 44.6,
+              "queries_total": 26635,
+              "seconds": 29.2
+            }
+          ],
+          "mean_pct": 45.8,
+          "min_pct": 44.6,
+          "max_pct": 47.0
+        },
+        "8": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 70,
+              "pct": 84.3,
+              "queries_total": 12244,
+              "seconds": 13.2
+            },
+            {
+              "seed": 2,
+              "fooled": 68,
+              "pct": 81.9,
+              "queries_total": 11933,
+              "seconds": 13.6
+            },
+            {
+              "seed": 3,
+              "fooled": 73,
+              "pct": 88.0,
+              "queries_total": 10957,
+              "seconds": 12.2
+            }
+          ],
+          "mean_pct": 84.7,
+          "min_pct": 81.9,
+          "max_pct": 88.0
+        }
+      },
+      "sensitivity_4_255": {
+        "trials_per_image": 20,
+        "stale_fraction": 0.0,
+        "min_nonzero_margin_change": 0.000125885009765625,
+        "median_margin_change": 0.05717897415161133
+      }
+    },
+    "fp16_cpu_and_ne": {
+      "clean_correct": 83,
+      "square": {
+        "4": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 29,
+              "pct": 34.9,
+              "queries_total": 27399,
+              "seconds": 16.4
+            },
+            {
+              "seed": 2,
+              "fooled": 30,
+              "pct": 36.1,
+              "queries_total": 26440,
+              "seconds": 16.6
+            },
+            {
+              "seed": 3,
+              "fooled": 30,
+              "pct": 36.1,
+              "queries_total": 27213,
+              "seconds": 17.0
+            }
+          ],
+          "mean_pct": 35.7,
+          "min_pct": 34.9,
+          "max_pct": 36.1
+        },
+        "8": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 61,
+              "pct": 73.5,
+              "queries_total": 13099,
+              "seconds": 8.7
+            },
+            {
+              "seed": 2,
+              "fooled": 63,
+              "pct": 75.9,
+              "queries_total": 12313,
+              "seconds": 9.1
+            },
+            {
+              "seed": 3,
+              "fooled": 58,
+              "pct": 69.9,
+              "queries_total": 12389,
+              "seconds": 8.5
+            }
+          ],
+          "mean_pct": 73.1,
+          "min_pct": 69.9,
+          "max_pct": 75.9
+        }
+      },
+      "sensitivity_4_255": {
+        "trials_per_image": 20,
+        "stale_fraction": 0.051807228915662654,
+        "min_nonzero_margin_change": 0.0078125,
+        "median_margin_change": 0.0625
+      }
+    },
+    "int8_cpu_only": {
+      "clean_correct": 83,
+      "square": {
+        "4": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 21,
+              "pct": 25.3,
+              "queries_total": 31021,
+              "seconds": 31.9
+            },
+            {
+              "seed": 2,
+              "fooled": 25,
+              "pct": 30.1,
+              "queries_total": 29518,
+              "seconds": 30.1
+            },
+            {
+              "seed": 3,
+              "fooled": 21,
+              "pct": 25.3,
+              "queries_total": 31841,
+              "seconds": 32.4
+            }
+          ],
+          "mean_pct": 26.9,
+          "min_pct": 25.3,
+          "max_pct": 30.1
+        },
+        "8": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 50,
+              "pct": 60.2,
+              "queries_total": 15033,
+              "seconds": 15.4
+            },
+            {
+              "seed": 2,
+              "fooled": 53,
+              "pct": 63.9,
+              "queries_total": 14848,
+              "seconds": 15.2
+            },
+            {
+              "seed": 3,
+              "fooled": 49,
+              "pct": 59.0,
+              "queries_total": 17709,
+              "seconds": 18.0
+            }
+          ],
+          "mean_pct": 61.0,
+          "min_pct": 59.0,
+          "max_pct": 63.9
+        }
+      },
+      "sensitivity_4_255": {
+        "trials_per_image": 20,
+        "stale_fraction": 0.03674698795180723,
+        "min_nonzero_margin_change": 0.0078125,
+        "median_margin_change": 0.0859375
+      }
+    },
+    "int8_cpu_and_gpu": {
+      "clean_correct": 83,
+      "square": {
+        "4": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 36,
+              "pct": 43.4,
+              "queries_total": 26770,
+              "seconds": 23.8
+            },
+            {
+              "seed": 2,
+              "fooled": 38,
+              "pct": 45.8,
+              "queries_total": 26198,
+              "seconds": 29.3
+            },
+            {
+              "seed": 3,
+              "fooled": 36,
+              "pct": 43.4,
+              "queries_total": 27318,
+              "seconds": 30.1
+            }
+          ],
+          "mean_pct": 44.2,
+          "min_pct": 43.4,
+          "max_pct": 45.8
+        },
+        "8": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 72,
+              "pct": 86.7,
+              "queries_total": 10832,
+              "seconds": 12.2
+            },
+            {
+              "seed": 2,
+              "fooled": 71,
+              "pct": 85.5,
+              "queries_total": 10124,
+              "seconds": 11.7
+            },
+            {
+              "seed": 3,
+              "fooled": 70,
+              "pct": 84.3,
+              "queries_total": 11562,
+              "seconds": 13.2
+            }
+          ],
+          "mean_pct": 85.5,
+          "min_pct": 84.3,
+          "max_pct": 86.7
+        }
+      },
+      "sensitivity_4_255": {
+        "trials_per_image": 20,
+        "stale_fraction": 0.0,
+        "min_nonzero_margin_change": 0.0001697540283203125,
+        "median_margin_change": 0.05661153793334961
+      }
+    },
+    "int8_cpu_and_ne": {
+      "clean_correct": 83,
+      "square": {
+        "4": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 30,
+              "pct": 36.1,
+              "queries_total": 27500,
+              "seconds": 17.2
+            },
+            {
+              "seed": 2,
+              "fooled": 28,
+              "pct": 33.7,
+              "queries_total": 26726,
+              "seconds": 16.2
+            },
+            {
+              "seed": 3,
+              "fooled": 29,
+              "pct": 34.9,
+              "queries_total": 28047,
+              "seconds": 17.0
+            }
+          ],
+          "mean_pct": 34.9,
+          "min_pct": 33.7,
+          "max_pct": 36.1
+        },
+        "8": {
+          "runs": [
+            {
+              "seed": 1,
+              "fooled": 63,
+              "pct": 75.9,
+              "queries_total": 11515,
+              "seconds": 7.2
+            },
+            {
+              "seed": 2,
+              "fooled": 65,
+              "pct": 78.3,
+              "queries_total": 11456,
+              "seconds": 7.1
+            },
+            {
+              "seed": 3,
+              "fooled": 60,
+              "pct": 72.3,
+              "queries_total": 11726,
+              "seconds": 7.1
+            }
+          ],
+          "mean_pct": 75.5,
+          "min_pct": 72.3,
+          "max_pct": 78.3
+        }
+      },
+      "sensitivity_4_255": {
+        "trials_per_image": 20,
+        "stale_fraction": 0.043373493975903614,
+        "min_nonzero_margin_change": 0.00390625,
+        "median_margin_change": 0.0625
+      }
+    }
+  }
+}

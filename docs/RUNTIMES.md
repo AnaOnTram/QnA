@@ -38,6 +38,33 @@ MobileNetV2's FP32 graph is opset 20. Its `rknn/mobilenetv2_opset19.onnx` is a
 compatibility conversion for RKNN Toolkit2 2.5.0; the existing validation records
 bit-identical outputs on the retained 100-image validation sample.
 
+## Apple Core ML
+
+ResNetV2-50 now includes FP32, FP16, INT8 weight-only (W8A16) and INT4 weight-only
+(W4A16) ML Program packages under `weights/resnetv2_50/coreml/`. All target
+**iOS 18 / macOS 15** and have FP32 input `image` `[1,3,224,224]` and FP32 output
+`logits` `[1,1000]`. Normalization is external: use the archive's ResNetV2 image
+preparation and ImageNet normalization above when reproducing archive comparisons.
+INT8/INT4 packages use FP16 internal computation; compression does not imply
+integer convolution kernels. FP32 runtime parity was checked with `CPU_ONLY`.
+
+MobileNetV2 has the same four precisions under `weights/mobilenetv2/coreml/`,
+with the same targets, I/O names, shapes and external normalization. Use the
+MobileNetV2 image preparation above.
+
+All eight packages were compiled and executed locally. Both INT4 packages showed
+substantial prediction drift and should be treated as experimental; MobileNetV2
+INT4 is severely degraded (mean logit cosine 0.66). See the [conversion,
+usage and validation notes](coreml/README.md) for exact recipes, sizes,
+preprocessing options, checksums and measured parity limits.
+
+The compute-unit request is not a guarantee of placement. On macOS 26.6.2, FP32
+packages run entirely on the CPU under `CPU_AND_NE`, because the Neural Engine
+has no FP32 path. FP16 and INT8 run on the Neural Engine. The Core ML evasion
+studies ([MobileNetV2](reports/mobilenetv2/evasion_coreml/README.md),
+[ResNetV2-50](reports/resnetv2_50/evasion_coreml/README.md)) measure how each
+request changes clean logits and attack outcomes.
+
 ## TensorRT
 
 ResNetV2 INT8 graphs have two storage forms. `*_int8_qdq.onnx` retains float

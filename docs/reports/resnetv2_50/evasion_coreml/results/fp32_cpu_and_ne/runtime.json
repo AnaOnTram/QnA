@@ -1,0 +1,27 @@
+{
+  "package": "/Users/ross/Documents/AISR/QnA/weights/resnetv2_50/coreml/resnetv2_50_fp32.mlpackage",
+  "package_files": [
+    {
+      "path": "Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 89362,
+      "sha256": "19e1775e1403f21b0388578919b921a799b51ac08251428d7ac8f89aa8f38810"
+    },
+    {
+      "path": "Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 102298560,
+      "sha256": "91463af00afaa687a24eee40970bf009723d70b2aab172ed260e4fb13276b0f6"
+    },
+    {
+      "path": "Manifest.json",
+      "bytes": 617,
+      "sha256": "377f51fecb358ef4efe45245738bd610cd6df70386831037967d5ee17af57c14"
+    }
+  ],
+  "compute_units_requested": "CPU_AND_NE",
+  "planned_op_devices": {
+    "CPU": 139
+  },
+  "coremltools": "9.0",
+  "macos": "26.6.2",
+  "machine": "arm64"
+}

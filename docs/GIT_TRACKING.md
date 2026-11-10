@@ -3,7 +3,8 @@
 The repository uses `main`. All model binary extensions are matched by the
 committed `.gitattributes` LFS rules before the initial commit. Model files in
 Git history are small LFS pointers; complete payloads live in LFS storage and in
-the working tree. Documentation, report figures, compact JSON/CSV evidence,
+the working tree. Core ML `.mlmodel` and `weight.bin` components use LFS; package `Manifest.json`
+files use ordinary Git. Documentation, report figures, compact JSON/CSV evidence,
 `manifest.json` and `SHA256SUMS` use regular Git. The report archive has its own
 manifest and checksum ledger under `docs/reports/`.
 
@@ -53,7 +54,8 @@ For a smaller checkout, fetch one model family:
 git lfs pull --include='weights/resnetv2_50/**' --exclude=''
 ```
 
-Full `SHA256SUMS` verification requires all 24 weight files to be downloaded.
+Full `SHA256SUMS` verification requires all 48 manifest-listed files, including
+the component files of all eight Core ML packages. Download all LFS payloads first.
 A text LFS pointer in place of a binary indicates its payload has not been fetched.
 The report checksum ledger is independent of the weight ledger. If an archived
 report or figure is replaced, update its archive-manifest entry and regenerate
@@ -75,6 +77,8 @@ p = Path('manifest.json')
 m = json.loads(p.read_text())
 for a in m['artifacts']:
     f = Path(a['path'])
+    if f.stat().st_size < 1024 and f.read_bytes().startswith(b'version https://git-lfs.github.com/spec/v1'):
+        raise SystemExit(f'Fetch the LFS payload before hashing: {f}')
     a['bytes'] = f.stat().st_size
     with f.open('rb') as stream:
         a['sha256'] = hashlib.file_digest(stream, 'sha256').hexdigest()

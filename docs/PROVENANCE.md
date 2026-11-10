@@ -1,10 +1,21 @@
 # Provenance and packaging scope
 
-This repository contains standalone copies of existing weights and their evasion
+The original 6 November 2026 snapshot contains standalone copies of existing weights and their evasion
 attack reports, figures and compact result evidence. Packaging did
 not train, quantize, convert, rebuild or run the models. Every copied weight was
 checked by SHA-256 against its source; previously pinned digests were also checked
 where available. Source files were read without changing their contents or mtimes.
+
+On 10 November 2026, four **Core ML** packages were newly converted from the
+same pinned timm checkpoint: FP32, FP16, INT8 weight-only and INT4 weight-only.
+The same day, four MobileNetV2 Core ML packages with the same precisions were
+converted from the repository's `mobilenet_v2-b0353104.pth` checkpoint.
+Each addition includes a reproducible conversion script and fresh Core ML
+inference checks. See [Core ML provenance and validation](coreml/README.md).
+The original snapshot's no-conversion/no-execution statements apply to the
+original artifacts; the Core ML exports have their own build and validation
+records in `docs/coreml/validation.json` (ResNetV2-50) and
+`docs/coreml/validation_mobilenetv2.json` (MobileNetV2).
 
 ## Sources
 
@@ -54,11 +65,15 @@ bundles are excluded. Report figures and compact JSON/CSV result evidence are
 included as documentation. Only the final static NHWC TFLite / Edge TPU weight
 pair is retained.
 
+The Core ML conversion scripts are retained as a reproducibility exception to the
+original snapshot's scripts exclusion. No calibration data or new photo files
+are included.
+
 MobileNetV2's generic legacy `trt/mobilenetv2.engine` is excluded because its
 build identity is not established by the per-precision deployment records. The
 documented `trt/engine/*_bs1.engine` / `*_bs8.engine` files are absent locally.
 No remote board or server files were fetched. Missing runtime/precision variants
-were not fabricated or newly built.
+were not fabricated or newly built during the original packaging step.
 
 The newly included QNN FP32 DLC is hashed but has no previously pinned source
 digest. The manifest distinguishes previously pinned source hashes from hashes
