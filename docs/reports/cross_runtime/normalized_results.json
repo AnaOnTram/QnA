@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-16",
   "population_n": 100,
   "cohort_identity_verified": true,
   "preprocessing_identical_between_models": false,
@@ -7251,7 +7251,7 @@
       "clean_correct": 80,
       "population_n": 100,
       "source": "resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json",
-      "source_sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
+      "source_sha256": "f2ed7b2b65a153c16801487ce5a5bc0eacca61994ac0a8d430e8b7d20c537f5a",
       "conditions": {
         "random@1": {
           "fooled": 3,
@@ -7406,6 +7406,17 @@
           ],
           "robust_correct": 49,
           "robust_accuracy_pct": 49
+        },
+        "pgd_stronger@1": {
+          "fooled": 53,
+          "eligible": 80,
+          "success_pct": 66.25,
+          "wilson95_pct": [
+            55.35652339817697,
+            75.6543873919184
+          ],
+          "robust_correct": 27,
+          "robust_accuracy_pct": 27
         }
       }
     },

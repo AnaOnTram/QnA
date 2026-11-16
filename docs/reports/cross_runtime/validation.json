@@ -4,9 +4,12 @@
     "mobilenetv2": 20,
     "resnetv2_50": 19
   },
-  "conditions_reconciled": 842,
-  "original_summary_hashes_verified": 39,
+  "conditions_reconciled": 843,
+  "source_summary_hashes_verified": 39,
   "cohort_sha256_and_label_matches": 100,
+  "supplemental_hardware_validations_checked": 1,
+  "supplemental_per_image_rows_checked": 200,
+  "supplemental_candidate_replays_recorded": 200,
   "coreml_matrices_checked": 2,
   "shared_effect_cells": 24,
   "supplementary_seed_cells": 24,
@@ -18,7 +21,8 @@
     "matplotlib": "3.11.2"
   },
   "limitations": [
-    "No fresh inference or candidate replay performed.",
+    "The reporting build performs no fresh inference or candidate replay; the archived 2026-11-16 Coral supplement records a separate successful hardware replay.",
+    "Historical Coral primary attack tensors were not retained; the supplement reproduces clean logits and the primary count, not historical per-image attack identities.",
     "No per-image Core ML data in this archive; no combined 19/20-arm clean intersection or paired model-effect confidence interval is claimed."
   ]
 }

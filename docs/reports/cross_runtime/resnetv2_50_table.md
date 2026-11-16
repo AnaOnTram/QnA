@@ -9,7 +9,7 @@
 | [TensorRT INT8 Q/DQ](../resnetv2_50/evasion_onnx/results/timm_rnv2_int8_ptq_ort/summary.json) | 79 | 32/79 (40.5%) | 50/79 (63.3%) | 57/79 (72.2%) | 77/79 (97.5%) | 22/79 (27.8%) | 34/79 (43.0%) |
 | [TensorRT INT8 compressed](../resnetv2_50/evasion_onnx/results/timm_rnv2_int8_dq_ort/summary.json) | 79 | 32/79 (40.5%) | 50/79 (63.3%) | 58/79 (73.4%) | 77/79 (97.5%) | 22/79 (27.8%) | 34/79 (43.0%) |
 | [QNN HTP INT8](inputs/resnetv2_50_qnn_summary.json) | 79 | 32/79 (40.5%) | 49/79 (62.0%) | 51/79 (64.6%) | 79/79 (100.0%) | 18/79 (22.8%) | 29/79 (36.7%) |
-| [Coral USB INT8](../resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json) | 80 | 28/80 (35.0%) | 45/80 (56.2%) | Not run | 79/80 (98.8%) | 21/80 (26.2%) | 31/80 (38.8%) |
+| [Coral USB INT8](../resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json) | 80 | 28/80 (35.0%) | 45/80 (56.2%) | 53/80 (66.2%) | 79/80 (98.8%) | 21/80 (26.2%) | 31/80 (38.8%) |
 | [Core ML FP32 CPU](../resnetv2_50/evasion_coreml/results/fp32_cpu_only/summary.json) | 81 | 41/81 (50.6%) | 64/81 (79.0%) | 73/81 (90.1%) | 81/81 (100.0%) | 34/81 (42.0%) | 51/81 (63.0%) |
 | [Core ML FP32 CPU+GPU](../resnetv2_50/evasion_coreml/results/fp32_cpu_and_gpu/summary.json) | 81 | 41/81 (50.6%) | 66/81 (81.5%) | 73/81 (90.1%) | 81/81 (100.0%) | 34/81 (42.0%) | 51/81 (63.0%) |
 | [Core ML FP32 CPU+NE](../resnetv2_50/evasion_coreml/results/fp32_cpu_and_ne/summary.json) | 81 | 41/81 (50.6%) | 64/81 (79.0%) | 73/81 (90.1%) | 81/81 (100.0%) | 34/81 (42.0%) | 51/81 (63.0%) |

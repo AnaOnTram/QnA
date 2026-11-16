@@ -3,7 +3,8 @@
 The current synthesis is in the [ResNetV2-50 report](../resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md),
 [MobileNetV2 report](../mobilenetv2/MOBILENETV2_REPORT.md) and
 [cross-model report](../CROSS_MODEL_REPORT.md). These reports use retained
-measurements through 10 November 2026; no new inference or attack was run.
+measurements through 16 November 2026, including a new Coral PGD+ supplement.
+The reporting build itself performs no inference or attacks.
 
 ## Reproduce the calculations and figures
 
@@ -24,18 +25,31 @@ renderer version, update the report manifest and checksum ledger as described
 in [Git tracking](../../GIT_TRACKING.md). Figure bytes may vary with renderer
 versions; numerical tables must still reconcile.
 
+## Coral PGD+ update: 16 November 2026
+
+The ResNet Coral condition is now **53/80 (66.25%)**. The stronger check
+retains primary PGD successes and adds eight successes from 35 survivors.
+The canonical Coral summary preserves its original attack rows and links the
+[original snapshot](../resnetv2_50/TPU/evasion/results/edgetpu_int8/summary_before_pgd_plus_20261116.json),
+[supplemental summary](../resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/summary.json),
+[200 per-image rows](../resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/per_image.csv),
+and [independent hardware replay](../resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/validation.json).
+The reporting build checks these compact records and primary-success retention;
+it does not replay the candidate tensors. The local source workspace retains
+those tensors and the runner. The archive continues to exclude them.
+
 ## Evidence files
 
 | File | Purpose |
 | --- | --- |
-| [normalized_results.json](normalized_results.json) | 39 deployments, 842 conditions, integer numerators/denominators, recomputed rates and Wilson intervals |
+| [normalized_results.json](normalized_results.json) | 39 deployments, 843 conditions, integer numerators/denominators, recomputed rates and Wilson intervals |
 | [all_conditions.csv](all_conditions.csv) | Flat complete condition ledger, including controls and transfer conditions |
 | [cross_model_comparisons.json](cross_model_comparisons.json) | Own-denominator model contrasts; missing conditions remain null |
 | [quantization_effects.json](quantization_effects.json) | FP16-minus-quantized success on source-study common-clean masks |
 | [square_seed_results.json](square_seed_results.json) | Three supplementary Square seeds per cell, means recomputed from counts, observed ranges |
 | [chart_data.json](chart_data.json) | Exact reviewed inputs for each of the five figures |
 | [source_index.json](source_index.json) | SHA-256 of reporting code and measurement inputs, with calculation and interpretation rules |
-| [validation.json](validation.json) | Reconciliation coverage and limits; no claim of new candidate replay |
+| [validation.json](validation.json) | Reconciliation coverage and limits, including the archived Coral supplemental replay |
 
 `inputs/resnetv2_50_qnn_summary.json` and `inputs/resnetv2_50_samples.json`
 are byte-for-byte copies of the missing matched-QNN summary and the ResNet

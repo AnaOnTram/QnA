@@ -7,7 +7,8 @@ Protocol identical to the other arms: 100-image stratified Imagenette-320 pilot
 (`seed=20261030`, resize 232 / crop 224), `random`/`fgsm`/`pgd` (20 steps, 2 restarts) at
 $\epsilon$ = 1,2,4,8/255, `square` (500 queries) at 4,8/255. Gradient attacks use **BPDA**
 (deployment forward, FP32 timm surrogate backward); `square` queries the accelerator directly.
-Campaign cost: **75,977 TPU inferences, 3,572 s wall, 44.9 ms per inference**.
+Original campaign cost: **75,977 TPU inferences, 3,572 s wall, 44.9 ms per inference**.
+The 16 November PGD+ supplement is recorded separately below.
 
 ## Clean accuracy
 
@@ -38,10 +39,36 @@ Campaign cost: **75,977 TPU inferences, 3,572 s wall, 44.9 ms per inference**.
 | pgd @ 2 | 90.1 | 89.0 | 76.9 | 74.7 | 75.9 | 78.2 | 71.2 |
 | pgd @ 4 | 96.3 | 96.3 | 93.6 | 89.9 | 89.9 | 93.6 | 82.5 |
 | pgd @ 8 | 100.0 | 100.0 | 97.4 | 97.5 | 97.5 | 100.0 | 98.8 |
+| pgd_stronger @ 1 | 90.1 | 92.7 | 74.4 | 72.2 | 73.4 | 74.4 | 66.2 |
 | square @ 4 | 44.4 | 37.8 | 23.1 | 27.8 | 27.8 | 19.2 | 26.2 |
 | square @ 8 | 60.5 | 62.2 | 39.7 | 43.0 | 43.0 | 35.9 | 38.8 |
 
 Values are percent of each arm's own clean-correct images that are fooled; higher = less robust.
+
+## PGD+ supplement: 16 November 2026
+
+The stronger 1/255 check fools **53/80
+(66.25%)**, versus
+45/80 (56.25%)
+for primary PGD: **8 additional images** and
+**10.0 percentage points**.
+It retains reproduced primary successes and applies 100 steps x 5 starts to
+the 35 clean-correct survivors (seed 20262730), leaving
+27/100 robust-correct images. On the existing 75-image
+Coral/FP32 common-clean set it fools 48/75.
+
+The supplemental run reproduced the original clean logits exactly and the
+primary 45/80 count. Historical primary attack tensors were not retained, so
+matching historical per-image attack identities is unverified. A fresh hardware
+replay reproduced all 100 clean and 200 PGD/PGD+ candidate logits bit-for-bit;
+floating-point and native UINT8 bounds passed, with at most one input-code
+change per component. All reproduced primary successes were retained.
+
+The supplement took 1,163.5 s (19 min 23 s) and 22,310 TPU inferences, including
+the repeated primary PGD; the stronger search itself took 918.9 s.
+[Supplement summary](results/pgd_plus_20261116_01/summary.json),
+[per-image evidence](results/pgd_plus_20261116_01/per_image.csv), and
+[independent replay validation](results/pgd_plus_20261116_01/validation.json).
 
 ## $\Delta$ vs the FP32 reference (percentage points; negative = more robust)
 
@@ -59,6 +86,7 @@ Values are percent of each arm's own clean-correct images that are fooled; highe
 | pgd @ 2 | -1.1 | -13.2 | -15.4 | -14.2 | -11.9 | -18.9 |
 | pgd @ 4 | +0.0 | -2.7 | -6.4 | -6.4 | -2.7 | -13.8 |
 | pgd @ 8 | +0.0 | -2.6 | -2.5 | -2.5 | +0.0 | -1.2 |
+| pgd_stronger @ 1 | +2.6 | -15.8 | -18.0 | -16.7 | -15.8 | -23.9 |
 | square @ 4 | -6.6 | -21.4 | -16.6 | -16.6 | -25.2 | -18.2 |
 | square @ 8 | +1.7 | -20.8 | -17.5 | -17.5 | -24.6 | -21.7 |
 
@@ -116,7 +144,7 @@ and ~0 % GPU while querying (GPU is only used for surrogate gradients during PGD
   (common-clean overlap with FP32: 75 images).
 * Cross-arm comparisons reuse the other arms' published summaries (same images, protocol and
   seed); hosts differ (this campaign: RTX 2000 Ada laptop + USB3).
-* `pgd_stronger` (the $\epsilon$=1 survivor re-attack of the other arms) was not run on the
-  accelerator; it would cost ~30 min of extra TPU queries.
+* PGD+ is a later supplement; the original campaign timings and other attack rows are retained.
+  Its 100-step, five-start survivor search remains finite and uses approximate BPDA gradients.
 
 ![ASR vs epsilon](figures/asr_vs_eps.png)

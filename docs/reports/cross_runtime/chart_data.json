@@ -664,7 +664,17 @@
           "robust_correct": 35,
           "robust_accuracy_pct": 35
         },
-        "pgd_stronger@1": null,
+        "pgd_stronger@1": {
+          "fooled": 53,
+          "eligible": 80,
+          "success_pct": 66.25,
+          "wilson95_pct": [
+            55.35652339817697,
+            75.6543873919184
+          ],
+          "robust_correct": 27,
+          "robust_accuracy_pct": 27
+        },
         "pgd@8": {
           "fooled": 79,
           "eligible": 80,

@@ -100,6 +100,44 @@ for item in master:
 assert Counter(a['model'] for a in records) == {'mobilenetv2':20,'resnetv2_50':19}
 lookup = {(a['model'],a['deployment']):a for a in records}
 
+# Validate the compact evidence for the later Coral PGD+ supplement. This
+# reporting-only check does not repeat the archived hardware replay.
+coral = lookup['resnetv2_50','Coral USB INT8']
+coral_source = REPORTS/coral['source']
+coral_summary = read(coral_source)
+supplement = coral_summary['supplementary_runs'][-1]
+supplement_path = (coral_source.parent/supplement['summary']).resolve()
+supplement_summary = read(supplement_path)
+replay_path = (coral_source.parent/supplement['validation']).resolve()
+replay = read(replay_path)
+historical_path = (coral_source.parent/supplement['historical_summary']).resolve()
+historical_summary = read(historical_path)
+assert sha(supplement_path) == supplement['summary_sha256'] == replay['summary_sha256']
+assert sha(replay_path) == supplement['validation_sha256']
+assert sha(historical_path) == supplement['historical_summary_sha256'] == supplement_summary['provenance']['historical_sha256']
+assert supplement_summary['complete'] and replay['passed'] and replay['primary_successes_retained']
+assert supplement_summary['provenance']['clean_logits_identical']
+assert coral_summary['attacks'][:-1] == historical_summary['attacks']
+per_image_path = supplement_path.parent/'per_image.csv'
+sources[str(per_image_path.relative_to(REPO))] = sha(per_image_path)
+assert sha(per_image_path) == replay['per_image_sha256']
+with per_image_path.open(newline='') as stream:
+    supplemental_rows = list(csv.DictReader(stream))
+for attack in ['pgd','pgd_stronger']:
+    rows = [r for r in supplemental_rows if r['attack'] == attack]
+    assert len(rows) == len({r['index'] for r in rows}) == 100
+    n = sum(r['clean_correct'] == 'True' for r in rows)
+    k = sum(r['clean_correct'] == 'True' and r['adv_correct'] == 'False' for r in rows)
+    expected = coral['conditions'][f'{attack}@1']
+    assert (k,n) == (expected['fooled'],expected['eligible'])
+    assert all(float(r['linf_255']) <= 1+255e-6 and int(r['native_linf']) <= 1 for r in rows)
+success_ids = {attack:{r['index'] for r in supplemental_rows if r['attack'] == attack and
+                      r['clean_correct'] == 'True' and r['adv_correct'] == 'False'}
+               for attack in ['pgd','pgd_stronger']}
+assert success_ids['pgd'] <= success_ids['pgd_stronger']
+assert len(success_ids['pgd_stronger'] - success_ids['pgd']) == replay['additional_fooled'] == 8
+assert coral['conditions']['pgd_stronger@1']['fooled'] == 53
+
 # Verify image identity, without claiming identical model-specific crop tensors.
 resnet_samples = read(HERE/'inputs/resnetv2_50_samples.json')
 mobile_samples = read(REPORTS/'mobilenetv2/TPU/results/samples.json')
@@ -180,7 +218,7 @@ for label in common_labels:
         cross.append(dict(deployment=label,condition=key,resnet=x,mobilenet=y,
             mobile_minus_resnet_pp=None if x is None or y is None else y['success_pct']-x['success_pct']))
 
-save('normalized_results.json',dict(as_of='2026-11-10',population_n=100,
+save('normalized_results.json',dict(as_of='2026-11-16',population_n=100,
     cohort_identity_verified=True,preprocessing_identical_between_models=False,
     rate_definition='fooled / each deployment own clean-correct',
     robust_accuracy_definition='(clean_correct - fooled) / 100',deployments=records))
@@ -304,9 +342,13 @@ for label in common_labels:
 (HERE/'cross_model_table.md').write_text('\n'.join(lines)+'\n')
 save('validation.json',dict(passed=True,deployment_counts=dict(Counter(a['model'] for a in records)),
     conditions_reconciled=sum(len(a['conditions']) for a in records),
-    original_summary_hashes_verified=len(records),cohort_sha256_and_label_matches=100,
+    source_summary_hashes_verified=len(records),cohort_sha256_and_label_matches=100,
+    supplemental_hardware_validations_checked=1,supplemental_per_image_rows_checked=len(supplemental_rows),
+    supplemental_candidate_replays_recorded=replay['fresh_native_candidate_scores'],
     coreml_matrices_checked=2,shared_effect_cells=len(effects),supplementary_seed_cells=len(seed_results),
     figures_generated=5,full_combined_shared_population_available=False,
     environment=dict(python=sys.version.split()[0],numpy=np.__version__,matplotlib=matplotlib.__version__),
-    limitations=['No fresh inference or candidate replay performed.','No per-image Core ML data in this archive; no combined 19/20-arm clean intersection or paired model-effect confidence interval is claimed.']))
+    limitations=['The reporting build performs no fresh inference or candidate replay; the archived 2026-11-16 Coral supplement records a separate successful hardware replay.',
+                 'Historical Coral primary attack tensors were not retained; the supplement reproduces clean logits and the primary count, not historical per-image attack identities.',
+                 'No per-image Core ML data in this archive; no combined 19/20-arm clean intersection or paired model-effect confidence interval is claimed.']))
 print((HERE/'validation.json').read_text())

@@ -23,7 +23,13 @@
     ],
     "square_queries": 500,
     "bpda": "deployment forward, FP32 surrogate backward",
-    "population": "imagenette2-320 val, same 100 images as the other arms"
+    "population": "imagenette2-320 val, same 100 images as the other arms",
+    "strong_survivor_check": {
+      "steps": 100,
+      "restarts": 5,
+      "seed": 20262730,
+      "retain_primary_successes": true
+    }
   },
   "clean": {
     "correct": 80,
@@ -387,10 +393,48 @@
           "eligible": 80
         }
       ]
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 80,
+      "fooled": 53,
+      "robust_correct": 27,
+      "robust_accuracy_pct": 27.000001907348633,
+      "attack_success_pct": 66.25,
+      "common_clean_n": 75,
+      "common_clean_fooled": 48,
+      "common_clean_success_pct": 64.0,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 918.9019198417664,
+      "fp32_fooled": 68,
+      "fp32_attack_success_pct": 85.0,
+      "steps": 100,
+      "restarts": 5,
+      "additional_survivor_n": 35,
+      "source_summary": "../pgd_plus_20261116_01/summary.json",
+      "source_sha256": "be4332a215a68a2323cb73f387676bc4cdfe2f2e3bfc0608985d5bc019f68698",
+      "execution_date": "2026-11-16"
     }
   ],
   "complete": true,
   "elapsed_seconds": 3571.5148718357086,
   "last_latency_ms": 44.884809001814574,
-  "n_tpu_inferences": 75977
+  "n_tpu_inferences": 75977,
+  "results_updated": "2026-11-16",
+  "supplementary_runs": [
+    {
+      "date": "2026-11-16",
+      "summary": "../pgd_plus_20261116_01/summary.json",
+      "summary_sha256": "be4332a215a68a2323cb73f387676bc4cdfe2f2e3bfc0608985d5bc019f68698",
+      "validation": "../pgd_plus_20261116_01/validation.json",
+      "validation_sha256": "09a706f5eaae57a42370bf63a4e238118efa2882ff9bb6ce2134e13797f6643d",
+      "historical_summary": "summary_before_pgd_plus_20261116.json",
+      "historical_summary_sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
+      "elapsed_seconds": 1163.4986319541931,
+      "n_tpu_inferences": 22310,
+      "note": "Original campaign fields and attack rows retained; supplemental timings include primary PGD reproduction and the stronger survivor check."
+    }
+  ]
 }

@@ -6,12 +6,16 @@ of existing experiments; packaging did not rerun attacks or change their results
 The two **Core ML** studies were run locally on 10 November 2026 against this
 repository's Core ML packages. The MobileNetV2 TPU and QNN studies were also
 completed on 10 November and subsequently imported from the source workspace;
-archiving them did not rerun their models or attacks.
+archiving them did not rerun their models or attacks. A later ResNetV2-50
+Coral PGD+ supplement completed on 16 November: 53/80 (66.25%), with a separate
+successful hardware replay. Its original campaign snapshot and compact
+supplemental evidence are retained alongside the updated canonical summary.
 
 The expanded ResNetV2-50, consolidated MobileNetV2 and cross-model reports are
 newly composed analyses of those retained measurements. Their calculation
 script reconciles original summary hashes and counts; it performs no new
-inference or attacks. Original experiment reports remain intact.
+inference or attacks. Original measurements are retained, with later supplements
+identified separately in the affected reports.
 
 ## Main reports
 

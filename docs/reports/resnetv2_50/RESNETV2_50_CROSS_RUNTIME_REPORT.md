@@ -1,6 +1,6 @@
 # ResNetV2-50 cross-runtime evasion: Core ML separates weight compression from activation quantization
 
-Results through **10 November 2026 (Hong Kong time)**. Model:
+Results through **16 November 2026 (Hong Kong time)**. Model:
 `timm/resnetv2_50.a1h_in1k`, checkpoint `b809e8c0…a61b`, canonical ONNX
 `6416f2e9…c13f4`. This report covers **19 deployment configurations**: the
 original nine-deployment matrix, Coral Edge TPU and nine Core ML configurations.
@@ -41,7 +41,8 @@ score-only, capped at 500 search queries per eligible image at 4 and 8/255.
 Random perturbations and FP32 transfer candidates remain in the complete
 evidence tables. Every scored forward pass belongs to the actual deployment;
 forward-only runtimes use the recorded differentiable replica/BPDA for the
-backward pass. This report does not rerun inference or attacks.
+backward pass. The reporting build does not rerun inference or attacks; the 16 November Coral
+PGD+ supplement is a separately recorded hardware experiment.
 
 **Attack success = fooled / that deployment's clean-correct images.** Higher
 means more successful evasion. Clean accuracy is clean-correct /100.
@@ -69,8 +70,8 @@ a different model and is excluded here. [Runtime and preprocessing notes](../../
 ## All 19 deployments
 
 Each cell is **fooled / own clean-correct (percentage)**. Budgets in column
-names are /255. `Not run` is missing evidence, not zero success. Core ML INT8
-means W8A16; its CPU+NE FP32 request actually has CPU placement in the retained
+names are /255. All six displayed conditions are available for every deployment.
+Core ML INT8 means W8A16; its CPU+NE FP32 request actually has CPU placement in the retained
 compute plan. Configurations are counted separately even when placement or
 outcomes coincide.
 
@@ -85,7 +86,7 @@ outcomes coincide.
 | [TensorRT INT8 Q/DQ](evasion_onnx/results/timm_rnv2_int8_ptq_ort/summary.json) | 79 | 32/79 (40.5%) | 50/79 (63.3%) | 57/79 (72.2%) | 77/79 (97.5%) | 22/79 (27.8%) | 34/79 (43.0%) |
 | [TensorRT INT8 compressed](evasion_onnx/results/timm_rnv2_int8_dq_ort/summary.json) | 79 | 32/79 (40.5%) | 50/79 (63.3%) | 58/79 (73.4%) | 77/79 (97.5%) | 22/79 (27.8%) | 34/79 (43.0%) |
 | [QNN HTP INT8](../cross_runtime/inputs/resnetv2_50_qnn_summary.json) | 79 | 32/79 (40.5%) | 49/79 (62.0%) | 51/79 (64.6%) | 79/79 (100.0%) | 18/79 (22.8%) | 29/79 (36.7%) |
-| [Coral USB INT8](TPU/evasion/results/edgetpu_int8/summary.json) | 80 | 28/80 (35.0%) | 45/80 (56.2%) | Not run | 79/80 (98.8%) | 21/80 (26.2%) | 31/80 (38.8%) |
+| [Coral USB INT8](TPU/evasion/results/edgetpu_int8/summary.json) | 80 | 28/80 (35.0%) | 45/80 (56.2%) | 53/80 (66.2%) | 79/80 (98.8%) | 21/80 (26.2%) | 31/80 (38.8%) |
 | [Core ML FP32 CPU](evasion_coreml/results/fp32_cpu_only/summary.json) | 81 | 41/81 (50.6%) | 64/81 (79.0%) | 73/81 (90.1%) | 81/81 (100.0%) | 34/81 (42.0%) | 51/81 (63.0%) |
 | [Core ML FP32 CPU+GPU](evasion_coreml/results/fp32_cpu_and_gpu/summary.json) | 81 | 41/81 (50.6%) | 66/81 (81.5%) | 73/81 (90.1%) | 81/81 (100.0%) | 34/81 (42.0%) | 51/81 (63.0%) |
 | [Core ML FP32 CPU+NE](evasion_coreml/results/fp32_cpu_and_ne/summary.json) | 81 | 41/81 (50.6%) | 64/81 (79.0%) | 73/81 (90.1%) | 81/81 (100.0%) | 34/81 (42.0%) | 51/81 (63.0%) |
@@ -98,13 +99,24 @@ outcomes coincide.
 
 ![ResNetV2-50 full evasion matrix](../cross_runtime/figures/resnetv2_50_matrix.png)
 
+The **16 November Coral PGD+ supplement** fills the previously unmeasured cell:
+**53/80 (66.25%)**, up from primary PGD's 45/80 (56.25%). The 100-step,
+five-start check re-attacked 35 survivors and fooled eight more images,
+a **10.0 percentage-point** increase, leaving 27/100 robust-correct images.
+Primary successes were retained. The clean logits matched the original run,
+and a fresh hardware replay reproduced all supplemental clean and candidate
+logits exactly. Historical primary candidate tensors were not retained, so
+historical per-image attack identity is unverified.
+[Supplement and validation](TPU/evasion/EVASION_TPU_REPORT.md#pgd-supplement-16-november-2026).
+
+
 The published single-attack robust accuracy at PGD 1/255 is 16/100 for PyTorch,
 26/100 for RKNN INT8, 18/100 for Core ML W8A16 CPU and 35/100 for Coral. At
 8/255 the corresponding values are 0, 0, 1 and 1 correct out of 100. Clean
 accuracy differs too: 81, 78, 81 and 80/100 respectively. Lower conditional
 evasion therefore needs to be read together with clean accuracy.
 
-Representative uncertainty intervals are below; all 842 conditions across
+Representative uncertainty intervals are below; all 843 conditions across
 both models, with counts and intervals, are in the
 [complete condition ledger](../cross_runtime/all_conditions.csv).
 
@@ -209,7 +221,7 @@ appears in the attack matrix.
   [all condition counts and 95% intervals](../cross_runtime/all_conditions.csv),
   [source hashes and calculation rules](../cross_runtime/source_index.json).
 - [Reporting validation](../cross_runtime/validation.json). The new synthesis
-  reconciles 842 conditions from 39 hash-pinned summaries across both models;
+  reconciles 843 conditions from 39 hash-pinned summaries across both models;
   it does not repeat the earlier hardware/candidate validation.
 - From the archive root, run `python docs/reports/cross_runtime/build_reports.py`
   with NumPy and Matplotlib to regenerate evidence, tables and figures. Report

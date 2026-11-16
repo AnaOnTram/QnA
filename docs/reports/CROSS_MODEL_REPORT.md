@@ -1,11 +1,18 @@
 # Runtime and quantization effects depend on the model and the attack
 
-**ResNetV2-50 versus MobileNetV2 — retained results through 10 November 2026
+**ResNetV2-50 versus MobileNetV2 — retained results through 16 November 2026
 (Hong Kong time).** This report compares the two archived model families,
 building on the new [ResNetV2-50 cross-runtime report](resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md)
 and [MobileNetV2 cross-runtime report](mobilenetv2/MOBILENETV2_REPORT.md).
 “ResNet” here means the timm pre-activation ResNetV2-50 checkpoint, not the
 historical TorchVision ResNet-50 experiments.
+
+The 16 November ResNet Coral supplement adds PGD+ at **53/80 (66.25%)**,
+retaining primary PGD's 45 successes and fooling eight more images. The
+MobileNet measurements remain the 10 November results. This later supplement
+fills one missing condition; it does not change the cohorts or deployment count.
+[Coral supplement and replay validation](resnetv2_50/TPU/evasion/EVASION_TPU_REPORT.md#pgd-supplement-16-november-2026).
+
 
 ## Executive summary
 
@@ -31,8 +38,8 @@ historical TorchVision ResNet-50 experiments.
 
 The primary evidence includes **19 ResNet and 20 MobileNet configurations**,
 with **15 deployment labels paired across model families** (TensorRT INT8 is
-only an approximate platform match). A reporting reconciliation checked 842
-conditions against 39 original-summary hashes. It also compared the ordered
+only an approximate platform match). A reporting reconciliation checked 843
+conditions against 39 source-summary hashes. It also compared the ordered
 image SHA-256s, indices and labels: both models use the **same 100 source
 images**. These are two separately trained checkpoints and architectures, not
 two random replicates of one treatment.
@@ -224,7 +231,7 @@ are unmeasured cells, not zeros.
 ## Evidence and reproduction
 
 - [Normalized 39-deployment results](cross_runtime/normalized_results.json),
-  [all 842 conditions with per-cell Wilson intervals](cross_runtime/all_conditions.csv).
+  [all 843 conditions with per-cell Wilson intervals](cross_runtime/all_conditions.csv).
 - [Cross-model rate differences](cross_runtime/cross_model_comparisons.json),
   [matched-study quantization differences](cross_runtime/quantization_effects.json),
   [recomputed seed means and ranges](cross_runtime/square_seed_results.json).

@@ -1,65 +1,65 @@
 {
   "schema_version": 1,
-  "description": "Retained experiment reports, conversion/runtime documentation, selected helpers and compact evidence, plus newly composed cross-runtime and cross-model analyses with reproducible reporting calculations.",
+  "description": "Retained experiment reports and compact evidence, including the 2026-11-16 Coral PGD+ supplement and independent replay, with reproducible cross-runtime and cross-model reporting calculations.",
   "files": [
     {
       "path": "CROSS_MODEL_REPORT.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "2e1b9999b81024e82344a8736aabe91bd35137045ad518cb8107e50c8a711027",
-      "bytes": 15914,
+      "packaged_sha256": "03d8fdc56ecd4b9d9ffbfd6cbc9e3f2e631798f3cbf1fc375d7c18dd12862695",
+      "bytes": 16338,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "cross_runtime/README.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "42c295aa5b99efc4dc4d43423407d2e52496c69407f09fbed6da2d1d2f4e15ec",
-      "bytes": 3636,
+      "packaged_sha256": "0d3357c812514b71311ade689c6b160f37b7203cbe51e0dae56e3c01801eab90",
+      "bytes": 4610,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "cross_runtime/all_conditions.csv",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "f4369de6d7960b75f5b6bb0af1b580e3d1a6fc516c392b33d075ac10e69c6dcd",
-      "bytes": 192204,
+      "packaged_sha256": "7a744cc43832e8cdbf22f43fdfc60bdfb4ad4db47690f878940a6d053a1a6870",
+      "bytes": 192425,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "cross_runtime/build_reports.py",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "7e83c62db34220ef8a94349be053bb61e6dc9d2c6e2a31e5758e23fc03768c89",
-      "bytes": 20479,
+      "packaged_sha256": "a1d9a830b4bc01eb714d04a5a32558adff7d5cb12708a47350471b070adc3ef1",
+      "bytes": 23391,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "cross_runtime/chart_data.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "b986420b95b0e2bf3cd6fabb422a86311a72853ad3674ed17dfc9f11170d48a9",
-      "bytes": 102145,
+      "packaged_sha256": "fca59d580313c759a29cbe09d91496e68a2cc6abf006bf55b9e93639eba1c897",
+      "bytes": 102403,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "cross_runtime/cross_model_comparisons.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "a38ae35a38e15546b8d353658f3e5ddf99364473bf32cf5dca89ee2a6d70707b",
-      "bytes": 54659,
+      "packaged_sha256": "3bdaa6fcf1612a6252b337b4a423b9d9ac9fb789920dfb1de93c1b1a8c620806",
+      "bytes": 54878,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
@@ -116,10 +116,10 @@
       "path": "cross_runtime/figures/resnetv2_50_matrix.png",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "a0b537cd8690dda8235cbac0d971831762361f74548cb870c2e590d5736caa6b",
-      "bytes": 545867,
+      "packaged_sha256": "8a7fe631b98d26bd3d2c5bf0aaf76f67e6a93070898d5fad1a28236f6cc6cc12",
+      "bytes": 548115,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
@@ -166,10 +166,10 @@
       "path": "cross_runtime/normalized_results.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "f2b949f1f30ed9a29ba1c14ed5d335959c8c67ce1f3e21f805812eb4ebef9c1c",
-      "bytes": 260653,
+      "packaged_sha256": "49bfb0e182ecadab8d09a43e7e9c265dc7777ff2cbba3e189a65370a9890da03",
+      "bytes": 260943,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
@@ -196,20 +196,20 @@
       "path": "cross_runtime/resnetv2_50_table.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "2b88cb0c4c256c393d7a61dab901218251f997f6bb4394a36a4a2442e7764e55",
-      "bytes": 3761,
+      "packaged_sha256": "2c20a42465d994d53e5e4c612cc87b98f454dae25311231476c305b576f743f5",
+      "bytes": 3767,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
       "path": "cross_runtime/source_index.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "5d1863f0515cd4e773dbb6d811cb4eb3a87c7e75477e638b727c8e31d2966270",
-      "bytes": 8062,
+      "packaged_sha256": "9b68d72842564939ad73a37108b79b7b44f2537432f6a80dcc61e200a70ac30e",
+      "bytes": 8699,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
@@ -226,10 +226,10 @@
       "path": "cross_runtime/validation.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "af8f16db33b148abee2322b51a375427c3203acb53fc4807506f3cb1d88e4cb8",
-      "bytes": 711,
+      "packaged_sha256": "7f33aae9682ab1594534151bedbdf18b9d415590adc565c7ca27402b37d34a37",
+      "bytes": 1134,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
@@ -282,11 +282,11 @@
     {
       "path": "mobilenetv2/TPU/evasion/EVASION_TPU_REPORT.md",
       "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/EVASION_TPU_REPORT.md",
-      "source_sha256": "e760a589b216d496e332d8fe2954cd640e13b30eaef6534a32b99f96a6005622",
-      "packaged_sha256": "a747342134495db2fd8e0a3b27a11e324ab318c05d9b1df4bd5f33216dea1778",
-      "bytes": 24903,
+      "source_sha256": "1595e0de02ec446fb796b0c273f93c49a81a339d0620a84cb2478b0d587bccd7",
+      "packaged_sha256": "7d2d38133e5aeaa7eb221a2b059506df55d21ac570486e62554b4fff45fbb57e",
+      "bytes": 25183,
       "links_adjusted": true,
-      "archive_date": "2026-11-10"
+      "archive_date": "2026-11-16"
     },
     {
       "path": "mobilenetv2/TPU/evasion/README.md",
@@ -318,11 +318,11 @@
     {
       "path": "mobilenetv2/TPU/evasion/figures/resnet_comparison.png",
       "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/figures/resnet_comparison.png",
-      "source_sha256": "44aad32c153006c0a62196a6b56beb230bd7fe7fa87df8015f53379486aaff22",
-      "packaged_sha256": "44aad32c153006c0a62196a6b56beb230bd7fe7fa87df8015f53379486aaff22",
-      "bytes": 491085,
+      "source_sha256": "056871c100a051eeab9220f6651eb15dd45631493267b16f55aabf447ce2c24c",
+      "packaged_sha256": "056871c100a051eeab9220f6651eb15dd45631493267b16f55aabf447ce2c24c",
+      "bytes": 493052,
       "links_adjusted": false,
-      "archive_date": "2026-11-10"
+      "archive_date": "2026-11-16"
     },
     {
       "path": "mobilenetv2/TPU/evasion/figures/square_queries.png",
@@ -336,29 +336,29 @@
     {
       "path": "mobilenetv2/TPU/evasion/results/comparisons/all_deployments.csv",
       "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/comparisons/all_deployments.csv",
-      "source_sha256": "3037588b0a8c44076eb7ddf0d5249ba796a6e5af9b44b44991249eedbe32a9ba",
-      "packaged_sha256": "3037588b0a8c44076eb7ddf0d5249ba796a6e5af9b44b44991249eedbe32a9ba",
-      "bytes": 223739,
+      "source_sha256": "eadb7838ea3f4e4025fbed2faca0c980e36f8eb7248eb03886cf74e29d771195",
+      "packaged_sha256": "eadb7838ea3f4e4025fbed2faca0c980e36f8eb7248eb03886cf74e29d771195",
+      "bytes": 223984,
       "links_adjusted": false,
-      "archive_date": "2026-11-10"
+      "archive_date": "2026-11-16"
     },
     {
       "path": "mobilenetv2/TPU/evasion/results/comparisons/all_deployments.json",
       "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/comparisons/all_deployments.json",
-      "source_sha256": "73215a0e4261c98e7f2c5d2b2629980b35beb9164251fc806bebee69d871d816",
-      "packaged_sha256": "73215a0e4261c98e7f2c5d2b2629980b35beb9164251fc806bebee69d871d816",
-      "bytes": 329993,
+      "source_sha256": "43e36ec5cf015585934a8841f00ab4353d0ce4d9edd05cc90e47476d95ff9212",
+      "packaged_sha256": "43e36ec5cf015585934a8841f00ab4353d0ce4d9edd05cc90e47476d95ff9212",
+      "bytes": 330485,
       "links_adjusted": false,
-      "archive_date": "2026-11-10"
+      "archive_date": "2026-11-16"
     },
     {
       "path": "mobilenetv2/TPU/evasion/results/comparisons/historical_audit.json",
       "source_path_relative_to_qa": "Models/mobilenetV2/TPU/evasion/results/comparisons/historical_audit.json",
-      "source_sha256": "6a2b9a6b4cdfec293aad43f5ab00b9b1a7231d262a8d382c0e0c8f79dc94eac8",
-      "packaged_sha256": "6a2b9a6b4cdfec293aad43f5ab00b9b1a7231d262a8d382c0e0c8f79dc94eac8",
-      "bytes": 11713,
+      "source_sha256": "d22ea84a59644f7039b91e8167e5c0ddd2d212b76910a7daf401e4774e644609",
+      "packaged_sha256": "d22ea84a59644f7039b91e8167e5c0ddd2d212b76910a7daf401e4774e644609",
+      "bytes": 11968,
       "links_adjusted": false,
-      "archive_date": "2026-11-10"
+      "archive_date": "2026-11-16"
     },
     {
       "path": "mobilenetv2/TPU/evasion/results/report_checks.json",
@@ -1672,10 +1672,10 @@
       "path": "resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "352f857729926dd4a5e6fe5f295c2f5ece4126d216ad7695e1e550cffe95a690",
-      "bytes": 15347,
+      "packaged_sha256": "3f946c4fac459a8f28a3dcdef89604a619b7ce4bd15cf5ea9f5011a16a6875df",
+      "bytes": 16138,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
+      "archive_date": "2026-11-16",
       "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
     },
     {
@@ -1697,42 +1697,97 @@
     {
       "path": "resnetv2_50/TPU/evasion/EVASION_TPU_REPORT.md",
       "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/EVASION_TPU_REPORT.md",
-      "source_sha256": "1bd2fad432cb6cb481d6de5695c1889c7b92fff9c6115bb79d211e5f8df23120",
-      "packaged_sha256": "1bd2fad432cb6cb481d6de5695c1889c7b92fff9c6115bb79d211e5f8df23120",
-      "bytes": 6283,
-      "links_adjusted": false
+      "source_sha256": "e3f4c0bfeaa8a06e3e0ce95c1b07831a00b52b05d26c83b4d60a890ac11b13f0",
+      "packaged_sha256": "e3f4c0bfeaa8a06e3e0ce95c1b07831a00b52b05d26c83b4d60a890ac11b13f0",
+      "bytes": 7767,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16"
     },
     {
       "path": "resnetv2_50/TPU/evasion/comparison.json",
       "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/comparison.json",
-      "source_sha256": "d52bbf3cb702f4de90d5dde341c956254e5d2da383e527f9e61c76d4552e5d0d",
-      "packaged_sha256": "d52bbf3cb702f4de90d5dde341c956254e5d2da383e527f9e61c76d4552e5d0d",
-      "bytes": 15550,
-      "links_adjusted": false
+      "source_sha256": "92b8ad9218f8d40795d2a24f533652e17de62f12e69d6e8114dea4ee0d5abe07",
+      "packaged_sha256": "92b8ad9218f8d40795d2a24f533652e17de62f12e69d6e8114dea4ee0d5abe07",
+      "bytes": 16144,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16"
     },
     {
       "path": "resnetv2_50/TPU/evasion/figures/asr_vs_eps.png",
       "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/figures/asr_vs_eps.png",
-      "source_sha256": "bcdacada4c5b37df0246e03b3ba20918b0c1d8fa469eec559fe23941125c53b4",
-      "packaged_sha256": "bcdacada4c5b37df0246e03b3ba20918b0c1d8fa469eec559fe23941125c53b4",
-      "bytes": 126176,
-      "links_adjusted": false
+      "source_sha256": "91d73b87650cba81b9acdd4d6fb1ff2e9b3514f0517b15b74f20b0e496d81b8b",
+      "packaged_sha256": "91d73b87650cba81b9acdd4d6fb1ff2e9b3514f0517b15b74f20b0e496d81b8b",
+      "bytes": 131065,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16"
     },
     {
       "path": "resnetv2_50/TPU/evasion/results/edgetpu_int8/attacks.csv",
       "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/edgetpu_int8/attacks.csv",
-      "source_sha256": "b28506d35759fc8014205b7f1c5c6ef24dd36a42ae4c2d0e3700eca17c2c24ec",
-      "packaged_sha256": "b28506d35759fc8014205b7f1c5c6ef24dd36a42ae4c2d0e3700eca17c2c24ec",
-      "bytes": 922,
-      "links_adjusted": false
+      "source_sha256": "ec64baede6d812676344591b996b8a36fa9ad3e5eff087477a542480c9f98828",
+      "packaged_sha256": "ec64baede6d812676344591b996b8a36fa9ad3e5eff087477a542480c9f98828",
+      "bytes": 987,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16"
     },
     {
       "path": "resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json",
       "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/edgetpu_int8/summary.json",
+      "source_sha256": "f2ed7b2b65a153c16801487ce5a5bc0eacca61994ac0a8d430e8b7d20c537f5a",
+      "packaged_sha256": "f2ed7b2b65a153c16801487ce5a5bc0eacca61994ac0a8d430e8b7d20c537f5a",
+      "bytes": 12025,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16"
+    },
+    {
+      "path": "resnetv2_50/TPU/evasion/results/edgetpu_int8/summary_before_pgd_plus_20261116.json",
+      "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/edgetpu_int8/summary_before_pgd_plus_20261116.json",
       "source_sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
       "packaged_sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
       "bytes": 10315,
-      "links_adjusted": false
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Original campaign snapshot"
+    },
+    {
+      "path": "resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/per_image.csv",
+      "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/pgd_plus_20261116_01/per_image.csv",
+      "source_sha256": "55861b1b8dc66a00019441f6aca5c43938415ef6af4f0bae6842d102aa16e9a3",
+      "packaged_sha256": "55861b1b8dc66a00019441f6aca5c43938415ef6af4f0bae6842d102aa16e9a3",
+      "bytes": 11471,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Compact evidence from the 2026-11-16 Coral PGD+ supplement and independent hardware replay"
+    },
+    {
+      "path": "resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/samples.json",
+      "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/pgd_plus_20261116_01/samples.json",
+      "source_sha256": "45d6abe19b14d93f3f4b4f02ffd98463c2995c517cc5a7b3eeb98a132e9b18e2",
+      "packaged_sha256": "45d6abe19b14d93f3f4b4f02ffd98463c2995c517cc5a7b3eeb98a132e9b18e2",
+      "bytes": 21347,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Compact evidence from the 2026-11-16 Coral PGD+ supplement and independent hardware replay"
+    },
+    {
+      "path": "resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/summary.json",
+      "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/pgd_plus_20261116_01/summary.json",
+      "source_sha256": "be4332a215a68a2323cb73f387676bc4cdfe2f2e3bfc0608985d5bc019f68698",
+      "packaged_sha256": "be4332a215a68a2323cb73f387676bc4cdfe2f2e3bfc0608985d5bc019f68698",
+      "bytes": 3899,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Compact evidence from the 2026-11-16 Coral PGD+ supplement and independent hardware replay"
+    },
+    {
+      "path": "resnetv2_50/TPU/evasion/results/pgd_plus_20261116_01/validation.json",
+      "source_path_relative_to_qa": "Models/resnet50/TPU/evasion/results/pgd_plus_20261116_01/validation.json",
+      "source_sha256": "09a706f5eaae57a42370bf63a4e238118efa2882ff9bb6ce2134e13797f6643d",
+      "packaged_sha256": "09a706f5eaae57a42370bf63a4e238118efa2882ff9bb6ce2134e13797f6643d",
+      "bytes": 2960,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Compact evidence from the 2026-11-16 Coral PGD+ supplement and independent hardware replay"
     },
     {
       "path": "resnetv2_50/TV_FAMILY.md",
@@ -2423,5 +2478,5 @@
       "links_adjusted": false
     }
   ],
-  "updated": "2026-11-10"
+  "updated": "2026-11-16"
 }

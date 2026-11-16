@@ -704,7 +704,17 @@
   {
     "deployment": "Coral USB INT8",
     "condition": "pgd_stronger@1",
-    "resnet": null,
+    "resnet": {
+      "fooled": 53,
+      "eligible": 80,
+      "success_pct": 66.25,
+      "wilson95_pct": [
+        55.35652339817697,
+        75.6543873919184
+      ],
+      "robust_correct": 27,
+      "robust_accuracy_pct": 27
+    },
     "mobilenet": {
       "fooled": 79,
       "eligible": 79,
@@ -716,7 +726,7 @@
       "robust_correct": 0,
       "robust_accuracy_pct": 0
     },
-    "mobile_minus_resnet_pp": null
+    "mobile_minus_resnet_pp": 33.75
   },
   {
     "deployment": "Coral USB INT8",

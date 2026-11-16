@@ -9985,7 +9985,7 @@
     "n": 100,
     "clean_correct": 80,
     "path": "/home/ross/QA/Models/resnet50/TPU/evasion/results/edgetpu_int8/summary.json",
-    "sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
+    "sha256": "f2ed7b2b65a153c16801487ce5a5bc0eacca61994ac0a8d430e8b7d20c537f5a",
     "conditions": {
       "random@1": {
         "fooled": 3,
@@ -10168,6 +10168,19 @@
         "robust_accuracy_pct": 49.0,
         "seconds": 1154.4384276866913,
         "search_queries": null
+      },
+      "pgd_stronger@1": {
+        "fooled": 53,
+        "n": 80,
+        "pct": 66.25,
+        "ci95": [
+          55.35652339817697,
+          75.6543873919184
+        ],
+        "robust_correct": 27,
+        "robust_accuracy_pct": 27.0,
+        "seconds": 918.9019198417664,
+        "search_queries": null
       }
     },
     "gradient": {},
@@ -10192,9 +10205,15 @@
       ],
       "square_queries": 500,
       "bpda": "deployment forward, FP32 surrogate backward",
-      "population": "imagenette2-320 val, same 100 images as the other arms"
+      "population": "imagenette2-320 val, same 100 images as the other arms",
+      "strong_survivor_check": {
+        "steps": 100,
+        "restarts": 5,
+        "seed": 20262730,
+        "retain_primary_successes": true
+      }
     },
-    "status": "retained prior experiment; not rerun"
+    "status": "retained prior experiment with 2026-11-16 PGD+ supplement"
   },
   {
     "family": "ResNetV2-50",

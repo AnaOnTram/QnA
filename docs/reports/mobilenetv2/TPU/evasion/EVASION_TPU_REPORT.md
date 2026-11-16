@@ -1,6 +1,6 @@
 # MobileNetV2 remains vulnerable on Coral despite 8-bit input and output
 
-Evasion evaluation completed on 10 November 2026 (Hong Kong time).
+MobileNetV2 evasion evaluation completed on 10 November 2026 (Hong Kong time); ResNet Coral PGD+ context updated on 16 November.
 
 ## Executive summary
 
@@ -104,7 +104,7 @@ The new Coral result extends the previous MobileNet pattern: PGD at 1/255 reache
 
 ## ResNetV2-50 provides context, not a hardware-only control
 
-The canonical timm ResNetV2-50 study uses the same image identities with resize 232 and bilinear crops, a different architecture and checkpoint. Its rates cannot identify a causal architecture-independent TPU or quantization effect. The previous Coral campaign did not run the stronger-survivor condition; the missing entry is not zero. The two retained TensorRT ResNetV2 arms carry documented replica-gate exceptions in their original summaries.
+The canonical timm ResNetV2-50 study uses the same image identities with resize 232 and bilinear crops, a different architecture and checkpoint. Its rates cannot identify a causal architecture-independent TPU or quantization effect. A 16 November Coral supplement reproduced primary PGD at 45/80 and added the stronger-survivor condition: 53/80 (66.25%), eight additional images. All reproduced primary successes were retained; independent hardware replay passed. The two retained TensorRT ResNetV2 arms carry documented replica-gate exceptions in their original summaries.
 
 ![ResNetV2-50 comparison](figures/resnet_comparison.png)
 
@@ -119,7 +119,7 @@ The canonical timm ResNetV2-50 study uses the same image identities with resize 
 | [TensorRT INT8 Q/DQ](../../../resnetv2_50/evasion_onnx/results/timm_rnv2_int8_ptq_ort/summary.json) | 79 | 32/79 (40.5%) | 50/79 (63.3%) | 57/79 (72.2%) | 77/79 (97.5%) | 34/79 (43.0%) |
 | [TensorRT INT8 compressed](../../../resnetv2_50/evasion_onnx/results/timm_rnv2_int8_dq_ort/summary.json) | 79 | 32/79 (40.5%) | 50/79 (63.3%) | 58/79 (73.4%) | 77/79 (97.5%) | 34/79 (43.0%) |
 | QNN HTP INT8 (`Models/resnet50/evasion/results/qnn_v2_matched/run/summary.json`; source workspace only) | 79 | 32/79 (40.5%) | 49/79 (62.0%) | 51/79 (64.6%) | 79/79 (100.0%) | 29/79 (36.7%) |
-| [Coral USB INT8](../../../resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json) | 80 | 28/80 (35.0%) | 45/80 (56.2%) | — | 79/80 (98.8%) | 31/80 (38.8%) |
+| [Coral USB INT8](../../../resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json) | 80 | 28/80 (35.0%) | 45/80 (56.2%) | 53/80 (66.2%) | 79/80 (98.8%) | 31/80 (38.8%) |
 | [Core ML FP32 CPU](../../../resnetv2_50/evasion_coreml/results/fp32_cpu_only/summary.json) | 81 | 41/81 (50.6%) | 64/81 (79.0%) | 73/81 (90.1%) | 81/81 (100.0%) | 51/81 (63.0%) |
 | [Core ML FP32 CPU+GPU](../../../resnetv2_50/evasion_coreml/results/fp32_cpu_and_gpu/summary.json) | 81 | 41/81 (50.6%) | 66/81 (81.5%) | 73/81 (90.1%) | 81/81 (100.0%) | 51/81 (63.0%) |
 | [Core ML FP32 CPU+NE](../../../resnetv2_50/evasion_coreml/results/fp32_cpu_and_ne/summary.json) | 81 | 41/81 (50.6%) | 64/81 (79.0%) | 73/81 (90.1%) | 81/81 (100.0%) | 51/81 (63.0%) |
@@ -138,7 +138,7 @@ The older TorchVision ResNet-50 experiments are a separate cross-architecture/ch
 
 An independent fresh process reconciled **46 conditions / 4,600 per-image rows**. It issued **9,200 native candidate scores**, plus 200 clean scores, to replay every saved result and test CPU↔Coral transfer. Every saved logit was reproduced bit-for-bit. Floating and native-byte bounds, labels/order, Square query caps and traces, zero search queries on ineligible images, stronger-success retention, transfer-candidate identity and source/model/code hashes passed.
 
-The previous 37 deployments are read from their retained summaries with exact source SHA-256s. A fresh arithmetic audit reconciled 35,900 available per-image CSV rows across 17 prior deployments and matched 18 Core ML summaries to their retained independently verified comparison matrices. The remaining two sources (MobileNet QNN and ResNet Coral) are explicitly summary-only imports in the [historical audit](results/comparisons/historical_audit.json). Their binaries and attacks were not rerun during this campaign. Historical robust-accuracy fields are not copied where definitions differ: this report derives robust accuracy from clean-correct minus fooled, over 100. All 39 deployments’ condition-level counts, 95% intervals and source paths are available in [JSON](results/comparisons/all_deployments.json) and [CSV](results/comparisons/all_deployments.csv).
+The previous 37 deployments are read from their retained summaries with exact source SHA-256s. An arithmetic audit reconciled 35,900 available per-image CSV rows across 17 prior deployments and matched 18 Core ML summaries to their retained independently verified comparison matrices. MobileNet QNN and the original ResNet Coral conditions remain summary-only imports in the [historical audit](results/comparisons/historical_audit.json). The later ResNet Coral supplement adds independently replayed primary PGD and PGD+ candidates, with 200 per-image rows; its original campaign rows are preserved. Historical robust-accuracy fields are not copied where definitions differ: this report derives robust accuracy from clean-correct minus fooled, over 100. All 39 deployments’ condition-level counts, 95% intervals and source paths are available in [JSON](results/comparisons/all_deployments.json) and [CSV](results/comparisons/all_deployments.csv).
 
 The evidence supports susceptibility to the attempted digital attacks. It does not establish a worst-case risk, certified radius, full ImageNet accuracy, physical/camera robustness, or a causal effect of bit width alone. Adjacent percentages are not ranked as statistically distinct. Wilson intervals describe uncertainty across the eligible pilot images; one attack seed leaves search variability unmeasured.
 

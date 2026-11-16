@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-16T01:32:03.426446+00:00",
+  "fresh_native_clean_scores": 100,
+  "fresh_native_candidate_scores": 200,
+  "per_image_rows_reconciled": 200,
+  "population_n": 100,
+  "clean_correct": 80,
+  "survivors_re_attacked": 35,
+  "additional_fooled": 8,
+  "primary_successes_retained": true,
+  "non_survivor_tensors_unchanged": true,
+  "conditions": {
+    "pgd": {
+      "fooled": 45,
+      "eligible": 80,
+      "success_pct": 56.25,
+      "robust_correct": 35,
+      "max_linf_255": 1.0000075101852417,
+      "max_native_linf": 1,
+      "candidate_sha256": "5300f78e0fcf42583f0c917054163df9ced5d4a011c4c8d7ddb57d9d835e9420",
+      "replayed_logits_identical": true
+    },
+    "pgd_stronger": {
+      "fooled": 53,
+      "eligible": 80,
+      "success_pct": 66.25,
+      "robust_correct": 27,
+      "max_linf_255": 1.0000075101852417,
+      "max_native_linf": 1,
+      "candidate_sha256": "df14c4cba8766a598dc57998a1be65e858f3761eed0e52227175f176f2c5cd26",
+      "replayed_logits_identical": true
+    }
+  },
+  "summary_sha256": "be4332a215a68a2323cb73f387676bc4cdfe2f2e3bfc0608985d5bc019f68698",
+  "per_image_sha256": "55861b1b8dc66a00019441f6aca5c43938415ef6af4f0bae6842d102aa16e9a3",
+  "verifier_sha256": "d6bee88e994ee9fa0ee98e8797234a1ae7da51e975d12400242d19ee69642b04",
+  "runtime": {
+    "runtime": "Edge TPU (Coral USB Accelerator)",
+    "backend": "tpu",
+    "model": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc_edgetpu.tflite",
+    "model_bytes": 26542720,
+    "tensorflow": "2.19.1",
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "scale": 0.003921568859368563,
+      "zero_point": 0,
+      "quantized": true
+    },
+    "output": {
+      "shape": [
+        1,
+        1000
+      ],
+      "dtype": "uint8",
+      "scale": 0.10331345349550247,
+      "zero_point": 203,
+      "quantized": true
+    },
+    "harness_normalization": {
+      "baked_into": "stem conv",
+      "mean": [
+        0.48500001430511475,
+        0.4560000002384186,
+        0.4059999883174896
+      ],
+      "std": [
+        0.2290000021457672,
+        0.2240000069141388,
+        0.22499999403953552
+      ],
+      "caller_contract": "pass pixel-space [0,1] tensors, unnormalized"
+    },
+    "gradients": false,
+    "libedgetpu": "libedgetpu.so.1",
+    "runtime_version": "BuildLabel(COMPILER=13.3.0,DATE=redacted,TIME=redacted), RuntimeVersion(14)",
+    "devices": [
+      {
+        "type": "APEX_USB",
+        "path": "/sys/bus/usb/devices/2-3"
+      }
+    ],
+    "delegated_ops": [
+      "edgetpu-custom-op",
+      "DELEGATE"
+    ]
+  },
+  "limitations": [
+    "The historical primary candidate tensors were not retained; historical reproduction is verified by identical clean logits and matching primary count, not historical per-image attack identity.",
+    "Single-seed, 100-image pilot; finite-search evasion success is not a robustness guarantee."
+  ]
+}

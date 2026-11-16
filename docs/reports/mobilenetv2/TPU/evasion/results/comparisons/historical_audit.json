@@ -179,8 +179,12 @@
   },
   {
     "source": "/home/ross/QA/Models/resnet50/TPU/evasion/results/edgetpu_int8/summary.json",
-    "source_sha256": "560bfd7855798669beb3dba5329049af99a8eaf92510d98d691f4856e43212d4",
-    "method": "Summary-only import; prior native evidence retained, no fresh per-image audit in this report"
+    "source_sha256": "f2ed7b2b65a153c16801487ce5a5bc0eacca61994ac0a8d430e8b7d20c537f5a",
+    "method": "Original conditions summary-only; 2026-11-16 supplemental primary PGD and PGD+ independently replayed on Coral",
+    "supplemental_validation": "/home/ross/QA/Models/resnet50/TPU/evasion/results/pgd_plus_20261116_01/validation.json",
+    "supplemental_conditions": 2,
+    "supplemental_per_image_rows": 200,
+    "fresh_native_candidate_scores": 200
   },
   {
     "source": "/home/ross/QA/model-weights/docs/reports/resnetv2_50/evasion_coreml/results/fp32_cpu_only/summary.json",
