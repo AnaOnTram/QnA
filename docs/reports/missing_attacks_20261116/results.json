@@ -1,0 +1,2009 @@
+{
+  "status": {
+    "mobile_ort_fp32": "validated with native replay",
+    "mobile_ort_fp16": "validated with native replay",
+    "mobile_ort_int8": "validated with native replay",
+    "resnet_trt_fp32": "validated with native replay",
+    "resnet_trt_fp16": "validated with native replay",
+    "resnet_trt_fp8": "validated with native replay",
+    "resnet_trt_int4": "validated with native replay",
+    "resnet_tflite_int8": "validated with native replay"
+  },
+  "validated_deployments": 8,
+  "requested_missing_deployments": 8,
+  "requested_screenshot_cells": 40,
+  "validated_screenshot_cells": 40,
+  "records": [
+    {
+      "arm": "mobile_ort_fp32",
+      "family": "MobileNetV2",
+      "deployment": "ONNX Runtime FP32 \u00b7 GPU",
+      "clean_correct": 83,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ]
+        },
+        "square@4": {
+          "fooled": 38,
+          "eligible": 83,
+          "success_pct": 45.78313253012048,
+          "wilson95_pct": [
+            35.48937698207064,
+            56.44995695466891
+          ]
+        },
+        "square@8": {
+          "fooled": 71,
+          "eligible": 83,
+          "success_pct": 85.5421686746988,
+          "wilson95_pct": [
+            76.40819877833326,
+            91.53170089771919
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ]
+        }
+      },
+      "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+      "runtime": {
+        "runtime": "ONNX Runtime",
+        "version": "1.24.4",
+        "requested_provider": "CUDAExecutionProvider",
+        "registered_providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "input_type": "tensor(float)",
+        "tf32": false,
+        "profile": "/home/ross/QA/experiments/missing_attacks_20261116/results/mobile_ort_fp32/ort_profile_2026-11-16_10-23-49.json",
+        "executed_node_providers": {
+          "CUDAExecutionProvider": 1000
+        },
+        "compute_kernels": {
+          "CUDAExecutionProvider:Conv": 520,
+          "CUDAExecutionProvider:Gemm": 10
+        }
+      },
+      "validation": {
+        "arm": "mobile_ort_fp32",
+        "ok": true,
+        "conditions": 15,
+        "rows_reconciled": 1500,
+        "native_replayed_images": 1500,
+        "complete_native_replay": true,
+        "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "metrics": {
+          "random@1": {
+            "fooled": 1,
+            "eligible": 83,
+            "success_pct": 1.2048192771084338
+          },
+          "fgsm@1": {
+            "fooled": 76,
+            "eligible": 83,
+            "success_pct": 91.56626506024097
+          },
+          "pgd@1": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "pgd_stronger@1": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "random@2": {
+            "fooled": 0,
+            "eligible": 83,
+            "success_pct": 0.0
+          },
+          "fgsm@2": {
+            "fooled": 77,
+            "eligible": 83,
+            "success_pct": 92.7710843373494
+          },
+          "pgd@2": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "random@4": {
+            "fooled": 1,
+            "eligible": 83,
+            "success_pct": 1.2048192771084338
+          },
+          "fgsm@4": {
+            "fooled": 80,
+            "eligible": 83,
+            "success_pct": 96.3855421686747
+          },
+          "pgd@4": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "square@4": {
+            "fooled": 38,
+            "eligible": 83,
+            "success_pct": 45.78313253012048
+          },
+          "random@8": {
+            "fooled": 1,
+            "eligible": 83,
+            "success_pct": 1.2048192771084338
+          },
+          "fgsm@8": {
+            "fooled": 79,
+            "eligible": 83,
+            "success_pct": 95.18072289156626
+          },
+          "pgd@8": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "square@8": {
+            "fooled": 71,
+            "eligible": 83,
+            "success_pct": 85.5421686746988
+          }
+        },
+        "engine_precision_evidence": null,
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "mobile_ort_fp16",
+      "family": "MobileNetV2",
+      "deployment": "ONNX Runtime FP16 \u00b7 GPU",
+      "clean_correct": 83,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 74,
+          "eligible": 83,
+          "success_pct": 89.1566265060241,
+          "wilson95_pct": [
+            80.65953353528812,
+            94.18950848070189
+          ]
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ]
+        },
+        "square@4": {
+          "fooled": 33,
+          "eligible": 83,
+          "success_pct": 39.75903614457831,
+          "wilson95_pct": [
+            29.90893171041682,
+            50.5151649930935
+          ]
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ]
+        }
+      },
+      "source_sha256": "cf8a3b902a5f182c930f691a2216bc739912d224150b7498a4df8b4e5532b5d5",
+      "runtime": {
+        "runtime": "ONNX Runtime",
+        "version": "1.24.4",
+        "requested_provider": "CUDAExecutionProvider",
+        "registered_providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "input_type": "tensor(float)",
+        "tf32": false,
+        "profile": "/home/ross/QA/experiments/missing_attacks_20261116/results/mobile_ort_fp16/ort_profile_2026-11-16_10-26-35.json",
+        "executed_node_providers": {
+          "CUDAExecutionProvider": 1020
+        },
+        "compute_kernels": {
+          "CUDAExecutionProvider:Conv": 520,
+          "CUDAExecutionProvider:Gemm": 10
+        }
+      },
+      "validation": {
+        "arm": "mobile_ort_fp16",
+        "ok": true,
+        "conditions": 23,
+        "rows_reconciled": 2300,
+        "native_replayed_images": 2300,
+        "complete_native_replay": true,
+        "source_sha256": "cf8a3b902a5f182c930f691a2216bc739912d224150b7498a4df8b4e5532b5d5",
+        "metrics": {
+          "random@1": {
+            "fooled": 1,
+            "eligible": 83,
+            "success_pct": 1.2048192771084338
+          },
+          "fgsm@1": {
+            "fooled": 74,
+            "eligible": 83,
+            "success_pct": 89.1566265060241
+          },
+          "pgd@1": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "pgd_stronger@1": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "random@2": {
+            "fooled": 0,
+            "eligible": 83,
+            "success_pct": 0.0
+          },
+          "fgsm@2": {
+            "fooled": 77,
+            "eligible": 83,
+            "success_pct": 92.7710843373494
+          },
+          "pgd@2": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "random@4": {
+            "fooled": 0,
+            "eligible": 83,
+            "success_pct": 0.0
+          },
+          "fgsm@4": {
+            "fooled": 80,
+            "eligible": 83,
+            "success_pct": 96.3855421686747
+          },
+          "pgd@4": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "square@4": {
+            "fooled": 33,
+            "eligible": 83,
+            "success_pct": 39.75903614457831
+          },
+          "random@8": {
+            "fooled": 1,
+            "eligible": 83,
+            "success_pct": 1.2048192771084338
+          },
+          "fgsm@8": {
+            "fooled": 79,
+            "eligible": 83,
+            "success_pct": 95.18072289156626
+          },
+          "pgd@8": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "square@8": {
+            "fooled": 70,
+            "eligible": 83,
+            "success_pct": 84.33734939759036
+          },
+          "transfer_fp32_fgsm@1": {
+            "fooled": 76,
+            "eligible": 83,
+            "success_pct": 91.56626506024097
+          },
+          "transfer_fp32_pgd@1": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "transfer_fp32_fgsm@2": {
+            "fooled": 77,
+            "eligible": 83,
+            "success_pct": 92.7710843373494
+          },
+          "transfer_fp32_pgd@2": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "transfer_fp32_fgsm@4": {
+            "fooled": 80,
+            "eligible": 83,
+            "success_pct": 96.3855421686747
+          },
+          "transfer_fp32_pgd@4": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          },
+          "transfer_fp32_fgsm@8": {
+            "fooled": 79,
+            "eligible": 83,
+            "success_pct": 95.18072289156626
+          },
+          "transfer_fp32_pgd@8": {
+            "fooled": 83,
+            "eligible": 83,
+            "success_pct": 100.0
+          }
+        },
+        "engine_precision_evidence": null,
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "mobile_ort_int8",
+      "family": "MobileNetV2",
+      "deployment": "ONNX Runtime INT8 \u00b7 CPU",
+      "clean_correct": 82,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 69,
+          "eligible": 82,
+          "success_pct": 84.14634146341463,
+          "wilson95_pct": [
+            74.74213307168286,
+            90.49440970070054
+          ]
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ]
+        },
+        "square@4": {
+          "fooled": 26,
+          "eligible": 82,
+          "success_pct": 31.70731707317073,
+          "wilson95_pct": [
+            22.64806567040274,
+            42.403786415820456
+          ]
+        },
+        "square@8": {
+          "fooled": 44,
+          "eligible": 82,
+          "success_pct": 53.65853658536585,
+          "wilson95_pct": [
+            42.94472560322624,
+            64.04490397952914
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ]
+        }
+      },
+      "source_sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+      "runtime": {
+        "runtime": "ONNX Runtime",
+        "version": "1.24.4",
+        "requested_provider": "CPUExecutionProvider",
+        "registered_providers": [
+          "CPUExecutionProvider"
+        ],
+        "input_type": "tensor(float)",
+        "tf32": null,
+        "profile": "/home/ross/QA/experiments/missing_attacks_20261116/results/mobile_ort_int8/ort_profile_2026-11-16_10-41-09.json",
+        "executed_node_providers": {
+          "CPUExecutionProvider": 710
+        },
+        "compute_kernels": {
+          "CPUExecutionProvider:QLinearConv": 520,
+          "CPUExecutionProvider:QGemm": 10
+        }
+      },
+      "validation": {
+        "arm": "mobile_ort_int8",
+        "ok": true,
+        "conditions": 23,
+        "rows_reconciled": 2300,
+        "native_replayed_images": 2300,
+        "complete_native_replay": true,
+        "source_sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+        "metrics": {
+          "random@1": {
+            "fooled": 4,
+            "eligible": 82,
+            "success_pct": 4.878048780487805
+          },
+          "fgsm@1": {
+            "fooled": 69,
+            "eligible": 82,
+            "success_pct": 84.14634146341463
+          },
+          "pgd@1": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "pgd_stronger@1": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "random@2": {
+            "fooled": 4,
+            "eligible": 82,
+            "success_pct": 4.878048780487805
+          },
+          "fgsm@2": {
+            "fooled": 77,
+            "eligible": 82,
+            "success_pct": 93.90243902439025
+          },
+          "pgd@2": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "random@4": {
+            "fooled": 1,
+            "eligible": 82,
+            "success_pct": 1.2195121951219512
+          },
+          "fgsm@4": {
+            "fooled": 77,
+            "eligible": 82,
+            "success_pct": 93.90243902439025
+          },
+          "pgd@4": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "square@4": {
+            "fooled": 26,
+            "eligible": 82,
+            "success_pct": 31.70731707317073
+          },
+          "random@8": {
+            "fooled": 5,
+            "eligible": 82,
+            "success_pct": 6.097560975609756
+          },
+          "fgsm@8": {
+            "fooled": 79,
+            "eligible": 82,
+            "success_pct": 96.34146341463415
+          },
+          "pgd@8": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "square@8": {
+            "fooled": 44,
+            "eligible": 82,
+            "success_pct": 53.65853658536585
+          },
+          "transfer_fp32_fgsm@1": {
+            "fooled": 65,
+            "eligible": 82,
+            "success_pct": 79.26829268292683
+          },
+          "transfer_fp32_pgd@1": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "transfer_fp32_fgsm@2": {
+            "fooled": 75,
+            "eligible": 82,
+            "success_pct": 91.46341463414635
+          },
+          "transfer_fp32_pgd@2": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "transfer_fp32_fgsm@4": {
+            "fooled": 79,
+            "eligible": 82,
+            "success_pct": 96.34146341463415
+          },
+          "transfer_fp32_pgd@4": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "transfer_fp32_fgsm@8": {
+            "fooled": 78,
+            "eligible": 82,
+            "success_pct": 95.1219512195122
+          },
+          "transfer_fp32_pgd@8": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          }
+        },
+        "engine_precision_evidence": null,
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "resnet_trt_fp32",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT FP32",
+      "clean_correct": 81,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ]
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 81,
+          "success_pct": 80.24691358024691,
+          "wilson95_pct": [
+            70.29560930488834,
+            87.45917318129888
+          ]
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ]
+        },
+        "square@4": {
+          "fooled": 36,
+          "eligible": 81,
+          "success_pct": 44.44444444444444,
+          "wilson95_pct": [
+            34.119552503457854,
+            55.27242622356897
+          ]
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 81,
+          "success_pct": 60.49382716049383,
+          "wilson95_pct": [
+            49.60547732360617,
+            70.43189619200982
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ]
+        }
+      },
+      "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+      "runtime": {
+        "runtime": "native TensorRT",
+        "version": "11.3.0.99",
+        "provider": "CUDA device 0",
+        "cpu_fallback": false,
+        "static_batch": 1,
+        "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_fp32/engine.plan",
+        "engine_sha256": "de4f3a2b6d5cdb5ee9985529d477fd5e529034922255701efcdfdc03db492dcc",
+        "convolution_weight_types": {},
+        "tf32": false,
+        "build_or_load_seconds": 7.423632621765137,
+        "input_dtype": "torch.float32",
+        "output_dtype": "torch.float32"
+      },
+      "validation": {
+        "arm": "resnet_trt_fp32",
+        "ok": true,
+        "conditions": 15,
+        "rows_reconciled": 1500,
+        "native_replayed_images": 1500,
+        "complete_native_replay": true,
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "metrics": {
+          "random@1": {
+            "fooled": 0,
+            "eligible": 81,
+            "success_pct": 0.0
+          },
+          "fgsm@1": {
+            "fooled": 41,
+            "eligible": 81,
+            "success_pct": 50.617283950617285
+          },
+          "pgd@1": {
+            "fooled": 65,
+            "eligible": 81,
+            "success_pct": 80.24691358024691
+          },
+          "pgd_stronger@1": {
+            "fooled": 73,
+            "eligible": 81,
+            "success_pct": 90.12345679012346
+          },
+          "random@2": {
+            "fooled": 1,
+            "eligible": 81,
+            "success_pct": 1.2345679012345678
+          },
+          "fgsm@2": {
+            "fooled": 42,
+            "eligible": 81,
+            "success_pct": 51.851851851851855
+          },
+          "pgd@2": {
+            "fooled": 72,
+            "eligible": 81,
+            "success_pct": 88.88888888888889
+          },
+          "random@4": {
+            "fooled": 1,
+            "eligible": 81,
+            "success_pct": 1.2345679012345678
+          },
+          "fgsm@4": {
+            "fooled": 40,
+            "eligible": 81,
+            "success_pct": 49.382716049382715
+          },
+          "pgd@4": {
+            "fooled": 78,
+            "eligible": 81,
+            "success_pct": 96.29629629629629
+          },
+          "square@4": {
+            "fooled": 36,
+            "eligible": 81,
+            "success_pct": 44.44444444444444
+          },
+          "random@8": {
+            "fooled": 4,
+            "eligible": 81,
+            "success_pct": 4.938271604938271
+          },
+          "fgsm@8": {
+            "fooled": 42,
+            "eligible": 81,
+            "success_pct": 51.851851851851855
+          },
+          "pgd@8": {
+            "fooled": 81,
+            "eligible": 81,
+            "success_pct": 100.0
+          },
+          "square@8": {
+            "fooled": 49,
+            "eligible": 81,
+            "success_pct": 60.49382716049383
+          }
+        },
+        "engine_precision_evidence": {
+          "inspector_schema": "TensorRT 11 Constants/Datatype",
+          "constant_datatypes": {
+            "Float": 229
+          },
+          "convolution_input_datatypes": {
+            "Float": 70
+          },
+          "convolution_layer_count": 54
+        },
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "resnet_trt_fp16",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT FP16",
+      "clean_correct": 82,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 42,
+          "eligible": 82,
+          "success_pct": 51.21951219512195,
+          "wilson95_pct": [
+            40.59077238820504,
+            61.73910413938009
+          ]
+        },
+        "pgd@1": {
+          "fooled": 67,
+          "eligible": 82,
+          "success_pct": 81.70731707317073,
+          "wilson95_pct": [
+            71.98781157085605,
+            88.58897814635709
+          ]
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ]
+        },
+        "square@4": {
+          "fooled": 31,
+          "eligible": 82,
+          "success_pct": 37.80487804878049,
+          "wilson95_pct": [
+            28.078371592811894,
+            48.6228631313369
+          ]
+        },
+        "square@8": {
+          "fooled": 50,
+          "eligible": 82,
+          "success_pct": 60.97560975609756,
+          "wilson95_pct": [
+            50.15357010815031,
+            70.81531864011576
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 82,
+          "success_pct": 91.46341463414635,
+          "wilson95_pct": [
+            83.41245443721832,
+            95.80334750067581
+          ]
+        }
+      },
+      "source_sha256": "23cc23880d70cf7b7a0737aa717c4f1727f9d3c085df270739ae76a83fa663d0",
+      "runtime": {
+        "runtime": "native TensorRT",
+        "version": "11.3.0.99",
+        "provider": "CUDA device 0",
+        "cpu_fallback": false,
+        "static_batch": 1,
+        "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_fp16/engine.plan",
+        "engine_sha256": "9ee3b7a8315f1d60563832d6ebc9fb13787e11bd924125926e8a7a632bf821ea",
+        "convolution_weight_types": {},
+        "tf32": false,
+        "build_or_load_seconds": 7.048383712768555,
+        "input_dtype": "torch.float16",
+        "output_dtype": "torch.float16"
+      },
+      "validation": {
+        "arm": "resnet_trt_fp16",
+        "ok": true,
+        "conditions": 23,
+        "rows_reconciled": 2300,
+        "native_replayed_images": 2300,
+        "complete_native_replay": true,
+        "source_sha256": "23cc23880d70cf7b7a0737aa717c4f1727f9d3c085df270739ae76a83fa663d0",
+        "metrics": {
+          "random@1": {
+            "fooled": 0,
+            "eligible": 82,
+            "success_pct": 0.0
+          },
+          "fgsm@1": {
+            "fooled": 42,
+            "eligible": 82,
+            "success_pct": 51.21951219512195
+          },
+          "pgd@1": {
+            "fooled": 67,
+            "eligible": 82,
+            "success_pct": 81.70731707317073
+          },
+          "pgd_stronger@1": {
+            "fooled": 75,
+            "eligible": 82,
+            "success_pct": 91.46341463414635
+          },
+          "random@2": {
+            "fooled": 2,
+            "eligible": 82,
+            "success_pct": 2.4390243902439024
+          },
+          "fgsm@2": {
+            "fooled": 43,
+            "eligible": 82,
+            "success_pct": 52.4390243902439
+          },
+          "pgd@2": {
+            "fooled": 73,
+            "eligible": 82,
+            "success_pct": 89.02439024390245
+          },
+          "random@4": {
+            "fooled": 2,
+            "eligible": 82,
+            "success_pct": 2.4390243902439024
+          },
+          "fgsm@4": {
+            "fooled": 41,
+            "eligible": 82,
+            "success_pct": 50.0
+          },
+          "pgd@4": {
+            "fooled": 80,
+            "eligible": 82,
+            "success_pct": 97.5609756097561
+          },
+          "square@4": {
+            "fooled": 31,
+            "eligible": 82,
+            "success_pct": 37.80487804878049
+          },
+          "random@8": {
+            "fooled": 5,
+            "eligible": 82,
+            "success_pct": 6.097560975609756
+          },
+          "fgsm@8": {
+            "fooled": 44,
+            "eligible": 82,
+            "success_pct": 53.65853658536585
+          },
+          "pgd@8": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          },
+          "square@8": {
+            "fooled": 50,
+            "eligible": 82,
+            "success_pct": 60.97560975609756
+          },
+          "transfer_fp32_fgsm@1": {
+            "fooled": 42,
+            "eligible": 82,
+            "success_pct": 51.21951219512195
+          },
+          "transfer_fp32_pgd@1": {
+            "fooled": 66,
+            "eligible": 82,
+            "success_pct": 80.48780487804878
+          },
+          "transfer_fp32_fgsm@2": {
+            "fooled": 42,
+            "eligible": 82,
+            "success_pct": 51.21951219512195
+          },
+          "transfer_fp32_pgd@2": {
+            "fooled": 73,
+            "eligible": 82,
+            "success_pct": 89.02439024390245
+          },
+          "transfer_fp32_fgsm@4": {
+            "fooled": 41,
+            "eligible": 82,
+            "success_pct": 50.0
+          },
+          "transfer_fp32_pgd@4": {
+            "fooled": 79,
+            "eligible": 82,
+            "success_pct": 96.34146341463415
+          },
+          "transfer_fp32_fgsm@8": {
+            "fooled": 43,
+            "eligible": 82,
+            "success_pct": 52.4390243902439
+          },
+          "transfer_fp32_pgd@8": {
+            "fooled": 82,
+            "eligible": 82,
+            "success_pct": 100.0
+          }
+        },
+        "engine_precision_evidence": {
+          "inspector_schema": "TensorRT 11 Constants/Datatype",
+          "constant_datatypes": {
+            "Half": 122,
+            "Float": 108
+          },
+          "convolution_input_datatypes": {
+            "Half": 71
+          },
+          "convolution_layer_count": 55
+        },
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "resnet_trt_fp8",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT FP8",
+      "clean_correct": 81,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 39,
+          "eligible": 81,
+          "success_pct": 48.148148148148145,
+          "wilson95_pct": [
+            37.59964161288465,
+            58.864351296124276
+          ]
+        },
+        "pgd@1": {
+          "fooled": 61,
+          "eligible": 81,
+          "success_pct": 75.30864197530865,
+          "wilson95_pct": [
+            64.91574213226649,
+            83.40968811127793
+          ]
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ]
+        },
+        "square@4": {
+          "fooled": 18,
+          "eligible": 81,
+          "success_pct": 22.22222222222222,
+          "wilson95_pct": [
+            14.544607404671892,
+            32.41528623046228
+          ]
+        },
+        "square@8": {
+          "fooled": 33,
+          "eligible": 81,
+          "success_pct": 40.74074074074074,
+          "wilson95_pct": [
+            30.69627781339348,
+            51.62368673165123
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 81,
+          "success_pct": 92.5925925925926,
+          "wilson95_pct": [
+            84.76712613403235,
+            96.56103695876189
+          ]
+        }
+      },
+      "source_sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+      "runtime": {
+        "runtime": "native TensorRT",
+        "version": "11.3.0.99",
+        "provider": "CUDA device 0",
+        "cpu_fallback": false,
+        "static_batch": 1,
+        "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_fp8/engine.plan",
+        "engine_sha256": "b11ddf759b404967f500f8c37d7f1f3f619e62c296de5b1770bb7863d42a32dd",
+        "convolution_weight_types": {},
+        "tf32": false,
+        "build_or_load_seconds": 8.038028240203857,
+        "input_dtype": "torch.float32",
+        "output_dtype": "torch.float32"
+      },
+      "validation": {
+        "arm": "resnet_trt_fp8",
+        "ok": true,
+        "conditions": 23,
+        "rows_reconciled": 2300,
+        "native_replayed_images": 2300,
+        "complete_native_replay": true,
+        "source_sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+        "metrics": {
+          "random@1": {
+            "fooled": 2,
+            "eligible": 81,
+            "success_pct": 2.4691358024691357
+          },
+          "fgsm@1": {
+            "fooled": 39,
+            "eligible": 81,
+            "success_pct": 48.148148148148145
+          },
+          "pgd@1": {
+            "fooled": 61,
+            "eligible": 81,
+            "success_pct": 75.30864197530865
+          },
+          "pgd_stronger@1": {
+            "fooled": 75,
+            "eligible": 81,
+            "success_pct": 92.5925925925926
+          },
+          "random@2": {
+            "fooled": 2,
+            "eligible": 81,
+            "success_pct": 2.4691358024691357
+          },
+          "fgsm@2": {
+            "fooled": 39,
+            "eligible": 81,
+            "success_pct": 48.148148148148145
+          },
+          "pgd@2": {
+            "fooled": 73,
+            "eligible": 81,
+            "success_pct": 90.12345679012346
+          },
+          "random@4": {
+            "fooled": 5,
+            "eligible": 81,
+            "success_pct": 6.172839506172839
+          },
+          "fgsm@4": {
+            "fooled": 41,
+            "eligible": 81,
+            "success_pct": 50.617283950617285
+          },
+          "pgd@4": {
+            "fooled": 78,
+            "eligible": 81,
+            "success_pct": 96.29629629629629
+          },
+          "square@4": {
+            "fooled": 18,
+            "eligible": 81,
+            "success_pct": 22.22222222222222
+          },
+          "random@8": {
+            "fooled": 4,
+            "eligible": 81,
+            "success_pct": 4.938271604938271
+          },
+          "fgsm@8": {
+            "fooled": 41,
+            "eligible": 81,
+            "success_pct": 50.617283950617285
+          },
+          "pgd@8": {
+            "fooled": 81,
+            "eligible": 81,
+            "success_pct": 100.0
+          },
+          "square@8": {
+            "fooled": 33,
+            "eligible": 81,
+            "success_pct": 40.74074074074074
+          },
+          "transfer_fp32_fgsm@1": {
+            "fooled": 39,
+            "eligible": 81,
+            "success_pct": 48.148148148148145
+          },
+          "transfer_fp32_pgd@1": {
+            "fooled": 60,
+            "eligible": 81,
+            "success_pct": 74.07407407407408
+          },
+          "transfer_fp32_fgsm@2": {
+            "fooled": 40,
+            "eligible": 81,
+            "success_pct": 49.382716049382715
+          },
+          "transfer_fp32_pgd@2": {
+            "fooled": 68,
+            "eligible": 81,
+            "success_pct": 83.95061728395062
+          },
+          "transfer_fp32_fgsm@4": {
+            "fooled": 40,
+            "eligible": 81,
+            "success_pct": 49.382716049382715
+          },
+          "transfer_fp32_pgd@4": {
+            "fooled": 78,
+            "eligible": 81,
+            "success_pct": 96.29629629629629
+          },
+          "transfer_fp32_fgsm@8": {
+            "fooled": 41,
+            "eligible": 81,
+            "success_pct": 50.617283950617285
+          },
+          "transfer_fp32_pgd@8": {
+            "fooled": 81,
+            "eligible": 81,
+            "success_pct": 100.0
+          }
+        },
+        "engine_precision_evidence": {
+          "inspector_schema": "TensorRT 11 Constants/Datatype",
+          "constant_datatypes": {
+            "Half": 82,
+            "Float": 140,
+            "FP8": 53
+          },
+          "convolution_input_datatypes": {
+            "Float": 1,
+            "Half": 5,
+            "FP8": 57
+          },
+          "convolution_layer_count": 59
+        },
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "resnet_trt_int4",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT INT4 (classifier)",
+      "clean_correct": 84,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 43,
+          "eligible": 84,
+          "success_pct": 51.19047619047619,
+          "wilson95_pct": [
+            40.68518288999884,
+            61.591646328061465
+          ]
+        },
+        "pgd@1": {
+          "fooled": 70,
+          "eligible": 84,
+          "success_pct": 83.33333333333333,
+          "wilson95_pct": [
+            73.9469602546601,
+            89.80425785102926
+          ]
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 84,
+          "success_pct": 98.80952380952381,
+          "wilson95_pct": [
+            93.5604562492286,
+            99.78954169124508
+          ]
+        },
+        "square@4": {
+          "fooled": 36,
+          "eligible": 84,
+          "success_pct": 42.857142857142854,
+          "wilson95_pct": [
+            32.81597743735877,
+            53.52304725427922
+          ]
+        },
+        "square@8": {
+          "fooled": 56,
+          "eligible": 84,
+          "success_pct": 66.66666666666667,
+          "wilson95_pct": [
+            56.05282305356535,
+            75.8227859992793
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 76,
+          "eligible": 84,
+          "success_pct": 90.47619047619048,
+          "wilson95_pct": [
+            82.31736440500728,
+            95.09482900904406
+          ]
+        }
+      },
+      "source_sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+      "runtime": {
+        "runtime": "native TensorRT",
+        "version": "11.3.0.99",
+        "provider": "CUDA device 0",
+        "cpu_fallback": false,
+        "static_batch": 1,
+        "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_int4/engine.plan",
+        "engine_sha256": "89c80d4b1ae4bef18bf55f42851f58da264a711d315677da7cd931042df48f59",
+        "convolution_weight_types": {},
+        "tf32": false,
+        "build_or_load_seconds": 6.529096603393555,
+        "input_dtype": "torch.float32",
+        "output_dtype": "torch.float32"
+      },
+      "validation": {
+        "arm": "resnet_trt_int4",
+        "ok": true,
+        "conditions": 23,
+        "rows_reconciled": 2300,
+        "native_replayed_images": 2300,
+        "complete_native_replay": true,
+        "source_sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+        "metrics": {
+          "random@1": {
+            "fooled": 1,
+            "eligible": 84,
+            "success_pct": 1.1904761904761905
+          },
+          "fgsm@1": {
+            "fooled": 43,
+            "eligible": 84,
+            "success_pct": 51.19047619047619
+          },
+          "pgd@1": {
+            "fooled": 70,
+            "eligible": 84,
+            "success_pct": 83.33333333333333
+          },
+          "pgd_stronger@1": {
+            "fooled": 76,
+            "eligible": 84,
+            "success_pct": 90.47619047619048
+          },
+          "random@2": {
+            "fooled": 4,
+            "eligible": 84,
+            "success_pct": 4.761904761904762
+          },
+          "fgsm@2": {
+            "fooled": 44,
+            "eligible": 84,
+            "success_pct": 52.38095238095238
+          },
+          "pgd@2": {
+            "fooled": 75,
+            "eligible": 84,
+            "success_pct": 89.28571428571429
+          },
+          "random@4": {
+            "fooled": 3,
+            "eligible": 84,
+            "success_pct": 3.5714285714285716
+          },
+          "fgsm@4": {
+            "fooled": 43,
+            "eligible": 84,
+            "success_pct": 51.19047619047619
+          },
+          "pgd@4": {
+            "fooled": 81,
+            "eligible": 84,
+            "success_pct": 96.42857142857143
+          },
+          "square@4": {
+            "fooled": 36,
+            "eligible": 84,
+            "success_pct": 42.857142857142854
+          },
+          "random@8": {
+            "fooled": 5,
+            "eligible": 84,
+            "success_pct": 5.9523809523809526
+          },
+          "fgsm@8": {
+            "fooled": 44,
+            "eligible": 84,
+            "success_pct": 52.38095238095238
+          },
+          "pgd@8": {
+            "fooled": 83,
+            "eligible": 84,
+            "success_pct": 98.80952380952381
+          },
+          "square@8": {
+            "fooled": 56,
+            "eligible": 84,
+            "success_pct": 66.66666666666667
+          },
+          "transfer_fp32_fgsm@1": {
+            "fooled": 43,
+            "eligible": 84,
+            "success_pct": 51.19047619047619
+          },
+          "transfer_fp32_pgd@1": {
+            "fooled": 68,
+            "eligible": 84,
+            "success_pct": 80.95238095238095
+          },
+          "transfer_fp32_fgsm@2": {
+            "fooled": 44,
+            "eligible": 84,
+            "success_pct": 52.38095238095238
+          },
+          "transfer_fp32_pgd@2": {
+            "fooled": 75,
+            "eligible": 84,
+            "success_pct": 89.28571428571429
+          },
+          "transfer_fp32_fgsm@4": {
+            "fooled": 43,
+            "eligible": 84,
+            "success_pct": 51.19047619047619
+          },
+          "transfer_fp32_pgd@4": {
+            "fooled": 81,
+            "eligible": 84,
+            "success_pct": 96.42857142857143
+          },
+          "transfer_fp32_fgsm@8": {
+            "fooled": 44,
+            "eligible": 84,
+            "success_pct": 52.38095238095238
+          },
+          "transfer_fp32_pgd@8": {
+            "fooled": 84,
+            "eligible": 84,
+            "success_pct": 100.0
+          }
+        },
+        "engine_precision_evidence": {
+          "inspector_schema": "TensorRT 11 Constants/Datatype",
+          "constant_datatypes": {
+            "Float": 229,
+            "Int4": 1
+          },
+          "convolution_input_datatypes": {
+            "Float": 69
+          },
+          "convolution_layer_count": 53,
+          "int4_classifier_stored_parameters": 2048000
+        },
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    },
+    {
+      "arm": "resnet_tflite_int8",
+      "family": "ResNetV2-50",
+      "deployment": "TFLite INT8 \u00b7 CPU",
+      "clean_correct": 81,
+      "population_n": 100,
+      "conditions": {
+        "fgsm@1": {
+          "fooled": 32,
+          "eligible": 81,
+          "success_pct": 39.50617283950617,
+          "effective_uint8_linf_max": 1,
+          "wilson95_pct": [
+            29.568103807990187,
+            50.39452267639383
+          ]
+        },
+        "pgd@1": {
+          "fooled": 53,
+          "eligible": 81,
+          "success_pct": 65.4320987654321,
+          "effective_uint8_linf_max": 1,
+          "wilson95_pct": [
+            54.58937528984923,
+            74.87735046840956
+          ]
+        },
+        "pgd@8": {
+          "fooled": 80,
+          "eligible": 81,
+          "success_pct": 98.76543209876543,
+          "effective_uint8_linf_max": 8,
+          "wilson95_pct": [
+            93.33311840195164,
+            99.7817349941461
+          ]
+        },
+        "square@4": {
+          "fooled": 24,
+          "eligible": 81,
+          "success_pct": 29.62962962962963,
+          "effective_uint8_linf_max": 4,
+          "wilson95_pct": [
+            20.791957048345946,
+            40.31196495075244
+          ]
+        },
+        "square@8": {
+          "fooled": 35,
+          "eligible": 81,
+          "success_pct": 43.20987654320987,
+          "effective_uint8_linf_max": 8,
+          "wilson95_pct": [
+            32.972077141341074,
+            54.062563525025034
+          ]
+        },
+        "pgd_stronger@1": {
+          "fooled": 59,
+          "eligible": 81,
+          "success_pct": 72.8395061728395,
+          "effective_uint8_linf_max": 1,
+          "wilson95_pct": [
+            62.28457676019475,
+            81.32617736202826
+          ]
+        }
+      },
+      "source_sha256": "4c835882627bf4cf32c24ccf2836282047cc59924d2a9cb3af94604ebec560da",
+      "runtime": {
+        "runtime": "TFLite INT8 CPU",
+        "backend": "cpu",
+        "model": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc.tflite",
+        "model_bytes": 26290080,
+        "tensorflow": "2.19.1",
+        "input": {
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "uint8",
+          "scale": 0.003921568859368563,
+          "zero_point": 0,
+          "quantized": true
+        },
+        "output": {
+          "shape": [
+            1,
+            1000
+          ],
+          "dtype": "uint8",
+          "scale": 0.10331345349550247,
+          "zero_point": 203,
+          "quantized": true
+        },
+        "harness_normalization": {
+          "baked_into": "stem conv",
+          "mean": [
+            0.48500001430511475,
+            0.4560000002384186,
+            0.4059999883174896
+          ],
+          "std": [
+            0.2290000021457672,
+            0.2240000069141388,
+            0.22499999403953552
+          ],
+          "caller_contract": "pass pixel-space [0,1] tensors, unnormalized"
+        },
+        "gradients": false,
+        "parallel_interpreters": 8,
+        "wrapper_sha256": "0acac53bb8893f5b7ef8569f70ee35cf9503e5caa7bc997042b897c6f4d798cc",
+        "parallel_order_preserved": true,
+        "cpu_fallback": false,
+        "serial_parallel_logits_bit_identical": true
+      },
+      "validation": {
+        "arm": "resnet_tflite_int8",
+        "ok": true,
+        "conditions": 23,
+        "rows_reconciled": 2300,
+        "native_replayed_images": 2300,
+        "complete_native_replay": true,
+        "source_sha256": "4c835882627bf4cf32c24ccf2836282047cc59924d2a9cb3af94604ebec560da",
+        "metrics": {
+          "random@1": {
+            "fooled": 2,
+            "eligible": 81,
+            "success_pct": 2.4691358024691357,
+            "effective_uint8_linf_max": 1
+          },
+          "fgsm@1": {
+            "fooled": 32,
+            "eligible": 81,
+            "success_pct": 39.50617283950617,
+            "effective_uint8_linf_max": 1
+          },
+          "pgd@1": {
+            "fooled": 53,
+            "eligible": 81,
+            "success_pct": 65.4320987654321,
+            "effective_uint8_linf_max": 1
+          },
+          "pgd_stronger@1": {
+            "fooled": 59,
+            "eligible": 81,
+            "success_pct": 72.8395061728395,
+            "effective_uint8_linf_max": 1
+          },
+          "random@2": {
+            "fooled": 1,
+            "eligible": 81,
+            "success_pct": 1.2345679012345678,
+            "effective_uint8_linf_max": 2
+          },
+          "fgsm@2": {
+            "fooled": 35,
+            "eligible": 81,
+            "success_pct": 43.20987654320987,
+            "effective_uint8_linf_max": 2
+          },
+          "pgd@2": {
+            "fooled": 61,
+            "eligible": 81,
+            "success_pct": 75.30864197530865,
+            "effective_uint8_linf_max": 2
+          },
+          "random@4": {
+            "fooled": 4,
+            "eligible": 81,
+            "success_pct": 4.938271604938271,
+            "effective_uint8_linf_max": 4
+          },
+          "fgsm@4": {
+            "fooled": 37,
+            "eligible": 81,
+            "success_pct": 45.67901234567901,
+            "effective_uint8_linf_max": 4
+          },
+          "pgd@4": {
+            "fooled": 73,
+            "eligible": 81,
+            "success_pct": 90.12345679012346,
+            "effective_uint8_linf_max": 4
+          },
+          "square@4": {
+            "fooled": 24,
+            "eligible": 81,
+            "success_pct": 29.62962962962963,
+            "effective_uint8_linf_max": 4
+          },
+          "random@8": {
+            "fooled": 7,
+            "eligible": 81,
+            "success_pct": 8.641975308641975,
+            "effective_uint8_linf_max": 8
+          },
+          "fgsm@8": {
+            "fooled": 39,
+            "eligible": 81,
+            "success_pct": 48.148148148148145,
+            "effective_uint8_linf_max": 8
+          },
+          "pgd@8": {
+            "fooled": 80,
+            "eligible": 81,
+            "success_pct": 98.76543209876543,
+            "effective_uint8_linf_max": 8
+          },
+          "square@8": {
+            "fooled": 35,
+            "eligible": 81,
+            "success_pct": 43.20987654320987,
+            "effective_uint8_linf_max": 8
+          },
+          "transfer_fp32_fgsm@1": {
+            "fooled": 32,
+            "eligible": 81,
+            "success_pct": 39.50617283950617,
+            "effective_uint8_linf_max": 1
+          },
+          "transfer_fp32_pgd@1": {
+            "fooled": 48,
+            "eligible": 81,
+            "success_pct": 59.25925925925926,
+            "effective_uint8_linf_max": 1
+          },
+          "transfer_fp32_fgsm@2": {
+            "fooled": 37,
+            "eligible": 81,
+            "success_pct": 45.67901234567901,
+            "effective_uint8_linf_max": 2
+          },
+          "transfer_fp32_pgd@2": {
+            "fooled": 57,
+            "eligible": 81,
+            "success_pct": 70.37037037037037,
+            "effective_uint8_linf_max": 2
+          },
+          "transfer_fp32_fgsm@4": {
+            "fooled": 38,
+            "eligible": 81,
+            "success_pct": 46.91358024691358,
+            "effective_uint8_linf_max": 4
+          },
+          "transfer_fp32_pgd@4": {
+            "fooled": 71,
+            "eligible": 81,
+            "success_pct": 87.65432098765432,
+            "effective_uint8_linf_max": 4
+          },
+          "transfer_fp32_fgsm@8": {
+            "fooled": 41,
+            "eligible": 81,
+            "success_pct": 50.617283950617285,
+            "effective_uint8_linf_max": 8
+          },
+          "transfer_fp32_pgd@8": {
+            "fooled": 81,
+            "eligible": 81,
+            "success_pct": 100.0,
+            "effective_uint8_linf_max": 8
+          }
+        },
+        "engine_precision_evidence": null,
+        "checks": [
+          "sample hashes and labels",
+          "unique complete condition rows",
+          "all tensor bounds and finite pixels",
+          "saved logits/count/CSV agreement",
+          "Square query cap and totals",
+          "PGD+ retains successes",
+          "replica gate",
+          "runtime provider/precision evidence",
+          "source and implementation hashes"
+        ]
+      }
+    }
+  ],
+  "shared": {
+    "MobileNetV2": {
+      "n": 80,
+      "scope": "Only the new deployments in this campaign; not the original all-runtime intersection",
+      "arms": {
+        "mobile_ort_fp32": {
+          "fgsm@1": {
+            "fooled": 73,
+            "eligible": 80
+          },
+          "pgd@1": {
+            "fooled": 80,
+            "eligible": 80
+          },
+          "pgd@8": {
+            "fooled": 80,
+            "eligible": 80
+          },
+          "square@4": {
+            "fooled": 35,
+            "eligible": 80
+          },
+          "square@8": {
+            "fooled": 68,
+            "eligible": 80
+          },
+          "pgd_stronger@1": {
+            "fooled": 80,
+            "eligible": 80
+          }
+        },
+        "mobile_ort_fp16": {
+          "fgsm@1": {
+            "fooled": 71,
+            "eligible": 80
+          },
+          "pgd@1": {
+            "fooled": 80,
+            "eligible": 80
+          },
+          "pgd@8": {
+            "fooled": 80,
+            "eligible": 80
+          },
+          "square@4": {
+            "fooled": 30,
+            "eligible": 80
+          },
+          "square@8": {
+            "fooled": 67,
+            "eligible": 80
+          },
+          "pgd_stronger@1": {
+            "fooled": 80,
+            "eligible": 80
+          }
+        },
+        "mobile_ort_int8": {
+          "fgsm@1": {
+            "fooled": 67,
+            "eligible": 80
+          },
+          "pgd@1": {
+            "fooled": 80,
+            "eligible": 80
+          },
+          "pgd@8": {
+            "fooled": 80,
+            "eligible": 80
+          },
+          "square@4": {
+            "fooled": 24,
+            "eligible": 80
+          },
+          "square@8": {
+            "fooled": 42,
+            "eligible": 80
+          },
+          "pgd_stronger@1": {
+            "fooled": 80,
+            "eligible": 80
+          }
+        }
+      }
+    },
+    "ResNetV2-50": {
+      "n": 73,
+      "scope": "Only the new deployments in this campaign; not the original all-runtime intersection",
+      "arms": {
+        "resnet_trt_fp32": {
+          "fgsm@1": {
+            "fooled": 33,
+            "eligible": 73
+          },
+          "pgd@1": {
+            "fooled": 57,
+            "eligible": 73
+          },
+          "pgd@8": {
+            "fooled": 73,
+            "eligible": 73
+          },
+          "square@4": {
+            "fooled": 28,
+            "eligible": 73
+          },
+          "square@8": {
+            "fooled": 41,
+            "eligible": 73
+          },
+          "pgd_stronger@1": {
+            "fooled": 65,
+            "eligible": 73
+          }
+        },
+        "resnet_trt_fp16": {
+          "fgsm@1": {
+            "fooled": 33,
+            "eligible": 73
+          },
+          "pgd@1": {
+            "fooled": 58,
+            "eligible": 73
+          },
+          "pgd@8": {
+            "fooled": 73,
+            "eligible": 73
+          },
+          "square@4": {
+            "fooled": 22,
+            "eligible": 73
+          },
+          "square@8": {
+            "fooled": 41,
+            "eligible": 73
+          },
+          "pgd_stronger@1": {
+            "fooled": 66,
+            "eligible": 73
+          }
+        },
+        "resnet_trt_fp8": {
+          "fgsm@1": {
+            "fooled": 31,
+            "eligible": 73
+          },
+          "pgd@1": {
+            "fooled": 53,
+            "eligible": 73
+          },
+          "pgd@8": {
+            "fooled": 73,
+            "eligible": 73
+          },
+          "square@4": {
+            "fooled": 12,
+            "eligible": 73
+          },
+          "square@8": {
+            "fooled": 26,
+            "eligible": 73
+          },
+          "pgd_stronger@1": {
+            "fooled": 67,
+            "eligible": 73
+          }
+        },
+        "resnet_trt_int4": {
+          "fgsm@1": {
+            "fooled": 32,
+            "eligible": 73
+          },
+          "pgd@1": {
+            "fooled": 59,
+            "eligible": 73
+          },
+          "pgd@8": {
+            "fooled": 72,
+            "eligible": 73
+          },
+          "square@4": {
+            "fooled": 25,
+            "eligible": 73
+          },
+          "square@8": {
+            "fooled": 45,
+            "eligible": 73
+          },
+          "pgd_stronger@1": {
+            "fooled": 65,
+            "eligible": 73
+          }
+        },
+        "resnet_tflite_int8": {
+          "fgsm@1": {
+            "fooled": 24,
+            "eligible": 73
+          },
+          "pgd@1": {
+            "fooled": 45,
+            "eligible": 73
+          },
+          "pgd@8": {
+            "fooled": 72,
+            "eligible": 73
+          },
+          "square@4": {
+            "fooled": 17,
+            "eligible": 73
+          },
+          "square@8": {
+            "fooled": 27,
+            "eligible": 73
+          },
+          "pgd_stronger@1": {
+            "fooled": 51,
+            "eligible": 73
+          }
+        }
+      }
+    }
+  }
+}

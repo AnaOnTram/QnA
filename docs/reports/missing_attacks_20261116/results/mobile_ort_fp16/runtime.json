@@ -1,0 +1,19 @@
+{
+  "runtime": "ONNX Runtime",
+  "version": "1.24.4",
+  "requested_provider": "CUDAExecutionProvider",
+  "registered_providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "input_type": "tensor(float)",
+  "tf32": false,
+  "profile": "/home/ross/QA/experiments/missing_attacks_20261116/results/mobile_ort_fp16/ort_profile_2026-11-16_10-26-35.json",
+  "executed_node_providers": {
+    "CUDAExecutionProvider": 1020
+  },
+  "compute_kernels": {
+    "CUDAExecutionProvider:Conv": 520,
+    "CUDAExecutionProvider:Gemm": 10
+  }
+}

@@ -19,3 +19,8 @@
 | [Core ML INT8 CPU](../resnetv2_50/evasion_coreml/results/int8_cpu_only/summary.json) | 81 | 37/81 (45.7%) | 63/81 (77.8%) | 75/81 (92.6%) | 80/81 (98.8%) | 24/81 (29.6%) | 43/81 (53.1%) |
 | [Core ML INT8 CPU+GPU](../resnetv2_50/evasion_coreml/results/int8_cpu_and_gpu/summary.json) | 81 | 38/81 (46.9%) | 67/81 (82.7%) | 75/81 (92.6%) | 80/81 (98.8%) | 31/81 (38.3%) | 46/81 (56.8%) |
 | [Core ML INT8 CPU+NE](../resnetv2_50/evasion_coreml/results/int8_cpu_and_ne/summary.json) | 81 | 38/81 (46.9%) | 65/81 (80.2%) | 74/81 (91.4%) | 81/81 (100.0%) | 28/81 (34.6%) | 49/81 (60.5%) |
+| [TensorRT FP32](../missing_attacks_20261116/results/resnet_trt_fp32/summary.json) | 81 | 41/81 (50.6%) | 65/81 (80.2%) | 73/81 (90.1%) | 81/81 (100.0%) | 36/81 (44.4%) | 49/81 (60.5%) |
+| [TensorRT FP16](../missing_attacks_20261116/results/resnet_trt_fp16/summary.json) | 82 | 42/82 (51.2%) | 67/82 (81.7%) | 75/82 (91.5%) | 82/82 (100.0%) | 31/82 (37.8%) | 50/82 (61.0%) |
+| [TensorRT FP8](../missing_attacks_20261116/results/resnet_trt_fp8/summary.json) | 81 | 39/81 (48.1%) | 61/81 (75.3%) | 75/81 (92.6%) | 81/81 (100.0%) | 18/81 (22.2%) | 33/81 (40.7%) |
+| [TensorRT INT4](../missing_attacks_20261116/results/resnet_trt_int4/summary.json) | 84 | 43/84 (51.2%) | 70/84 (83.3%) | 76/84 (90.5%) | 83/84 (98.8%) | 36/84 (42.9%) | 56/84 (66.7%) |
+| [TFLite CPU INT8](../missing_attacks_20261116/results/resnet_tflite_int8/summary.json) | 81 | 32/81 (39.5%) | 53/81 (65.4%) | 59/81 (72.8%) | 80/81 (98.8%) | 24/81 (29.6%) | 35/81 (43.2%) |

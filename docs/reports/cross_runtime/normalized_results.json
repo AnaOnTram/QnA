@@ -9707,6 +9707,1942 @@
           "robust_accuracy_pct": 0
         }
       }
+    },
+    {
+      "model": "mobilenetv2",
+      "family": "MobileNetV2",
+      "deployment": "ORT CUDA FP32",
+      "clean_correct": 83,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/mobile_ort_fp32/summary.json",
+      "source_sha256": "1800d1765e44b5a4fea0e5720d49b79604aac0f3f6d40aaab78699f9331f0f8b",
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "eligible": 83,
+          "success_pct": 1.2048192771084338,
+          "wilson95_pct": [
+            0.21299774281082692,
+            6.513580668032404
+          ],
+          "robust_correct": 82,
+          "robust_accuracy_pct": 82
+        },
+        "fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "random@2": {
+          "fooled": 0,
+          "eligible": 83,
+          "success_pct": 0.0,
+          "wilson95_pct": [
+            3.469446951953614e-16,
+            4.423530964197385
+          ],
+          "robust_correct": 83,
+          "robust_accuracy_pct": 83
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "eligible": 83,
+          "success_pct": 92.7710843373494,
+          "wilson95_pct": [
+            85.11321390822681,
+            96.64497044770073
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "random@4": {
+          "fooled": 1,
+          "eligible": 83,
+          "success_pct": 1.2048192771084338,
+          "wilson95_pct": [
+            0.21299774281082692,
+            6.513580668032404
+          ],
+          "robust_correct": 82,
+          "robust_accuracy_pct": 82
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "eligible": 83,
+          "success_pct": 96.3855421686747,
+          "wilson95_pct": [
+            89.90410702303961,
+            98.76321967282547
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 38,
+          "eligible": 83,
+          "success_pct": 45.78313253012048,
+          "wilson95_pct": [
+            35.48937698207064,
+            56.44995695466891
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        },
+        "random@8": {
+          "fooled": 1,
+          "eligible": 83,
+          "success_pct": 1.2048192771084338,
+          "wilson95_pct": [
+            0.21299774281082692,
+            6.513580668032404
+          ],
+          "robust_correct": 82,
+          "robust_accuracy_pct": 82
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "eligible": 83,
+          "success_pct": 95.18072289156626,
+          "wilson95_pct": [
+            88.25414079954847,
+            98.11013844967077
+          ],
+          "robust_correct": 4,
+          "robust_accuracy_pct": 4
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@8": {
+          "fooled": 71,
+          "eligible": 83,
+          "success_pct": 85.5421686746988,
+          "wilson95_pct": [
+            76.40819877833326,
+            91.53170089771919
+          ],
+          "robust_correct": 12,
+          "robust_accuracy_pct": 12
+        }
+      }
+    },
+    {
+      "model": "mobilenetv2",
+      "family": "MobileNetV2",
+      "deployment": "ORT CUDA FP16",
+      "clean_correct": 83,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/mobile_ort_fp16/summary.json",
+      "source_sha256": "a145a395d3c154955d8985b9fdcdf21e288c36716f2192954f02064548415cf6",
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "eligible": 83,
+          "success_pct": 1.2048192771084338,
+          "wilson95_pct": [
+            0.21299774281082692,
+            6.513580668032404
+          ],
+          "robust_correct": 82,
+          "robust_accuracy_pct": 82
+        },
+        "fgsm@1": {
+          "fooled": 74,
+          "eligible": 83,
+          "success_pct": 89.1566265060241,
+          "wilson95_pct": [
+            80.65953353528812,
+            94.18950848070189
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "random@2": {
+          "fooled": 0,
+          "eligible": 83,
+          "success_pct": 0.0,
+          "wilson95_pct": [
+            3.469446951953614e-16,
+            4.423530964197385
+          ],
+          "robust_correct": 83,
+          "robust_accuracy_pct": 83
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "eligible": 83,
+          "success_pct": 92.7710843373494,
+          "wilson95_pct": [
+            85.11321390822681,
+            96.64497044770073
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "pgd@2": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "random@4": {
+          "fooled": 0,
+          "eligible": 83,
+          "success_pct": 0.0,
+          "wilson95_pct": [
+            3.469446951953614e-16,
+            4.423530964197385
+          ],
+          "robust_correct": 83,
+          "robust_accuracy_pct": 83
+        },
+        "fgsm@4": {
+          "fooled": 80,
+          "eligible": 83,
+          "success_pct": 96.3855421686747,
+          "wilson95_pct": [
+            89.90410702303961,
+            98.76321967282547
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "pgd@4": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 33,
+          "eligible": 83,
+          "success_pct": 39.75903614457831,
+          "wilson95_pct": [
+            29.90893171041682,
+            50.5151649930935
+          ],
+          "robust_correct": 50,
+          "robust_accuracy_pct": 50
+        },
+        "random@8": {
+          "fooled": 1,
+          "eligible": 83,
+          "success_pct": 1.2048192771084338,
+          "wilson95_pct": [
+            0.21299774281082692,
+            6.513580668032404
+          ],
+          "robust_correct": 82,
+          "robust_accuracy_pct": 82
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "eligible": 83,
+          "success_pct": 95.18072289156626,
+          "wilson95_pct": [
+            88.25414079954847,
+            98.11013844967077
+          ],
+          "robust_correct": 4,
+          "robust_accuracy_pct": 4
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@8": {
+          "fooled": 70,
+          "eligible": 83,
+          "success_pct": 84.33734939759036,
+          "wilson95_pct": [
+            75.02486450452768,
+            90.61198772487894
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 76,
+          "eligible": 83,
+          "success_pct": 91.56626506024097,
+          "wilson95_pct": [
+            83.60047054138369,
+            95.854666367898
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 77,
+          "eligible": 83,
+          "success_pct": 92.7710843373494,
+          "wilson95_pct": [
+            85.11321390822681,
+            96.64497044770073
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 80,
+          "eligible": 83,
+          "success_pct": 96.3855421686747,
+          "wilson95_pct": [
+            89.90410702303961,
+            98.76321967282547
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 79,
+          "eligible": 83,
+          "success_pct": 95.18072289156626,
+          "wilson95_pct": [
+            88.25414079954847,
+            98.11013844967077
+          ],
+          "robust_correct": 4,
+          "robust_accuracy_pct": 4
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 83,
+          "eligible": 83,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.57646903580263,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        }
+      }
+    },
+    {
+      "model": "mobilenetv2",
+      "family": "MobileNetV2",
+      "deployment": "ORT CPU INT8 QOperator",
+      "clean_correct": 82,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/mobile_ort_int8/summary.json",
+      "source_sha256": "878c3b754e8a8bbf25e102c2adb409776d45ed9255f47e1fdf4e5864e3a51f30",
+      "conditions": {
+        "random@1": {
+          "fooled": 4,
+          "eligible": 82,
+          "success_pct": 4.878048780487805,
+          "wilson95_pct": [
+            1.9131065567745804,
+            11.881461922575939
+          ],
+          "robust_correct": 78,
+          "robust_accuracy_pct": 78
+        },
+        "fgsm@1": {
+          "fooled": 69,
+          "eligible": 82,
+          "success_pct": 84.14634146341463,
+          "wilson95_pct": [
+            74.74213307168286,
+            90.49440970070054
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        },
+        "pgd@1": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "pgd_stronger@1": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "random@2": {
+          "fooled": 4,
+          "eligible": 82,
+          "success_pct": 4.878048780487805,
+          "wilson95_pct": [
+            1.9131065567745804,
+            11.881461922575939
+          ],
+          "robust_correct": 78,
+          "robust_accuracy_pct": 78
+        },
+        "fgsm@2": {
+          "fooled": 77,
+          "eligible": 82,
+          "success_pct": 93.90243902439025,
+          "wilson95_pct": [
+            86.50795049984596,
+            97.3676044932184
+          ],
+          "robust_correct": 5,
+          "robust_accuracy_pct": 5
+        },
+        "pgd@2": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "random@4": {
+          "fooled": 1,
+          "eligible": 82,
+          "success_pct": 1.2195121951219512,
+          "wilson95_pct": [
+            0.2155992081812344,
+            6.58933968841392
+          ],
+          "robust_correct": 81,
+          "robust_accuracy_pct": 81
+        },
+        "fgsm@4": {
+          "fooled": 77,
+          "eligible": 82,
+          "success_pct": 93.90243902439025,
+          "wilson95_pct": [
+            86.50795049984596,
+            97.3676044932184
+          ],
+          "robust_correct": 5,
+          "robust_accuracy_pct": 5
+        },
+        "pgd@4": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@4": {
+          "fooled": 26,
+          "eligible": 82,
+          "success_pct": 31.70731707317073,
+          "wilson95_pct": [
+            22.64806567040274,
+            42.403786415820456
+          ],
+          "robust_correct": 56,
+          "robust_accuracy_pct": 56
+        },
+        "random@8": {
+          "fooled": 5,
+          "eligible": 82,
+          "success_pct": 6.097560975609756,
+          "wilson95_pct": [
+            2.6323955067816067,
+            13.49204950015403
+          ],
+          "robust_correct": 77,
+          "robust_accuracy_pct": 77
+        },
+        "fgsm@8": {
+          "fooled": 79,
+          "eligible": 82,
+          "success_pct": 96.34146341463415,
+          "wilson95_pct": [
+            89.78726535639152,
+            98.74804269184307
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@8": {
+          "fooled": 44,
+          "eligible": 82,
+          "success_pct": 53.65853658536585,
+          "wilson95_pct": [
+            42.94472560322624,
+            64.04490397952914
+          ],
+          "robust_correct": 38,
+          "robust_accuracy_pct": 38
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 65,
+          "eligible": 82,
+          "success_pct": 79.26829268292683,
+          "wilson95_pct": [
+            69.28342703478701,
+            86.63360962725591
+          ],
+          "robust_correct": 17,
+          "robust_accuracy_pct": 17
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 75,
+          "eligible": 82,
+          "success_pct": 91.46341463414635,
+          "wilson95_pct": [
+            83.41245443721832,
+            95.80334750067581
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 79,
+          "eligible": 82,
+          "success_pct": 96.34146341463415,
+          "wilson95_pct": [
+            89.78726535639152,
+            98.74804269184307
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 78,
+          "eligible": 82,
+          "success_pct": 95.1219512195122,
+          "wilson95_pct": [
+            88.11853807742406,
+            98.08689344322542
+          ],
+          "robust_correct": 4,
+          "robust_accuracy_pct": 4
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        }
+      }
+    },
+    {
+      "model": "resnetv2_50",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT FP32",
+      "clean_correct": 81,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/resnet_trt_fp32/summary.json",
+      "source_sha256": "90d36c052af392403b8f019f2ac2f9a802cd6929d0cdadc16737335ef853795d",
+      "conditions": {
+        "random@1": {
+          "fooled": 0,
+          "eligible": 81,
+          "success_pct": 0.0,
+          "wilson95_pct": [
+            0,
+            4.5278085432415205
+          ],
+          "robust_correct": 81,
+          "robust_accuracy_pct": 81
+        },
+        "fgsm@1": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 65,
+          "eligible": 81,
+          "success_pct": 80.24691358024691,
+          "wilson95_pct": [
+            70.29560930488834,
+            87.45917318129888
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "pgd_stronger@1": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "random@2": {
+          "fooled": 1,
+          "eligible": 81,
+          "success_pct": 1.2345679012345678,
+          "wilson95_pct": [
+            0.21826500585387723,
+            6.666881598048347
+          ],
+          "robust_correct": 80,
+          "robust_accuracy_pct": 80
+        },
+        "fgsm@2": {
+          "fooled": 42,
+          "eligible": 81,
+          "success_pct": 51.851851851851855,
+          "wilson95_pct": [
+            41.13564870387572,
+            62.40035838711533
+          ],
+          "robust_correct": 39,
+          "robust_accuracy_pct": 39
+        },
+        "pgd@2": {
+          "fooled": 72,
+          "eligible": 81,
+          "success_pct": 88.88888888888889,
+          "wilson95_pct": [
+            80.21290531846267,
+            94.04324359234946
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "random@4": {
+          "fooled": 1,
+          "eligible": 81,
+          "success_pct": 1.2345679012345678,
+          "wilson95_pct": [
+            0.21826500585387723,
+            6.666881598048347
+          ],
+          "robust_correct": 80,
+          "robust_accuracy_pct": 80
+        },
+        "fgsm@4": {
+          "fooled": 40,
+          "eligible": 81,
+          "success_pct": 49.382716049382715,
+          "wilson95_pct": [
+            38.772115676987575,
+            60.04921529268207
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@4": {
+          "fooled": 78,
+          "eligible": 81,
+          "success_pct": 96.29629629629629,
+          "wilson95_pct": [
+            89.66768869310617,
+            98.73248858167018
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "square@4": {
+          "fooled": 36,
+          "eligible": 81,
+          "success_pct": 44.44444444444444,
+          "wilson95_pct": [
+            34.119552503457854,
+            55.27242622356897
+          ],
+          "robust_correct": 45,
+          "robust_accuracy_pct": 45
+        },
+        "random@8": {
+          "fooled": 4,
+          "eligible": 81,
+          "success_pct": 4.938271604938271,
+          "wilson95_pct": [
+            1.9369305554033829,
+            12.02023023048095
+          ],
+          "robust_correct": 77,
+          "robust_accuracy_pct": 77
+        },
+        "fgsm@8": {
+          "fooled": 42,
+          "eligible": 81,
+          "success_pct": 51.851851851851855,
+          "wilson95_pct": [
+            41.13564870387572,
+            62.40035838711533
+          ],
+          "robust_correct": 39,
+          "robust_accuracy_pct": 39
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@8": {
+          "fooled": 49,
+          "eligible": 81,
+          "success_pct": 60.49382716049383,
+          "wilson95_pct": [
+            49.60547732360617,
+            70.43189619200982
+          ],
+          "robust_correct": 32,
+          "robust_accuracy_pct": 32
+        }
+      }
+    },
+    {
+      "model": "resnetv2_50",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT FP16",
+      "clean_correct": 82,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/resnet_trt_fp16/summary.json",
+      "source_sha256": "32cd25d8eed2a58e0dac455eafb8b64cd2ebf5d6be050057c95aed0a68b72848",
+      "conditions": {
+        "random@1": {
+          "fooled": 0,
+          "eligible": 82,
+          "success_pct": 0.0,
+          "wilson95_pct": [
+            0,
+            4.475062369010033
+          ],
+          "robust_correct": 82,
+          "robust_accuracy_pct": 82
+        },
+        "fgsm@1": {
+          "fooled": 42,
+          "eligible": 82,
+          "success_pct": 51.21951219512195,
+          "wilson95_pct": [
+            40.59077238820504,
+            61.73910413938009
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@1": {
+          "fooled": 67,
+          "eligible": 82,
+          "success_pct": 81.70731707317073,
+          "wilson95_pct": [
+            71.98781157085605,
+            88.58897814635709
+          ],
+          "robust_correct": 15,
+          "robust_accuracy_pct": 15
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 82,
+          "success_pct": 91.46341463414635,
+          "wilson95_pct": [
+            83.41245443721832,
+            95.80334750067581
+          ],
+          "robust_correct": 7,
+          "robust_accuracy_pct": 7
+        },
+        "random@2": {
+          "fooled": 2,
+          "eligible": 82,
+          "success_pct": 2.4390243902439024,
+          "wilson95_pct": [
+            0.6714370331163357,
+            8.463378391063939
+          ],
+          "robust_correct": 80,
+          "robust_accuracy_pct": 80
+        },
+        "fgsm@2": {
+          "fooled": 43,
+          "eligible": 82,
+          "success_pct": 52.4390243902439,
+          "wilson95_pct": [
+            41.76473297995616,
+            62.89502007521409
+          ],
+          "robust_correct": 39,
+          "robust_accuracy_pct": 39
+        },
+        "pgd@2": {
+          "fooled": 73,
+          "eligible": 82,
+          "success_pct": 89.02439024390245,
+          "wilson95_pct": [
+            80.4387633588628,
+            94.1172855238611
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "random@4": {
+          "fooled": 2,
+          "eligible": 82,
+          "success_pct": 2.4390243902439024,
+          "wilson95_pct": [
+            0.6714370331163357,
+            8.463378391063939
+          ],
+          "robust_correct": 80,
+          "robust_accuracy_pct": 80
+        },
+        "fgsm@4": {
+          "fooled": 41,
+          "eligible": 82,
+          "success_pct": 50.0,
+          "wilson95_pct": [
+            39.422828391991985,
+            60.577171608008015
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@4": {
+          "fooled": 80,
+          "eligible": 82,
+          "success_pct": 97.5609756097561,
+          "wilson95_pct": [
+            91.53662160893606,
+            99.32856296688367
+          ],
+          "robust_correct": 2,
+          "robust_accuracy_pct": 2
+        },
+        "square@4": {
+          "fooled": 31,
+          "eligible": 82,
+          "success_pct": 37.80487804878049,
+          "wilson95_pct": [
+            28.078371592811894,
+            48.6228631313369
+          ],
+          "robust_correct": 51,
+          "robust_accuracy_pct": 51
+        },
+        "random@8": {
+          "fooled": 5,
+          "eligible": 82,
+          "success_pct": 6.097560975609756,
+          "wilson95_pct": [
+            2.6323955067816067,
+            13.49204950015403
+          ],
+          "robust_correct": 77,
+          "robust_accuracy_pct": 77
+        },
+        "fgsm@8": {
+          "fooled": 44,
+          "eligible": 82,
+          "success_pct": 53.65853658536585,
+          "wilson95_pct": [
+            42.94472560322624,
+            64.04490397952914
+          ],
+          "robust_correct": 38,
+          "robust_accuracy_pct": 38
+        },
+        "pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@8": {
+          "fooled": 50,
+          "eligible": 82,
+          "success_pct": 60.97560975609756,
+          "wilson95_pct": [
+            50.15357010815031,
+            70.81531864011576
+          ],
+          "robust_correct": 32,
+          "robust_accuracy_pct": 32
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 42,
+          "eligible": 82,
+          "success_pct": 51.21951219512195,
+          "wilson95_pct": [
+            40.59077238820504,
+            61.73910413938009
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 66,
+          "eligible": 82,
+          "success_pct": 80.48780487804878,
+          "wilson95_pct": [
+            70.62981066280966,
+            87.61710252681839
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 42,
+          "eligible": 82,
+          "success_pct": 51.21951219512195,
+          "wilson95_pct": [
+            40.59077238820504,
+            61.73910413938009
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 73,
+          "eligible": 82,
+          "success_pct": 89.02439024390245,
+          "wilson95_pct": [
+            80.4387633588628,
+            94.1172855238611
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 41,
+          "eligible": 82,
+          "success_pct": 50.0,
+          "wilson95_pct": [
+            39.422828391991985,
+            60.577171608008015
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 79,
+          "eligible": 82,
+          "success_pct": 96.34146341463415,
+          "wilson95_pct": [
+            89.78726535639152,
+            98.74804269184307
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 43,
+          "eligible": 82,
+          "success_pct": 52.4390243902439,
+          "wilson95_pct": [
+            41.76473297995616,
+            62.89502007521409
+          ],
+          "robust_correct": 39,
+          "robust_accuracy_pct": 39
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 82,
+          "eligible": 82,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.52493763098998,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        }
+      }
+    },
+    {
+      "model": "resnetv2_50",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT FP8",
+      "clean_correct": 81,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/resnet_trt_fp8/summary.json",
+      "source_sha256": "5324b89e26d95272f5786aba7630f9705ff4f78dd9b52c545fd1db66ff03e204",
+      "conditions": {
+        "random@1": {
+          "fooled": 2,
+          "eligible": 81,
+          "success_pct": 2.4691358024691357,
+          "wilson95_pct": [
+            0.6797587423664029,
+            8.562725922196524
+          ],
+          "robust_correct": 79,
+          "robust_accuracy_pct": 79
+        },
+        "fgsm@1": {
+          "fooled": 39,
+          "eligible": 81,
+          "success_pct": 48.148148148148145,
+          "wilson95_pct": [
+            37.59964161288465,
+            58.864351296124276
+          ],
+          "robust_correct": 42,
+          "robust_accuracy_pct": 42
+        },
+        "pgd@1": {
+          "fooled": 61,
+          "eligible": 81,
+          "success_pct": 75.30864197530865,
+          "wilson95_pct": [
+            64.91574213226649,
+            83.40968811127793
+          ],
+          "robust_correct": 20,
+          "robust_accuracy_pct": 20
+        },
+        "pgd_stronger@1": {
+          "fooled": 75,
+          "eligible": 81,
+          "success_pct": 92.5925925925926,
+          "wilson95_pct": [
+            84.76712613403235,
+            96.56103695876189
+          ],
+          "robust_correct": 6,
+          "robust_accuracy_pct": 6
+        },
+        "random@2": {
+          "fooled": 2,
+          "eligible": 81,
+          "success_pct": 2.4691358024691357,
+          "wilson95_pct": [
+            0.6797587423664029,
+            8.562725922196524
+          ],
+          "robust_correct": 79,
+          "robust_accuracy_pct": 79
+        },
+        "fgsm@2": {
+          "fooled": 39,
+          "eligible": 81,
+          "success_pct": 48.148148148148145,
+          "wilson95_pct": [
+            37.59964161288465,
+            58.864351296124276
+          ],
+          "robust_correct": 42,
+          "robust_accuracy_pct": 42
+        },
+        "pgd@2": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "random@4": {
+          "fooled": 5,
+          "eligible": 81,
+          "success_pct": 6.172839506172839,
+          "wilson95_pct": [
+            2.665251209702916,
+            13.649247636842118
+          ],
+          "robust_correct": 76,
+          "robust_accuracy_pct": 76
+        },
+        "fgsm@4": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@4": {
+          "fooled": 78,
+          "eligible": 81,
+          "success_pct": 96.29629629629629,
+          "wilson95_pct": [
+            89.66768869310617,
+            98.73248858167018
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "square@4": {
+          "fooled": 18,
+          "eligible": 81,
+          "success_pct": 22.22222222222222,
+          "wilson95_pct": [
+            14.544607404671892,
+            32.41528623046228
+          ],
+          "robust_correct": 63,
+          "robust_accuracy_pct": 63
+        },
+        "random@8": {
+          "fooled": 4,
+          "eligible": 81,
+          "success_pct": 4.938271604938271,
+          "wilson95_pct": [
+            1.9369305554033829,
+            12.02023023048095
+          ],
+          "robust_correct": 77,
+          "robust_accuracy_pct": 77
+        },
+        "fgsm@8": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        },
+        "square@8": {
+          "fooled": 33,
+          "eligible": 81,
+          "success_pct": 40.74074074074074,
+          "wilson95_pct": [
+            30.69627781339348,
+            51.62368673165123
+          ],
+          "robust_correct": 48,
+          "robust_accuracy_pct": 48
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 39,
+          "eligible": 81,
+          "success_pct": 48.148148148148145,
+          "wilson95_pct": [
+            37.59964161288465,
+            58.864351296124276
+          ],
+          "robust_correct": 42,
+          "robust_accuracy_pct": 42
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 60,
+          "eligible": 81,
+          "success_pct": 74.07407407407408,
+          "wilson95_pct": [
+            63.595651117472244,
+            82.37244106541145
+          ],
+          "robust_correct": 21,
+          "robust_accuracy_pct": 21
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 40,
+          "eligible": 81,
+          "success_pct": 49.382716049382715,
+          "wilson95_pct": [
+            38.772115676987575,
+            60.04921529268207
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 68,
+          "eligible": 81,
+          "success_pct": 83.95061728395062,
+          "wilson95_pct": [
+            74.45295089488066,
+            90.37384577328868
+          ],
+          "robust_correct": 13,
+          "robust_accuracy_pct": 13
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 40,
+          "eligible": 81,
+          "success_pct": 49.382716049382715,
+          "wilson95_pct": [
+            38.772115676987575,
+            60.04921529268207
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 78,
+          "eligible": 81,
+          "success_pct": 96.29629629629629,
+          "wilson95_pct": [
+            89.66768869310617,
+            98.73248858167018
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        }
+      }
+    },
+    {
+      "model": "resnetv2_50",
+      "family": "ResNetV2-50",
+      "deployment": "TensorRT INT4",
+      "clean_correct": 84,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/resnet_trt_int4/summary.json",
+      "source_sha256": "c4d79350d4b67d2076802ed7f187dbab9e0b9e5f9678fab2a18c03d07c5ef4f9",
+      "conditions": {
+        "random@1": {
+          "fooled": 1,
+          "eligible": 84,
+          "success_pct": 1.1904761904761905,
+          "wilson95_pct": [
+            0.2104583087549225,
+            6.439543750771399
+          ],
+          "robust_correct": 83,
+          "robust_accuracy_pct": 83
+        },
+        "fgsm@1": {
+          "fooled": 43,
+          "eligible": 84,
+          "success_pct": 51.19047619047619,
+          "wilson95_pct": [
+            40.68518288999884,
+            61.591646328061465
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@1": {
+          "fooled": 70,
+          "eligible": 84,
+          "success_pct": 83.33333333333333,
+          "wilson95_pct": [
+            73.9469602546601,
+            89.80425785102926
+          ],
+          "robust_correct": 14,
+          "robust_accuracy_pct": 14
+        },
+        "pgd_stronger@1": {
+          "fooled": 76,
+          "eligible": 84,
+          "success_pct": 90.47619047619048,
+          "wilson95_pct": [
+            82.31736440500728,
+            95.09482900904406
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "random@2": {
+          "fooled": 4,
+          "eligible": 84,
+          "success_pct": 4.761904761904762,
+          "wilson95_pct": [
+            1.8671746809490055,
+            11.613315032758317
+          ],
+          "robust_correct": 80,
+          "robust_accuracy_pct": 80
+        },
+        "fgsm@2": {
+          "fooled": 44,
+          "eligible": 84,
+          "success_pct": 52.38095238095238,
+          "wilson95_pct": [
+            41.8321056517279,
+            62.72155278439278
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@2": {
+          "fooled": 75,
+          "eligible": 84,
+          "success_pct": 89.28571428571429,
+          "wilson95_pct": [
+            80.87538548365549,
+            94.25997871233551
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "random@4": {
+          "fooled": 3,
+          "eligible": 84,
+          "success_pct": 3.5714285714285716,
+          "wilson95_pct": [
+            1.2219669231335377,
+            9.98169357251345
+          ],
+          "robust_correct": 81,
+          "robust_accuracy_pct": 81
+        },
+        "fgsm@4": {
+          "fooled": 43,
+          "eligible": 84,
+          "success_pct": 51.19047619047619,
+          "wilson95_pct": [
+            40.68518288999884,
+            61.591646328061465
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "pgd@4": {
+          "fooled": 81,
+          "eligible": 84,
+          "success_pct": 96.42857142857143,
+          "wilson95_pct": [
+            90.01830642748655,
+            98.77803307686646
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "square@4": {
+          "fooled": 36,
+          "eligible": 84,
+          "success_pct": 42.857142857142854,
+          "wilson95_pct": [
+            32.81597743735877,
+            53.52304725427922
+          ],
+          "robust_correct": 48,
+          "robust_accuracy_pct": 48
+        },
+        "random@8": {
+          "fooled": 5,
+          "eligible": 84,
+          "success_pct": 5.9523809523809526,
+          "wilson95_pct": [
+            2.569056109149544,
+            13.188262822618114
+          ],
+          "robust_correct": 79,
+          "robust_accuracy_pct": 79
+        },
+        "fgsm@8": {
+          "fooled": 44,
+          "eligible": 84,
+          "success_pct": 52.38095238095238,
+          "wilson95_pct": [
+            41.8321056517279,
+            62.72155278439278
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "pgd@8": {
+          "fooled": 83,
+          "eligible": 84,
+          "success_pct": 98.80952380952381,
+          "wilson95_pct": [
+            93.5604562492286,
+            99.78954169124508
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "square@8": {
+          "fooled": 56,
+          "eligible": 84,
+          "success_pct": 66.66666666666667,
+          "wilson95_pct": [
+            56.05282305356535,
+            75.8227859992793
+          ],
+          "robust_correct": 28,
+          "robust_accuracy_pct": 28
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 43,
+          "eligible": 84,
+          "success_pct": 51.19047619047619,
+          "wilson95_pct": [
+            40.68518288999884,
+            61.591646328061465
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 68,
+          "eligible": 84,
+          "success_pct": 80.95238095238095,
+          "wilson95_pct": [
+            71.27625740629011,
+            87.92130226327856
+          ],
+          "robust_correct": 16,
+          "robust_accuracy_pct": 16
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 44,
+          "eligible": 84,
+          "success_pct": 52.38095238095238,
+          "wilson95_pct": [
+            41.8321056517279,
+            62.72155278439278
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 75,
+          "eligible": 84,
+          "success_pct": 89.28571428571429,
+          "wilson95_pct": [
+            80.87538548365549,
+            94.25997871233551
+          ],
+          "robust_correct": 9,
+          "robust_accuracy_pct": 9
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 43,
+          "eligible": 84,
+          "success_pct": 51.19047619047619,
+          "wilson95_pct": [
+            40.68518288999884,
+            61.591646328061465
+          ],
+          "robust_correct": 41,
+          "robust_accuracy_pct": 41
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 81,
+          "eligible": 84,
+          "success_pct": 96.42857142857143,
+          "wilson95_pct": [
+            90.01830642748655,
+            98.77803307686646
+          ],
+          "robust_correct": 3,
+          "robust_accuracy_pct": 3
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 44,
+          "eligible": 84,
+          "success_pct": 52.38095238095238,
+          "wilson95_pct": [
+            41.8321056517279,
+            62.72155278439278
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 84,
+          "eligible": 84,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.626827158534,
+            99.99999999999999
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        }
+      }
+    },
+    {
+      "model": "resnetv2_50",
+      "family": "ResNetV2-50",
+      "deployment": "TFLite CPU INT8",
+      "clean_correct": 81,
+      "population_n": 100,
+      "source": "missing_attacks_20261116/results/resnet_tflite_int8/summary.json",
+      "source_sha256": "3f66693d78760ccea7d8c59684078d73dc4bb8300b443fb3dbedab944bde156b",
+      "conditions": {
+        "random@1": {
+          "fooled": 2,
+          "eligible": 81,
+          "success_pct": 2.4691358024691357,
+          "wilson95_pct": [
+            0.6797587423664029,
+            8.562725922196524
+          ],
+          "robust_correct": 79,
+          "robust_accuracy_pct": 79
+        },
+        "fgsm@1": {
+          "fooled": 32,
+          "eligible": 81,
+          "success_pct": 39.50617283950617,
+          "wilson95_pct": [
+            29.568103807990187,
+            50.39452267639383
+          ],
+          "robust_correct": 49,
+          "robust_accuracy_pct": 49
+        },
+        "pgd@1": {
+          "fooled": 53,
+          "eligible": 81,
+          "success_pct": 65.4320987654321,
+          "wilson95_pct": [
+            54.58937528984923,
+            74.87735046840956
+          ],
+          "robust_correct": 28,
+          "robust_accuracy_pct": 28
+        },
+        "pgd_stronger@1": {
+          "fooled": 59,
+          "eligible": 81,
+          "success_pct": 72.8395061728395,
+          "wilson95_pct": [
+            62.28457676019475,
+            81.32617736202826
+          ],
+          "robust_correct": 22,
+          "robust_accuracy_pct": 22
+        },
+        "random@2": {
+          "fooled": 1,
+          "eligible": 81,
+          "success_pct": 1.2345679012345678,
+          "wilson95_pct": [
+            0.21826500585387723,
+            6.666881598048347
+          ],
+          "robust_correct": 80,
+          "robust_accuracy_pct": 80
+        },
+        "fgsm@2": {
+          "fooled": 35,
+          "eligible": 81,
+          "success_pct": 43.20987654320987,
+          "wilson95_pct": [
+            32.972077141341074,
+            54.062563525025034
+          ],
+          "robust_correct": 46,
+          "robust_accuracy_pct": 46
+        },
+        "pgd@2": {
+          "fooled": 61,
+          "eligible": 81,
+          "success_pct": 75.30864197530865,
+          "wilson95_pct": [
+            64.91574213226649,
+            83.40968811127793
+          ],
+          "robust_correct": 20,
+          "robust_accuracy_pct": 20
+        },
+        "random@4": {
+          "fooled": 4,
+          "eligible": 81,
+          "success_pct": 4.938271604938271,
+          "wilson95_pct": [
+            1.9369305554033829,
+            12.02023023048095
+          ],
+          "robust_correct": 77,
+          "robust_accuracy_pct": 77
+        },
+        "fgsm@4": {
+          "fooled": 37,
+          "eligible": 81,
+          "success_pct": 45.67901234567901,
+          "wilson95_pct": [
+            35.2733326843646,
+            56.47598410332293
+          ],
+          "robust_correct": 44,
+          "robust_accuracy_pct": 44
+        },
+        "pgd@4": {
+          "fooled": 73,
+          "eligible": 81,
+          "success_pct": 90.12345679012346,
+          "wilson95_pct": [
+            81.70349859835268,
+            94.90998837312017
+          ],
+          "robust_correct": 8,
+          "robust_accuracy_pct": 8
+        },
+        "square@4": {
+          "fooled": 24,
+          "eligible": 81,
+          "success_pct": 29.62962962962963,
+          "wilson95_pct": [
+            20.791957048345946,
+            40.31196495075244
+          ],
+          "robust_correct": 57,
+          "robust_accuracy_pct": 57
+        },
+        "random@8": {
+          "fooled": 7,
+          "eligible": 81,
+          "success_pct": 8.641975308641975,
+          "wilson95_pct": [
+            4.2492583339959245,
+            16.779916633870517
+          ],
+          "robust_correct": 74,
+          "robust_accuracy_pct": 74
+        },
+        "fgsm@8": {
+          "fooled": 39,
+          "eligible": 81,
+          "success_pct": 48.148148148148145,
+          "wilson95_pct": [
+            37.59964161288465,
+            58.864351296124276
+          ],
+          "robust_correct": 42,
+          "robust_accuracy_pct": 42
+        },
+        "pgd@8": {
+          "fooled": 80,
+          "eligible": 81,
+          "success_pct": 98.76543209876543,
+          "wilson95_pct": [
+            93.33311840195164,
+            99.7817349941461
+          ],
+          "robust_correct": 1,
+          "robust_accuracy_pct": 1
+        },
+        "square@8": {
+          "fooled": 35,
+          "eligible": 81,
+          "success_pct": 43.20987654320987,
+          "wilson95_pct": [
+            32.972077141341074,
+            54.062563525025034
+          ],
+          "robust_correct": 46,
+          "robust_accuracy_pct": 46
+        },
+        "transfer_fp32_fgsm@1": {
+          "fooled": 32,
+          "eligible": 81,
+          "success_pct": 39.50617283950617,
+          "wilson95_pct": [
+            29.568103807990187,
+            50.39452267639383
+          ],
+          "robust_correct": 49,
+          "robust_accuracy_pct": 49
+        },
+        "transfer_fp32_pgd@1": {
+          "fooled": 48,
+          "eligible": 81,
+          "success_pct": 59.25925925925926,
+          "wilson95_pct": [
+            48.37631326834876,
+            69.3037221866065
+          ],
+          "robust_correct": 33,
+          "robust_accuracy_pct": 33
+        },
+        "transfer_fp32_fgsm@2": {
+          "fooled": 37,
+          "eligible": 81,
+          "success_pct": 45.67901234567901,
+          "wilson95_pct": [
+            35.2733326843646,
+            56.47598410332293
+          ],
+          "robust_correct": 44,
+          "robust_accuracy_pct": 44
+        },
+        "transfer_fp32_pgd@2": {
+          "fooled": 57,
+          "eligible": 81,
+          "success_pct": 70.37037037037037,
+          "wilson95_pct": [
+            59.68803504924756,
+            79.20804295165405
+          ],
+          "robust_correct": 24,
+          "robust_accuracy_pct": 24
+        },
+        "transfer_fp32_fgsm@4": {
+          "fooled": 38,
+          "eligible": 81,
+          "success_pct": 46.91358024691358,
+          "wilson95_pct": [
+            36.43337335618233,
+            57.6732814921659
+          ],
+          "robust_correct": 43,
+          "robust_accuracy_pct": 43
+        },
+        "transfer_fp32_pgd@4": {
+          "fooled": 71,
+          "eligible": 81,
+          "success_pct": 87.65432098765432,
+          "wilson95_pct": [
+            78.7449267620232,
+            93.15388408812824
+          ],
+          "robust_correct": 10,
+          "robust_accuracy_pct": 10
+        },
+        "transfer_fp32_fgsm@8": {
+          "fooled": 41,
+          "eligible": 81,
+          "success_pct": 50.617283950617285,
+          "wilson95_pct": [
+            39.95078470731793,
+            61.22788432301242
+          ],
+          "robust_correct": 40,
+          "robust_accuracy_pct": 40
+        },
+        "transfer_fp32_pgd@8": {
+          "fooled": 81,
+          "eligible": 81,
+          "success_pct": 100.0,
+          "wilson95_pct": [
+            95.47219145675847,
+            100
+          ],
+          "robust_correct": 0,
+          "robust_accuracy_pct": 0
+        }
+      }
     }
   ]
 }

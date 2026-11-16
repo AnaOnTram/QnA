@@ -1,0 +1,4998 @@
+{"Layers": [{
+  "Name": "__mye3834_myl0_0",
+  "LayerType": "custom_layer",
+  "Inputs": [
+  {
+    "Name": "l2_cache_policy_inputs_0_myl0",
+    "Dimensions": [92160],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_1_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_2_myl0",
+    "Dimensions": [8192],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_3_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_4_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_5_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_6_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_7_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_8_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_9_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_10_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_11_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_12_myl0",
+    "Dimensions": [301056],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_13_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_14_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_15_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_16_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_17_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_18_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_19_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_20_myl0",
+    "Dimensions": [802816],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_21_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_22_myl0",
+    "Dimensions": [1605632],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_23_myl0",
+    "Dimensions": [802816],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_24_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_25_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_26_myl0",
+    "Dimensions": [172032],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_27_myl0",
+    "Dimensions": [4000],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_management_device_0_myl0",
+    "Dimensions": [256],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt64",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_management_host_0_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt64",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [],
+  "TacticName": "",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stem/conv/Conv_myl0_1",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "input",
+    "Dimensions": [1,3,224,224],
+    "Strides": [150528,50176,224,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stem/conv/Conv filterWeightsFloat_myl0",
+    "Dimensions": [64,3,7,7],
+    "Strides": [147,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_2_myl0",
+    "Dimensions": [1,64,112,112],
+    "Strides": [802816,12544,112,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_indexed_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stem/conv/Conv]"
+},{
+  "Name": "__myl_Tran_myl0_2",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_2_myl0",
+    "Dimensions": [1,64,112,112],
+    "Strides": [802816,12544,112,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stem/pool/MaxPool_output_0.1_3_myl0",
+    "Dimensions": [1,64,112,112],
+    "Strides": [802816,1,7168,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0x98aa863e70c51eb3f75ac84e52c40efc",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stem/pool/MaxPool_myl0_3",
+  "LayerType": "maxpool",
+  "Inputs": [
+  {
+    "Name": "/stem/pool/MaxPool_output_0.1_3_myl0",
+    "Dimensions": [1,64,112,112],
+    "Strides": [802816,1,7168,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_4_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm50_xmma_pooling_max_nhwc_FP32FP32_WINDOWSIZE_3_NOT_PROPAGATE_NAN_2D",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stem/pool/MaxPool]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_4",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_4_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/norm1/BatchNormalization/stages/stages.0/blocks/blocks.0/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/norm1/BatchNormalization/stages/stages.0/blocks/blocks.0/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/downsample/conv/Conv_output_0.1_5_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x204225050ecd26a45ec25fa0f5f7d53a",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.0/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.0/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.0/blocks/blocks.0/conv1/Conv + /stages/stages.0/blocks/blocks.0/norm2/BatchNormalization_myl0_5",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/downsample/conv/Conv_output_0.1_5_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2922dconst_myl0",
+    "Dimensions": [64,64,1,1],
+    "Strides": [1,64,64,64],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2927dconst_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,64,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_8_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x64x8_stage3_warpsize1x4x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.0/conv1/Conv]\u001e[ONNX Layer: /stages/stages.0/blocks/blocks.0/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.0/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_6",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_8_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/norm3/act/Relu_output_0.1_9_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1e39b9534f76eb271510b3b03a918213",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.0/blocks/blocks.0/conv2/Conv + /stages/stages.0/blocks/blocks.0/norm3/BatchNormalization_myl0_7",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/norm3/act/Relu_output_0.1_9_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3730_xformed_/stages/stages.0/blocks/blocks.0/conv2/Conv + /stages/stages.0/blocks/blocks.0/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [64,64,3,3],
+    "Strides": [576,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/conv2/Conv + /stages/stages.0/blocks/blocks.0/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/Add_output_0.1_10_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x32x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.0/conv2/Conv]\u001e[ONNX Layer: /stages/stages.0/blocks/blocks.0/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.0/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.0/blocks/blocks.0/downsample/conv/Conv_myl0_8",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/downsample/conv/Conv_output_0.1_5_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2932dconst_myl0",
+    "Dimensions": [256,64,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_6_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x64x8_stage3_warpsize1x4x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.0/downsample/conv/Conv]"
+},{
+  "Name": "__myl_Tran_myl0_9",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_6_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/Add_output_0.1_7_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x9d0d7fc212d7a94a1a28716aa487b098",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.0/blocks/blocks.0/conv3/Conv_myl0_10",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/Add_output_0.1_10_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/Add_output_0.1_7_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.0/conv3/Conv filterWeightsFloat_myl0",
+    "Dimensions": [256,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_11_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.0/conv3/Conv]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.0/Add]"
+},{
+  "Name": "__myl_MulAddMoveRelu_myl0_11",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_11_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/norm1/BatchNormalization/stages/stages.0/blocks/blocks.1/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/norm1/BatchNormalization/stages/stages.0/blocks/blocks.1/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/norm2/act/Relu_output_0.1_12_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddMoveRelu_0xb5269372a99ab74853a54833ead65046",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.1/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.1/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.0/blocks/blocks.1/conv1/Conv + /stages/stages.0/blocks/blocks.1/norm2/BatchNormalization_myl0_12",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/norm2/act/Relu_output_0.1_12_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2937dconst_myl0",
+    "Dimensions": [64,256,1,1],
+    "Strides": [1,64,64,64],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2942dconst_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,64,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_13_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x64x8_stage3_warpsize1x4x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.1/conv1/Conv]\u001e[ONNX Layer: /stages/stages.0/blocks/blocks.1/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.1/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_13",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_13_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/norm3/act/Relu_output_0.1_14_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1e39b9534f76eb271510b3b03a918213",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.0/blocks/blocks.1/conv2/Conv + /stages/stages.0/blocks/blocks.1/norm3/BatchNormalization_myl0_14",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/norm3/act/Relu_output_0.1_14_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3734_xformed_/stages/stages.0/blocks/blocks.1/conv2/Conv + /stages/stages.0/blocks/blocks.1/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [64,64,3,3],
+    "Strides": [576,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/conv2/Conv + /stages/stages.0/blocks/blocks.1/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/Add_output_0.1_15_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x32x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.1/conv2/Conv]\u001e[ONNX Layer: /stages/stages.0/blocks/blocks.1/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.1/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.0/blocks/blocks.1/conv3/Conv_myl0_15",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/Add_output_0.1_15_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_11_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.1/conv3/Conv filterWeightsFloat_myl0",
+    "Dimensions": [256,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_16_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.1/conv3/Conv]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.1/Add]"
+},{
+  "Name": "__myl_MulAddMoveRelu_myl0_16",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_16_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/norm1/BatchNormalization/stages/stages.0/blocks/blocks.2/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/norm1/BatchNormalization/stages/stages.0/blocks/blocks.2/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/norm2/act/Relu_output_0.1_17_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddMoveRelu_0xb5269372a99ab74853a54833ead65046",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.2/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.2/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.0/blocks/blocks.2/conv1/Conv + /stages/stages.0/blocks/blocks.2/norm2/BatchNormalization_myl0_17",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/norm2/act/Relu_output_0.1_17_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2947dconst_myl0",
+    "Dimensions": [64,256,1,1],
+    "Strides": [1,64,64,64],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2952dconst_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,64,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_18_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x64x8_stage3_warpsize1x4x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.2/conv1/Conv]\u001e[ONNX Layer: /stages/stages.0/blocks/blocks.2/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.2/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_18",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_18_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,1,3584,64],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/norm3/act/Relu_output_0.1_19_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1e39b9534f76eb271510b3b03a918213",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.0/blocks/blocks.2/conv2/Conv + /stages/stages.0/blocks/blocks.2/norm3/BatchNormalization_myl0_19",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/norm3/act/Relu_output_0.1_19_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3738_xformed_/stages/stages.0/blocks/blocks.2/conv2/Conv + /stages/stages.0/blocks/blocks.2/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [64,64,3,3],
+    "Strides": [576,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/conv2/Conv + /stages/stages.0/blocks/blocks.2/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/Add_output_0.1_20_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x32x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.2/conv2/Conv]\u001e[ONNX Layer: /stages/stages.0/blocks/blocks.2/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.2/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.0/blocks/blocks.2/conv3/Conv_myl0_20",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/Add_output_0.1_20_myl0",
+    "Dimensions": [1,64,56,56],
+    "Strides": [200704,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_16_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.0/blocks/blocks.2/conv3/Conv filterWeightsFloat_myl0",
+    "Dimensions": [256,64,1,1],
+    "Strides": [64,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_21_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.0/blocks/blocks.2/conv3/Conv]\u001f[ONNX Layer: /stages/stages.0/blocks/blocks.2/Add]"
+},{
+  "Name": "__myl_MulAddMoveRelu_myl0_21",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_21_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,3136,56,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/norm1/BatchNormalization/stages/stages.1/blocks/blocks.0/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/norm1/BatchNormalization/stages/stages.1/blocks/blocks.0/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/downsample/conv/Conv_output_0.1_22_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddMoveRelu_0xb5269372a99ab74853a54833ead65046",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.0/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.0/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.0/conv1/Conv + /stages/stages.1/blocks/blocks.0/norm2/BatchNormalization_myl0_22",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/downsample/conv/Conv_output_0.1_22_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2957dconst_myl0",
+    "Dimensions": [128,256,1,1],
+    "Strides": [1,128,128,128],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2962dconst_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/norm3/act/Relu_output_0.1_23_myl0",
+    "Dimensions": [1,128,56,56],
+    "Strides": [401408,1,7168,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x64x8_stage3_warpsize1x4x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.0/conv1/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.0/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.0/norm2/act/Relu]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.0/conv2/Conv + /stages/stages.1/blocks/blocks.0/norm3/BatchNormalization_myl0_23",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/norm3/act/Relu_output_0.1_23_myl0",
+    "Dimensions": [1,128,56,56],
+    "Strides": [401408,1,7168,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2967dconst_myl0",
+    "Dimensions": [128,128,3,3],
+    "Strides": [1152,1,384,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2972dconst_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/Add_output_0.1_24_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_t1r3s3_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.0/conv2/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.0/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.0/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.0/downsample/conv/Conv_myl0_24",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/downsample/conv/Conv_output_0.1_22_myl0",
+    "Dimensions": [1,256,56,56],
+    "Strides": [802816,1,14336,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2977dconst_myl0",
+    "Dimensions": [512,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/Add_output_0.1_25_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.0/downsample/conv/Conv]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.0/conv3/Conv_myl0_25",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/Add_output_0.1_24_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.0/Add_output_0.1_25_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2982dconst_myl0",
+    "Dimensions": [512,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_26_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.0/conv3/Conv]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.0/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_26",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_26_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/norm1/BatchNormalization/stages/stages.1/blocks/blocks.1/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/norm1/BatchNormalization/stages/stages.1/blocks/blocks.1/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/norm2/act/Relu_output_0.1_27_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x8dddd3e6022fb364ebacc3e6febb526f",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.1/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.1/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.1/conv1/Conv + /stages/stages.1/blocks/blocks.1/norm2/BatchNormalization_myl0_27",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/norm2/act/Relu_output_0.1_27_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2987dconst_myl0",
+    "Dimensions": [128,512,1,1],
+    "Strides": [1,128,128,128],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2992dconst_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_28_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.1/conv1/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.1/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.1/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_28",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_28_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/norm3/act/Relu_output_0.1_29_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xa181a381cfed0ef9747731a96b84dab7",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.1/blocks/blocks.1/conv2/Conv + /stages/stages.1/blocks/blocks.1/norm3/BatchNormalization_myl0_29",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/norm3/act/Relu_output_0.1_29_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3742_xformed_/stages/stages.1/blocks/blocks.1/conv2/Conv + /stages/stages.1/blocks/blocks.1/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [128,128,3,3],
+    "Strides": [1152,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/conv2/Conv + /stages/stages.1/blocks/blocks.1/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_30_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.1/conv2/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.1/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.1/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_30",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_30_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/Add_output_0.1_31_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0xfa8604b5a44116eb0c38a4a765be0e43",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.1/blocks/blocks.1/conv3/Conv_myl0_31",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.1/Add_output_0.1_31_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_26_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2997dconst_myl0",
+    "Dimensions": [512,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_32_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.1/conv3/Conv]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.1/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_32",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_32_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/norm1/BatchNormalization/stages/stages.1/blocks/blocks.2/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/norm1/BatchNormalization/stages/stages.1/blocks/blocks.2/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/norm2/act/Relu_output_0.1_33_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x8dddd3e6022fb364ebacc3e6febb526f",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.2/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.2/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.2/conv1/Conv + /stages/stages.1/blocks/blocks.2/norm2/BatchNormalization_myl0_33",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/norm2/act/Relu_output_0.1_33_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3002dconst_myl0",
+    "Dimensions": [128,512,1,1],
+    "Strides": [1,128,128,128],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3007dconst_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_34_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.2/conv1/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.2/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.2/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_34",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_34_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/norm3/act/Relu_output_0.1_35_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xa181a381cfed0ef9747731a96b84dab7",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.1/blocks/blocks.2/conv2/Conv + /stages/stages.1/blocks/blocks.2/norm3/BatchNormalization_myl0_35",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/norm3/act/Relu_output_0.1_35_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3746_xformed_/stages/stages.1/blocks/blocks.2/conv2/Conv + /stages/stages.1/blocks/blocks.2/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [128,128,3,3],
+    "Strides": [1152,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/conv2/Conv + /stages/stages.1/blocks/blocks.2/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_36_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.2/conv2/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.2/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.2/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_36",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_36_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/Add_output_0.1_37_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0xfa8604b5a44116eb0c38a4a765be0e43",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.1/blocks/blocks.2/conv3/Conv_myl0_37",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.2/Add_output_0.1_37_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_32_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3012dconst_myl0",
+    "Dimensions": [512,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_38_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.2/conv3/Conv]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.2/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_38",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_38_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/norm1/BatchNormalization/stages/stages.1/blocks/blocks.3/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/norm1/BatchNormalization/stages/stages.1/blocks/blocks.3/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/norm2/act/Relu_output_0.1_39_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x8dddd3e6022fb364ebacc3e6febb526f",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.3/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.3/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.1/blocks/blocks.3/conv1/Conv + /stages/stages.1/blocks/blocks.3/norm2/BatchNormalization_myl0_39",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/norm2/act/Relu_output_0.1_39_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3017dconst_myl0",
+    "Dimensions": [128,512,1,1],
+    "Strides": [1,128,128,128],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3022dconst_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_40_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.3/conv1/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.3/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.3/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_40",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_40_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/norm3/act/Relu_output_0.1_41_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xa181a381cfed0ef9747731a96b84dab7",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.1/blocks/blocks.3/conv2/Conv + /stages/stages.1/blocks/blocks.3/norm3/BatchNormalization_myl0_41",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/norm3/act/Relu_output_0.1_41_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3750_xformed_/stages/stages.1/blocks/blocks.3/conv2/Conv + /stages/stages.1/blocks/blocks.3/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [128,128,3,3],
+    "Strides": [1152,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/conv2/Conv + /stages/stages.1/blocks/blocks.3/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,128,1,1],
+    "Strides": [128,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_42_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.3/conv2/Conv]\u001e[ONNX Layer: /stages/stages.1/blocks/blocks.3/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.3/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_42",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_42_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,784,28,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/Add_output_0.1_43_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0xfa8604b5a44116eb0c38a4a765be0e43",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.1/blocks/blocks.3/conv3/Conv_myl0_43",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.1/blocks/blocks.3/Add_output_0.1_43_myl0",
+    "Dimensions": [1,128,28,28],
+    "Strides": [100352,1,3584,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_38_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3027dconst_myl0",
+    "Dimensions": [512,128,1,1],
+    "Strides": [128,1,128,128],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_44_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_simple_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.1/blocks/blocks.3/conv3/Conv]\u001f[ONNX Layer: /stages/stages.1/blocks/blocks.3/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_44",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_44_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/norm1/BatchNormalization/stages/stages.2/blocks/blocks.0/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/norm1/BatchNormalization/stages/stages.2/blocks/blocks.0/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/downsample/conv/Conv_output_0.1_45_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x8dddd3e6022fb364ebacc3e6febb526f",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.0/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.0/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.0/conv1/Conv + /stages/stages.2/blocks/blocks.0/norm2/BatchNormalization_myl0_45",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/downsample/conv/Conv_output_0.1_45_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3032dconst_myl0",
+    "Dimensions": [256,512,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3037dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/norm3/act/Relu_output_0.1_46_myl0",
+    "Dimensions": [1,256,28,28],
+    "Strides": [200704,1,7168,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize64x64x8_stage3_warpsize1x4x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.0/conv1/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.0/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.0/norm2/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.0/conv2/Conv + /stages/stages.2/blocks/blocks.0/norm3/BatchNormalization_myl0_46",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/norm3/act/Relu_output_0.1_46_myl0",
+    "Dimensions": [1,256,28,28],
+    "Strides": [200704,1,7168,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3042dconst_myl0",
+    "Dimensions": [256,256,3,3],
+    "Strides": [2304,1,768,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3047dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/Add_output_0.1_47_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_t1r3s3_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.0/conv2/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.0/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.0/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.0/downsample/conv/Conv_myl0_47",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/downsample/conv/Conv_output_0.1_45_myl0",
+    "Dimensions": [1,512,28,28],
+    "Strides": [401408,1,14336,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3052dconst_myl0",
+    "Dimensions": [1024,512,1,1],
+    "Strides": [512,1,512,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/Add_output_0.1_48_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.0/downsample/conv/Conv]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.0/conv3/Conv_myl0_48",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/Add_output_0.1_47_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.0/Add_output_0.1_48_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3057dconst_myl0",
+    "Dimensions": [1024,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_49_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.0/conv3/Conv]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.0/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_49",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_49_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/norm1/BatchNormalization/stages/stages.2/blocks/blocks.1/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/norm1/BatchNormalization/stages/stages.2/blocks/blocks.1/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/norm2/act/Relu_output_0.1_50_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x605daa329bda6c3257733634adefa2aa",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.1/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.1/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.1/conv1/Conv + /stages/stages.2/blocks/blocks.1/norm2/BatchNormalization_myl0_50",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/norm2/act/Relu_output_0.1_50_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3062dconst_myl0",
+    "Dimensions": [256,1024,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3067dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_51_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.1/conv1/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.1/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.1/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_51",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_51_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/norm3/act/Relu_output_0.1_52_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1710e5f87c164a5085e72d4af842c7d1",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.1/conv2/Conv + /stages/stages.2/blocks/blocks.1/norm3/BatchNormalization_myl0_52",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/norm3/act/Relu_output_0.1_52_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3754_xformed_/stages/stages.2/blocks/blocks.1/conv2/Conv + /stages/stages.2/blocks/blocks.1/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [256,256,3,3],
+    "Strides": [2304,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/conv2/Conv + /stages/stages.2/blocks/blocks.1/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_53_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.1/conv2/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.1/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.1/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_53",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_53_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/Add_output_0.1_54_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0x23f05d921dc06134efb8aa85750f2319",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.1/conv3/Conv_myl0_54",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.1/Add_output_0.1_54_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_49_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3072dconst_myl0",
+    "Dimensions": [1024,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_55_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.1/conv3/Conv]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.1/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_55",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_55_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/norm1/BatchNormalization/stages/stages.2/blocks/blocks.2/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/norm1/BatchNormalization/stages/stages.2/blocks/blocks.2/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/norm2/act/Relu_output_0.1_56_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x605daa329bda6c3257733634adefa2aa",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.2/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.2/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.2/conv1/Conv + /stages/stages.2/blocks/blocks.2/norm2/BatchNormalization_myl0_56",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/norm2/act/Relu_output_0.1_56_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3077dconst_myl0",
+    "Dimensions": [256,1024,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3082dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_57_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.2/conv1/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.2/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.2/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_57",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_57_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/norm3/act/Relu_output_0.1_58_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1710e5f87c164a5085e72d4af842c7d1",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.2/conv2/Conv + /stages/stages.2/blocks/blocks.2/norm3/BatchNormalization_myl0_58",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/norm3/act/Relu_output_0.1_58_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3758_xformed_/stages/stages.2/blocks/blocks.2/conv2/Conv + /stages/stages.2/blocks/blocks.2/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [256,256,3,3],
+    "Strides": [2304,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/conv2/Conv + /stages/stages.2/blocks/blocks.2/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_59_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.2/conv2/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.2/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.2/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_59",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_59_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/Add_output_0.1_60_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0x23f05d921dc06134efb8aa85750f2319",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.2/conv3/Conv_myl0_60",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.2/Add_output_0.1_60_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_55_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3087dconst_myl0",
+    "Dimensions": [1024,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_61_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.2/conv3/Conv]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.2/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_61",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_61_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/norm1/BatchNormalization/stages/stages.2/blocks/blocks.3/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/norm1/BatchNormalization/stages/stages.2/blocks/blocks.3/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/norm2/act/Relu_output_0.1_62_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x605daa329bda6c3257733634adefa2aa",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.3/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.3/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.3/conv1/Conv + /stages/stages.2/blocks/blocks.3/norm2/BatchNormalization_myl0_62",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/norm2/act/Relu_output_0.1_62_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3092dconst_myl0",
+    "Dimensions": [256,1024,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3097dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_63_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.3/conv1/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.3/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.3/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_63",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_63_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/norm3/act/Relu_output_0.1_64_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1710e5f87c164a5085e72d4af842c7d1",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.3/conv2/Conv + /stages/stages.2/blocks/blocks.3/norm3/BatchNormalization_myl0_64",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/norm3/act/Relu_output_0.1_64_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3762_xformed_/stages/stages.2/blocks/blocks.3/conv2/Conv + /stages/stages.2/blocks/blocks.3/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [256,256,3,3],
+    "Strides": [2304,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/conv2/Conv + /stages/stages.2/blocks/blocks.3/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_65_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.3/conv2/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.3/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.3/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_65",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_65_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/Add_output_0.1_66_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0x23f05d921dc06134efb8aa85750f2319",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.3/conv3/Conv_myl0_66",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.3/Add_output_0.1_66_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_61_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3102dconst_myl0",
+    "Dimensions": [1024,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_67_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.3/conv3/Conv]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.3/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_67",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_67_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/norm1/BatchNormalization/stages/stages.2/blocks/blocks.4/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/norm1/BatchNormalization/stages/stages.2/blocks/blocks.4/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/norm2/act/Relu_output_0.1_68_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x605daa329bda6c3257733634adefa2aa",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.4/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.4/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.4/conv1/Conv + /stages/stages.2/blocks/blocks.4/norm2/BatchNormalization_myl0_68",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/norm2/act/Relu_output_0.1_68_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3107dconst_myl0",
+    "Dimensions": [256,1024,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3112dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_69_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.4/conv1/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.4/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.4/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_69",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_69_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/norm3/act/Relu_output_0.1_70_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1710e5f87c164a5085e72d4af842c7d1",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.4/conv2/Conv + /stages/stages.2/blocks/blocks.4/norm3/BatchNormalization_myl0_70",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/norm3/act/Relu_output_0.1_70_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3766_xformed_/stages/stages.2/blocks/blocks.4/conv2/Conv + /stages/stages.2/blocks/blocks.4/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [256,256,3,3],
+    "Strides": [2304,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/conv2/Conv + /stages/stages.2/blocks/blocks.4/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_71_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.4/conv2/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.4/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.4/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_71",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_71_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/Add_output_0.1_72_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0x23f05d921dc06134efb8aa85750f2319",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.4/conv3/Conv_myl0_72",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.4/Add_output_0.1_72_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_67_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3117dconst_myl0",
+    "Dimensions": [1024,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_73_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.4/conv3/Conv]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.4/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_73",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_73_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/norm1/BatchNormalization/stages/stages.2/blocks/blocks.5/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/norm1/BatchNormalization/stages/stages.2/blocks/blocks.5/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/norm2/act/Relu_output_0.1_74_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x605daa329bda6c3257733634adefa2aa",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.5/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.5/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.2/blocks/blocks.5/conv1/Conv + /stages/stages.2/blocks/blocks.5/norm2/BatchNormalization_myl0_74",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/norm2/act/Relu_output_0.1_74_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3122dconst_myl0",
+    "Dimensions": [256,1024,1,1],
+    "Strides": [1,256,256,256],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3127dconst_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_75_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.5/conv1/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.5/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.5/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_75",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_75_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/norm3/act/Relu_output_0.1_76_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0x1710e5f87c164a5085e72d4af842c7d1",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.5/conv2/Conv + /stages/stages.2/blocks/blocks.5/norm3/BatchNormalization_myl0_76",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/norm3/act/Relu_output_0.1_76_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3770_xformed_/stages/stages.2/blocks/blocks.5/conv2/Conv + /stages/stages.2/blocks/blocks.5/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [256,256,3,3],
+    "Strides": [2304,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/conv2/Conv + /stages/stages.2/blocks/blocks.5/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,256,1,1],
+    "Strides": [256,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_77_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.5/conv2/Conv]\u001e[ONNX Layer: /stages/stages.2/blocks/blocks.5/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.5/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_77",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_77_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,196,14,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/Add_output_0.1_78_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_Tran_0x23f05d921dc06134efb8aa85750f2319",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.2/blocks/blocks.5/conv3/Conv_myl0_78",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.2/blocks/blocks.5/Add_output_0.1_78_myl0",
+    "Dimensions": [1,256,14,14],
+    "Strides": [50176,1,3584,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_73_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3132dconst_myl0",
+    "Dimensions": [1024,256,1,1],
+    "Strides": [256,1,256,256],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_79_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize64x64x8_stage3_warpsize1x4x1_g1_ffma_t1r1s1_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.2/blocks/blocks.5/conv3/Conv]\u001f[ONNX Layer: /stages/stages.2/blocks/blocks.5/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_79",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_79_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/norm1/BatchNormalization/stages/stages.3/blocks/blocks.0/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/norm1/BatchNormalization/stages/stages.3/blocks/blocks.0/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,1024,1,1],
+    "Strides": [1024,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/downsample/conv/Conv_output_0.1_80_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0x605daa329bda6c3257733634adefa2aa",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.0/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.0/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.3/blocks/blocks.0/conv1/Conv + /stages/stages.3/blocks/blocks.0/norm2/BatchNormalization_myl0_80",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/downsample/conv/Conv_output_0.1_80_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3137dconst_myl0",
+    "Dimensions": [512,1024,1,1],
+    "Strides": [1,512,512,512],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3142dconst_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,512,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/norm3/act/Relu_output_0.1_83_myl0",
+    "Dimensions": [1,512,14,14],
+    "Strides": [100352,1,7168,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.0/conv1/Conv]\u001e[ONNX Layer: /stages/stages.3/blocks/blocks.0/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.0/norm2/act/Relu]"
+},{
+  "Name": "/stages/stages.3/blocks/blocks.0/conv2/Conv + /stages/stages.3/blocks/blocks.0/norm3/BatchNormalization_myl0_81",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/norm3/act/Relu_output_0.1_83_myl0",
+    "Dimensions": [1,512,14,14],
+    "Strides": [100352,1,7168,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3147dconst_myl0",
+    "Dimensions": [512,512,3,3],
+    "Strides": [4608,1,1536,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3152dconst_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,512,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_84_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,1,3584,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.0/conv2/Conv]\u001e[ONNX Layer: /stages/stages.3/blocks/blocks.0/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.0/norm3/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_82",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_84_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,1,3584,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/Add_output_0.1_85_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xa59ab6b20effdea2445f66e51436c8bb",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.3/blocks/blocks.0/downsample/conv/Conv_myl0_83",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/downsample/conv/Conv_output_0.1_80_myl0",
+    "Dimensions": [1,1024,14,14],
+    "Strides": [200704,1,14336,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3157dconst_myl0",
+    "Dimensions": [2048,1024,1,1],
+    "Strides": [1024,1,1024,1024],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_81_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,1,14336,2048],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nhwckrsc_nhwc_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.0/downsample/conv/Conv]"
+},{
+  "Name": "__myl_Tran_myl0_84",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_81_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,1,14336,2048],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/Add_output_0.1_82_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xbff8932c8ee77edaa1ad1c7a4123caf9",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.3/blocks/blocks.0/conv3/Conv_myl0_85",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/Add_output_0.1_85_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/Add_output_0.1_82_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.0/conv3/Conv filterWeightsFloat_myl0",
+    "Dimensions": [2048,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_86_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.0/conv3/Conv]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.0/Add]"
+},{
+  "Name": "__myl_MulAddMoveRelu_myl0_86",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_86_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/norm1/BatchNormalization/stages/stages.3/blocks/blocks.1/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/norm1/BatchNormalization/stages/stages.3/blocks/blocks.1/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/norm2/act/Relu_output_0.1_87_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,1,14336,2048],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddMoveRelu_0xb767ef4facffd41ec446ec5f0d01fe25",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.1/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.1/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.3/blocks/blocks.1/conv1/Conv + /stages/stages.3/blocks/blocks.1/norm2/BatchNormalization_myl0_87",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/norm2/act/Relu_output_0.1_87_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,1,14336,2048],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3162dconst_myl0",
+    "Dimensions": [512,2048,1,1],
+    "Strides": [1,512,512,512],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3167dconst_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,512,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_88_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,1,3584,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.1/conv1/Conv]\u001e[ONNX Layer: /stages/stages.3/blocks/blocks.1/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.1/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_88",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_88_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,1,3584,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/norm3/act/Relu_output_0.1_89_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xa59ab6b20effdea2445f66e51436c8bb",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.3/blocks/blocks.1/conv2/Conv + /stages/stages.3/blocks/blocks.1/norm3/BatchNormalization_myl0_89",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/norm3/act/Relu_output_0.1_89_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3774_xformed_/stages/stages.3/blocks/blocks.1/conv2/Conv + /stages/stages.3/blocks/blocks.1/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [512,512,3,3],
+    "Strides": [4608,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/conv2/Conv + /stages/stages.3/blocks/blocks.1/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/Add_output_0.1_90_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.1/conv2/Conv]\u001e[ONNX Layer: /stages/stages.3/blocks/blocks.1/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.1/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.3/blocks/blocks.1/conv3/Conv_myl0_90",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/Add_output_0.1_90_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_86_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.1/conv3/Conv filterWeightsFloat_myl0",
+    "Dimensions": [2048,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_91_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.1/conv3/Conv]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.1/Add]"
+},{
+  "Name": "__myl_MulAddMoveRelu_myl0_91",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_91_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/norm1/BatchNormalization/stages/stages.3/blocks/blocks.2/norm1/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/norm1/BatchNormalization/stages/stages.3/blocks/blocks.2/norm1/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/norm2/act/Relu_output_0.1_92_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,1,14336,2048],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "__myl_MulAddMoveRelu_0xb767ef4facffd41ec446ec5f0d01fe25",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.2/norm1/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.2/norm1/act/Relu]"
+},{
+  "Name": "/stages/stages.3/blocks/blocks.2/conv1/Conv + /stages/stages.3/blocks/blocks.2/norm2/BatchNormalization_myl0_92",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/norm2/act/Relu_output_0.1_92_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,1,14336,2048],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3172dconst_myl0",
+    "Dimensions": [512,2048,1,1],
+    "Strides": [1,512,512,512],
+    "StrideOrder": [0,3,2,1],
+    "Datatype": "Float",
+    "Format": "(Arbitrary) Format with stride order = [0,3,2,1]"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3177dconst_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,512,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_93_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,1,3584,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "TacticName": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize32x32x8_stage3_warpsize1x2x1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.2/conv1/Conv]\u001e[ONNX Layer: /stages/stages.3/blocks/blocks.2/norm2/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.2/norm2/act/Relu]"
+},{
+  "Name": "__myl_Tran_myl0_93",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_93_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,1,3584,512],
+    "StrideOrder": [3,0,2,1],
+    "Datatype": "Float",
+    "Format": "(NHWC) Channel major format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/norm3/act/Relu_output_0.1_94_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Tran_0xa59ab6b20effdea2445f66e51436c8bb",
+  "StreamId": 0,
+  "Metadata": ""
+},{
+  "Name": "/stages/stages.3/blocks/blocks.2/conv2/Conv + /stages/stages.3/blocks/blocks.2/norm3/BatchNormalization_myl0_94",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/norm3/act/Relu_output_0.1_94_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye3778_xformed_/stages/stages.3/blocks/blocks.2/conv2/Conv + /stages/stages.3/blocks/blocks.2/norm3/BatchNormalization filterWeightsFloat_myl0",
+    "Dimensions": [512,512,3,3],
+    "Strides": [4608,9,3,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3842_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/conv2/Conv + /stages/stages.3/blocks/blocks.2/norm3/BatchNormalization biasWeightsFloat_myl0",
+    "Dimensions": [1,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/Add_output_0.1_95_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_wngd_f32f32_f32_f32_nchwkcrs_nchw_tilesize8x16x16x8_warpsize8x1x1_wngd2x2",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.2/conv2/Conv]\u001e[ONNX Layer: /stages/stages.3/blocks/blocks.2/norm3/BatchNormalization]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.2/norm3/act/Relu]"
+},{
+  "Name": "/stages/stages.3/blocks/blocks.2/conv3/Conv_myl0_95",
+  "LayerType": "correlation",
+  "Inputs": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/Add_output_0.1_95_myl0",
+    "Dimensions": [1,512,7,7],
+    "Strides": [25088,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__myln_k_arg__bb1_91_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/stages/stages.3/blocks/blocks.2/conv3/Conv filterWeightsFloat_myl0",
+    "Dimensions": [2048,512,1,1],
+    "Strides": [512,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye3838_const_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_96_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm80_xmma_fprop_implicit_gemm_f32f32_f32f32_f32_nchwkcrs_nchw_tilesize32x32x8_stage3_warpsize1x2x1_g1_ffma_aligna4_alignc4",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /stages/stages.3/blocks/blocks.2/conv3/Conv]\u001f[ONNX Layer: /stages/stages.3/blocks/blocks.2/Add]"
+},{
+  "Name": "__myl_MulAddRelu_myl0_96",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_96_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "/norm/BatchNormalization/norm/BatchNormalization_shift_wFloat_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "/norm/BatchNormalization/norm/BatchNormalization_scale_wFloat_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "/head/global_pool/pool/GlobalAveragePool_output_0.1_97_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_MulAddRelu_0xd55f40a9d1d280f1004d31f296259029",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /norm/BatchNormalization]\u001f[ONNX Layer: /norm/act/Relu]"
+},{
+  "Name": "/head/global_pool/pool/GlobalAveragePool_myl0_97",
+  "LayerType": "avgpool",
+  "Inputs": [
+  {
+    "Name": "/head/global_pool/pool/GlobalAveragePool_output_0.1_97_myl0",
+    "Dimensions": [1,2048,7,7],
+    "Strides": [100352,49,7,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [
+  {
+    "Name": "/head/global_pool/pool/GlobalAveragePool_output_0.1_myl0",
+    "Dimensions": [1,2048,1,1],
+    "Strides": [2048,1,1,1],
+    "StrideOrder": [3,2,1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm50_xmma_pooling_tiled_FP32NCHW_kAVERAGE_tP1_tQ1_tR7_tS7_tU1_tV1_tUnroll3_tThreads49",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: /head/global_pool/pool/GlobalAveragePool]"
+},{
+  "Name": "__myl_ReplCastMulCast_myl0_98",
+  "LayerType": "kgen",
+  "Inputs": [],
+  "Constants": [
+  {
+    "Name": "__mye2522_dconst_myl0",
+    "Dimensions": [2048,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Int4",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2533_dconst_myl0",
+    "Dimensions": [16,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "ClassifierInt4Gemm_output.1_99_myl0",
+    "Dimensions": [2048,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_ReplCastMulCast_0xed67c6604bb5dbedb2db6801e988f252",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: ClassifierInt4DQ]"
+},{
+  "Name": "ClassifierInt4Gemm_myl0_99",
+  "LayerType": "gemm",
+  "Inputs": [
+  {
+    "Name": "/head/global_pool/pool/GlobalAveragePool_output_0.1_myl0",
+    "Dimensions": [1,2048],
+    "Strides": [2048,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "ClassifierInt4Gemm_output.1_99_myl0",
+    "Dimensions": [2048,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "__mye2500ClassifierInt4Gemm_alpha_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "__mye2501ClassifierInt4Gemm_beta_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "__myln_k_arg__bb1_100_myl0",
+    "Dimensions": [1,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "sm50_xmma_cublas_gemvx_f32f32_f32_f32_nn_n_int32_unit_n_launch_param16x32x32_strided_unit_stride",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: ClassifierInt4Gemm]"
+},{
+  "Name": "__myl_Add_myl0_100",
+  "LayerType": "kgen",
+  "Inputs": [
+  {
+    "Name": "__myln_k_arg__bb1_100_myl0",
+    "Dimensions": [1,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [
+  {
+    "Name": "head.fc.bias + ONNXTRT_Broadcast_constantFloat_myl0",
+    "Dimensions": [1,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Outputs": [
+  {
+    "Name": "output",
+    "Dimensions": [1,1000],
+    "Strides": [1000,1],
+    "StrideOrder": [1,0],
+    "Datatype": "Float",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "TacticName": "__myl_Add_0x4c8e79817e5cb717947538dd05f46553",
+  "StreamId": 0,
+  "Metadata": "[ONNX Layer: ClassifierInt4Gemm]"
+},{
+  "Name": "__mye3836_myl0_101",
+  "LayerType": "custom_layer",
+  "Inputs": [
+  {
+    "Name": "l2_cache_policy_inputs_0_myl0",
+    "Dimensions": [92160],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_1_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_2_myl0",
+    "Dimensions": [8192],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_3_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_4_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_5_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_6_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_7_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_8_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_9_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_10_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_11_myl0",
+    "Dimensions": [100352],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_12_myl0",
+    "Dimensions": [301056],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_13_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_14_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_15_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_16_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_17_myl0",
+    "Dimensions": [200704],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_18_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_19_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_20_myl0",
+    "Dimensions": [802816],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_21_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_22_myl0",
+    "Dimensions": [1605632],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_23_myl0",
+    "Dimensions": [802816],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_24_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_25_myl0",
+    "Dimensions": [401408],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_26_myl0",
+    "Dimensions": [172032],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_policy_inputs_27_myl0",
+    "Dimensions": [4000],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt8",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_management_device_0_myl0",
+    "Dimensions": [256],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt64",
+    "Format": "(Linear) Row major linear format"
+  },
+  {
+    "Name": "l2_cache_management_host_0_myl0",
+    "Dimensions": [1],
+    "Strides": [1],
+    "StrideOrder": [0],
+    "Datatype": "UInt64",
+    "Format": "(Linear) Row major linear format"
+  }],
+  "Constants": [],
+  "Outputs": [],
+  "TacticName": "",
+  "StreamId": 0,
+  "Metadata": ""
+}],
+"I/O Tensors": [
+{
+  "Name": "input",
+  "IOMode": "Input",
+  "DataType": "Float",
+  "Dimensions": [1,3,224,224],
+  "Location": "Device",
+  "IsShapeInferenceIO": false,
+  "ProfileInfo": [
+  {
+    "MinShape": [1,3,224,224],
+    "OptShape": [1,3,224,224],
+    "MaxShape": [1,3,224,224],
+    "Format": "Row major linear FP32 format (kLINEAR)"
+  }]
+},
+{
+  "Name": "output",
+  "IOMode": "Output",
+  "DataType": "Float",
+  "Dimensions": [1,1000],
+  "Location": "Device",
+  "IsShapeInferenceIO": false,
+  "ProfileInfo": [
+  {
+    "Format": "Row major linear FP32 format (kLINEAR)"
+  }]
+}],
+"Engine Metadata": {
+  "Multi-Device": "Disabled"
+}}

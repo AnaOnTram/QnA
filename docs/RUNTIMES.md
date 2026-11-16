@@ -38,6 +38,12 @@ MobileNetV2's FP32 graph is opset 20. Its `rknn/mobilenetv2_opset19.onnx` is a
 compatibility conversion for RKNN Toolkit2 2.5.0; the existing validation records
 bit-identical outputs on the retained 100-image validation sample.
 
+MobileNetV2 now also includes `onnx/mobilenetv2_int8_qoperator.onnx`: ORT CPU
+QOperator with per-channel INT8 weights, UINT8 activations and 512 calibration
+inputs from the retained MobileNet array. Its FP16 graph is shared from
+`tensorrt/mobilenetv2_fp16.onnx`; the new ORT FP32/FP16 attacks verified actual
+CUDA convolution execution with CPU heavy-kernel fallback rejected.
+
 ## Apple Core ML
 
 ResNetV2-50 now includes FP32, FP16, INT8 weight-only (W8A16) and INT4 weight-only
@@ -88,6 +94,22 @@ fully INT4 network. The original records describe TensorRT 11.3.0.99 / Blackwell
 deployment engines, but those per-precision engines are not present in the local
 source tree and are not included. Build compatible engines from the graphs on
 the target device.
+
+### Added 16 November: canonical ResNetV2-50 variants
+
+`resnetv2_50_fp8.onnx` is FP8 E4M3 Q/DQ with FP16 surrounding computation,
+ModelOpt max calibration on 512 images. `resnetv2_50_int4_classifier.onnx`
+compresses only classifier weights, block 128, leaving other layers FP32.
+The source 1×1 classifier convolution after global pooling is rewritten as
+Flatten+Gemm before INT4 quantization; independent checks establish the float
+rewrite equivalence and unchanged non-classifier tensors/nodes. INT4 storage
+does not imply INT4 activation or convolution compute.
+
+The four `*.trt113.bs1.plan` files execute FP32, FP16, FP8 or classifier-only
+INT4 on **TensorRT 11.3.0.99 / NVIDIA RTX PRO 4000 Blackwell**, static batch 1,
+strong typing, TF32 disabled and 2 GiB workspace. They are hardware/version-specific;
+rebuild for another target. The two earlier INT8 TensorRT 10.9/Ada plans remain
+separate. [Native precision and replay evidence](reports/missing_attacks_20261116/README.md).
 
 ## RKNN on RK3588
 

@@ -50,3 +50,17 @@ Package sizes sum their three component files. Each component is recorded in the
 | [mobilenetv2_int4.mlpackage](../weights/mobilenetv2/coreml/mobilenetv2_int4.mlpackage) | Apple Core ML | INT4 weights / FP16 compute | 2.01 |
 
 [Conversion procedure and validation](coreml/README.md). Both INT4 packages are experimental and showed substantial prediction drift; MobileNetV2 INT4 is severely degraded.
+
+## Added 16 November 2026
+
+The seven new files below support the [eight completed attack campaigns](reports/missing_attacks_20261116/README.md). Other campaigns reuse already archived canonical graphs. The four compiled engines require TensorRT 11.3 / RTX PRO 4000 Blackwell; they are hardware/version-specific.
+
+| File | Runtime | Precision | MiB |
+| --- | --- | --- | ---: |
+| [weights/mobilenetv2/onnx/mobilenetv2_int8_qoperator.onnx](../weights/mobilenetv2/onnx/mobilenetv2_int8_qoperator.onnx) | ONNX Runtime CPU | INT8 QOperator | 3.54 |
+| [weights/resnetv2_50/tensorrt/resnetv2_50_fp8.onnx](../weights/resnetv2_50/tensorrt/resnetv2_50_fp8.onnx) | TensorRT | FP8 E4M3 Q/DQ | 24.91 |
+| [weights/resnetv2_50/tensorrt/resnetv2_50_int4_classifier.onnx](../weights/resnetv2_50/tensorrt/resnetv2_50_int4_classifier.onnx) | TensorRT | INT4 classifier weights; FP32 other layers | 90.92 |
+| [weights/resnetv2_50/tensorrt/resnetv2_50_fp32.trt113.bs1.plan](../weights/resnetv2_50/tensorrt/resnetv2_50_fp32.trt113.bs1.plan) | TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell | FP32 | 122.43 |
+| [weights/resnetv2_50/tensorrt/resnetv2_50_fp16.trt113.bs1.plan](../weights/resnetv2_50/tensorrt/resnetv2_50_fp16.trt113.bs1.plan) | TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell | FP16 | 49.31 |
+| [weights/resnetv2_50/tensorrt/resnetv2_50_fp8.trt113.bs1.plan](../weights/resnetv2_50/tensorrt/resnetv2_50_fp8.trt113.bs1.plan) | TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell | FP8 E4M3 | 25.37 |
+| [weights/resnetv2_50/tensorrt/resnetv2_50_int4.trt113.bs1.plan](../weights/resnetv2_50/tensorrt/resnetv2_50_int4.trt113.bs1.plan) | TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell | INT4 classifier weights; FP32 other layers | 115.69 |

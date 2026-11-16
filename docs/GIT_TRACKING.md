@@ -58,7 +58,7 @@ For a smaller checkout, fetch one model family:
 git lfs pull --include='weights/resnetv2_50/**' --exclude=''
 ```
 
-Full `SHA256SUMS` verification requires all 53 manifest-listed files, including
+Full `SHA256SUMS` verification requires all 60 manifest-listed files, including
 the component files of all eight Core ML packages. Download all LFS payloads first.
 A text LFS pointer in place of a binary indicates its payload has not been fetched.
 The report checksum ledger is independent of the weight ledger. If an archived

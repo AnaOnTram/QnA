@@ -1,0 +1,10 @@
+{
+  "inspector_schema": "TensorRT 11 Constants/Datatype",
+  "constant_datatypes": {
+    "Float": 229
+  },
+  "convolution_input_datatypes": {
+    "Float": 70
+  },
+  "convolution_layer_count": 54
+}

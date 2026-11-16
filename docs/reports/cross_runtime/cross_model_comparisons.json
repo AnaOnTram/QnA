@@ -162,6 +162,168 @@
     "mobile_minus_resnet_pp": 25.04834151420497
   },
   {
+    "deployment": "ORT CUDA FP32",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 41,
+      "eligible": 81,
+      "success_pct": 50.617283950617285,
+      "wilson95_pct": [
+        39.95078470731793,
+        61.22788432301242
+      ],
+      "robust_correct": 40,
+      "robust_accuracy_pct": 40
+    },
+    "mobilenet": {
+      "fooled": 76,
+      "eligible": 83,
+      "success_pct": 91.56626506024097,
+      "wilson95_pct": [
+        83.60047054138369,
+        95.854666367898
+      ],
+      "robust_correct": 7,
+      "robust_accuracy_pct": 7
+    },
+    "mobile_minus_resnet_pp": 40.94898110962368
+  },
+  {
+    "deployment": "ORT CUDA FP32",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 65,
+      "eligible": 81,
+      "success_pct": 80.24691358024691,
+      "wilson95_pct": [
+        70.29560930488834,
+        87.45917318129888
+      ],
+      "robust_correct": 16,
+      "robust_accuracy_pct": 16
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 19.75308641975309
+  },
+  {
+    "deployment": "ORT CUDA FP32",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 74,
+      "eligible": 81,
+      "success_pct": 91.35802469135803,
+      "wilson95_pct": [
+        83.22008336612947,
+        95.75074166600406
+      ],
+      "robust_correct": 7,
+      "robust_accuracy_pct": 7
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 8.641975308641975
+  },
+  {
+    "deployment": "ORT CUDA FP32",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.47219145675847,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 0.0
+  },
+  {
+    "deployment": "ORT CUDA FP32",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 37,
+      "eligible": 81,
+      "success_pct": 45.67901234567901,
+      "wilson95_pct": [
+        35.2733326843646,
+        56.47598410332293
+      ],
+      "robust_correct": 44,
+      "robust_accuracy_pct": 44
+    },
+    "mobilenet": {
+      "fooled": 38,
+      "eligible": 83,
+      "success_pct": 45.78313253012048,
+      "wilson95_pct": [
+        35.48937698207064,
+        56.44995695466891
+      ],
+      "robust_correct": 45,
+      "robust_accuracy_pct": 45
+    },
+    "mobile_minus_resnet_pp": 0.10412018444147009
+  },
+  {
+    "deployment": "ORT CUDA FP32",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 49,
+      "eligible": 81,
+      "success_pct": 60.49382716049383,
+      "wilson95_pct": [
+        49.60547732360617,
+        70.43189619200982
+      ],
+      "robust_correct": 32,
+      "robust_accuracy_pct": 32
+    },
+    "mobilenet": {
+      "fooled": 71,
+      "eligible": 83,
+      "success_pct": 85.5421686746988,
+      "wilson95_pct": [
+        76.40819877833326,
+        91.53170089771919
+      ],
+      "robust_correct": 12,
+      "robust_accuracy_pct": 12
+    },
+    "mobile_minus_resnet_pp": 25.04834151420497
+  },
+  {
     "deployment": "RKNN FP16",
     "condition": "fgsm@1",
     "resnet": {
@@ -484,6 +646,330 @@
       "robust_accuracy_pct": 34
     },
     "mobile_minus_resnet_pp": 21.602564102564102
+  },
+  {
+    "deployment": "ORT CUDA FP16",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 42,
+      "eligible": 82,
+      "success_pct": 51.21951219512195,
+      "wilson95_pct": [
+        40.59077238820504,
+        61.73910413938009
+      ],
+      "robust_correct": 40,
+      "robust_accuracy_pct": 40
+    },
+    "mobilenet": {
+      "fooled": 74,
+      "eligible": 83,
+      "success_pct": 89.1566265060241,
+      "wilson95_pct": [
+        80.65953353528812,
+        94.18950848070189
+      ],
+      "robust_correct": 9,
+      "robust_accuracy_pct": 9
+    },
+    "mobile_minus_resnet_pp": 37.937114310902146
+  },
+  {
+    "deployment": "ORT CUDA FP16",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 65,
+      "eligible": 82,
+      "success_pct": 79.26829268292683,
+      "wilson95_pct": [
+        69.28342703478701,
+        86.63360962725591
+      ],
+      "robust_correct": 17,
+      "robust_accuracy_pct": 17
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 20.731707317073173
+  },
+  {
+    "deployment": "ORT CUDA FP16",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 76,
+      "eligible": 82,
+      "success_pct": 92.6829268292683,
+      "wilson95_pct": [
+        84.94215619114517,
+        96.60352227433408
+      ],
+      "robust_correct": 6,
+      "robust_accuracy_pct": 6
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 7.317073170731703
+  },
+  {
+    "deployment": "ORT CUDA FP16",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.52493763098998,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 0.0
+  },
+  {
+    "deployment": "ORT CUDA FP16",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 31,
+      "eligible": 82,
+      "success_pct": 37.80487804878049,
+      "wilson95_pct": [
+        28.078371592811894,
+        48.6228631313369
+      ],
+      "robust_correct": 51,
+      "robust_accuracy_pct": 51
+    },
+    "mobilenet": {
+      "fooled": 33,
+      "eligible": 83,
+      "success_pct": 39.75903614457831,
+      "wilson95_pct": [
+        29.90893171041682,
+        50.5151649930935
+      ],
+      "robust_correct": 50,
+      "robust_accuracy_pct": 50
+    },
+    "mobile_minus_resnet_pp": 1.9541580957978226
+  },
+  {
+    "deployment": "ORT CUDA FP16",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 51,
+      "eligible": 82,
+      "success_pct": 62.19512195121951,
+      "wilson95_pct": [
+        51.37713686866311,
+        71.92162840718811
+      ],
+      "robust_correct": 31,
+      "robust_accuracy_pct": 31
+    },
+    "mobilenet": {
+      "fooled": 70,
+      "eligible": 83,
+      "success_pct": 84.33734939759036,
+      "wilson95_pct": [
+        75.02486450452768,
+        90.61198772487894
+      ],
+      "robust_correct": 13,
+      "robust_accuracy_pct": 13
+    },
+    "mobile_minus_resnet_pp": 22.142227446370846
+  },
+  {
+    "deployment": "ORT CPU INT8 QOperator",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 27,
+      "eligible": 78,
+      "success_pct": 34.61538461538461,
+      "wilson95_pct": [
+        25.005203906310765,
+        45.669805623295204
+      ],
+      "robust_correct": 51,
+      "robust_accuracy_pct": 51
+    },
+    "mobilenet": {
+      "fooled": 69,
+      "eligible": 82,
+      "success_pct": 84.14634146341463,
+      "wilson95_pct": [
+        74.74213307168286,
+        90.49440970070054
+      ],
+      "robust_correct": 13,
+      "robust_accuracy_pct": 13
+    },
+    "mobile_minus_resnet_pp": 49.530956848030016
+  },
+  {
+    "deployment": "ORT CPU INT8 QOperator",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 48,
+      "eligible": 78,
+      "success_pct": 61.53846153846154,
+      "wilson95_pct": [
+        50.442785608463936,
+        71.55095724433158
+      ],
+      "robust_correct": 30,
+      "robust_accuracy_pct": 30
+    },
+    "mobilenet": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.52493763098998,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 38.46153846153846
+  },
+  {
+    "deployment": "ORT CPU INT8 QOperator",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 58,
+      "eligible": 78,
+      "success_pct": 74.35897435897436,
+      "wilson95_pct": [
+        63.68667271880386,
+        82.74456219265333
+      ],
+      "robust_correct": 20,
+      "robust_accuracy_pct": 20
+    },
+    "mobilenet": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.52493763098998,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 25.641025641025635
+  },
+  {
+    "deployment": "ORT CPU INT8 QOperator",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 76,
+      "eligible": 78,
+      "success_pct": 97.43589743589743,
+      "wilson95_pct": [
+        91.12472996432415,
+        99.29399065272409
+      ],
+      "robust_correct": 2,
+      "robust_accuracy_pct": 2
+    },
+    "mobilenet": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.52493763098998,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 2.564102564102569
+  },
+  {
+    "deployment": "ORT CPU INT8 QOperator",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 18,
+      "eligible": 78,
+      "success_pct": 23.076923076923077,
+      "wilson95_pct": [
+        15.125508850526876,
+        33.55575782628359
+      ],
+      "robust_correct": 60,
+      "robust_accuracy_pct": 60
+    },
+    "mobilenet": {
+      "fooled": 26,
+      "eligible": 82,
+      "success_pct": 31.70731707317073,
+      "wilson95_pct": [
+        22.64806567040274,
+        42.403786415820456
+      ],
+      "robust_correct": 56,
+      "robust_accuracy_pct": 56
+    },
+    "mobile_minus_resnet_pp": 8.630393996247655
+  },
+  {
+    "deployment": "ORT CPU INT8 QOperator",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 31,
+      "eligible": 78,
+      "success_pct": 39.743589743589745,
+      "wilson95_pct": [
+        29.611864644382386,
+        50.83814170868827
+      ],
+      "robust_correct": 47,
+      "robust_accuracy_pct": 47
+    },
+    "mobilenet": {
+      "fooled": 44,
+      "eligible": 82,
+      "success_pct": 53.65853658536585,
+      "wilson95_pct": [
+        42.94472560322624,
+        64.04490397952914
+      ],
+      "robust_correct": 38,
+      "robust_accuracy_pct": 38
+    },
+    "mobile_minus_resnet_pp": 13.914946841776107
   },
   {
     "deployment": "QNN HTP INT8",
@@ -2266,6 +2752,816 @@
       "robust_accuracy_pct": 20
     },
     "mobile_minus_resnet_pp": 15.409787297337495
+  },
+  {
+    "deployment": "TensorRT FP32",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 41,
+      "eligible": 81,
+      "success_pct": 50.617283950617285,
+      "wilson95_pct": [
+        39.95078470731793,
+        61.22788432301242
+      ],
+      "robust_correct": 40,
+      "robust_accuracy_pct": 40
+    },
+    "mobilenet": {
+      "fooled": 76,
+      "eligible": 83,
+      "success_pct": 91.56626506024097,
+      "wilson95_pct": [
+        83.60047054138369,
+        95.854666367898
+      ],
+      "robust_correct": 7,
+      "robust_accuracy_pct": 7
+    },
+    "mobile_minus_resnet_pp": 40.94898110962368
+  },
+  {
+    "deployment": "TensorRT FP32",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 65,
+      "eligible": 81,
+      "success_pct": 80.24691358024691,
+      "wilson95_pct": [
+        70.29560930488834,
+        87.45917318129888
+      ],
+      "robust_correct": 16,
+      "robust_accuracy_pct": 16
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 19.75308641975309
+  },
+  {
+    "deployment": "TensorRT FP32",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 73,
+      "eligible": 81,
+      "success_pct": 90.12345679012346,
+      "wilson95_pct": [
+        81.70349859835268,
+        94.90998837312017
+      ],
+      "robust_correct": 8,
+      "robust_accuracy_pct": 8
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 9.876543209876544
+  },
+  {
+    "deployment": "TensorRT FP32",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.47219145675847,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 0.0
+  },
+  {
+    "deployment": "TensorRT FP32",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 36,
+      "eligible": 81,
+      "success_pct": 44.44444444444444,
+      "wilson95_pct": [
+        34.119552503457854,
+        55.27242622356897
+      ],
+      "robust_correct": 45,
+      "robust_accuracy_pct": 45
+    },
+    "mobilenet": {
+      "fooled": 40,
+      "eligible": 83,
+      "success_pct": 48.19277108433735,
+      "wilson95_pct": [
+        37.763185922155515,
+        58.78224290787573
+      ],
+      "robust_correct": 43,
+      "robust_accuracy_pct": 43
+    },
+    "mobile_minus_resnet_pp": 3.748326639892909
+  },
+  {
+    "deployment": "TensorRT FP32",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 49,
+      "eligible": 81,
+      "success_pct": 60.49382716049383,
+      "wilson95_pct": [
+        49.60547732360617,
+        70.43189619200982
+      ],
+      "robust_correct": 32,
+      "robust_accuracy_pct": 32
+    },
+    "mobilenet": {
+      "fooled": 71,
+      "eligible": 83,
+      "success_pct": 85.5421686746988,
+      "wilson95_pct": [
+        76.40819877833326,
+        91.53170089771919
+      ],
+      "robust_correct": 12,
+      "robust_accuracy_pct": 12
+    },
+    "mobile_minus_resnet_pp": 25.04834151420497
+  },
+  {
+    "deployment": "TensorRT FP16",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 42,
+      "eligible": 82,
+      "success_pct": 51.21951219512195,
+      "wilson95_pct": [
+        40.59077238820504,
+        61.73910413938009
+      ],
+      "robust_correct": 40,
+      "robust_accuracy_pct": 40
+    },
+    "mobilenet": {
+      "fooled": 75,
+      "eligible": 83,
+      "success_pct": 90.36144578313252,
+      "wilson95_pct": [
+        82.11736349852804,
+        95.0347259641078
+      ],
+      "robust_correct": 8,
+      "robust_accuracy_pct": 8
+    },
+    "mobile_minus_resnet_pp": 39.14193358801057
+  },
+  {
+    "deployment": "TensorRT FP16",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 67,
+      "eligible": 82,
+      "success_pct": 81.70731707317073,
+      "wilson95_pct": [
+        71.98781157085605,
+        88.58897814635709
+      ],
+      "robust_correct": 15,
+      "robust_accuracy_pct": 15
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 18.292682926829272
+  },
+  {
+    "deployment": "TensorRT FP16",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 75,
+      "eligible": 82,
+      "success_pct": 91.46341463414635,
+      "wilson95_pct": [
+        83.41245443721832,
+        95.80334750067581
+      ],
+      "robust_correct": 7,
+      "robust_accuracy_pct": 7
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 8.536585365853654
+  },
+  {
+    "deployment": "TensorRT FP16",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.52493763098998,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 0.0
+  },
+  {
+    "deployment": "TensorRT FP16",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 31,
+      "eligible": 82,
+      "success_pct": 37.80487804878049,
+      "wilson95_pct": [
+        28.078371592811894,
+        48.6228631313369
+      ],
+      "robust_correct": 51,
+      "robust_accuracy_pct": 51
+    },
+    "mobilenet": {
+      "fooled": 25,
+      "eligible": 83,
+      "success_pct": 30.120481927710845,
+      "wilson95_pct": [
+        21.310689683441346,
+        40.689027446902216
+      ],
+      "robust_correct": 58,
+      "robust_accuracy_pct": 58
+    },
+    "mobile_minus_resnet_pp": -7.684396121069643
+  },
+  {
+    "deployment": "TensorRT FP16",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 50,
+      "eligible": 82,
+      "success_pct": 60.97560975609756,
+      "wilson95_pct": [
+        50.15357010815031,
+        70.81531864011576
+      ],
+      "robust_correct": 32,
+      "robust_accuracy_pct": 32
+    },
+    "mobilenet": {
+      "fooled": 63,
+      "eligible": 83,
+      "success_pct": 75.90361445783132,
+      "wilson95_pct": [
+        65.69026394404472,
+        83.82525615884097
+      ],
+      "robust_correct": 20,
+      "robust_accuracy_pct": 20
+    },
+    "mobile_minus_resnet_pp": 14.928004701733762
+  },
+  {
+    "deployment": "TensorRT FP8",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 39,
+      "eligible": 81,
+      "success_pct": 48.148148148148145,
+      "wilson95_pct": [
+        37.59964161288465,
+        58.864351296124276
+      ],
+      "robust_correct": 42,
+      "robust_accuracy_pct": 42
+    },
+    "mobilenet": {
+      "fooled": 72,
+      "eligible": 84,
+      "success_pct": 85.71428571428571,
+      "wilson95_pct": [
+        76.66989708237692,
+        91.63497945943307
+      ],
+      "robust_correct": 12,
+      "robust_accuracy_pct": 12
+    },
+    "mobile_minus_resnet_pp": 37.56613756613756
+  },
+  {
+    "deployment": "TensorRT FP8",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 61,
+      "eligible": 81,
+      "success_pct": 75.30864197530865,
+      "wilson95_pct": [
+        64.91574213226649,
+        83.40968811127793
+      ],
+      "robust_correct": 20,
+      "robust_accuracy_pct": 20
+    },
+    "mobilenet": {
+      "fooled": 84,
+      "eligible": 84,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.626827158534,
+        99.99999999999999
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 24.691358024691354
+  },
+  {
+    "deployment": "TensorRT FP8",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 75,
+      "eligible": 81,
+      "success_pct": 92.5925925925926,
+      "wilson95_pct": [
+        84.76712613403235,
+        96.56103695876189
+      ],
+      "robust_correct": 6,
+      "robust_accuracy_pct": 6
+    },
+    "mobilenet": {
+      "fooled": 84,
+      "eligible": 84,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.626827158534,
+        99.99999999999999
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 7.407407407407405
+  },
+  {
+    "deployment": "TensorRT FP8",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.47219145675847,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobilenet": {
+      "fooled": 84,
+      "eligible": 84,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.626827158534,
+        99.99999999999999
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 0.0
+  },
+  {
+    "deployment": "TensorRT FP8",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 18,
+      "eligible": 81,
+      "success_pct": 22.22222222222222,
+      "wilson95_pct": [
+        14.544607404671892,
+        32.41528623046228
+      ],
+      "robust_correct": 63,
+      "robust_accuracy_pct": 63
+    },
+    "mobilenet": {
+      "fooled": 21,
+      "eligible": 84,
+      "success_pct": 25.0,
+      "wilson95_pct": [
+        16.972312954861017,
+        35.214273465871976
+      ],
+      "robust_correct": 63,
+      "robust_accuracy_pct": 63
+    },
+    "mobile_minus_resnet_pp": 2.7777777777777786
+  },
+  {
+    "deployment": "TensorRT FP8",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 33,
+      "eligible": 81,
+      "success_pct": 40.74074074074074,
+      "wilson95_pct": [
+        30.69627781339348,
+        51.62368673165123
+      ],
+      "robust_correct": 48,
+      "robust_accuracy_pct": 48
+    },
+    "mobilenet": {
+      "fooled": 46,
+      "eligible": 84,
+      "success_pct": 54.76190476190476,
+      "wilson95_pct": [
+        44.14303701382066,
+        64.96427985842067
+      ],
+      "robust_correct": 38,
+      "robust_accuracy_pct": 38
+    },
+    "mobile_minus_resnet_pp": 14.021164021164019
+  },
+  {
+    "deployment": "TensorRT INT4",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 43,
+      "eligible": 84,
+      "success_pct": 51.19047619047619,
+      "wilson95_pct": [
+        40.68518288999884,
+        61.591646328061465
+      ],
+      "robust_correct": 41,
+      "robust_accuracy_pct": 41
+    },
+    "mobilenet": {
+      "fooled": 75,
+      "eligible": 83,
+      "success_pct": 90.36144578313252,
+      "wilson95_pct": [
+        82.11736349852804,
+        95.0347259641078
+      ],
+      "robust_correct": 8,
+      "robust_accuracy_pct": 8
+    },
+    "mobile_minus_resnet_pp": 39.170969592656334
+  },
+  {
+    "deployment": "TensorRT INT4",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 70,
+      "eligible": 84,
+      "success_pct": 83.33333333333333,
+      "wilson95_pct": [
+        73.9469602546601,
+        89.80425785102926
+      ],
+      "robust_correct": 14,
+      "robust_accuracy_pct": 14
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 16.66666666666667
+  },
+  {
+    "deployment": "TensorRT INT4",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 76,
+      "eligible": 84,
+      "success_pct": 90.47619047619048,
+      "wilson95_pct": [
+        82.31736440500728,
+        95.09482900904406
+      ],
+      "robust_correct": 8,
+      "robust_accuracy_pct": 8
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 9.523809523809518
+  },
+  {
+    "deployment": "TensorRT INT4",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 83,
+      "eligible": 84,
+      "success_pct": 98.80952380952381,
+      "wilson95_pct": [
+        93.5604562492286,
+        99.78954169124508
+      ],
+      "robust_correct": 1,
+      "robust_accuracy_pct": 1
+    },
+    "mobilenet": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.57646903580263,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 1.1904761904761898
+  },
+  {
+    "deployment": "TensorRT INT4",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 36,
+      "eligible": 84,
+      "success_pct": 42.857142857142854,
+      "wilson95_pct": [
+        32.81597743735877,
+        53.52304725427922
+      ],
+      "robust_correct": 48,
+      "robust_accuracy_pct": 48
+    },
+    "mobilenet": {
+      "fooled": 37,
+      "eligible": 83,
+      "success_pct": 44.57831325301205,
+      "wilson95_pct": [
+        34.3613029268308,
+        55.2749835632629
+      ],
+      "robust_correct": 46,
+      "robust_accuracy_pct": 46
+    },
+    "mobile_minus_resnet_pp": 1.7211703958691942
+  },
+  {
+    "deployment": "TensorRT INT4",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 56,
+      "eligible": 84,
+      "success_pct": 66.66666666666667,
+      "wilson95_pct": [
+        56.05282305356535,
+        75.8227859992793
+      ],
+      "robust_correct": 28,
+      "robust_accuracy_pct": 28
+    },
+    "mobilenet": {
+      "fooled": 71,
+      "eligible": 83,
+      "success_pct": 85.5421686746988,
+      "wilson95_pct": [
+        76.40819877833326,
+        91.53170089771919
+      ],
+      "robust_correct": 12,
+      "robust_accuracy_pct": 12
+    },
+    "mobile_minus_resnet_pp": 18.87550200803213
+  },
+  {
+    "deployment": "TFLite CPU INT8",
+    "condition": "fgsm@1",
+    "resnet": {
+      "fooled": 32,
+      "eligible": 81,
+      "success_pct": 39.50617283950617,
+      "wilson95_pct": [
+        29.568103807990187,
+        50.39452267639383
+      ],
+      "robust_correct": 49,
+      "robust_accuracy_pct": 49
+    },
+    "mobilenet": {
+      "fooled": 64,
+      "eligible": 81,
+      "success_pct": 79.01234567901234,
+      "wilson95_pct": [
+        68.93461803165967,
+        86.46282639386685
+      ],
+      "robust_correct": 17,
+      "robust_accuracy_pct": 17
+    },
+    "mobile_minus_resnet_pp": 39.50617283950617
+  },
+  {
+    "deployment": "TFLite CPU INT8",
+    "condition": "pgd@1",
+    "resnet": {
+      "fooled": 53,
+      "eligible": 81,
+      "success_pct": 65.4320987654321,
+      "wilson95_pct": [
+        54.58937528984923,
+        74.87735046840956
+      ],
+      "robust_correct": 28,
+      "robust_accuracy_pct": 28
+    },
+    "mobilenet": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.47219145675847,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 34.5679012345679
+  },
+  {
+    "deployment": "TFLite CPU INT8",
+    "condition": "pgd_stronger@1",
+    "resnet": {
+      "fooled": 59,
+      "eligible": 81,
+      "success_pct": 72.8395061728395,
+      "wilson95_pct": [
+        62.28457676019475,
+        81.32617736202826
+      ],
+      "robust_correct": 22,
+      "robust_accuracy_pct": 22
+    },
+    "mobilenet": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.47219145675847,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 27.160493827160494
+  },
+  {
+    "deployment": "TFLite CPU INT8",
+    "condition": "pgd@8",
+    "resnet": {
+      "fooled": 80,
+      "eligible": 81,
+      "success_pct": 98.76543209876543,
+      "wilson95_pct": [
+        93.33311840195164,
+        99.7817349941461
+      ],
+      "robust_correct": 1,
+      "robust_accuracy_pct": 1
+    },
+    "mobilenet": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "wilson95_pct": [
+        95.47219145675847,
+        100
+      ],
+      "robust_correct": 0,
+      "robust_accuracy_pct": 0
+    },
+    "mobile_minus_resnet_pp": 1.2345679012345698
+  },
+  {
+    "deployment": "TFLite CPU INT8",
+    "condition": "square@4",
+    "resnet": {
+      "fooled": 24,
+      "eligible": 81,
+      "success_pct": 29.62962962962963,
+      "wilson95_pct": [
+        20.791957048345946,
+        40.31196495075244
+      ],
+      "robust_correct": 57,
+      "robust_accuracy_pct": 57
+    },
+    "mobilenet": {
+      "fooled": 28,
+      "eligible": 81,
+      "success_pct": 34.5679012345679,
+      "wilson95_pct": [
+        25.122649531590426,
+        45.41062471015077
+      ],
+      "robust_correct": 53,
+      "robust_accuracy_pct": 53
+    },
+    "mobile_minus_resnet_pp": 4.938271604938269
+  },
+  {
+    "deployment": "TFLite CPU INT8",
+    "condition": "square@8",
+    "resnet": {
+      "fooled": 35,
+      "eligible": 81,
+      "success_pct": 43.20987654320987,
+      "wilson95_pct": [
+        32.972077141341074,
+        54.062563525025034
+      ],
+      "robust_correct": 46,
+      "robust_accuracy_pct": 46
+    },
+    "mobilenet": {
+      "fooled": 50,
+      "eligible": 81,
+      "success_pct": 61.72839506172839,
+      "wilson95_pct": [
+        50.841247547241295,
+        71.55346402903538
+      ],
+      "robust_correct": 31,
+      "robust_accuracy_pct": 31
+    },
+    "mobile_minus_resnet_pp": 18.51851851851852
   },
   {
     "deployment": "TensorRT INT8 (different recipe/hardware)",

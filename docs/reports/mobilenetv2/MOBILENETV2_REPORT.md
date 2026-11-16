@@ -1,17 +1,22 @@
 # MobileNetV2 cross-runtime evasion: PGD saturates while score-only attacks depend on deployment
 
-Results through **10 November 2026 (Hong Kong time)**. Model: TorchVision
+Results through **16 November 2026 (Hong Kong time)**. Model: TorchVision
 MobileNetV2 `IMAGENET1K_V1`, checkpoint `b0353104…9889`, canonical ONNX
 `9f2d5d94…3a77`. This is the first standalone cross-runtime synthesis in this
-archive: **20 configurations** spanning PyTorch, TensorRT, RKNN, QNN,
+archive: **23 configurations** spanning PyTorch, ONNX Runtime, TensorRT, RKNN, QNN,
 TFLite/Coral and Core ML. Existing runtime-specific reports remain the detailed
 experiment records.
+
+**16 November completion update.** [Eight completed campaigns](../missing_attacks_20261116/README.md)
+fill all 40 previously blank cells. The current matrix includes the new
+three MobileNet deployments; their saved candidates passed independent native replay
+before packaging. Earlier matched-study masks remain unchanged.
 
 ## Executive summary
 
 - **Gradient attacks overwhelm every configuration at small budgets.** At
-  1/255, PGD fools every clean-correct image in 19 of 20 configurations; QNN
-  HTP is 77/78 (98.7%). At 2/255 and 8/255 all 20 reach 100% success.
+  1/255, PGD fools every clean-correct image in 22 of 23 configurations; QNN
+  HTP is 77/78 (98.7%). At 2/255 and 8/255 all 23 reach 100% success.
   Quantization does not provide a substantial PGD barrier on this model.
 - **Score-only outcomes differ much more.** At Square 8/255 with 500 queries,
   the full matrix ranges from TensorRT INT8 **39/79 (49.4%)** to TensorRT
@@ -64,7 +69,7 @@ raw RGB UINT8 NHWC and embed normalization; QNN's native UINT8 input instead
 encodes normalized NCHW floats. These interfaces are different and must not be
 interchanged. [Input contracts](../../RUNTIMES.md).
 
-## All 20 deployments
+## All 23 deployments
 
 Each cell is **fooled / own clean-correct (percentage)**. Budgets are /255.
 Core ML INT8 is W8A16. FP32 `CPU_AND_NE` has CPU placement, so a request label
@@ -92,6 +97,9 @@ does not by itself establish Neural Engine execution.
 | [Core ML INT8 CPU+NE](evasion_coreml/results/int8_cpu_and_ne/summary.json) | 83 | 75/83 (90.4%) | 83/83 (100.0%) | 83/83 (100.0%) | 83/83 (100.0%) | 31/83 (37.3%) | 63/83 (75.9%) |
 | [TFLite CPU INT8](TPU/evasion/results/run/tflite_int8/summary.json) | 81 | 64/81 (79.0%) | 81/81 (100.0%) | 81/81 (100.0%) | 81/81 (100.0%) | 28/81 (34.6%) | 50/81 (61.7%) |
 | [Coral USB INT8](TPU/evasion/results/run/edgetpu_int8/summary.json) | 79 | 61/79 (77.2%) | 79/79 (100.0%) | 79/79 (100.0%) | 79/79 (100.0%) | 26/79 (32.9%) | 49/79 (62.0%) |
+| [ORT CUDA FP32](../missing_attacks_20261116/results/mobile_ort_fp32/summary.json) | 83 | 76/83 (91.6%) | 83/83 (100.0%) | 83/83 (100.0%) | 83/83 (100.0%) | 38/83 (45.8%) | 71/83 (85.5%) |
+| [ORT CUDA FP16](../missing_attacks_20261116/results/mobile_ort_fp16/summary.json) | 83 | 74/83 (89.2%) | 83/83 (100.0%) | 83/83 (100.0%) | 83/83 (100.0%) | 33/83 (39.8%) | 70/83 (84.3%) |
+| [ORT CPU INT8 QOperator](../missing_attacks_20261116/results/mobile_ort_int8/summary.json) | 82 | 69/82 (84.1%) | 82/82 (100.0%) | 82/82 (100.0%) | 82/82 (100.0%) | 26/82 (31.7%) | 44/82 (53.7%) |
 
 ![MobileNetV2 full evasion matrix](../cross_runtime/figures/mobilenetv2_matrix.png)
 
@@ -208,7 +216,7 @@ does not imply robustness against the stronger available gradient attack.
 Evaluate accuracy and performance alongside attack success; selecting a runtime
 only because it reduces finite-query success would overread this pilot.
 
-The archive does not contain a common 20-way clean mask or Core ML per-image
+The archive does not contain a common 23-way clean mask or Core ML per-image
 candidate data. This report therefore retains own-denominator results and
 separate study-level matched views rather than fabricating one unified
 intersection or attack union. It does not demonstrate transfer between these

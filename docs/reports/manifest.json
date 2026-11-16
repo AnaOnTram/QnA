@@ -1,76 +1,96 @@
 {
   "schema_version": 1,
-  "description": "Retained experiment reports and compact evidence, including the 2026-11-16 Coral PGD+ supplement and independent replay, with reproducible cross-runtime and cross-model reporting calculations.",
+  "description": "Retained reports, compact evidence and completed native-replay records for 47 deployments, including the eight-campaign 2026-11-16 completion and earlier Coral PGD+ supplement; reproducible archive-local reporting calculations.",
   "files": [
     {
       "path": "CROSS_MODEL_REPORT.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "03d8fdc56ecd4b9d9ffbfd6cbc9e3f2e631798f3cbf1fc375d7c18dd12862695",
-      "bytes": 16338,
+      "packaged_sha256": "66d760a26874ab4282713768162fbaadd8321a0b8d2ecdadfd5043c17f7fcba4",
+      "bytes": 17521,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
+    },
+    {
+      "path": "README.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks",
+      "packaged_sha256": "011ea7090c7e98d12bf748f6902575c15a8140116e8e5298f4ffbbf5f9d4e00e",
+      "bytes": 8278
+    },
+    {
+      "path": "SOURCE_REFERENCES.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks",
+      "packaged_sha256": "5b05736670fc13f206ba888501f894d9198a73cd14d497caf36803b7fc0f0a68",
+      "bytes": 4284
     },
     {
       "path": "cross_runtime/README.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "0d3357c812514b71311ade689c6b160f37b7203cbe51e0dae56e3c01801eab90",
-      "bytes": 4610,
+      "packaged_sha256": "0bbabdc99845e5f3e5713d65fc63b2f56706d8c1f886802e26b755867d377e7e",
+      "bytes": 5227,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/all_conditions.csv",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "7a744cc43832e8cdbf22f43fdfc60bdfb4ad4db47690f878940a6d053a1a6870",
-      "bytes": 192425,
+      "packaged_sha256": "a5530397bf4f163060eea34dd962a4734bf82118d83686136891a8cb156b80ff",
+      "bytes": 230954,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/build_reports.py",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "a1d9a830b4bc01eb714d04a5a32558adff7d5cb12708a47350471b070adc3ef1",
-      "bytes": 23391,
+      "packaged_sha256": "ab309cda2c83a979d48fde50391d818f6278c86b8a14689fa10be6967ba345ce",
+      "bytes": 28165,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/chart_data.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "fca59d580313c759a29cbe09d91496e68a2cc6abf006bf55b9e93639eba1c897",
-      "bytes": 102403,
+      "packaged_sha256": "3c4f1b5910326c62cfc635dbdb0a88144a1899edc3f512a70a3ac79ce4bc203b",
+      "bytes": 127603,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/cross_model_comparisons.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "3bdaa6fcf1612a6252b337b4a423b9d9ac9fb789920dfb1de93c1b1a8c620806",
-      "bytes": 54878,
+      "packaged_sha256": "7ef8408b7162a4f0289c55f9d94c74023a11c7e473df298ec224feeaebed19ca",
+      "bytes": 84107,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/cross_model_table.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "81d08c092b1adcf38431c4397b9706ee76d35b0a8cbc645460ab8ae63007e2d2",
-      "bytes": 1589,
+      "packaged_sha256": "ba1d597255e039a01ab0960690b01659a715751980445a80ad01e702dc0da04b",
+      "bytes": 2327,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/figures/coreml_square_seed_ranges.png",
@@ -86,21 +106,21 @@
       "path": "cross_runtime/figures/cross_model_rates.png",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "8700fad524a3cc0aa8cefd337d3ef2850aaf59dcf562d890589048d3bfc38176",
-      "bytes": 179105,
+      "packaged_sha256": "5f2db137a0056ad18e0108ed9579924dd9d815a7f9ffcad5a7a458163a893183",
+      "bytes": 231488,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/figures/mobilenetv2_matrix.png",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "5f06abe6e8143377aa0273495952e5f62c0c7b6e25be11519b528b8709fb193c",
-      "bytes": 530248,
+      "packaged_sha256": "9b3eb9d9e849ab76748e863535f24f42a96d610d3eb8dfbbcad6b4fa96904f19",
+      "bytes": 604750,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/figures/quantization_model_interaction.png",
@@ -116,11 +136,11 @@
       "path": "cross_runtime/figures/resnetv2_50_matrix.png",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "8a7fe631b98d26bd3d2c5bf0aaf76f67e6a93070898d5fad1a28236f6cc6cc12",
-      "bytes": 548115,
+      "packaged_sha256": "f11a1e286dd52d3d86b785bdd1fd37fd9d6e6eed5ecef0959f1e2793818c43d3",
+      "bytes": 668960,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/inputs/resnetv2_50_qnn_summary.json",
@@ -156,21 +176,21 @@
       "path": "cross_runtime/mobilenetv2_table.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "62c63d8fcd459472ed705a772b4ea220f615b36320d707837d4ffb66e0ed9b9f",
-      "bytes": 3924,
+      "packaged_sha256": "6afb8d4a99ca2bd3c568f0f90748b9cce1a6b9a226179d1ac5feb491eee0615d",
+      "bytes": 4503,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/normalized_results.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "49bfb0e182ecadab8d09a43e7e9c265dc7777ff2cbba3e189a65370a9890da03",
-      "bytes": 260943,
+      "packaged_sha256": "5614396b236a5a5bdd02560f34ce23a7c732b03af3df29412f6a36760938ade7",
+      "bytes": 313224,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/quantization_effects.json",
@@ -196,21 +216,21 @@
       "path": "cross_runtime/resnetv2_50_table.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "2c20a42465d994d53e5e4c612cc87b98f454dae25311231476c305b576f743f5",
-      "bytes": 3767,
+      "packaged_sha256": "59a9de84477e78959d6919bad67f0a51c073ee7a26f12c89b544426c52b023ed",
+      "bytes": 4708,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/source_index.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "9b68d72842564939ad73a37108b79b7b44f2537432f6a80dcc61e200a70ac30e",
-      "bytes": 8699,
+      "packaged_sha256": "ac6f641cb697a043d08d67c744fb83fbbed23c7c90c865863da60d3ee501cea7",
+      "bytes": 13877,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "cross_runtime/square_seed_results.json",
@@ -226,11 +246,661 @@
       "path": "cross_runtime/validation.json",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "7f33aae9682ab1594534151bedbdf18b9d415590adc565c7ca27402b37d34a37",
-      "bytes": 1134,
+      "packaged_sha256": "718bb7b752dc6a877061bf04754732c27b0e0e824964a10024608fb0e0cfd799",
+      "bytes": 1539,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
+    },
+    {
+      "path": "missing_attacks_20261116/README.md",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks",
+      "packaged_sha256": "8773f338810a75822aedc8bb8123ca8b335eb646ec83eb235e78bea4eedf3a46",
+      "bytes": 3607
+    },
+    {
+      "path": "missing_attacks_20261116/archive_map.json",
+      "source_path_relative_to_qa": null,
+      "source_sha256": null,
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks",
+      "packaged_sha256": "bba761c7c87a486bcbf3337756394cb482629138c6f58eeaefa1db5502e5bfc1",
+      "bytes": 2741
+    },
+    {
+      "path": "missing_attacks_20261116/artifact_validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/artifact_validation.json",
+      "source_sha256": "47914d7cc584e949ab67d43d06d01940a22a40f2ae426ce571f640396ab19fd3",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "47914d7cc584e949ab67d43d06d01940a22a40f2ae426ce571f640396ab19fd3",
+      "bytes": 1475
+    },
+    {
+      "path": "missing_attacks_20261116/artifacts/mobile_int8_qop.meta.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/artifacts/mobile_int8_qop.meta.json",
+      "source_sha256": "5012526ba9a0ae8a9fe1d5873776e5a17748cc7df3d4e08474335cc08fdbc620",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5012526ba9a0ae8a9fe1d5873776e5a17748cc7df3d4e08474335cc08fdbc620",
+      "bytes": 691
+    },
+    {
+      "path": "missing_attacks_20261116/artifacts/resnet_fp8.meta.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/artifacts/resnet_fp8.meta.json",
+      "source_sha256": "661d29a17a183d4fe67c1d525bcab1792017725eadabc908b68219acf9e125ec",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "661d29a17a183d4fe67c1d525bcab1792017725eadabc908b68219acf9e125ec",
+      "bytes": 640
+    },
+    {
+      "path": "missing_attacks_20261116/artifacts/resnet_int4_classifier.meta.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/artifacts/resnet_int4_classifier.meta.json",
+      "source_sha256": "0dbc652160c1570cc9b375bf3f3a4f0901bee37f38a7c5b2e36ce6e2f610b7e6",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "0dbc652160c1570cc9b375bf3f3a4f0901bee37f38a7c5b2e36ce6e2f610b7e6",
+      "bytes": 770
+    },
+    {
+      "path": "missing_attacks_20261116/completion.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/completion.json",
+      "source_sha256": "2e044fcd2da2e0a7a8733365ced7fb791e0453b0b745811967acfe88dea016b9",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "2e044fcd2da2e0a7a8733365ced7fb791e0453b0b745811967acfe88dea016b9",
+      "bytes": 919
+    },
+    {
+      "path": "missing_attacks_20261116/missing_cells.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/missing_cells.csv",
+      "source_sha256": "2c42f7013a8375c1b5b33add81d4669ecebb971d5c6a4a21f8c5827dd9777c01",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "2c42f7013a8375c1b5b33add81d4669ecebb971d5c6a4a21f8c5827dd9777c01",
+      "bytes": 3194
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp16/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp16/per_image.csv",
+      "source_sha256": "2b029938c66981ed0e90129e8d862839d5a3acfba79bd1c287cfee7bfa4cfd44",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "2b029938c66981ed0e90129e8d862839d5a3acfba79bd1c287cfee7bfa4cfd44",
+      "bytes": 170591
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp16/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp16/preflight.json",
+      "source_sha256": "33676093507846c7ad097b05afeefbd5f04640ff11eacfc1b04f14cfa040de76",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "33676093507846c7ad097b05afeefbd5f04640ff11eacfc1b04f14cfa040de76",
+      "bytes": 2669
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp16/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp16/runtime.json",
+      "source_sha256": "eb9fefd6a09a969fe6f0bea8d3ac33d86ceb6ed323a1c8ac5ca5da8b3dfb4dbe",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "eb9fefd6a09a969fe6f0bea8d3ac33d86ceb6ed323a1c8ac5ca5da8b3dfb4dbe",
+      "bytes": 544
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp16/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp16/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp16/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp16/summary.json",
+      "source_sha256": "a145a395d3c154955d8985b9fdcdf21e288c36716f2192954f02064548415cf6",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "a145a395d3c154955d8985b9fdcdf21e288c36716f2192954f02064548415cf6",
+      "bytes": 8904
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp16/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp16/validation.json",
+      "source_sha256": "8a712f943aef7a0b0e9696ee03ee3995b3d8bd32f224b87aee16810ea16d4a70",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "8a712f943aef7a0b0e9696ee03ee3995b3d8bd32f224b87aee16810ea16d4a70",
+      "bytes": 3015
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp32/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp32/per_image.csv",
+      "source_sha256": "5a809984826bc0e86ac6da35d9ce22ca739031814c79c66efc7ac872ccc5cbcf",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5a809984826bc0e86ac6da35d9ce22ca739031814c79c66efc7ac872ccc5cbcf",
+      "bytes": 104714
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp32/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp32/preflight.json",
+      "source_sha256": "f9a39175e65de18a6c7b853a91ac2e7f2f447f6f74df77ed93c6be9fc8e3f608",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "f9a39175e65de18a6c7b853a91ac2e7f2f447f6f74df77ed93c6be9fc8e3f608",
+      "bytes": 2648
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp32/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp32/runtime.json",
+      "source_sha256": "faf5f44ab68aa5a01ba7fb335880dc119caead76fedc1bdac90cf2416c68fda7",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "faf5f44ab68aa5a01ba7fb335880dc119caead76fedc1bdac90cf2416c68fda7",
+      "bytes": 544
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp32/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp32/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp32/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp32/summary.json",
+      "source_sha256": "1800d1765e44b5a4fea0e5720d49b79604aac0f3f6d40aaab78699f9331f0f8b",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "1800d1765e44b5a4fea0e5720d49b79604aac0f3f6d40aaab78699f9331f0f8b",
+      "bytes": 6807
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_fp32/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_fp32/validation.json",
+      "source_sha256": "5dcfa44b926bbf89fb7bd26c9f063ffe97efae72b443462dd93aedabc3bcae34",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5dcfa44b926bbf89fb7bd26c9f063ffe97efae72b443462dd93aedabc3bcae34",
+      "bytes": 2140
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_int8/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_int8/per_image.csv",
+      "source_sha256": "ae96e8d8b0a4572da24d4614136ec4b777d388bcb4ef4de5086360bdda598ffb",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "ae96e8d8b0a4572da24d4614136ec4b777d388bcb4ef4de5086360bdda598ffb",
+      "bytes": 170635
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_int8/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_int8/preflight.json",
+      "source_sha256": "edd05514b6a68af6a9730fc34f92b4ebb5ceda2bb06572e5031119820f2b92ce",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "edd05514b6a68af6a9730fc34f92b4ebb5ceda2bb06572e5031119820f2b92ce",
+      "bytes": 2709
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_int8/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_int8/runtime.json",
+      "source_sha256": "ec562268c37751ab49fa1f27dfda9877cbffc7f577d0de7b5d03445fadc63549",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "ec562268c37751ab49fa1f27dfda9877cbffc7f577d0de7b5d03445fadc63549",
+      "bytes": 517
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_int8/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_int8/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_int8/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_int8/summary.json",
+      "source_sha256": "878c3b754e8a8bbf25e102c2adb409776d45ed9255f47e1fdf4e5864e3a51f30",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "878c3b754e8a8bbf25e102c2adb409776d45ed9255f47e1fdf4e5864e3a51f30",
+      "bytes": 8976
+    },
+    {
+      "path": "missing_attacks_20261116/results/mobile_ort_int8/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/mobile_ort_int8/validation.json",
+      "source_sha256": "5f1f678c8d51017664a76b455982debbd202123d79a630f37c5c4a52cf7cd8a7",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5f1f678c8d51017664a76b455982debbd202123d79a630f37c5c4a52cf7cd8a7",
+      "bytes": 3046
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_tflite_int8/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_tflite_int8/per_image.csv",
+      "source_sha256": "a9234a7138acbdd0d9c9c1f19ef06d2dcefde58bc660ffe05ace6ed70fc0a282",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "a9234a7138acbdd0d9c9c1f19ef06d2dcefde58bc660ffe05ace6ed70fc0a282",
+      "bytes": 176835
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_tflite_int8/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_tflite_int8/preflight.json",
+      "source_sha256": "0d81d40e9f4fa92f7687bbc43e628ff2166aa77d604500b29b36de660df47713",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "0d81d40e9f4fa92f7687bbc43e628ff2166aa77d604500b29b36de660df47713",
+      "bytes": 3605
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_tflite_int8/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_tflite_int8/runtime.json",
+      "source_sha256": "0ac8b94312b68fc2f3a27768fb0103c768832574f67a37c5af1fb36b77d61591",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "0ac8b94312b68fc2f3a27768fb0103c768832574f67a37c5af1fb36b77d61591",
+      "bytes": 1107
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_tflite_int8/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_tflite_int8/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_tflite_int8/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_tflite_int8/summary.json",
+      "source_sha256": "3f66693d78760ccea7d8c59684078d73dc4bb8300b443fb3dbedab944bde156b",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "3f66693d78760ccea7d8c59684078d73dc4bb8300b443fb3dbedab944bde156b",
+      "bytes": 9980
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_tflite_int8/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_tflite_int8/validation.json",
+      "source_sha256": "1787ccfae85ca5acfc048a891f068974d6ead81fcb02a1c114e487255a6fae29",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "1787ccfae85ca5acfc048a891f068974d6ead81fcb02a1c114e487255a6fae29",
+      "bytes": 3998
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/per_image.csv",
+      "source_sha256": "455fc1dcbfce669124a270fe68dbef6b8397a39185921bd4767ee9f055c2397c",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "455fc1dcbfce669124a270fe68dbef6b8397a39185921bd4767ee9f055c2397c",
+      "bytes": 170158
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/precision_evidence.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/precision_evidence.json",
+      "source_sha256": "231e364cd36d69657614941df1b961dd6de0bfffbe45a4b90c6ce6ca5dc37339",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "231e364cd36d69657614941df1b961dd6de0bfffbe45a4b90c6ce6ca5dc37339",
+      "bytes": 212
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/preflight.json",
+      "source_sha256": "ce7a5a33dfeac7b8c05d81049d7724d1a74bba0a60f5eabf2762b0415ca45669",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "ce7a5a33dfeac7b8c05d81049d7724d1a74bba0a60f5eabf2762b0415ca45669",
+      "bytes": 2638
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/runtime.json",
+      "source_sha256": "c78397e7f49d831e501f07c7d7c6a850027dc3924a05e12563685053ce439635",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "c78397e7f49d831e501f07c7d7c6a850027dc3924a05e12563685053ce439635",
+      "bytes": 492
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/summary.json",
+      "source_sha256": "32cd25d8eed2a58e0dac455eafb8b64cd2ebf5d6be050057c95aed0a68b72848",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "32cd25d8eed2a58e0dac455eafb8b64cd2ebf5d6be050057c95aed0a68b72848",
+      "bytes": 8958
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/tensorrt_layers.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/tensorrt_layers.json",
+      "source_sha256": "554ee907676416224262519fa38eb6d289954c6b5123389bc31e790c31f0ae9e",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "554ee907676416224262519fa38eb6d289954c6b5123389bc31e790c31f0ae9e",
+      "bytes": 136402
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp16/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp16/validation.json",
+      "source_sha256": "9791b1fe838f28616ab20b618e7f5c2a1ba8724ba0e5f81edbdac548f7fe9939",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "9791b1fe838f28616ab20b618e7f5c2a1ba8724ba0e5f81edbdac548f7fe9939",
+      "bytes": 3316
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/per_image.csv",
+      "source_sha256": "2324b599cf8810b1fa579b2fd81f8739d377d88fbc0a75fa05444f5ab4921ec5",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "2324b599cf8810b1fa579b2fd81f8739d377d88fbc0a75fa05444f5ab4921ec5",
+      "bytes": 104456
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/precision_evidence.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/precision_evidence.json",
+      "source_sha256": "9a128692fb8d281093cebc909ca4ce2abda6c02bd3a9e94754277ed333e7fa8f",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "9a128692fb8d281093cebc909ca4ce2abda6c02bd3a9e94754277ed333e7fa8f",
+      "bytes": 196
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/preflight.json",
+      "source_sha256": "bb618545c93919eba64ba7cb5e1fe86af98036437ded8a1393963e7970f97f70",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "bb618545c93919eba64ba7cb5e1fe86af98036437ded8a1393963e7970f97f70",
+      "bytes": 2637
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/runtime.json",
+      "source_sha256": "ca47f6382ef249c04a754e2056aea41d42fc6468b02f55e3df3d10c6c82822d4",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "ca47f6382ef249c04a754e2056aea41d42fc6468b02f55e3df3d10c6c82822d4",
+      "bytes": 492
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/summary.json",
+      "source_sha256": "90d36c052af392403b8f019f2ac2f9a802cd6929d0cdadc16737335ef853795d",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "90d36c052af392403b8f019f2ac2f9a802cd6929d0cdadc16737335ef853795d",
+      "bytes": 6852
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/tensorrt_layers.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/tensorrt_layers.json",
+      "source_sha256": "8291cc03fc975802e4f9a13c01c6f5a797a37ff3b98c9b8a36858929062cfddb",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "8291cc03fc975802e4f9a13c01c6f5a797a37ff3b98c9b8a36858929062cfddb",
+      "bytes": 157124
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp32/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp32/validation.json",
+      "source_sha256": "95cd98690a6776dc3cbba4737c6e1818b580fc8eed0431e48a949b9c53a49055",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "95cd98690a6776dc3cbba4737c6e1818b580fc8eed0431e48a949b9c53a49055",
+      "bytes": 2403
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/per_image.csv",
+      "source_sha256": "1d1c48767c5eb490d93b2ff30d12ca30003f2f4a65381efd8f805fa513239cef",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "1d1c48767c5eb490d93b2ff30d12ca30003f2f4a65381efd8f805fa513239cef",
+      "bytes": 167811
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/precision_evidence.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/precision_evidence.json",
+      "source_sha256": "a1dc7afe0f1b32a2fb010c1c3a08f2608c68f5f4085a1e204472360a31ecdf6d",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "a1dc7afe0f1b32a2fb010c1c3a08f2608c68f5f4085a1e204472360a31ecdf6d",
+      "bytes": 256
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/preflight.json",
+      "source_sha256": "d13bdc004ce7323bd97479278d146bee5e80b704090513d563de5071f5c0ec08",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "d13bdc004ce7323bd97479278d146bee5e80b704090513d563de5071f5c0ec08",
+      "bytes": 2729
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/runtime.json",
+      "source_sha256": "39ed7f8fc8d16feb69a1a0fcfaa4d8258a21ac427debbc7c671a2b4630636813",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "39ed7f8fc8d16feb69a1a0fcfaa4d8258a21ac427debbc7c671a2b4630636813",
+      "bytes": 491
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/summary.json",
+      "source_sha256": "5324b89e26d95272f5786aba7630f9705ff4f78dd9b52c545fd1db66ff03e204",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5324b89e26d95272f5786aba7630f9705ff4f78dd9b52c545fd1db66ff03e204",
+      "bytes": 9100
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/tensorrt_layers.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/tensorrt_layers.json",
+      "source_sha256": "7ab9ea2708ee44d53d029b3bfcd2946f25fb8e39cc0a4d6ac3510a2f4c7a4ca7",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "7ab9ea2708ee44d53d029b3bfcd2946f25fb8e39cc0a4d6ac3510a2f4c7a4ca7",
+      "bytes": 174626
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_fp8/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_fp8/validation.json",
+      "source_sha256": "52cfdcd8e3544d05ed280ae0239532331589434cf3dffe82c0126859f1acac2e",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "52cfdcd8e3544d05ed280ae0239532331589434cf3dffe82c0126859f1acac2e",
+      "bytes": 3415
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/per_image.csv",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/per_image.csv",
+      "source_sha256": "5da7f5a8e1a38b3c821c44d18904b2f3eca3345c6bc2e419e2d9b6f8905756aa",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5da7f5a8e1a38b3c821c44d18904b2f3eca3345c6bc2e419e2d9b6f8905756aa",
+      "bytes": 170156
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/precision_evidence.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/precision_evidence.json",
+      "source_sha256": "12c28108bc956c08fe11ae925934de8cff4786889a3bc43368105e9fc650edb4",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "12c28108bc956c08fe11ae925934de8cff4786889a3bc43368105e9fc650edb4",
+      "bytes": 259
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/preflight.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/preflight.json",
+      "source_sha256": "ed222a78b973663e95a776d827cb4df0bf1a9d4836e53dc2bf1a1c5a3eb27a91",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "ed222a78b973663e95a776d827cb4df0bf1a9d4836e53dc2bf1a1c5a3eb27a91",
+      "bytes": 2675
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/runtime.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/runtime.json",
+      "source_sha256": "07e45c34ac2f620d3d2b04742ab41fcc8e80b4b0b6b7f5a328884fced4b67ef3",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "07e45c34ac2f620d3d2b04742ab41fcc8e80b4b0b6b7f5a328884fced4b67ef3",
+      "bytes": 492
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/samples.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/samples.json",
+      "source_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "475b0489c947a7b34ece121d9fb33d7a5163801da9dabdf2c5dfccaeb2e87c20",
+      "bytes": 21347
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/summary.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/summary.json",
+      "source_sha256": "c4d79350d4b67d2076802ed7f187dbab9e0b9e5f9678fab2a18c03d07c5ef4f9",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "c4d79350d4b67d2076802ed7f187dbab9e0b9e5f9678fab2a18c03d07c5ef4f9",
+      "bytes": 9049
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/tensorrt_layers.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/tensorrt_layers.json",
+      "source_sha256": "2981c88be6e2857571ba37de6359a5d3c71ca496636ac04dd6d3b524ce041f7c",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "2981c88be6e2857571ba37de6359a5d3c71ca496636ac04dd6d3b524ce041f7c",
+      "bytes": 156898
+    },
+    {
+      "path": "missing_attacks_20261116/results/resnet_trt_int4/validation.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results/resnet_trt_int4/validation.json",
+      "source_sha256": "5c35fc5b62a92b032a88e92a82aa644109a50c304448b325287d474a2b88ef02",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "5c35fc5b62a92b032a88e92a82aa644109a50c304448b325287d474a2b88ef02",
+      "bytes": 3422
+    },
+    {
+      "path": "missing_attacks_20261116/results.json",
+      "source_path_relative_to_qa": "experiments/missing_attacks_20261116/results.json",
+      "source_sha256": "6c9d7a71baa053cf2e245c200d607f4037eb9a1c06858dc428a5467f83a06c42",
+      "links_adjusted": false,
+      "archive_date": "2026-11-16",
+      "origin": "Completed eight-deployment attack campaign; compact source evidence imported after native candidate replay",
+      "packaged_sha256": "6c9d7a71baa053cf2e245c200d607f4037eb9a1c06858dc428a5467f83a06c42",
+      "bytes": 55985
     },
     {
       "path": "mobilenetv2/ARCHIVE.md",
@@ -246,11 +916,11 @@
       "path": "mobilenetv2/MOBILENETV2_REPORT.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "a0441838873800e7fed4210e281ca5cf784559e68a8eb8f6bb8bc2a8c268ba43",
-      "bytes": 16131,
+      "packaged_sha256": "065bf21c702efc6ddb5ee8f416942839fa5d22f271b7f7e7e97e9656aac3a7ed",
+      "bytes": 17048,
       "links_adjusted": false,
-      "archive_date": "2026-11-10",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "archive_date": "2026-11-16",
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "mobilenetv2/TPU/README.md",
@@ -1672,11 +2342,11 @@
       "path": "resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md",
       "source_path_relative_to_qa": null,
       "source_sha256": null,
-      "packaged_sha256": "3f946c4fac459a8f28a3dcdef89604a619b7ce4bd15cf5ea9f5011a16a6875df",
-      "bytes": 16138,
+      "packaged_sha256": "8b7a182d9342f4b8a76f3675278d83e7ef4702256c224f160d675b226a0f0683",
+      "bytes": 17525,
       "links_adjusted": false,
       "archive_date": "2026-11-16",
-      "origin": "New cross-runtime/cross-model reporting analysis of retained measurements; no new inference or attacks"
+      "origin": "Archive reporting, documentation or derived evidence updated with eight completed deployment campaigns; packaging performs no inference or attacks"
     },
     {
       "path": "resnetv2_50/RESNETV2_50_REPORT.md",

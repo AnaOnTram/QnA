@@ -1,0 +1,14 @@
+{
+  "source": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "output": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/resnet_fp8.onnx",
+  "sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+  "recipe": {
+    "format": "FP8 E4M3 Q/DQ",
+    "high_precision_dtype": "fp16",
+    "calibration_count": 512,
+    "calibration_sha256": "d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0"
+  },
+  "base_model": "timm/resnetv2_50.a1h_in1k",
+  "elapsed_seconds": 41.87462592124939
+}

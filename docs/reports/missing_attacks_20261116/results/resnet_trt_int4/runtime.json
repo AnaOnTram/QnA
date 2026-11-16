@@ -1,0 +1,14 @@
+{
+  "runtime": "native TensorRT",
+  "version": "11.3.0.99",
+  "provider": "CUDA device 0",
+  "cpu_fallback": false,
+  "static_batch": 1,
+  "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_int4/engine.plan",
+  "engine_sha256": "89c80d4b1ae4bef18bf55f42851f58da264a711d315677da7cd931042df48f59",
+  "convolution_weight_types": {},
+  "tf32": false,
+  "build_or_load_seconds": 6.529096603393555,
+  "input_dtype": "torch.float32",
+  "output_dtype": "torch.float32"
+}

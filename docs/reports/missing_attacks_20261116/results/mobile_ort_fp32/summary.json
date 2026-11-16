@@ -1,0 +1,260 @@
+{
+  "arm": "mobile_ort_fp32",
+  "family": "mobile",
+  "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "implementation_sha256": {
+    "experiments/missing_attacks_20261116/run.py": "9d7059004bd5cf7404811338f820b2d0a831f9626071deada30b0d301256f4c6",
+    "experiments/missing_attacks_20261116/support.py": "5e588b6a42298bab1b7140f41ec8112c0738ee45522a7ae2f916089cee454407",
+    "Models/mobilenetV2/evasion_trt/scripts/attacks.py": "06af231d5ba98f220cc9fe0fa31c56c4bddb755295dd474adc6ce34e59f8fd92",
+    "Models/resnet50/evasion_onnx/scripts/onnx_surrogate.py": "5983ed732989e167ab63fc38783a015308a075fcaa373818bb0822c40ed99573",
+    "Models/mobilenetV2/evasion_trt/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898"
+  },
+  "config": {
+    "seed": 20261030,
+    "n": 100,
+    "resize": 256,
+    "crop": 224,
+    "batch_size": 10,
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "square_queries": 500,
+    "strong_steps": 100,
+    "strong_restarts": 5,
+    "smoke": false
+  },
+  "clean": {
+    "n": 100,
+    "correct": 83
+  },
+  "runtime": {
+    "runtime": "ONNX Runtime",
+    "version": "1.24.4",
+    "requested_provider": "CUDAExecutionProvider",
+    "registered_providers": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "input_type": "tensor(float)",
+    "tf32": false,
+    "profile": "/home/ross/QA/experiments/missing_attacks_20261116/results/mobile_ort_fp32/ort_profile_2026-11-16_10-23-49.json",
+    "executed_node_providers": {
+      "CUDAExecutionProvider": 1000
+    },
+    "compute_kernels": {
+      "CUDAExecutionProvider:Conv": 520,
+      "CUDAExecutionProvider:Gemm": 10
+    }
+  },
+  "gradient": {
+    "native_runtime_autograd": false,
+    "method": "Exact runtime forward; matched graph FP32 derivative with STE quantizers",
+    "replica_agreement_pct": 100.0,
+    "logit_mae": 1.73956755133986e-06,
+    "gate_pct": 90,
+    "exact_forward_bit_identical": true,
+    "finite_nonzero_gradient": true,
+    "sign_flips": 10,
+    "random_flips": 1,
+    "op_counts": {
+      "Conv": 52,
+      "Clip": 35,
+      "Add": 10,
+      "ReduceMean": 1,
+      "Reshape": 1,
+      "Gemm": 1
+    }
+  },
+  "environment": {
+    "host": "NV10",
+    "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+    "python": "/home/ross/QA/venv/bin/python",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "date_hong_kong": "2026-11-16T10:23:50.401830+08:00"
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 1,
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 76,
+      "robust_correct": 7,
+      "attack_success_pct": 91.56626506024097,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0.3363189697265625
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 5.370058059692383
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 8.177757263183594e-05
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 0,
+      "robust_correct": 83,
+      "attack_success_pct": 0.0,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 77,
+      "robust_correct": 6,
+      "attack_success_pct": 92.7710843373494,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0.2639760971069336
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 5.399762392044067
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 1,
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 80,
+      "robust_correct": 3,
+      "attack_success_pct": 96.3855421686747,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0.26668691635131836
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 5.329885005950928
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 38,
+      "robust_correct": 45,
+      "attack_success_pct": 45.78313253012048,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 34.77102565765381,
+      "query_budget": 500,
+      "total_attack_queries": 27327
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 1,
+      "robust_correct": 82,
+      "attack_success_pct": 1.2048192771084338,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 79,
+      "robust_correct": 4,
+      "attack_success_pct": 95.18072289156626,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0.26864194869995117
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 83,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 6.184425592422485
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 83,
+      "fooled": 71,
+      "robust_correct": 12,
+      "attack_success_pct": 85.5421686746988,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 26.388622045516968,
+      "query_budget": 500,
+      "total_attack_queries": 10758
+    }
+  ],
+  "complete": true,
+  "elapsed_seconds_current_process": 86.28786444664001,
+  "hashes_unchanged": true
+}

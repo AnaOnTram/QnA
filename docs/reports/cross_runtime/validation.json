@@ -1,15 +1,19 @@
 {
   "passed": true,
   "deployment_counts": {
-    "mobilenetv2": 20,
-    "resnetv2_50": 19
+    "mobilenetv2": 23,
+    "resnetv2_50": 24
   },
-  "conditions_reconciled": 843,
-  "source_summary_hashes_verified": 39,
+  "conditions_reconciled": 1011,
+  "source_summary_hashes_verified": 47,
   "cohort_sha256_and_label_matches": 100,
   "supplemental_hardware_validations_checked": 1,
   "supplemental_per_image_rows_checked": 200,
   "supplemental_candidate_replays_recorded": 200,
+  "completed_campaigns_added": 8,
+  "new_campaign_per_image_rows_checked": 16800,
+  "new_campaign_native_replays_recorded": 16800,
+  "archived_weight_hash_links_checked": 8,
   "coreml_matrices_checked": 2,
   "shared_effect_cells": 24,
   "supplementary_seed_cells": 24,
@@ -23,6 +27,7 @@
   "limitations": [
     "The reporting build performs no fresh inference or candidate replay; the archived 2026-11-16 Coral supplement records a separate successful hardware replay.",
     "Historical Coral primary attack tensors were not retained; the supplement reproduces clean logits and the primary count, not historical per-image attack identities.",
-    "No per-image Core ML data in this archive; no combined 19/20-arm clean intersection or paired model-effect confidence interval is claimed."
+    "No per-image Core ML data in this archive; no combined 47-arm clean intersection or paired model-effect confidence interval is claimed.",
+    "The eight new campaigns have independent native replay records; their raw tensors/logits remain outside the archive. The reporting build validates compact evidence and manifest weight links, and performs no new native replay."
   ]
 }

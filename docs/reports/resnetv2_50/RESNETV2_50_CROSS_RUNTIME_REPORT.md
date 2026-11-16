@@ -2,10 +2,16 @@
 
 Results through **16 November 2026 (Hong Kong time)**. Model:
 `timm/resnetv2_50.a1h_in1k`, checkpoint `b809e8c0…a61b`, canonical ONNX
-`6416f2e9…c13f4`. This report covers **19 deployment configurations**: the
-original nine-deployment matrix, Coral Edge TPU and nine Core ML configurations.
+`6416f2e9…c13f4`. This report covers **24 deployment configurations**: the
+original nine-deployment matrix, Coral Edge TPU, nine Core ML configurations,
+four new TensorRT precisions and TFLite INT8 CPU.
 The [original nine-deployment report](RESNETV2_50_REPORT.md) is retained as a
 historical analysis; the conclusions below apply to the expanded scope.
+
+**16 November completion update.** [Eight completed campaigns](../missing_attacks_20261116/README.md)
+fill all 40 previously blank cells. The current matrix includes the new
+five ResNet deployments; their saved candidates passed independent native replay
+before packaging. Earlier matched-study masks remain unchanged.
 
 ## Executive summary
 
@@ -14,7 +20,7 @@ historical analysis; the conclusions below apply to the expanded scope.
   Activation-quantized INT8 deployments range from 56.2% on Coral to 66.7% on
   RKNN. These are deployed-configuration observations, with different
   calibrations and own denominators; they do not isolate activation precision
-  causally. [Full matrix](#all-19-deployments).
+  causally. [Full matrix](#all-24-deployments).
 - **The older broad claim that runtime is unimportant needs narrowing.** Core
   ML's nine configurations share 81 clean-correct images. At the same FP16
   precision, Square 4/255 fools 22/81 on CPU, 33/81 on GPU and 32/81 on Neural
@@ -67,7 +73,7 @@ including when baked into their graph; this fixed comparison recipe differs
 from the checkpoint's native timm evaluation recipe. TorchVision ResNet-50 is
 a different model and is excluded here. [Runtime and preprocessing notes](../../RUNTIMES.md).
 
-## All 19 deployments
+## All 24 deployments
 
 Each cell is **fooled / own clean-correct (percentage)**. Budgets in column
 names are /255. All six displayed conditions are available for every deployment.
@@ -96,6 +102,11 @@ outcomes coincide.
 | [Core ML INT8 CPU](evasion_coreml/results/int8_cpu_only/summary.json) | 81 | 37/81 (45.7%) | 63/81 (77.8%) | 75/81 (92.6%) | 80/81 (98.8%) | 24/81 (29.6%) | 43/81 (53.1%) |
 | [Core ML INT8 CPU+GPU](evasion_coreml/results/int8_cpu_and_gpu/summary.json) | 81 | 38/81 (46.9%) | 67/81 (82.7%) | 75/81 (92.6%) | 80/81 (98.8%) | 31/81 (38.3%) | 46/81 (56.8%) |
 | [Core ML INT8 CPU+NE](evasion_coreml/results/int8_cpu_and_ne/summary.json) | 81 | 38/81 (46.9%) | 65/81 (80.2%) | 74/81 (91.4%) | 81/81 (100.0%) | 28/81 (34.6%) | 49/81 (60.5%) |
+| [TensorRT FP32](../missing_attacks_20261116/results/resnet_trt_fp32/summary.json) | 81 | 41/81 (50.6%) | 65/81 (80.2%) | 73/81 (90.1%) | 81/81 (100.0%) | 36/81 (44.4%) | 49/81 (60.5%) |
+| [TensorRT FP16](../missing_attacks_20261116/results/resnet_trt_fp16/summary.json) | 82 | 42/82 (51.2%) | 67/82 (81.7%) | 75/82 (91.5%) | 82/82 (100.0%) | 31/82 (37.8%) | 50/82 (61.0%) |
+| [TensorRT FP8](../missing_attacks_20261116/results/resnet_trt_fp8/summary.json) | 81 | 39/81 (48.1%) | 61/81 (75.3%) | 75/81 (92.6%) | 81/81 (100.0%) | 18/81 (22.2%) | 33/81 (40.7%) |
+| [TensorRT INT4](../missing_attacks_20261116/results/resnet_trt_int4/summary.json) | 84 | 43/84 (51.2%) | 70/84 (83.3%) | 76/84 (90.5%) | 83/84 (98.8%) | 36/84 (42.9%) | 56/84 (66.7%) |
+| [TFLite CPU INT8](../missing_attacks_20261116/results/resnet_tflite_int8/summary.json) | 81 | 32/81 (39.5%) | 53/81 (65.4%) | 59/81 (72.8%) | 80/81 (98.8%) | 24/81 (29.6%) | 35/81 (43.2%) |
 
 ![ResNetV2-50 full evasion matrix](../cross_runtime/figures/resnetv2_50_matrix.png)
 
@@ -116,7 +127,7 @@ The published single-attack robust accuracy at PGD 1/255 is 16/100 for PyTorch,
 accuracy differs too: 81, 78, 81 and 80/100 respectively. Lower conditional
 evasion therefore needs to be read together with clean accuracy.
 
-Representative uncertainty intervals are below; all 843 conditions across
+Representative uncertainty intervals are below; all 1,011 conditions across
 both models, with counts and intervals, are in the
 [complete condition ledger](../cross_runtime/all_conditions.csv).
 
@@ -205,13 +216,13 @@ the quality of their BPDA search remains a material limitation.
 [Replica exception](UNIFICATION_STATUS.md).
 
 The archive lacks Core ML per-image candidate data, so this report does not
-claim a new 19-way clean intersection, per-image attack union, matched runtime
+claim a new 24-way clean intersection, per-image attack union, matched runtime
 significance test or cross-model candidate transfer. The pilot covers ten
 Imagenette classes and a finite attack budget, not full ImageNet robustness,
 physical attacks or certified worst-case accuracy. Core ML INT4 was not
-attacked because of degraded clean fidelity. ResNet's CPU TFLite conversion
-exists, but no comparable CPU TFLite attack campaign is present; only Coral
-appears in the attack matrix.
+attacked because of degraded clean fidelity. TensorRT classifier-only INT4 is
+a separate artifact and was attacked successfully; the new TFLite CPU campaign
+is also included. [Completed campaigns and replay evidence](../missing_attacks_20261116/README.md).
 
 ## Evidence and reproduction
 
@@ -221,7 +232,7 @@ appears in the attack matrix.
   [all condition counts and 95% intervals](../cross_runtime/all_conditions.csv),
   [source hashes and calculation rules](../cross_runtime/source_index.json).
 - [Reporting validation](../cross_runtime/validation.json). The new synthesis
-  reconciles 843 conditions from 39 hash-pinned summaries across both models;
+  reconciles 1,011 conditions from 47 hash-pinned summaries across both models;
   it does not repeat the earlier hardware/candidate validation.
 - From the archive root, run `python docs/reports/cross_runtime/build_reports.py`
   with NumPy and Matplotlib to regenerate evidence, tables and figures. Report

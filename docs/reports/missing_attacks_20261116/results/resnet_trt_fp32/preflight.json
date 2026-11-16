@@ -1,0 +1,84 @@
+{
+  "arm": "resnet_trt_fp32",
+  "family": "resnet",
+  "source": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "implementation_sha256": {
+    "experiments/missing_attacks_20261116/run.py": "9d7059004bd5cf7404811338f820b2d0a831f9626071deada30b0d301256f4c6",
+    "experiments/missing_attacks_20261116/support.py": "5e588b6a42298bab1b7140f41ec8112c0738ee45522a7ae2f916089cee454407",
+    "Models/resnet50/evasion/scripts/run_evasion.py": "ee4d362b07e350b694f08970ec1c97ec419888505dfacef6525808325091695b",
+    "Models/resnet50/evasion_onnx/scripts/onnx_surrogate.py": "5983ed732989e167ab63fc38783a015308a075fcaa373818bb0822c40ed99573",
+    "Models/mobilenetV2/evasion_trt/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898"
+  },
+  "config": {
+    "seed": 20261030,
+    "n": 100,
+    "resize": 232,
+    "crop": 224,
+    "batch_size": 10,
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "square_queries": 500,
+    "strong_steps": 100,
+    "strong_restarts": 5,
+    "smoke": false
+  },
+  "clean": {
+    "n": 100,
+    "correct": 81
+  },
+  "runtime": {
+    "runtime": "native TensorRT",
+    "version": "11.3.0.99",
+    "provider": "CUDA device 0",
+    "cpu_fallback": false,
+    "static_batch": 1,
+    "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_fp32/engine.plan",
+    "engine_sha256": "de4f3a2b6d5cdb5ee9985529d477fd5e529034922255701efcdfdc03db492dcc",
+    "convolution_weight_types": {},
+    "tf32": false,
+    "build_or_load_seconds": 7.423632621765137,
+    "input_dtype": "torch.float32",
+    "output_dtype": "torch.float32"
+  },
+  "gradient": {
+    "native_runtime_autograd": false,
+    "method": "Exact runtime forward; matched graph FP32 derivative with STE quantizers",
+    "replica_agreement_pct": 100.0,
+    "logit_mae": 4.9567929636396e-06,
+    "gate_pct": 90,
+    "exact_forward_bit_identical": true,
+    "finite_nonzero_gradient": true,
+    "sign_flips": 6,
+    "random_flips": 1,
+    "op_counts": {
+      "Conv": 54,
+      "MaxPool": 1,
+      "BatchNormalization": 49,
+      "Relu": 49,
+      "Add": 16,
+      "GlobalAveragePool": 1,
+      "Flatten": 1
+    }
+  },
+  "environment": {
+    "host": "NV10",
+    "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+    "python": "/home/ross/QA/venv/bin/python",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "date_hong_kong": "2026-11-16T10:29:32.813755+08:00"
+  },
+  "attacks": [],
+  "complete": false
+}

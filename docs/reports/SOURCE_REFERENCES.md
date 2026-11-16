@@ -37,3 +37,15 @@ report manifest. Historical source references in the copied experiment reports
 remain identifiable; the current synthesis links to these archive-local copies.
 The new [reporting script](cross_runtime/build_reports.py) is retained to
 reproduce derived counts and figures; it is not an attack implementation.
+
+## 16 November completed campaigns
+
+The original workspace is `QA/experiments/missing_attacks_20261116/`. Its
+`run.py`, `support.py`, `build.py`, `tflite_replica.py`, `run_tflite_parallel.py`,
+`verify.py`, `verify_artifacts.py` and orchestration helpers are source-only.
+Raw candidate `.pt` files, `clean.npz` logits, full logs, scratch ONNX builds,
+calibration arrays and environments are omitted. The archive retains compact
+metadata, per-image predictions/bounds/query counts, native replay records and
+final model/engine weights. Source summary paths remain provenance identifiers;
+[archive_map.json](missing_attacks_20261116/archive_map.json) resolves their
+graph/engine hashes to packaged model files.

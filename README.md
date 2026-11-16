@@ -20,18 +20,18 @@ Pretrained **timm ResNetV2-50 (`resnetv2_50.a1h_in1k`)** and **MobileNetV2
 artifacts, plus their evasion attack reports and supporting figures/evidence.
 This snapshot was assembled on 6 November 2026 (Hong Kong time).
 
-37 model artifacts represented by 53 files, **1,092,744,779 bytes** (1042.12 MiB),
+44 model artifacts represented by 60 files, **1,545,902,691 bytes** (1474.29 MiB),
 including eight Core ML packages (four per model) and five MobileNetV2 TFLite,
-Edge TPU and QNN artifacts added on 10 November 2026. Binary model data is
+Edge TPU and QNN artifacts added on 10 November 2026. Seven model/engine files and eight completed attack campaigns were added on 16 November 2026. Binary model data is
 tracked with Git LFS. Package JSON manifests, reports, figures, compact result
 evidence, checksums and provenance manifests use ordinary Git.
 
 | Runtime / format | timm ResNetV2-50 | MobileNetV2 |
 | --- | --- | --- |
 | PyTorch | FP32 safetensors checkpoint | FP32 checkpoint |
-| ONNX Runtime | FP32, FP16, INT8 QOperator | FP32 |
-| TensorRT ONNX graphs | INT8 explicit Q/DQ, compressed INT8 Q/DQ; FP32/FP16 graphs shared from `onnx/` | FP32 shared from `onnx/`; FP16, FP8, INT8, mixed INT4 weight-only |
-| TensorRT compiled engines | Two INT8 plans, TensorRT 10.9, batch profile max 10 | Documented deployment engines absent locally; graphs included |
+| ONNX Runtime | FP32, FP16, INT8 QOperator | FP32, FP16 (shared TensorRT graph), INT8 QOperator |
+| TensorRT ONNX graphs | INT8 explicit Q/DQ, compressed INT8 Q/DQ, FP8, classifier-only INT4; FP32/FP16 graphs shared from `onnx/` | FP32 shared from `onnx/`; FP16, FP8, INT8, mixed INT4 weight-only |
+| TensorRT compiled engines | Two INT8 plans, TensorRT 10.9, batch profile max 10; FP32/FP16/FP8/classifier-INT4 plans, TensorRT 11.3, Blackwell, static batch 1 | Documented deployment engines absent locally; graphs included |
 | Apple Core ML | FP32, FP16, INT8 weight-only, experimental INT4 weight-only; iOS 18 / macOS 15+ | FP32, FP16, INT8 weight-only, experimental INT4 weight-only; iOS 18 / macOS 15+ |
 | Rockchip RKNN, RK3588 | FP16, INT8 | FP16, INT8; opset-19 conversion source |
 | Qualcomm QAIRT / QNN | FP32 DLC, INT8 DLC, QCS6490 INT8 context | FP32 DLC, INT8 DLC, QCS6490 INT8 context |
@@ -46,9 +46,10 @@ TorchVision checkpoint. ResNetV2-50 and MobileNetV2 are separate model families.
 - [Evasion attack reports](docs/reports/README.md): unified timm comparison, Edge TPU,
   MobileNetV2 TensorRT and RKNN reports, and new Core ML studies of both models on
   CPU, CPU+GPU and CPU+Neural Engine, with figures, matrices and validation evidence.
-- New cross-runtime syntheses: [ResNetV2-50, 19 configurations](docs/reports/resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md),
-  [MobileNetV2, 20 configurations](docs/reports/mobilenetv2/MOBILENETV2_REPORT.md), and
+- New cross-runtime syntheses: [ResNetV2-50, 24 configurations](docs/reports/resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md),
+  [MobileNetV2, 23 configurations](docs/reports/mobilenetv2/MOBILENETV2_REPORT.md), and
   [how runtime and quantization effects differ between models](docs/reports/CROSS_MODEL_REPORT.md).
+- [Completed missing attack cells](docs/reports/missing_attacks_20261116/README.md): 40 filled cells, eight native-replayed campaigns, compact per-image evidence and new weight artifacts.
 - [Core ML conversion and validation](docs/coreml/README.md): four packages per model, reproduction scripts, input contracts and measured quantization drift.
 - [MobileNetV2 TPU and QNN archive](docs/reports/mobilenetv2/ARCHIVE.md): conversion, hardware validation, performance and evasion reports, runtime helpers and retained evidence.
 - [Artifact catalog](docs/CATALOG.md): every included file, runtime, precision and size.

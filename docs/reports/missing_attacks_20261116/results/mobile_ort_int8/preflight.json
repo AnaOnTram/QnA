@@ -1,0 +1,88 @@
+{
+  "arm": "mobile_ort_int8",
+  "family": "mobile",
+  "source": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/mobile_int8_qop.onnx",
+  "source_sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+  "implementation_sha256": {
+    "experiments/missing_attacks_20261116/run.py": "9d7059004bd5cf7404811338f820b2d0a831f9626071deada30b0d301256f4c6",
+    "experiments/missing_attacks_20261116/support.py": "5e588b6a42298bab1b7140f41ec8112c0738ee45522a7ae2f916089cee454407",
+    "Models/mobilenetV2/evasion_trt/scripts/attacks.py": "06af231d5ba98f220cc9fe0fa31c56c4bddb755295dd474adc6ce34e59f8fd92",
+    "Models/resnet50/evasion_onnx/scripts/onnx_surrogate.py": "5983ed732989e167ab63fc38783a015308a075fcaa373818bb0822c40ed99573",
+    "Models/mobilenetV2/evasion_trt/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898"
+  },
+  "config": {
+    "seed": 20261030,
+    "n": 100,
+    "resize": 256,
+    "crop": 224,
+    "batch_size": 10,
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "square_queries": 500,
+    "strong_steps": 100,
+    "strong_restarts": 5,
+    "smoke": false
+  },
+  "clean": {
+    "n": 100,
+    "correct": 82
+  },
+  "runtime": {
+    "runtime": "ONNX Runtime",
+    "version": "1.24.4",
+    "requested_provider": "CPUExecutionProvider",
+    "registered_providers": [
+      "CPUExecutionProvider"
+    ],
+    "input_type": "tensor(float)",
+    "tf32": null,
+    "profile": "/home/ross/QA/experiments/missing_attacks_20261116/results/mobile_ort_int8/ort_profile_2026-11-16_10-41-09.json",
+    "executed_node_providers": {
+      "CPUExecutionProvider": 710
+    },
+    "compute_kernels": {
+      "CPUExecutionProvider:QLinearConv": 520,
+      "CPUExecutionProvider:QGemm": 10
+    }
+  },
+  "gradient": {
+    "native_runtime_autograd": false,
+    "method": "Exact runtime forward; matched graph FP32 derivative with STE quantizers",
+    "replica_agreement_pct": 93.00000071525574,
+    "logit_mae": 0.40303531289100647,
+    "gate_pct": 90,
+    "exact_forward_bit_identical": true,
+    "finite_nonzero_gradient": true,
+    "sign_flips": 8,
+    "random_flips": 2,
+    "op_counts": {
+      "QuantizeLinear": 2,
+      "QLinearConv": 52,
+      "QLinearAdd": 10,
+      "DequantizeLinear": 2,
+      "ReduceMean": 1,
+      "Reshape": 1,
+      "QGemm": 1
+    }
+  },
+  "environment": {
+    "host": "NV10",
+    "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+    "python": "/home/ross/QA/venv/bin/python",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "date_hong_kong": "2026-11-16T10:41:09.956067+08:00"
+  },
+  "attacks": [],
+  "complete": false
+}

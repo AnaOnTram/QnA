@@ -1,0 +1,16 @@
+{
+  "source": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "output": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/resnet_int4_classifier.onnx",
+  "sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+  "recipe": {
+    "format": "classifier-only symmetric RTN INT4 weight-only",
+    "block_size": 128,
+    "axis": 1,
+    "classifier_rewrite": "1x1 Conv after global pool -> Flatten + Gemm; mathematically equivalent before quantization",
+    "quantized_parameters": 2048000,
+    "other_layers": "unchanged canonical FP32"
+  },
+  "base_model": "timm/resnetv2_50.a1h_in1k",
+  "elapsed_seconds": 0.5138773918151855
+}

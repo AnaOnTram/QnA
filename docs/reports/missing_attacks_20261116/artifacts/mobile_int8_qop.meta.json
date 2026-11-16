@@ -1,0 +1,16 @@
+{
+  "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "output": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/mobile_int8_qop.onnx",
+  "sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+  "recipe": {
+    "format": "QOperator",
+    "weight_type": "QInt8",
+    "activation_type": "QUInt8",
+    "per_channel": true,
+    "calibration_count": 512,
+    "calibration_sha256": "affbcb90682fbe677946b1bb665c4e5d7dc1da12f145dc062c3e72262b9d1a30"
+  },
+  "base_model": "torchvision/mobilenet_v2 IMAGENET1K_V1",
+  "elapsed_seconds": 6.0672125816345215
+}

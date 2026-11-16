@@ -1,0 +1,107 @@
+{
+  "arm": "resnet_trt_fp32",
+  "ok": true,
+  "conditions": 15,
+  "rows_reconciled": 1500,
+  "native_replayed_images": 1500,
+  "complete_native_replay": true,
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "metrics": {
+    "random@1": {
+      "fooled": 0,
+      "eligible": 81,
+      "success_pct": 0.0
+    },
+    "fgsm@1": {
+      "fooled": 41,
+      "eligible": 81,
+      "success_pct": 50.617283950617285
+    },
+    "pgd@1": {
+      "fooled": 65,
+      "eligible": 81,
+      "success_pct": 80.24691358024691
+    },
+    "pgd_stronger@1": {
+      "fooled": 73,
+      "eligible": 81,
+      "success_pct": 90.12345679012346
+    },
+    "random@2": {
+      "fooled": 1,
+      "eligible": 81,
+      "success_pct": 1.2345679012345678
+    },
+    "fgsm@2": {
+      "fooled": 42,
+      "eligible": 81,
+      "success_pct": 51.851851851851855
+    },
+    "pgd@2": {
+      "fooled": 72,
+      "eligible": 81,
+      "success_pct": 88.88888888888889
+    },
+    "random@4": {
+      "fooled": 1,
+      "eligible": 81,
+      "success_pct": 1.2345679012345678
+    },
+    "fgsm@4": {
+      "fooled": 40,
+      "eligible": 81,
+      "success_pct": 49.382716049382715
+    },
+    "pgd@4": {
+      "fooled": 78,
+      "eligible": 81,
+      "success_pct": 96.29629629629629
+    },
+    "square@4": {
+      "fooled": 36,
+      "eligible": 81,
+      "success_pct": 44.44444444444444
+    },
+    "random@8": {
+      "fooled": 4,
+      "eligible": 81,
+      "success_pct": 4.938271604938271
+    },
+    "fgsm@8": {
+      "fooled": 42,
+      "eligible": 81,
+      "success_pct": 51.851851851851855
+    },
+    "pgd@8": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0
+    },
+    "square@8": {
+      "fooled": 49,
+      "eligible": 81,
+      "success_pct": 60.49382716049383
+    }
+  },
+  "engine_precision_evidence": {
+    "inspector_schema": "TensorRT 11 Constants/Datatype",
+    "constant_datatypes": {
+      "Float": 229
+    },
+    "convolution_input_datatypes": {
+      "Float": 70
+    },
+    "convolution_layer_count": 54
+  },
+  "checks": [
+    "sample hashes and labels",
+    "unique complete condition rows",
+    "all tensor bounds and finite pixels",
+    "saved logits/count/CSV agreement",
+    "Square query cap and totals",
+    "PGD+ retains successes",
+    "replica gate",
+    "runtime provider/precision evidence",
+    "source and implementation hashes"
+  ]
+}

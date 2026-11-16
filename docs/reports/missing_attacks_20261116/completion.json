@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "date_hong_kong": "2026-11-16T10:51:33.289467+08:00",
+  "completed_deployments": 8,
+  "filled_screenshot_cells": 40,
+  "full_protocol_conditions": 168,
+  "per_image_rows_reconciled": 16800,
+  "native_candidate_replays": 16800,
+  "native_clean_images_replayed": 800,
+  "artifact_validation": "artifact_validation.json",
+  "validation_reports": [
+    "results/mobile_ort_fp32/validation.json",
+    "results/mobile_ort_fp16/validation.json",
+    "results/mobile_ort_int8/validation.json",
+    "results/resnet_trt_fp32/validation.json",
+    "results/resnet_trt_fp16/validation.json",
+    "results/resnet_trt_fp8/validation.json",
+    "results/resnet_trt_int4/validation.json",
+    "results/resnet_tflite_int8/validation.json"
+  ],
+  "gpu_host": "NV10 / 192.168.1.32 / NVIDIA RTX PRO 4000 Blackwell",
+  "tflite_cpu_host": "local Intel Core Ultra 7 165H",
+  "existing_study_results_modified": false
+}

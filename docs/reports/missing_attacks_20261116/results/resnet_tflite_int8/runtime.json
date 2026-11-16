@@ -1,0 +1,49 @@
+{
+  "runtime": "TFLite INT8 CPU",
+  "backend": "cpu",
+  "model": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc.tflite",
+  "model_bytes": 26290080,
+  "tensorflow": "2.19.1",
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "uint8",
+    "scale": 0.003921568859368563,
+    "zero_point": 0,
+    "quantized": true
+  },
+  "output": {
+    "shape": [
+      1,
+      1000
+    ],
+    "dtype": "uint8",
+    "scale": 0.10331345349550247,
+    "zero_point": 203,
+    "quantized": true
+  },
+  "harness_normalization": {
+    "baked_into": "stem conv",
+    "mean": [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    "std": [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ],
+    "caller_contract": "pass pixel-space [0,1] tensors, unnormalized"
+  },
+  "gradients": false,
+  "parallel_interpreters": 8,
+  "wrapper_sha256": "0acac53bb8893f5b7ef8569f70ee35cf9503e5caa7bc997042b897c6f4d798cc",
+  "parallel_order_preserved": true,
+  "cpu_fallback": false,
+  "serial_parallel_logits_bit_identical": true
+}

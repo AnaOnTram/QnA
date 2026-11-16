@@ -1,0 +1,41 @@
+arm,family,deployment,attack,eps_255,fooled,eligible,success_pct
+mobile_ort_fp32,MobileNetV2,ONNX Runtime FP32 · GPU,fgsm,1,76,83,91.56626506024097
+mobile_ort_fp32,MobileNetV2,ONNX Runtime FP32 · GPU,pgd,1,83,83,100.0
+mobile_ort_fp32,MobileNetV2,ONNX Runtime FP32 · GPU,pgd,8,83,83,100.0
+mobile_ort_fp32,MobileNetV2,ONNX Runtime FP32 · GPU,square,4,38,83,45.78313253012048
+mobile_ort_fp32,MobileNetV2,ONNX Runtime FP32 · GPU,square,8,71,83,85.5421686746988
+mobile_ort_fp16,MobileNetV2,ONNX Runtime FP16 · GPU,fgsm,1,74,83,89.1566265060241
+mobile_ort_fp16,MobileNetV2,ONNX Runtime FP16 · GPU,pgd,1,83,83,100.0
+mobile_ort_fp16,MobileNetV2,ONNX Runtime FP16 · GPU,pgd,8,83,83,100.0
+mobile_ort_fp16,MobileNetV2,ONNX Runtime FP16 · GPU,square,4,33,83,39.75903614457831
+mobile_ort_fp16,MobileNetV2,ONNX Runtime FP16 · GPU,square,8,70,83,84.33734939759036
+mobile_ort_int8,MobileNetV2,ONNX Runtime INT8 · CPU,fgsm,1,69,82,84.14634146341463
+mobile_ort_int8,MobileNetV2,ONNX Runtime INT8 · CPU,pgd,1,82,82,100.0
+mobile_ort_int8,MobileNetV2,ONNX Runtime INT8 · CPU,pgd,8,82,82,100.0
+mobile_ort_int8,MobileNetV2,ONNX Runtime INT8 · CPU,square,4,26,82,31.70731707317073
+mobile_ort_int8,MobileNetV2,ONNX Runtime INT8 · CPU,square,8,44,82,53.65853658536585
+resnet_trt_fp32,ResNetV2-50,TensorRT FP32,fgsm,1,41,81,50.617283950617285
+resnet_trt_fp32,ResNetV2-50,TensorRT FP32,pgd,1,65,81,80.24691358024691
+resnet_trt_fp32,ResNetV2-50,TensorRT FP32,pgd,8,81,81,100.0
+resnet_trt_fp32,ResNetV2-50,TensorRT FP32,square,4,36,81,44.44444444444444
+resnet_trt_fp32,ResNetV2-50,TensorRT FP32,square,8,49,81,60.49382716049383
+resnet_trt_fp16,ResNetV2-50,TensorRT FP16,fgsm,1,42,82,51.21951219512195
+resnet_trt_fp16,ResNetV2-50,TensorRT FP16,pgd,1,67,82,81.70731707317073
+resnet_trt_fp16,ResNetV2-50,TensorRT FP16,pgd,8,82,82,100.0
+resnet_trt_fp16,ResNetV2-50,TensorRT FP16,square,4,31,82,37.80487804878049
+resnet_trt_fp16,ResNetV2-50,TensorRT FP16,square,8,50,82,60.97560975609756
+resnet_trt_fp8,ResNetV2-50,TensorRT FP8,fgsm,1,39,81,48.148148148148145
+resnet_trt_fp8,ResNetV2-50,TensorRT FP8,pgd,1,61,81,75.30864197530865
+resnet_trt_fp8,ResNetV2-50,TensorRT FP8,pgd,8,81,81,100.0
+resnet_trt_fp8,ResNetV2-50,TensorRT FP8,square,4,18,81,22.22222222222222
+resnet_trt_fp8,ResNetV2-50,TensorRT FP8,square,8,33,81,40.74074074074074
+resnet_trt_int4,ResNetV2-50,TensorRT INT4 (classifier),fgsm,1,43,84,51.19047619047619
+resnet_trt_int4,ResNetV2-50,TensorRT INT4 (classifier),pgd,1,70,84,83.33333333333333
+resnet_trt_int4,ResNetV2-50,TensorRT INT4 (classifier),pgd,8,83,84,98.80952380952381
+resnet_trt_int4,ResNetV2-50,TensorRT INT4 (classifier),square,4,36,84,42.857142857142854
+resnet_trt_int4,ResNetV2-50,TensorRT INT4 (classifier),square,8,56,84,66.66666666666667
+resnet_tflite_int8,ResNetV2-50,TFLite INT8 · CPU,fgsm,1,32,81,39.50617283950617
+resnet_tflite_int8,ResNetV2-50,TFLite INT8 · CPU,pgd,1,53,81,65.4320987654321
+resnet_tflite_int8,ResNetV2-50,TFLite INT8 · CPU,pgd,8,80,81,98.76543209876543
+resnet_tflite_int8,ResNetV2-50,TFLite INT8 · CPU,square,4,24,81,29.62962962962963
+resnet_tflite_int8,ResNetV2-50,TFLite INT8 · CPU,square,8,35,81,43.20987654320987

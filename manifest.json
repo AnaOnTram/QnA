@@ -379,6 +379,36 @@
       "source_hash_previously_pinned": false
     },
     {
+      "path": "weights/mobilenetv2/onnx/mobilenetv2_int8_qoperator.onnx",
+      "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
+      "runtime": "ONNX Runtime CPU",
+      "precision": "INT8 QOperator",
+      "recipe": "{\"activation_type\": \"QUInt8\", \"calibration_count\": 512, \"calibration_sha256\": \"affbcb90682fbe677946b1bb665c4e5d7dc1da12f145dc062c3e72262b9d1a30\", \"format\": \"QOperator\", \"per_channel\": true, \"weight_type\": \"QInt8\"}",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/mobile_ort_int8/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/mobile_ort_int8/validation.json",
+        "build_date": "2026-11-16",
+        "source": "/home/ross/QA/Models/mobilenetV2/onnx/mobilenetv2.onnx",
+        "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+        "output": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/mobile_int8_qop.onnx",
+        "sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+        "recipe": {
+          "format": "QOperator",
+          "weight_type": "QInt8",
+          "activation_type": "QUInt8",
+          "per_channel": true,
+          "calibration_count": 512,
+          "calibration_sha256": "affbcb90682fbe677946b1bb665c4e5d7dc1da12f145dc062c3e72262b9d1a30"
+        },
+        "base_model": "torchvision/mobilenet_v2 IMAGENET1K_V1",
+        "elapsed_seconds": 6.0672125816345215
+      },
+      "bytes": 3715969,
+      "sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/artifacts/mobile_int8_qop.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
       "path": "weights/mobilenetv2/pytorch/mobilenet_v2-b0353104.pth",
       "model": "torchvision/mobilenet_v2/IMAGENET1K_V1",
       "runtime": "PyTorch",
@@ -1070,6 +1100,160 @@
       "source_hash_previously_pinned": true
     },
     {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_fp16.trt113.bs1.plan",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell",
+      "precision": "FP16",
+      "recipe": "Native TensorRT 11.3 engine, static batch 1; strongly typed, TF32 disabled; built and replayed on NV10",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp16/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp16/validation.json",
+        "build_date": "2026-11-16",
+        "onnx_sha256": "23cc23880d70cf7b7a0737aa717c4f1727f9d3c085df270739ae76a83fa663d0",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "static_batch": 1,
+        "trt_version": "11.3.0.99",
+        "strongly_typed": true,
+        "tf32": false,
+        "workspace_bytes": 2147483648,
+        "precision_evidence": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp16/precision_evidence.json"
+      },
+      "bytes": 51703860,
+      "sha256": "9ee3b7a8315f1d60563832d6ebc9fb13787e11bd924125926e8a7a632bf821ea",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/results/resnet_trt_fp16/engine.plan",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_fp32.trt113.bs1.plan",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell",
+      "precision": "FP32",
+      "recipe": "Native TensorRT 11.3 engine, static batch 1; strongly typed, TF32 disabled; built and replayed on NV10",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp32/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp32/validation.json",
+        "build_date": "2026-11-16",
+        "onnx_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "static_batch": 1,
+        "trt_version": "11.3.0.99",
+        "strongly_typed": true,
+        "tf32": false,
+        "workspace_bytes": 2147483648,
+        "precision_evidence": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp32/precision_evidence.json"
+      },
+      "bytes": 128372772,
+      "sha256": "de4f3a2b6d5cdb5ee9985529d477fd5e529034922255701efcdfdc03db492dcc",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/results/resnet_trt_fp32/engine.plan",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_fp8.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT",
+      "precision": "FP8 E4M3 Q/DQ",
+      "recipe": "{\"calibration_count\": 512, \"calibration_sha256\": \"d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0\", \"format\": \"FP8 E4M3 Q/DQ\", \"high_precision_dtype\": \"fp16\"}",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp8/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp8/validation.json",
+        "build_date": "2026-11-16",
+        "source": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "output": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/resnet_fp8.onnx",
+        "sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+        "recipe": {
+          "format": "FP8 E4M3 Q/DQ",
+          "high_precision_dtype": "fp16",
+          "calibration_count": 512,
+          "calibration_sha256": "d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0"
+        },
+        "base_model": "timm/resnetv2_50.a1h_in1k",
+        "elapsed_seconds": 41.87462592124939
+      },
+      "bytes": 26120634,
+      "sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/artifacts/resnet_fp8.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_fp8.trt113.bs1.plan",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell",
+      "precision": "FP8 E4M3",
+      "recipe": "Native TensorRT 11.3 engine, static batch 1; strongly typed, TF32 disabled; built and replayed on NV10",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp8/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp8/validation.json",
+        "build_date": "2026-11-16",
+        "onnx_sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "static_batch": 1,
+        "trt_version": "11.3.0.99",
+        "strongly_typed": true,
+        "tf32": false,
+        "workspace_bytes": 2147483648,
+        "precision_evidence": "docs/reports/missing_attacks_20261116/results/resnet_trt_fp8/precision_evidence.json"
+      },
+      "bytes": 26601156,
+      "sha256": "b11ddf759b404967f500f8c37d7f1f3f619e62c296de5b1770bb7863d42a32dd",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/results/resnet_trt_fp8/engine.plan",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int4.trt113.bs1.plan",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT 11.3.0.99 / RTX PRO 4000 Blackwell",
+      "precision": "INT4 classifier weights; FP32 other layers",
+      "recipe": "Native TensorRT 11.3 engine, static batch 1; strongly typed, TF32 disabled; built and replayed on NV10",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/resnet_trt_int4/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/resnet_trt_int4/validation.json",
+        "build_date": "2026-11-16",
+        "onnx_sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "static_batch": 1,
+        "trt_version": "11.3.0.99",
+        "strongly_typed": true,
+        "tf32": false,
+        "workspace_bytes": 2147483648,
+        "precision_evidence": "docs/reports/missing_attacks_20261116/results/resnet_trt_int4/precision_evidence.json"
+      },
+      "bytes": 121308900,
+      "sha256": "89c80d4b1ae4bef18bf55f42851f58da264a711d315677da7cd931042df48f59",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/results/resnet_trt_int4/engine.plan",
+      "source_hash_previously_pinned": true
+    },
+    {
+      "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int4_classifier.onnx",
+      "model": "timm/resnetv2_50.a1h_in1k",
+      "runtime": "TensorRT",
+      "precision": "INT4 classifier weights; FP32 other layers",
+      "recipe": "{\"axis\": 1, \"block_size\": 128, \"classifier_rewrite\": \"1x1 Conv after global pool -> Flatten + Gemm; mathematically equivalent before quantization\", \"format\": \"classifier-only symmetric RTN INT4 weight-only\", \"other_layers\": \"unchanged canonical FP32\", \"quantized_parameters\": 2048000}",
+      "metadata": {
+        "attack_summary": "docs/reports/missing_attacks_20261116/results/resnet_trt_int4/summary.json",
+        "native_replay": "docs/reports/missing_attacks_20261116/results/resnet_trt_int4/validation.json",
+        "build_date": "2026-11-16",
+        "source": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+        "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+        "output": "/home/ross/QA/experiments/missing_attacks_20261116/artifacts/resnet_int4_classifier.onnx",
+        "sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+        "recipe": {
+          "format": "classifier-only symmetric RTN INT4 weight-only",
+          "block_size": 128,
+          "axis": 1,
+          "classifier_rewrite": "1x1 Conv after global pool -> Flatten + Gemm; mathematically equivalent before quantization",
+          "quantized_parameters": 2048000,
+          "other_layers": "unchanged canonical FP32"
+        },
+        "base_model": "timm/resnetv2_50.a1h_in1k",
+        "elapsed_seconds": 0.5138773918151855
+      },
+      "bytes": 95334621,
+      "sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+      "source_path_relative_to_home": "QA/experiments/missing_attacks_20261116/artifacts/resnet_int4_classifier.onnx",
+      "source_hash_previously_pinned": true
+    },
+    {
       "path": "weights/resnetv2_50/tensorrt/resnetv2_50_int8_dq.onnx",
       "model": "timm/resnetv2_50.a1h_in1k",
       "runtime": "TensorRT",
@@ -1174,5 +1358,5 @@
       "source_hash_previously_pinned": false
     }
   ],
-  "updated": "2026-11-10"
+  "updated": "2026-11-16"
 }

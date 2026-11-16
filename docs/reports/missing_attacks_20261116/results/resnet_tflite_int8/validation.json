@@ -1,0 +1,161 @@
+{
+  "arm": "resnet_tflite_int8",
+  "ok": true,
+  "conditions": 23,
+  "rows_reconciled": 2300,
+  "native_replayed_images": 2300,
+  "complete_native_replay": true,
+  "source_sha256": "4c835882627bf4cf32c24ccf2836282047cc59924d2a9cb3af94604ebec560da",
+  "metrics": {
+    "random@1": {
+      "fooled": 2,
+      "eligible": 81,
+      "success_pct": 2.4691358024691357,
+      "effective_uint8_linf_max": 1
+    },
+    "fgsm@1": {
+      "fooled": 32,
+      "eligible": 81,
+      "success_pct": 39.50617283950617,
+      "effective_uint8_linf_max": 1
+    },
+    "pgd@1": {
+      "fooled": 53,
+      "eligible": 81,
+      "success_pct": 65.4320987654321,
+      "effective_uint8_linf_max": 1
+    },
+    "pgd_stronger@1": {
+      "fooled": 59,
+      "eligible": 81,
+      "success_pct": 72.8395061728395,
+      "effective_uint8_linf_max": 1
+    },
+    "random@2": {
+      "fooled": 1,
+      "eligible": 81,
+      "success_pct": 1.2345679012345678,
+      "effective_uint8_linf_max": 2
+    },
+    "fgsm@2": {
+      "fooled": 35,
+      "eligible": 81,
+      "success_pct": 43.20987654320987,
+      "effective_uint8_linf_max": 2
+    },
+    "pgd@2": {
+      "fooled": 61,
+      "eligible": 81,
+      "success_pct": 75.30864197530865,
+      "effective_uint8_linf_max": 2
+    },
+    "random@4": {
+      "fooled": 4,
+      "eligible": 81,
+      "success_pct": 4.938271604938271,
+      "effective_uint8_linf_max": 4
+    },
+    "fgsm@4": {
+      "fooled": 37,
+      "eligible": 81,
+      "success_pct": 45.67901234567901,
+      "effective_uint8_linf_max": 4
+    },
+    "pgd@4": {
+      "fooled": 73,
+      "eligible": 81,
+      "success_pct": 90.12345679012346,
+      "effective_uint8_linf_max": 4
+    },
+    "square@4": {
+      "fooled": 24,
+      "eligible": 81,
+      "success_pct": 29.62962962962963,
+      "effective_uint8_linf_max": 4
+    },
+    "random@8": {
+      "fooled": 7,
+      "eligible": 81,
+      "success_pct": 8.641975308641975,
+      "effective_uint8_linf_max": 8
+    },
+    "fgsm@8": {
+      "fooled": 39,
+      "eligible": 81,
+      "success_pct": 48.148148148148145,
+      "effective_uint8_linf_max": 8
+    },
+    "pgd@8": {
+      "fooled": 80,
+      "eligible": 81,
+      "success_pct": 98.76543209876543,
+      "effective_uint8_linf_max": 8
+    },
+    "square@8": {
+      "fooled": 35,
+      "eligible": 81,
+      "success_pct": 43.20987654320987,
+      "effective_uint8_linf_max": 8
+    },
+    "transfer_fp32_fgsm@1": {
+      "fooled": 32,
+      "eligible": 81,
+      "success_pct": 39.50617283950617,
+      "effective_uint8_linf_max": 1
+    },
+    "transfer_fp32_pgd@1": {
+      "fooled": 48,
+      "eligible": 81,
+      "success_pct": 59.25925925925926,
+      "effective_uint8_linf_max": 1
+    },
+    "transfer_fp32_fgsm@2": {
+      "fooled": 37,
+      "eligible": 81,
+      "success_pct": 45.67901234567901,
+      "effective_uint8_linf_max": 2
+    },
+    "transfer_fp32_pgd@2": {
+      "fooled": 57,
+      "eligible": 81,
+      "success_pct": 70.37037037037037,
+      "effective_uint8_linf_max": 2
+    },
+    "transfer_fp32_fgsm@4": {
+      "fooled": 38,
+      "eligible": 81,
+      "success_pct": 46.91358024691358,
+      "effective_uint8_linf_max": 4
+    },
+    "transfer_fp32_pgd@4": {
+      "fooled": 71,
+      "eligible": 81,
+      "success_pct": 87.65432098765432,
+      "effective_uint8_linf_max": 4
+    },
+    "transfer_fp32_fgsm@8": {
+      "fooled": 41,
+      "eligible": 81,
+      "success_pct": 50.617283950617285,
+      "effective_uint8_linf_max": 8
+    },
+    "transfer_fp32_pgd@8": {
+      "fooled": 81,
+      "eligible": 81,
+      "success_pct": 100.0,
+      "effective_uint8_linf_max": 8
+    }
+  },
+  "engine_precision_evidence": null,
+  "checks": [
+    "sample hashes and labels",
+    "unique complete condition rows",
+    "all tensor bounds and finite pixels",
+    "saved logits/count/CSV agreement",
+    "Square query cap and totals",
+    "PGD+ retains successes",
+    "replica gate",
+    "runtime provider/precision evidence",
+    "source and implementation hashes"
+  ]
+}

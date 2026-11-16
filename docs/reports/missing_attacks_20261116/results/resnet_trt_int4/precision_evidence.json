@@ -1,0 +1,12 @@
+{
+  "inspector_schema": "TensorRT 11 Constants/Datatype",
+  "constant_datatypes": {
+    "Float": 229,
+    "Int4": 1
+  },
+  "convolution_input_datatypes": {
+    "Float": 69
+  },
+  "convolution_layer_count": 53,
+  "int4_classifier_stored_parameters": 2048000
+}

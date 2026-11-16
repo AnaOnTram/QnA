@@ -1,0 +1,14 @@
+{
+  "inspector_schema": "TensorRT 11 Constants/Datatype",
+  "constant_datatypes": {
+    "Half": 82,
+    "Float": 140,
+    "FP8": 53
+  },
+  "convolution_input_datatypes": {
+    "Float": 1,
+    "Half": 5,
+    "FP8": 57
+  },
+  "convolution_layer_count": 59
+}

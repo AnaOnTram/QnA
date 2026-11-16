@@ -17,6 +17,10 @@ script reconciles original summary hashes and counts; it performs no new
 inference or attacks. Original measurements are retained, with later supplements
 identified separately in the affected reports.
 
+The 16 November completion archive adds eight native-replayed campaigns and
+40 formerly blank cells. The current synthesis covers **47 deployments and
+1,011 conditions**. [Completion table, per-image evidence and weight mapping](missing_attacks_20261116/README.md).
+
 ## Main reports
 
 The current cross-runtime syntheses incorporate the later Core ML, TPU and QNN
@@ -25,9 +29,10 @@ the two bases, with matched-study views and explicit denominator limits.
 
 | Model / deployment | Report | Supporting results |
 | --- | --- | --- |
-| timm ResNetV2-50, 19 configurations including Core ML and Coral | [Expanded cross-runtime report](resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md) | [Normalized results](cross_runtime/normalized_results.json), [all conditions and intervals](cross_runtime/all_conditions.csv) |
-| MobileNetV2, 20 configurations including Core ML, QNN and Coral | [Cross-runtime report](mobilenetv2/MOBILENETV2_REPORT.md) | [Normalized results](cross_runtime/normalized_results.json), [all conditions and intervals](cross_runtime/all_conditions.csv) |
+| timm ResNetV2-50, 24 configurations including Core ML and Coral | [Expanded cross-runtime report](resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md) | [Normalized results](cross_runtime/normalized_results.json), [all conditions and intervals](cross_runtime/all_conditions.csv) |
+| MobileNetV2, 23 configurations including Core ML, QNN and Coral | [Cross-runtime report](mobilenetv2/MOBILENETV2_REPORT.md) | [Normalized results](cross_runtime/normalized_results.json), [all conditions and intervals](cross_runtime/all_conditions.csv) |
 | ResNetV2-50 versus MobileNetV2 | [Model, runtime and quantization comparison](CROSS_MODEL_REPORT.md) | [Matched-study quantization contrasts](cross_runtime/quantization_effects.json), [model rate differences](cross_runtime/cross_model_comparisons.json) |
+| Eight new deployments; 40 completed cells | [Completion archive](missing_attacks_20261116/README.md) | [Native replay coverage](missing_attacks_20261116/completion.json), [40 cell counts](missing_attacks_20261116/missing_cells.csv) |
 | timm ResNetV2-50, original nine-deployment comparison | [Historical unified deployment report](resnetv2_50/RESNETV2_50_REPORT.md) | [Shared-population matrix](resnetv2_50/evasion_onnx/results/comparisons/timm_matrix.md), [figure/table data](resnetv2_50/evasion_onnx/results/comparisons/v2_report_data.json) |
 | timm ResNetV2-50, Coral Edge TPU | [Edge TPU attack report](resnetv2_50/TPU/evasion/EVASION_TPU_REPORT.md) | [Cross-runtime comparison](resnetv2_50/TPU/evasion/comparison.json), [attack summary](resnetv2_50/TPU/evasion/results/edgetpu_int8/summary.json) |
 | MobileNetV2, TensorRT FP32/FP16/FP8/INT8/INT4 | [TensorRT attack report](mobilenetv2/evasion_trt/README.md) | [Full attack matrix](mobilenetv2/evasion_trt/results/comparisons/matrix.md), [independent verification](mobilenetv2/evasion_trt/results/verification/REPORT.md) |

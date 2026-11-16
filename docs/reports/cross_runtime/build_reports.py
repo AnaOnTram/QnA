@@ -98,6 +98,74 @@ for item in master:
         population_n=100, source=str(source.relative_to(REPORTS)), source_sha256=sha(source),
         conditions=conditions))
 assert Counter(a['model'] for a in records) == {'mobilenetv2':20,'resnetv2_50':19}
+# New completed campaigns are supplements to the immutable 39-deployment registry.
+campaign = REPORTS/'missing_attacks_20261116'
+completion = read(campaign/'completion.json')
+assert completion['complete'] and completion['completed_deployments'] == 8
+archive_map = read(campaign/'archive_map.json')
+weight_manifest = read(REPO/'manifest.json')
+weight_hashes = {a['path']:a['sha256'] for a in weight_manifest['artifacts']}
+new_per_image_rows = new_native_replays = 0
+new_campaign_samples = {}
+for arm, mapping in archive_map.items():
+    work = campaign/'results'/arm
+    source = work/'summary.json'
+    summary = read(source)
+    validation = read(work/'validation.json')
+    samples = read(work/'samples.json')
+    assert summary['complete'] and summary['hashes_unchanged']
+    assert validation['ok'] and validation['complete_native_replay']
+    assert summary['source_sha256'] == validation['source_sha256'] == mapping['graph_sha256'] == weight_hashes[mapping['graph']]
+    if 'engine' in mapping:
+        assert summary['runtime']['engine_sha256'] == weight_hashes[mapping['engine']]
+    assert summary['gradient']['replica_agreement_pct'] >= 90
+    assert summary['gradient']['exact_forward_bit_identical']
+    n = summary['clean']['correct']
+    assert summary['clean']['n'] == len(samples) == 100
+    assert len({r['index'] for r in samples}) == 100
+    new_campaign_samples[arm] = samples
+    path = work/'per_image.csv'
+    sources[str(path.relative_to(REPO))] = sha(path)
+    with path.open(newline='') as stream:
+        rows = list(csv.DictReader(stream))
+    keys = [(r['attack'],int(r['eps_255']),int(r['index'])) for r in rows]
+    assert len(keys) == len(set(keys)) == validation['rows_reconciled'] == validation['native_replayed_images']
+    new_per_image_rows += len(rows)
+    new_native_replays += validation['native_replayed_images']
+    conditions = {}
+    success = {}
+    for a in summary['attacks']:
+        attack, eps = a['attack'], a['eps_255']
+        key = f'{attack}@{eps:g}'
+        assert key not in conditions
+        subset = sorted((r for r in rows if r['attack'] == attack and int(r['eps_255']) == eps),key=lambda r:int(r['index']))
+        assert [int(r['index']) for r in subset] == list(range(100))
+        assert [int(r['label']) for r in subset] == [r['label'] for r in samples]
+        assert sum(r['clean_correct'] == 'True' for r in subset) == n == a['clean_correct']
+        success[key] = {int(r['index']) for r in subset if r['clean_correct'] == 'True' and r['adv_correct'] == 'False'}
+        k = len(success[key])
+        assert k == a['fooled'] == validation['metrics'][key]['fooled']
+        assert n == validation['metrics'][key]['eligible']
+        assert a['robust_correct'] == n-k
+        assert abs(a['attack_success_pct']-100*k/n) < 1e-8
+        assert all(0 <= float(r['linf_255']) <= eps+255e-6 for r in subset)
+        assert all((r['adv_correct']=='True') == (int(r['adv_prediction'])==int(r['label'])) for r in subset)
+        assert all((r['clean_correct']=='True') == (int(r['clean_prediction'])==int(r['label'])) for r in subset)
+        if attack == 'square':
+            assert all(0 <= int(r['queries']) <= 500 for r in subset)
+            assert sum(int(r['queries']) for r in subset) == a['total_attack_queries']
+        if arm == 'resnet_tflite_int8':
+            assert validation['metrics'][key]['effective_uint8_linf_max'] <= eps
+        conditions[key] = metric(k,n) | dict(robust_correct=n-k,robust_accuracy_pct=n-k)
+    assert success['pgd@1'] <= success['pgd_stronger@1']
+    assert len(conditions) == validation['conditions']
+    records.append(dict(model=mapping['model'],family={'resnetv2_50':'ResNetV2-50','mobilenetv2':'MobileNetV2'}[mapping['model']],
+        deployment=mapping['deployment'],clean_correct=n,population_n=100,
+        source=str(source.relative_to(REPORTS)),source_sha256=sha(source),conditions=conditions))
+assert new_per_image_rows == new_native_replays == completion['per_image_rows_reconciled'] == completion['native_candidate_replays'] == 16800
+assert Counter(a['model'] for a in records) == {'mobilenetv2':23,'resnetv2_50':24}
+assert len({(a['model'],a['deployment']) for a in records}) == 47
+
 lookup = {(a['model'],a['deployment']):a for a in records}
 
 # Validate the compact evidence for the later Coral PGD+ supplement. This
@@ -144,6 +212,8 @@ mobile_samples = read(REPORTS/'mobilenetv2/TPU/results/samples.json')
 identities = lambda rows: [(x['index'],x['sha256'],x['label']) for x in rows]
 assert identities(resnet_samples) == identities(mobile_samples)
 assert len(resnet_samples) == len({x['sha256'] for x in resnet_samples}) == 100
+for arm, samples in new_campaign_samples.items():
+    assert identities(samples) == identities(resnet_samples)
 
 core = {model:read(REPORTS/f'{model}/evasion_coreml/results/comparisons/matrix.json')
         for model in FAMILY_MODEL.values()}
@@ -225,7 +295,7 @@ save('normalized_results.json',dict(as_of='2026-11-16',population_n=100,
 save('quantization_effects.json',effects)
 save('cross_model_comparisons.json',cross)
 save('square_seed_results.json',seed_results)
-save('source_index.json',dict(inputs=sources,methods=dict(normalization='Read each pinned source summary; reconcile all counts with the historical registry; recompute rates and Wilson intervals.',
+save('source_index.json',dict(inputs=sources,methods=dict(normalization='Reconcile historical registry counts and new campaign per-image evidence; recompute rates and Wilson intervals.',
     shared_masks='Reuse retained common-clean matrix counts. Do not combine masks or fabricate an all-deployment common cohort.',
     intervals='95% Wilson per cell; seed ranges are observed ranges of three extra attack seeds, not confidence intervals.',
     differences='Percentage-point differences are descriptive. Paired difference uncertainty is unavailable without per-image discordances.',
@@ -267,7 +337,7 @@ for family,model in FAMILY_MODEL.items():
     chart_data[f'{model}_matrix']=[dict(deployment=a['deployment'],conditions={k:a['conditions'].get(k) for k in MAIN}) for a in subset]
 
 # The same axes and uncertainty definition for both models in the direct view.
-fig,axes=plt.subplots(1,2,figsize=(15,9.3),sharey=True)
+fig,axes=plt.subplots(1,2,figsize=(15,0.4*len(common_labels)+3.3),sharey=True)
 for ax,key,title in zip(axes,['pgd@1','square@8'],['PGD at 1/255','Square at 8/255 (500 queries)']):
     rows=[x for x in cross if x['condition']==key]
     for i,row in enumerate(rows):
@@ -345,10 +415,14 @@ save('validation.json',dict(passed=True,deployment_counts=dict(Counter(a['model'
     source_summary_hashes_verified=len(records),cohort_sha256_and_label_matches=100,
     supplemental_hardware_validations_checked=1,supplemental_per_image_rows_checked=len(supplemental_rows),
     supplemental_candidate_replays_recorded=replay['fresh_native_candidate_scores'],
+    completed_campaigns_added=8,new_campaign_per_image_rows_checked=new_per_image_rows,
+    new_campaign_native_replays_recorded=new_native_replays,
+    archived_weight_hash_links_checked=len(archive_map),
     coreml_matrices_checked=2,shared_effect_cells=len(effects),supplementary_seed_cells=len(seed_results),
     figures_generated=5,full_combined_shared_population_available=False,
     environment=dict(python=sys.version.split()[0],numpy=np.__version__,matplotlib=matplotlib.__version__),
     limitations=['The reporting build performs no fresh inference or candidate replay; the archived 2026-11-16 Coral supplement records a separate successful hardware replay.',
                  'Historical Coral primary attack tensors were not retained; the supplement reproduces clean logits and the primary count, not historical per-image attack identities.',
-                 'No per-image Core ML data in this archive; no combined 19/20-arm clean intersection or paired model-effect confidence interval is claimed.']))
+                 'No per-image Core ML data in this archive; no combined 47-arm clean intersection or paired model-effect confidence interval is claimed.',
+                 'The eight new campaigns have independent native replay records; their raw tensors/logits remain outside the archive. The reporting build validates compact evidence and manifest weight links, and performs no new native replay.']))
 print((HERE/'validation.json').read_text())

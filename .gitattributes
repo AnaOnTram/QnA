@@ -15,3 +15,4 @@ SHA256SUMS text eol=lf
 # Preserve original evidence bytes and checksum validity across checkouts.
 docs/reports/mobilenetv2/TPU/**/*.csv -text
 docs/reports/mobilenetv2/evasion_qnn/**/*.csv -text
+docs/reports/missing_attacks_20261116/**/*.csv -text

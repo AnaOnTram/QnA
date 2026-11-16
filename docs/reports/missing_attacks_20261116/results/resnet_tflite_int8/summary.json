@@ -1,0 +1,382 @@
+{
+  "arm": "resnet_tflite_int8",
+  "family": "resnet",
+  "source": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc.tflite",
+  "source_sha256": "4c835882627bf4cf32c24ccf2836282047cc59924d2a9cb3af94604ebec560da",
+  "implementation_sha256": {
+    "experiments/missing_attacks_20261116/run.py": "9d7059004bd5cf7404811338f820b2d0a831f9626071deada30b0d301256f4c6",
+    "experiments/missing_attacks_20261116/support.py": "5e588b6a42298bab1b7140f41ec8112c0738ee45522a7ae2f916089cee454407",
+    "Models/resnet50/evasion/scripts/run_evasion.py": "ee4d362b07e350b694f08970ec1c97ec419888505dfacef6525808325091695b",
+    "Models/resnet50/evasion_onnx/scripts/onnx_surrogate.py": "5983ed732989e167ab63fc38783a015308a075fcaa373818bb0822c40ed99573",
+    "Models/mobilenetV2/evasion_trt/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898",
+    "experiments/missing_attacks_20261116/tflite_replica.py": "d78f741f87defb8b67362af5c564495de2c6bbec1d39c0d1e8ce84c115a3c094",
+    "Models/resnet50/TPU/edgetpu_runtime.py": "0f5564978338c1ac6cf33e706b8c7ca63b887219893ca51a9d1af4633b93ae56"
+  },
+  "config": {
+    "seed": 20261030,
+    "n": 100,
+    "resize": 232,
+    "crop": 224,
+    "batch_size": 10,
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "square_queries": 500,
+    "strong_steps": 100,
+    "strong_restarts": 5,
+    "smoke": false
+  },
+  "clean": {
+    "n": 100,
+    "correct": 81
+  },
+  "runtime": {
+    "runtime": "TFLite INT8 CPU",
+    "backend": "cpu",
+    "model": "/home/ross/QA/Models/resnet50/TPU/resnetv2_50_int8_nhwc.tflite",
+    "model_bytes": 26290080,
+    "tensorflow": "2.19.1",
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "scale": 0.003921568859368563,
+      "zero_point": 0,
+      "quantized": true
+    },
+    "output": {
+      "shape": [
+        1,
+        1000
+      ],
+      "dtype": "uint8",
+      "scale": 0.10331345349550247,
+      "zero_point": 203,
+      "quantized": true
+    },
+    "harness_normalization": {
+      "baked_into": "stem conv",
+      "mean": [
+        0.48500001430511475,
+        0.4560000002384186,
+        0.4059999883174896
+      ],
+      "std": [
+        0.2290000021457672,
+        0.2240000069141388,
+        0.22499999403953552
+      ],
+      "caller_contract": "pass pixel-space [0,1] tensors, unnormalized"
+    },
+    "gradients": false,
+    "parallel_interpreters": 8,
+    "wrapper_sha256": "0acac53bb8893f5b7ef8569f70ee35cf9503e5caa7bc997042b897c6f4d798cc",
+    "parallel_order_preserved": true,
+    "cpu_fallback": false,
+    "serial_parallel_logits_bit_identical": true
+  },
+  "gradient": {
+    "native_runtime_autograd": false,
+    "method": "Exact runtime forward; matched graph FP32 derivative with STE quantizers",
+    "replica_agreement_pct": 93.00000071525574,
+    "logit_mae": 0.2701140344142914,
+    "gate_pct": 90,
+    "exact_forward_bit_identical": true,
+    "finite_nonzero_gradient": true,
+    "sign_flips": 3,
+    "random_flips": 2,
+    "op_counts": {
+      "QUANTIZE": 2,
+      "PAD": 5,
+      "CONV_2D": 54,
+      "MAX_POOL_2D": 1,
+      "MUL": 17,
+      "ADD": 33,
+      "MEAN": 1,
+      "RESHAPE": 1
+    }
+  },
+  "environment": {
+    "host": "Precision",
+    "gpu": "NVIDIA RTX 2000 Ada Generation Laptop GPU",
+    "python": "/home/ross/QA/.venvs/coral-pgd-plus/bin/python",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.1.3",
+    "date_hong_kong": "2026-11-16T10:26:56.788747+08:00"
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 2,
+      "robust_correct": 79,
+      "attack_success_pct": 2.4691358024691357,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 32,
+      "robust_correct": 49,
+      "attack_success_pct": 39.50617283950617,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 13.309245347976685
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 53,
+      "robust_correct": 28,
+      "attack_success_pct": 65.4320987654321,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 118.50383806228638
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 59,
+      "robust_correct": 22,
+      "attack_success_pct": 72.8395061728395,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 411.2672860622406
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 1,
+      "robust_correct": 80,
+      "attack_success_pct": 1.2345679012345678,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 35,
+      "robust_correct": 46,
+      "attack_success_pct": 43.20987654320987,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 7.010183334350586
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 61,
+      "robust_correct": 20,
+      "attack_success_pct": 75.30864197530865,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 126.04621005058289
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 4,
+      "robust_correct": 77,
+      "attack_success_pct": 4.938271604938271,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 37,
+      "robust_correct": 44,
+      "attack_success_pct": 45.67901234567901,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 7.260041236877441
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 73,
+      "robust_correct": 8,
+      "attack_success_pct": 90.12345679012346,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 123.67233967781067
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 24,
+      "robust_correct": 57,
+      "attack_success_pct": 29.62962962962963,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 270.93332028388977,
+      "query_budget": 500,
+      "total_attack_queries": 29703
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 7,
+      "robust_correct": 74,
+      "attack_success_pct": 8.641975308641975,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 39,
+      "robust_correct": 42,
+      "attack_success_pct": 48.148148148148145,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 5.697960138320923
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 80,
+      "robust_correct": 1,
+      "attack_success_pct": 98.76543209876543,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 120.13956952095032
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 35,
+      "robust_correct": 46,
+      "attack_success_pct": 43.20987654320987,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 221.7473611831665,
+      "query_budget": 500,
+      "total_attack_queries": 23718
+    },
+    {
+      "attack": "transfer_fp32_fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 32,
+      "robust_correct": 49,
+      "attack_success_pct": 39.50617283950617,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 48,
+      "robust_correct": 33,
+      "attack_success_pct": 59.25925925925926,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 37,
+      "robust_correct": 44,
+      "attack_success_pct": 45.67901234567901,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 57,
+      "robust_correct": 24,
+      "attack_success_pct": 70.37037037037037,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 38,
+      "robust_correct": 43,
+      "attack_success_pct": 46.91358024691358,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 71,
+      "robust_correct": 10,
+      "attack_success_pct": 87.65432098765432,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 41,
+      "robust_correct": 40,
+      "attack_success_pct": 50.617283950617285,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0
+    },
+    {
+      "attack": "transfer_fp32_pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 81,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0
+    }
+  ],
+  "complete": true,
+  "elapsed_seconds_current_process": 1436.8397114276886,
+  "hashes_unchanged": true
+}

@@ -1,0 +1,62 @@
+{
+  "mobile_ort_fp32": {
+    "model": "mobilenetv2",
+    "deployment": "ORT CUDA FP32",
+    "graph": "weights/mobilenetv2/onnx/mobilenetv2_fp32.onnx",
+    "graph_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+    "summary": "results/mobile_ort_fp32/summary.json"
+  },
+  "mobile_ort_fp16": {
+    "model": "mobilenetv2",
+    "deployment": "ORT CUDA FP16",
+    "graph": "weights/mobilenetv2/tensorrt/mobilenetv2_fp16.onnx",
+    "graph_sha256": "cf8a3b902a5f182c930f691a2216bc739912d224150b7498a4df8b4e5532b5d5",
+    "summary": "results/mobile_ort_fp16/summary.json"
+  },
+  "mobile_ort_int8": {
+    "model": "mobilenetv2",
+    "deployment": "ORT CPU INT8 QOperator",
+    "graph": "weights/mobilenetv2/onnx/mobilenetv2_int8_qoperator.onnx",
+    "graph_sha256": "47794619ed16ebfd6757bc186fa910c5e7bb88135b4d0a29cbacd2d372577b2b",
+    "summary": "results/mobile_ort_int8/summary.json"
+  },
+  "resnet_trt_fp32": {
+    "model": "resnetv2_50",
+    "deployment": "TensorRT FP32",
+    "graph": "weights/resnetv2_50/onnx/resnetv2_50_fp32.onnx",
+    "graph_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+    "summary": "results/resnet_trt_fp32/summary.json",
+    "engine": "weights/resnetv2_50/tensorrt/resnetv2_50_fp32.trt113.bs1.plan"
+  },
+  "resnet_trt_fp16": {
+    "model": "resnetv2_50",
+    "deployment": "TensorRT FP16",
+    "graph": "weights/resnetv2_50/onnx/resnetv2_50_fp16.onnx",
+    "graph_sha256": "23cc23880d70cf7b7a0737aa717c4f1727f9d3c085df270739ae76a83fa663d0",
+    "summary": "results/resnet_trt_fp16/summary.json",
+    "engine": "weights/resnetv2_50/tensorrt/resnetv2_50_fp16.trt113.bs1.plan"
+  },
+  "resnet_trt_fp8": {
+    "model": "resnetv2_50",
+    "deployment": "TensorRT FP8",
+    "graph": "weights/resnetv2_50/tensorrt/resnetv2_50_fp8.onnx",
+    "graph_sha256": "980c05083d336058f47534fd064d98723a4126292d606c4f17017a57daf903f7",
+    "summary": "results/resnet_trt_fp8/summary.json",
+    "engine": "weights/resnetv2_50/tensorrt/resnetv2_50_fp8.trt113.bs1.plan"
+  },
+  "resnet_trt_int4": {
+    "model": "resnetv2_50",
+    "deployment": "TensorRT INT4",
+    "graph": "weights/resnetv2_50/tensorrt/resnetv2_50_int4_classifier.onnx",
+    "graph_sha256": "453e27c12cafb590366884f13af06df5580af436027b5c0f009d09982e7c01d5",
+    "summary": "results/resnet_trt_int4/summary.json",
+    "engine": "weights/resnetv2_50/tensorrt/resnetv2_50_int4.trt113.bs1.plan"
+  },
+  "resnet_tflite_int8": {
+    "model": "resnetv2_50",
+    "deployment": "TFLite CPU INT8",
+    "graph": "weights/resnetv2_50/tflite/resnetv2_50_int8_nhwc.tflite",
+    "graph_sha256": "4c835882627bf4cf32c24ccf2836282047cc59924d2a9cb3af94604ebec560da",
+    "summary": "results/resnet_tflite_int8/summary.json"
+  }
+}

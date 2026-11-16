@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "artifacts": {
+    "mobile_int8_qop.onnx": {
+      "source_hash_passed": true,
+      "artifact_hash_passed": true,
+      "recipe": {
+        "format": "QOperator",
+        "weight_type": "QInt8",
+        "activation_type": "QUInt8",
+        "per_channel": true,
+        "calibration_count": 512,
+        "calibration_sha256": "affbcb90682fbe677946b1bb665c4e5d7dc1da12f145dc062c3e72262b9d1a30"
+      }
+    },
+    "resnet_int4_classifier.onnx": {
+      "source_hash_passed": true,
+      "artifact_hash_passed": true,
+      "recipe": {
+        "format": "classifier-only symmetric RTN INT4 weight-only",
+        "block_size": 128,
+        "axis": 1,
+        "classifier_rewrite": "1x1 Conv after global pool -> Flatten + Gemm; mathematically equivalent before quantization",
+        "quantized_parameters": 2048000,
+        "other_layers": "unchanged canonical FP32"
+      },
+      "unchanged_nonclassifier_initializers": true,
+      "unchanged_nonclassifier_nodes": true,
+      "float_classifier_rewrite_max_error": 1.52587890625e-05,
+      "quantized_parameters": 2048000,
+      "nearest_int4_grid_passed": true
+    },
+    "resnet_fp8.onnx": {
+      "source_hash_passed": true,
+      "artifact_hash_passed": true,
+      "recipe": {
+        "format": "FP8 E4M3 Q/DQ",
+        "high_precision_dtype": "fp16",
+        "calibration_count": 512,
+        "calibration_sha256": "d66928330a3a4bfd652330cc4bb4709dd61167abe17ef213d86111aff40d33b0"
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "arm": "resnet_trt_fp32",
+  "family": "resnet",
+  "source": "/home/ross/QA/Models/resnet50/quantize/artifacts/timm_rnv2_fp32.onnx",
+  "source_sha256": "6416f2e9d2d9c13f3baa60a496d0934e870e19baf8cd2c416979df42c75c13f4",
+  "implementation_sha256": {
+    "experiments/missing_attacks_20261116/run.py": "9d7059004bd5cf7404811338f820b2d0a831f9626071deada30b0d301256f4c6",
+    "experiments/missing_attacks_20261116/support.py": "5e588b6a42298bab1b7140f41ec8112c0738ee45522a7ae2f916089cee454407",
+    "Models/resnet50/evasion/scripts/run_evasion.py": "ee4d362b07e350b694f08970ec1c97ec419888505dfacef6525808325091695b",
+    "Models/resnet50/evasion_onnx/scripts/onnx_surrogate.py": "5983ed732989e167ab63fc38783a015308a075fcaa373818bb0822c40ed99573",
+    "Models/mobilenetV2/evasion_trt/scripts/replica.py": "b1ff1bc4f9d72d6cd55f24ec518f90ec869bcb74980a36892d597269e4352898"
+  },
+  "config": {
+    "seed": 20261030,
+    "n": 100,
+    "resize": 232,
+    "crop": 224,
+    "batch_size": 10,
+    "eps_255": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "steps": 20,
+    "restarts": 2,
+    "square_eps_255": [
+      4,
+      8
+    ],
+    "square_queries": 500,
+    "strong_steps": 100,
+    "strong_restarts": 5,
+    "smoke": false
+  },
+  "clean": {
+    "n": 100,
+    "correct": 81
+  },
+  "runtime": {
+    "runtime": "native TensorRT",
+    "version": "11.3.0.99",
+    "provider": "CUDA device 0",
+    "cpu_fallback": false,
+    "static_batch": 1,
+    "engine": "/home/ross/QA/experiments/missing_attacks_20261116/results/resnet_trt_fp32/engine.plan",
+    "engine_sha256": "de4f3a2b6d5cdb5ee9985529d477fd5e529034922255701efcdfdc03db492dcc",
+    "convolution_weight_types": {},
+    "tf32": false,
+    "build_or_load_seconds": 7.423632621765137,
+    "input_dtype": "torch.float32",
+    "output_dtype": "torch.float32"
+  },
+  "gradient": {
+    "native_runtime_autograd": false,
+    "method": "Exact runtime forward; matched graph FP32 derivative with STE quantizers",
+    "replica_agreement_pct": 100.0,
+    "logit_mae": 4.9567929636396e-06,
+    "gate_pct": 90,
+    "exact_forward_bit_identical": true,
+    "finite_nonzero_gradient": true,
+    "sign_flips": 6,
+    "random_flips": 1,
+    "op_counts": {
+      "Conv": 54,
+      "MaxPool": 1,
+      "BatchNormalization": 49,
+      "Relu": 49,
+      "Add": 16,
+      "GlobalAveragePool": 1,
+      "Flatten": 1
+    }
+  },
+  "environment": {
+    "host": "NV10",
+    "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+    "python": "/home/ross/QA/venv/bin/python",
+    "torch": "2.15.0+cu132",
+    "numpy": "2.5.4",
+    "date_hong_kong": "2026-11-16T10:29:32.813755+08:00"
+  },
+  "attacks": [
+    {
+      "attack": "random",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 0,
+      "robust_correct": 81,
+      "attack_success_pct": 0.0,
+      "max_linf_255": 0.9999999403953552,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 41,
+      "robust_correct": 40,
+      "attack_success_pct": 50.617283950617285,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 0.8538649082183838
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 65,
+      "robust_correct": 16,
+      "attack_success_pct": 80.24691358024691,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 15.798455715179443
+    },
+    {
+      "attack": "pgd_stronger",
+      "eps_255": 1,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 73,
+      "robust_correct": 8,
+      "attack_success_pct": 90.12345679012346,
+      "max_linf_255": 1.0000075101852417,
+      "seconds": 32.03521108627319
+    },
+    {
+      "attack": "random",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 1,
+      "robust_correct": 80,
+      "attack_success_pct": 1.2345679012345678,
+      "max_linf_255": 1.9999998807907104,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 42,
+      "robust_correct": 39,
+      "attack_success_pct": 51.851851851851855,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 0.8231945037841797
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 2,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 72,
+      "robust_correct": 9,
+      "attack_success_pct": 88.88888888888889,
+      "max_linf_255": 2.000007390975952,
+      "seconds": 16.108799695968628
+    },
+    {
+      "attack": "random",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 1,
+      "robust_correct": 80,
+      "attack_success_pct": 1.2345679012345678,
+      "max_linf_255": 3.999999761581421,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 40,
+      "robust_correct": 41,
+      "attack_success_pct": 49.382716049382715,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 0.8265171051025391
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 78,
+      "robust_correct": 3,
+      "attack_success_pct": 96.29629629629629,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 16.17287826538086
+    },
+    {
+      "attack": "square",
+      "eps_255": 4,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 36,
+      "robust_correct": 45,
+      "attack_success_pct": 44.44444444444444,
+      "max_linf_255": 4.000007152557373,
+      "seconds": 49.47052359580994,
+      "query_budget": 500,
+      "total_attack_queries": 28357
+    },
+    {
+      "attack": "random",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 4,
+      "robust_correct": 77,
+      "attack_success_pct": 4.938271604938271,
+      "max_linf_255": 7.999999523162842,
+      "seconds": 0
+    },
+    {
+      "attack": "fgsm",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 42,
+      "robust_correct": 39,
+      "attack_success_pct": 51.851851851851855,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 0.8346781730651855
+    },
+    {
+      "attack": "pgd",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 81,
+      "robust_correct": 0,
+      "attack_success_pct": 100.0,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 16.29196572303772
+    },
+    {
+      "attack": "square",
+      "eps_255": 8,
+      "n": 100,
+      "clean_correct": 81,
+      "fooled": 49,
+      "robust_correct": 32,
+      "attack_success_pct": 60.49382716049383,
+      "max_linf_255": 8.000006675720215,
+      "seconds": 34.420323848724365,
+      "query_budget": 500,
+      "total_attack_queries": 19810
+    }
+  ],
+  "complete": true,
+  "elapsed_seconds_current_process": 186.94463396072388,
+  "hashes_unchanged": true
+}

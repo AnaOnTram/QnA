@@ -3,7 +3,7 @@
 The current synthesis is in the [ResNetV2-50 report](../resnetv2_50/RESNETV2_50_CROSS_RUNTIME_REPORT.md),
 [MobileNetV2 report](../mobilenetv2/MOBILENETV2_REPORT.md) and
 [cross-model report](../CROSS_MODEL_REPORT.md). These reports use retained
-measurements through 16 November 2026, including a new Coral PGD+ supplement.
+measurements through 16 November 2026, including the Coral PGD+ supplement and eight newly completed deployment campaigns.
 The reporting build itself performs no inference or attacks.
 
 ## Reproduce the calculations and figures
@@ -38,11 +38,20 @@ The reporting build checks these compact records and primary-success retention;
 it does not replay the candidate tensors. The local source workspace retains
 those tensors and the runner. The archive continues to exclude them.
 
+## Eight completed campaigns: 16 November 2026
+
+The [completion archive](../missing_attacks_20261116/README.md) adds five
+ResNetV2-50 and three MobileNetV2 deployments. Its 168 conditions reconcile
+against 16,800 compact per-image rows and successful independent native replay
+records. Archived graph/engine hashes match the weight manifest. This build
+checks those records without repeating inference or replaying omitted tensors.
+The original 39-deployment source registry remains unchanged.
+
 ## Evidence files
 
 | File | Purpose |
 | --- | --- |
-| [normalized_results.json](normalized_results.json) | 39 deployments, 843 conditions, integer numerators/denominators, recomputed rates and Wilson intervals |
+| [normalized_results.json](normalized_results.json) | 47 deployments, 1,011 conditions, integer numerators/denominators, recomputed rates and Wilson intervals |
 | [all_conditions.csv](all_conditions.csv) | Flat complete condition ledger, including controls and transfer conditions |
 | [cross_model_comparisons.json](cross_model_comparisons.json) | Own-denominator model contrasts; missing conditions remain null |
 | [quantization_effects.json](quantization_effects.json) | FP16-minus-quantized success on source-study common-clean masks |
@@ -65,7 +74,7 @@ The full matrices use own clean-correct denominators. The shared tables use
 only the intersections already available in the corresponding source study:
 ResNet original nine-deployment n=71, MobileNet RKNN n=80, MobileNet TensorRT
 n=78, Core ML ResNet n=81 and Core ML MobileNet n=82. These are different
-populations. There is no new 19-, 20- or 39-way intersection and no cross-model
+populations. The new completion campaign has its own three-MobileNet/five-ResNet masks; there is no new 24-, 23- or 47-way intersection and no cross-model
 candidate-transfer evaluation.
 
 Wilson intervals apply to each cell's binomial pilot rate. Supplementary seed

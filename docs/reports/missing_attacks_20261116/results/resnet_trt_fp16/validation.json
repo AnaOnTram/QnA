@@ -1,0 +1,148 @@
+{
+  "arm": "resnet_trt_fp16",
+  "ok": true,
+  "conditions": 23,
+  "rows_reconciled": 2300,
+  "native_replayed_images": 2300,
+  "complete_native_replay": true,
+  "source_sha256": "23cc23880d70cf7b7a0737aa717c4f1727f9d3c085df270739ae76a83fa663d0",
+  "metrics": {
+    "random@1": {
+      "fooled": 0,
+      "eligible": 82,
+      "success_pct": 0.0
+    },
+    "fgsm@1": {
+      "fooled": 42,
+      "eligible": 82,
+      "success_pct": 51.21951219512195
+    },
+    "pgd@1": {
+      "fooled": 67,
+      "eligible": 82,
+      "success_pct": 81.70731707317073
+    },
+    "pgd_stronger@1": {
+      "fooled": 75,
+      "eligible": 82,
+      "success_pct": 91.46341463414635
+    },
+    "random@2": {
+      "fooled": 2,
+      "eligible": 82,
+      "success_pct": 2.4390243902439024
+    },
+    "fgsm@2": {
+      "fooled": 43,
+      "eligible": 82,
+      "success_pct": 52.4390243902439
+    },
+    "pgd@2": {
+      "fooled": 73,
+      "eligible": 82,
+      "success_pct": 89.02439024390245
+    },
+    "random@4": {
+      "fooled": 2,
+      "eligible": 82,
+      "success_pct": 2.4390243902439024
+    },
+    "fgsm@4": {
+      "fooled": 41,
+      "eligible": 82,
+      "success_pct": 50.0
+    },
+    "pgd@4": {
+      "fooled": 80,
+      "eligible": 82,
+      "success_pct": 97.5609756097561
+    },
+    "square@4": {
+      "fooled": 31,
+      "eligible": 82,
+      "success_pct": 37.80487804878049
+    },
+    "random@8": {
+      "fooled": 5,
+      "eligible": 82,
+      "success_pct": 6.097560975609756
+    },
+    "fgsm@8": {
+      "fooled": 44,
+      "eligible": 82,
+      "success_pct": 53.65853658536585
+    },
+    "pgd@8": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0
+    },
+    "square@8": {
+      "fooled": 50,
+      "eligible": 82,
+      "success_pct": 60.97560975609756
+    },
+    "transfer_fp32_fgsm@1": {
+      "fooled": 42,
+      "eligible": 82,
+      "success_pct": 51.21951219512195
+    },
+    "transfer_fp32_pgd@1": {
+      "fooled": 66,
+      "eligible": 82,
+      "success_pct": 80.48780487804878
+    },
+    "transfer_fp32_fgsm@2": {
+      "fooled": 42,
+      "eligible": 82,
+      "success_pct": 51.21951219512195
+    },
+    "transfer_fp32_pgd@2": {
+      "fooled": 73,
+      "eligible": 82,
+      "success_pct": 89.02439024390245
+    },
+    "transfer_fp32_fgsm@4": {
+      "fooled": 41,
+      "eligible": 82,
+      "success_pct": 50.0
+    },
+    "transfer_fp32_pgd@4": {
+      "fooled": 79,
+      "eligible": 82,
+      "success_pct": 96.34146341463415
+    },
+    "transfer_fp32_fgsm@8": {
+      "fooled": 43,
+      "eligible": 82,
+      "success_pct": 52.4390243902439
+    },
+    "transfer_fp32_pgd@8": {
+      "fooled": 82,
+      "eligible": 82,
+      "success_pct": 100.0
+    }
+  },
+  "engine_precision_evidence": {
+    "inspector_schema": "TensorRT 11 Constants/Datatype",
+    "constant_datatypes": {
+      "Half": 122,
+      "Float": 108
+    },
+    "convolution_input_datatypes": {
+      "Half": 71
+    },
+    "convolution_layer_count": 55
+  },
+  "checks": [
+    "sample hashes and labels",
+    "unique complete condition rows",
+    "all tensor bounds and finite pixels",
+    "saved logits/count/CSV agreement",
+    "Square query cap and totals",
+    "PGD+ retains successes",
+    "replica gate",
+    "runtime provider/precision evidence",
+    "source and implementation hashes"
+  ]
+}

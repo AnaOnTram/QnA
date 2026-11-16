@@ -1,0 +1,98 @@
+{
+  "arm": "mobile_ort_fp32",
+  "ok": true,
+  "conditions": 15,
+  "rows_reconciled": 1500,
+  "native_replayed_images": 1500,
+  "complete_native_replay": true,
+  "source_sha256": "9f2d5d94df76f044172dc28345bf975b83e24de1ca33e5892fe074d312d93a77",
+  "metrics": {
+    "random@1": {
+      "fooled": 1,
+      "eligible": 83,
+      "success_pct": 1.2048192771084338
+    },
+    "fgsm@1": {
+      "fooled": 76,
+      "eligible": 83,
+      "success_pct": 91.56626506024097
+    },
+    "pgd@1": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0
+    },
+    "pgd_stronger@1": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0
+    },
+    "random@2": {
+      "fooled": 0,
+      "eligible": 83,
+      "success_pct": 0.0
+    },
+    "fgsm@2": {
+      "fooled": 77,
+      "eligible": 83,
+      "success_pct": 92.7710843373494
+    },
+    "pgd@2": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0
+    },
+    "random@4": {
+      "fooled": 1,
+      "eligible": 83,
+      "success_pct": 1.2048192771084338
+    },
+    "fgsm@4": {
+      "fooled": 80,
+      "eligible": 83,
+      "success_pct": 96.3855421686747
+    },
+    "pgd@4": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0
+    },
+    "square@4": {
+      "fooled": 38,
+      "eligible": 83,
+      "success_pct": 45.78313253012048
+    },
+    "random@8": {
+      "fooled": 1,
+      "eligible": 83,
+      "success_pct": 1.2048192771084338
+    },
+    "fgsm@8": {
+      "fooled": 79,
+      "eligible": 83,
+      "success_pct": 95.18072289156626
+    },
+    "pgd@8": {
+      "fooled": 83,
+      "eligible": 83,
+      "success_pct": 100.0
+    },
+    "square@8": {
+      "fooled": 71,
+      "eligible": 83,
+      "success_pct": 85.5421686746988
+    }
+  },
+  "engine_precision_evidence": null,
+  "checks": [
+    "sample hashes and labels",
+    "unique complete condition rows",
+    "all tensor bounds and finite pixels",
+    "saved logits/count/CSV agreement",
+    "Square query cap and totals",
+    "PGD+ retains successes",
+    "replica gate",
+    "runtime provider/precision evidence",
+    "source and implementation hashes"
+  ]
+}

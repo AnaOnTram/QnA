@@ -28,13 +28,36 @@ conversions. See [the archive guide](reports/mobilenetv2/ARCHIVE.md) for retaine
 reports, validation evidence and conversion/runtime helpers.
 
 The three cross-runtime/cross-model syntheses under `docs/reports/` were then
-newly composed from the retained measurements. They reconcile 842 conditions
-from 39 hash-pinned deployment summaries and preserve study-specific common-clean
+newly composed from the retained measurements. The original synthesis reconciled 842 conditions
+from 39 hash-pinned deployment summaries before the Coral PGD+ supplement and preserve study-specific common-clean
 denominators. Their reporting script, derived tables, figures and source ledger
 are under `docs/reports/cross_runtime/`. The missing matched ResNet QNN summary
 and ResNet sample ledger were copied from the original workspace to make the
 new calculations archive-local. This is reporting and arithmetic validation,
 not a new hardware experiment or candidate replay.
+
+## 16 November completed attack campaigns
+
+Eight additional campaigns were completed in the source workspace
+`QA/experiments/missing_attacks_20261116/`, filling 40 previously blank cells.
+This archive imports their compact records after successful independent native
+replay of all 16,800 candidate evaluations. Packaging does not rerun attacks.
+The synthesis now reconciles 1,011 conditions across 47 deployments; the original
+39-deployment registry and its values remain unchanged.
+
+Seven final model files are added: MobileNet INT8 QOperator, canonical timm
+ResNet FP8 and classifier-only INT4 ONNX graphs, and four ResNet TensorRT 11.3
+static-batch-1 plans from NV10 / RTX PRO 4000 Blackwell. FP8 uses max calibration
+on the existing 512-image array; INT4 uses block-128 symmetric RTN on the
+classifier after a verified equivalent Flatten+Gemm rewrite. Other layers are
+unchanged FP32. Sources, calibration hashes, recipes, precision evidence and
+attack-time graph/engine digests are retained in the manifest and
+[completion archive](reports/missing_attacks_20261116/README.md). The source
+FP32 graph was protected with a scratch copy during FP8 quantization.
+
+The seven files match the already pinned experiment digests. Native replay was
+performed before archiving; the compact archive documents it but omits the raw
+candidate tensors and logits required to repeat it.
 
 ## Sources
 
